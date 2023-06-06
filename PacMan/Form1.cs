@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace PacMan
 {
-    public partial class Form1 : Form
+    public partial class Pacman : Form
     {
-        public Form1()
+        public Pacman()
         {
             InitializeComponent();
         }

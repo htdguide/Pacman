@@ -12,6 +12,9 @@ namespace PacMan
 {
     public partial class Pacman : Form
     {
+        private Entity pacman, ghost1, ghost2, ghost3, ghost4;
+
+
         public Pacman()
         {
             InitializeComponent();

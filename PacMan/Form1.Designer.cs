@@ -45,6 +45,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.Black;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.panel1.Location = new System.Drawing.Point(12, 12);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(500, 500);
@@ -69,9 +70,9 @@
             // 
             this.Pause.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Pause.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Pause.Location = new System.Drawing.Point(354, 13);
+            this.Pause.Location = new System.Drawing.Point(347, 13);
             this.Pause.Name = "Pause";
-            this.Pause.Size = new System.Drawing.Size(75, 31);
+            this.Pause.Size = new System.Drawing.Size(82, 35);
             this.Pause.TabIndex = 0;
             this.Pause.Text = "Pause";
             this.Pause.UseVisualStyleBackColor = true;
@@ -100,7 +101,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.Location = new System.Drawing.Point(33, 17);
+            this.label3.Location = new System.Drawing.Point(34, 17);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(56, 23);
             this.label3.TabIndex = 3;
@@ -110,7 +111,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.Location = new System.Drawing.Point(180, 17);
+            this.label4.Location = new System.Drawing.Point(181, 17);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(50, 23);
             this.label4.TabIndex = 4;
@@ -120,7 +121,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label5.Location = new System.Drawing.Point(95, 17);
+            this.label5.Location = new System.Drawing.Point(96, 17);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(19, 23);
             this.label5.TabIndex = 5;
@@ -130,7 +131,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label6.Location = new System.Drawing.Point(236, 17);
+            this.label6.Location = new System.Drawing.Point(237, 17);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(19, 23);
             this.label6.TabIndex = 6;
@@ -144,6 +145,7 @@
             this.ClientSize = new System.Drawing.Size(525, 653);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Pacman";
             this.Text = "Pacman";

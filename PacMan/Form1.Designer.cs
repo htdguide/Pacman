@@ -30,6 +30,139 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Pacman));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.Pause = new System.Windows.Forms.Button();
+            this.pictureBox394 = new System.Windows.Forms.PictureBox();
+            this.pictureBox393 = new System.Windows.Forms.PictureBox();
+            this.pictureBox392 = new System.Windows.Forms.PictureBox();
+            this.pictureBox391 = new System.Windows.Forms.PictureBox();
+            this.pictureBox389 = new System.Windows.Forms.PictureBox();
+            this.pictureBox390 = new System.Windows.Forms.PictureBox();
+            this.pictureBox387 = new System.Windows.Forms.PictureBox();
+            this.pictureBox388 = new System.Windows.Forms.PictureBox();
+            this.pictureBox386 = new System.Windows.Forms.PictureBox();
+            this.pictureBox385 = new System.Windows.Forms.PictureBox();
+            this.pictureBox384 = new System.Windows.Forms.PictureBox();
+            this.pictureBox380 = new System.Windows.Forms.PictureBox();
+            this.pictureBox381 = new System.Windows.Forms.PictureBox();
+            this.pictureBox382 = new System.Windows.Forms.PictureBox();
+            this.pictureBox383 = new System.Windows.Forms.PictureBox();
+            this.pictureBox379 = new System.Windows.Forms.PictureBox();
+            this.pictureBox378 = new System.Windows.Forms.PictureBox();
+            this.pictureBox377 = new System.Windows.Forms.PictureBox();
+            this.pictureBox374 = new System.Windows.Forms.PictureBox();
+            this.pictureBox375 = new System.Windows.Forms.PictureBox();
+            this.pictureBox376 = new System.Windows.Forms.PictureBox();
+            this.pictureBox373 = new System.Windows.Forms.PictureBox();
+            this.pictureBox372 = new System.Windows.Forms.PictureBox();
+            this.pictureBox371 = new System.Windows.Forms.PictureBox();
+            this.pictureBox370 = new System.Windows.Forms.PictureBox();
+            this.pictureBox369 = new System.Windows.Forms.PictureBox();
+            this.pictureBox366 = new System.Windows.Forms.PictureBox();
+            this.pictureBox367 = new System.Windows.Forms.PictureBox();
+            this.pictureBox368 = new System.Windows.Forms.PictureBox();
+            this.pictureBox363 = new System.Windows.Forms.PictureBox();
+            this.pictureBox364 = new System.Windows.Forms.PictureBox();
+            this.pictureBox365 = new System.Windows.Forms.PictureBox();
+            this.pictureBox360 = new System.Windows.Forms.PictureBox();
+            this.pictureBox361 = new System.Windows.Forms.PictureBox();
+            this.pictureBox362 = new System.Windows.Forms.PictureBox();
+            this.pictureBox356 = new System.Windows.Forms.PictureBox();
+            this.pictureBox357 = new System.Windows.Forms.PictureBox();
+            this.pictureBox358 = new System.Windows.Forms.PictureBox();
+            this.pictureBox359 = new System.Windows.Forms.PictureBox();
+            this.pictureBox352 = new System.Windows.Forms.PictureBox();
+            this.pictureBox353 = new System.Windows.Forms.PictureBox();
+            this.pictureBox354 = new System.Windows.Forms.PictureBox();
+            this.pictureBox355 = new System.Windows.Forms.PictureBox();
+            this.pictureBox347 = new System.Windows.Forms.PictureBox();
+            this.pictureBox348 = new System.Windows.Forms.PictureBox();
+            this.pictureBox349 = new System.Windows.Forms.PictureBox();
+            this.pictureBox350 = new System.Windows.Forms.PictureBox();
+            this.pictureBox351 = new System.Windows.Forms.PictureBox();
+            this.pictureBox343 = new System.Windows.Forms.PictureBox();
+            this.pictureBox344 = new System.Windows.Forms.PictureBox();
+            this.pictureBox345 = new System.Windows.Forms.PictureBox();
+            this.pictureBox346 = new System.Windows.Forms.PictureBox();
+            this.pictureBox338 = new System.Windows.Forms.PictureBox();
+            this.pictureBox339 = new System.Windows.Forms.PictureBox();
+            this.pictureBox340 = new System.Windows.Forms.PictureBox();
+            this.pictureBox341 = new System.Windows.Forms.PictureBox();
+            this.pictureBox342 = new System.Windows.Forms.PictureBox();
+            this.pictureBox333 = new System.Windows.Forms.PictureBox();
+            this.pictureBox334 = new System.Windows.Forms.PictureBox();
+            this.pictureBox335 = new System.Windows.Forms.PictureBox();
+            this.pictureBox336 = new System.Windows.Forms.PictureBox();
+            this.pictureBox337 = new System.Windows.Forms.PictureBox();
+            this.pictureBox317 = new System.Windows.Forms.PictureBox();
+            this.pictureBox318 = new System.Windows.Forms.PictureBox();
+            this.pictureBox319 = new System.Windows.Forms.PictureBox();
+            this.pictureBox320 = new System.Windows.Forms.PictureBox();
+            this.pictureBox321 = new System.Windows.Forms.PictureBox();
+            this.pictureBox322 = new System.Windows.Forms.PictureBox();
+            this.pictureBox323 = new System.Windows.Forms.PictureBox();
+            this.pictureBox324 = new System.Windows.Forms.PictureBox();
+            this.pictureBox325 = new System.Windows.Forms.PictureBox();
+            this.pictureBox326 = new System.Windows.Forms.PictureBox();
+            this.pictureBox327 = new System.Windows.Forms.PictureBox();
+            this.pictureBox328 = new System.Windows.Forms.PictureBox();
+            this.pictureBox329 = new System.Windows.Forms.PictureBox();
+            this.pictureBox330 = new System.Windows.Forms.PictureBox();
+            this.pictureBox331 = new System.Windows.Forms.PictureBox();
+            this.pictureBox332 = new System.Windows.Forms.PictureBox();
+            this.pictureBox316 = new System.Windows.Forms.PictureBox();
+            this.pictureBox314 = new System.Windows.Forms.PictureBox();
+            this.pictureBox315 = new System.Windows.Forms.PictureBox();
+            this.pictureBox311 = new System.Windows.Forms.PictureBox();
+            this.pictureBox312 = new System.Windows.Forms.PictureBox();
+            this.pictureBox313 = new System.Windows.Forms.PictureBox();
+            this.pictureBox307 = new System.Windows.Forms.PictureBox();
+            this.pictureBox308 = new System.Windows.Forms.PictureBox();
+            this.pictureBox309 = new System.Windows.Forms.PictureBox();
+            this.pictureBox310 = new System.Windows.Forms.PictureBox();
+            this.pictureBox306 = new System.Windows.Forms.PictureBox();
+            this.pictureBox305 = new System.Windows.Forms.PictureBox();
+            this.pictureBox301 = new System.Windows.Forms.PictureBox();
+            this.pictureBox302 = new System.Windows.Forms.PictureBox();
+            this.pictureBox303 = new System.Windows.Forms.PictureBox();
+            this.pictureBox304 = new System.Windows.Forms.PictureBox();
+            this.pictureBox298 = new System.Windows.Forms.PictureBox();
+            this.pictureBox299 = new System.Windows.Forms.PictureBox();
+            this.pictureBox300 = new System.Windows.Forms.PictureBox();
+            this.pictureBox294 = new System.Windows.Forms.PictureBox();
+            this.pictureBox295 = new System.Windows.Forms.PictureBox();
+            this.pictureBox296 = new System.Windows.Forms.PictureBox();
+            this.pictureBox297 = new System.Windows.Forms.PictureBox();
+            this.pictureBox288 = new System.Windows.Forms.PictureBox();
+            this.pictureBox289 = new System.Windows.Forms.PictureBox();
+            this.pictureBox290 = new System.Windows.Forms.PictureBox();
+            this.pictureBox291 = new System.Windows.Forms.PictureBox();
+            this.pictureBox292 = new System.Windows.Forms.PictureBox();
+            this.pictureBox293 = new System.Windows.Forms.PictureBox();
+            this.pictureBox282 = new System.Windows.Forms.PictureBox();
+            this.pictureBox283 = new System.Windows.Forms.PictureBox();
+            this.pictureBox284 = new System.Windows.Forms.PictureBox();
+            this.pictureBox285 = new System.Windows.Forms.PictureBox();
+            this.pictureBox286 = new System.Windows.Forms.PictureBox();
+            this.pictureBox287 = new System.Windows.Forms.PictureBox();
+            this.pictureBox272 = new System.Windows.Forms.PictureBox();
+            this.pictureBox277 = new System.Windows.Forms.PictureBox();
+            this.pictureBox278 = new System.Windows.Forms.PictureBox();
+            this.pictureBox279 = new System.Windows.Forms.PictureBox();
+            this.pictureBox280 = new System.Windows.Forms.PictureBox();
+            this.pictureBox281 = new System.Windows.Forms.PictureBox();
+            this.pictureBox270 = new System.Windows.Forms.PictureBox();
+            this.pictureBox271 = new System.Windows.Forms.PictureBox();
+            this.pictureBox273 = new System.Windows.Forms.PictureBox();
+            this.pictureBox274 = new System.Windows.Forms.PictureBox();
+            this.pictureBox275 = new System.Windows.Forms.PictureBox();
+            this.pictureBox276 = new System.Windows.Forms.PictureBox();
             this.pictureBox254 = new System.Windows.Forms.PictureBox();
             this.pictureBox255 = new System.Windows.Forms.PictureBox();
             this.pictureBox256 = new System.Windows.Forms.PictureBox();
@@ -299,137 +432,133 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.Pause = new System.Windows.Forms.Button();
-            this.pictureBox270 = new System.Windows.Forms.PictureBox();
-            this.pictureBox271 = new System.Windows.Forms.PictureBox();
-            this.pictureBox273 = new System.Windows.Forms.PictureBox();
-            this.pictureBox274 = new System.Windows.Forms.PictureBox();
-            this.pictureBox275 = new System.Windows.Forms.PictureBox();
-            this.pictureBox276 = new System.Windows.Forms.PictureBox();
-            this.pictureBox272 = new System.Windows.Forms.PictureBox();
-            this.pictureBox277 = new System.Windows.Forms.PictureBox();
-            this.pictureBox278 = new System.Windows.Forms.PictureBox();
-            this.pictureBox279 = new System.Windows.Forms.PictureBox();
-            this.pictureBox280 = new System.Windows.Forms.PictureBox();
-            this.pictureBox281 = new System.Windows.Forms.PictureBox();
-            this.pictureBox282 = new System.Windows.Forms.PictureBox();
-            this.pictureBox283 = new System.Windows.Forms.PictureBox();
-            this.pictureBox284 = new System.Windows.Forms.PictureBox();
-            this.pictureBox285 = new System.Windows.Forms.PictureBox();
-            this.pictureBox286 = new System.Windows.Forms.PictureBox();
-            this.pictureBox287 = new System.Windows.Forms.PictureBox();
-            this.pictureBox288 = new System.Windows.Forms.PictureBox();
-            this.pictureBox289 = new System.Windows.Forms.PictureBox();
-            this.pictureBox290 = new System.Windows.Forms.PictureBox();
-            this.pictureBox291 = new System.Windows.Forms.PictureBox();
-            this.pictureBox292 = new System.Windows.Forms.PictureBox();
-            this.pictureBox293 = new System.Windows.Forms.PictureBox();
-            this.pictureBox294 = new System.Windows.Forms.PictureBox();
-            this.pictureBox295 = new System.Windows.Forms.PictureBox();
-            this.pictureBox296 = new System.Windows.Forms.PictureBox();
-            this.pictureBox297 = new System.Windows.Forms.PictureBox();
-            this.pictureBox298 = new System.Windows.Forms.PictureBox();
-            this.pictureBox299 = new System.Windows.Forms.PictureBox();
-            this.pictureBox300 = new System.Windows.Forms.PictureBox();
-            this.pictureBox301 = new System.Windows.Forms.PictureBox();
-            this.pictureBox302 = new System.Windows.Forms.PictureBox();
-            this.pictureBox303 = new System.Windows.Forms.PictureBox();
-            this.pictureBox304 = new System.Windows.Forms.PictureBox();
-            this.pictureBox305 = new System.Windows.Forms.PictureBox();
-            this.pictureBox306 = new System.Windows.Forms.PictureBox();
-            this.pictureBox307 = new System.Windows.Forms.PictureBox();
-            this.pictureBox308 = new System.Windows.Forms.PictureBox();
-            this.pictureBox309 = new System.Windows.Forms.PictureBox();
-            this.pictureBox310 = new System.Windows.Forms.PictureBox();
-            this.pictureBox311 = new System.Windows.Forms.PictureBox();
-            this.pictureBox312 = new System.Windows.Forms.PictureBox();
-            this.pictureBox313 = new System.Windows.Forms.PictureBox();
-            this.pictureBox314 = new System.Windows.Forms.PictureBox();
-            this.pictureBox315 = new System.Windows.Forms.PictureBox();
-            this.pictureBox316 = new System.Windows.Forms.PictureBox();
-            this.pictureBox317 = new System.Windows.Forms.PictureBox();
-            this.pictureBox318 = new System.Windows.Forms.PictureBox();
-            this.pictureBox319 = new System.Windows.Forms.PictureBox();
-            this.pictureBox320 = new System.Windows.Forms.PictureBox();
-            this.pictureBox321 = new System.Windows.Forms.PictureBox();
-            this.pictureBox322 = new System.Windows.Forms.PictureBox();
-            this.pictureBox323 = new System.Windows.Forms.PictureBox();
-            this.pictureBox324 = new System.Windows.Forms.PictureBox();
-            this.pictureBox325 = new System.Windows.Forms.PictureBox();
-            this.pictureBox326 = new System.Windows.Forms.PictureBox();
-            this.pictureBox327 = new System.Windows.Forms.PictureBox();
-            this.pictureBox328 = new System.Windows.Forms.PictureBox();
-            this.pictureBox329 = new System.Windows.Forms.PictureBox();
-            this.pictureBox330 = new System.Windows.Forms.PictureBox();
-            this.pictureBox331 = new System.Windows.Forms.PictureBox();
-            this.pictureBox332 = new System.Windows.Forms.PictureBox();
-            this.pictureBox333 = new System.Windows.Forms.PictureBox();
-            this.pictureBox334 = new System.Windows.Forms.PictureBox();
-            this.pictureBox335 = new System.Windows.Forms.PictureBox();
-            this.pictureBox336 = new System.Windows.Forms.PictureBox();
-            this.pictureBox337 = new System.Windows.Forms.PictureBox();
-            this.pictureBox338 = new System.Windows.Forms.PictureBox();
-            this.pictureBox339 = new System.Windows.Forms.PictureBox();
-            this.pictureBox340 = new System.Windows.Forms.PictureBox();
-            this.pictureBox341 = new System.Windows.Forms.PictureBox();
-            this.pictureBox342 = new System.Windows.Forms.PictureBox();
-            this.pictureBox343 = new System.Windows.Forms.PictureBox();
-            this.pictureBox344 = new System.Windows.Forms.PictureBox();
-            this.pictureBox345 = new System.Windows.Forms.PictureBox();
-            this.pictureBox346 = new System.Windows.Forms.PictureBox();
-            this.pictureBox347 = new System.Windows.Forms.PictureBox();
-            this.pictureBox348 = new System.Windows.Forms.PictureBox();
-            this.pictureBox349 = new System.Windows.Forms.PictureBox();
-            this.pictureBox350 = new System.Windows.Forms.PictureBox();
-            this.pictureBox351 = new System.Windows.Forms.PictureBox();
-            this.pictureBox352 = new System.Windows.Forms.PictureBox();
-            this.pictureBox353 = new System.Windows.Forms.PictureBox();
-            this.pictureBox354 = new System.Windows.Forms.PictureBox();
-            this.pictureBox355 = new System.Windows.Forms.PictureBox();
-            this.pictureBox356 = new System.Windows.Forms.PictureBox();
-            this.pictureBox357 = new System.Windows.Forms.PictureBox();
-            this.pictureBox358 = new System.Windows.Forms.PictureBox();
-            this.pictureBox359 = new System.Windows.Forms.PictureBox();
-            this.pictureBox360 = new System.Windows.Forms.PictureBox();
-            this.pictureBox361 = new System.Windows.Forms.PictureBox();
-            this.pictureBox362 = new System.Windows.Forms.PictureBox();
-            this.pictureBox363 = new System.Windows.Forms.PictureBox();
-            this.pictureBox364 = new System.Windows.Forms.PictureBox();
-            this.pictureBox365 = new System.Windows.Forms.PictureBox();
-            this.pictureBox366 = new System.Windows.Forms.PictureBox();
-            this.pictureBox367 = new System.Windows.Forms.PictureBox();
-            this.pictureBox368 = new System.Windows.Forms.PictureBox();
-            this.pictureBox369 = new System.Windows.Forms.PictureBox();
-            this.pictureBox370 = new System.Windows.Forms.PictureBox();
-            this.pictureBox371 = new System.Windows.Forms.PictureBox();
-            this.pictureBox372 = new System.Windows.Forms.PictureBox();
-            this.pictureBox373 = new System.Windows.Forms.PictureBox();
-            this.pictureBox374 = new System.Windows.Forms.PictureBox();
-            this.pictureBox375 = new System.Windows.Forms.PictureBox();
-            this.pictureBox376 = new System.Windows.Forms.PictureBox();
-            this.pictureBox377 = new System.Windows.Forms.PictureBox();
-            this.pictureBox378 = new System.Windows.Forms.PictureBox();
-            this.pictureBox379 = new System.Windows.Forms.PictureBox();
-            this.pictureBox380 = new System.Windows.Forms.PictureBox();
-            this.pictureBox381 = new System.Windows.Forms.PictureBox();
-            this.pictureBox382 = new System.Windows.Forms.PictureBox();
-            this.pictureBox383 = new System.Windows.Forms.PictureBox();
-            this.pictureBox384 = new System.Windows.Forms.PictureBox();
-            this.pictureBox385 = new System.Windows.Forms.PictureBox();
-            this.pictureBox386 = new System.Windows.Forms.PictureBox();
-            this.pictureBox387 = new System.Windows.Forms.PictureBox();
-            this.pictureBox388 = new System.Windows.Forms.PictureBox();
-            this.pictureBox389 = new System.Windows.Forms.PictureBox();
-            this.pictureBox390 = new System.Windows.Forms.PictureBox();
-            this.pictureBox391 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox394)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox393)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox392)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox391)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox389)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox390)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox387)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox388)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox386)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox385)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox384)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox380)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox381)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox382)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox383)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox379)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox378)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox377)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox374)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox375)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox376)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox373)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox372)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox371)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox370)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox369)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox366)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox367)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox368)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox363)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox364)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox365)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox360)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox361)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox362)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox356)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox357)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox358)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox359)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox352)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox353)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox354)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox355)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox347)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox348)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox349)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox350)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox351)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox343)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox344)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox345)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox346)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox338)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox339)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox340)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox341)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox342)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox333)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox334)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox335)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox336)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox337)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox317)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox318)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox319)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox320)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox321)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox322)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox323)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox324)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox325)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox326)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox327)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox328)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox329)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox330)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox331)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox332)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox316)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox314)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox315)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox311)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox312)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox313)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox307)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox308)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox309)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox310)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox306)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox305)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox301)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox302)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox303)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox304)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox298)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox299)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox300)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox294)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox295)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox296)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox297)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox288)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox289)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox290)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox291)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox292)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox293)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox282)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox283)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox284)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox285)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox286)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox287)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox272)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox277)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox278)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox279)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox280)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox281)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox270)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox271)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox273)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox274)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox275)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox276)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox254)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox255)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox256)).BeginInit();
@@ -699,135 +828,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox270)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox271)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox273)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox274)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox275)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox276)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox272)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox277)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox278)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox279)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox280)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox281)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox282)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox283)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox284)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox285)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox286)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox287)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox288)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox289)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox290)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox291)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox292)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox293)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox294)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox295)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox296)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox297)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox298)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox299)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox300)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox301)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox302)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox303)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox304)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox305)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox306)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox307)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox308)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox309)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox310)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox311)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox312)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox313)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox314)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox315)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox316)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox317)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox318)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox319)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox320)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox321)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox322)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox323)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox324)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox325)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox326)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox327)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox328)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox329)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox330)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox331)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox332)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox333)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox334)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox335)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox336)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox337)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox338)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox339)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox340)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox341)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox342)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox343)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox344)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox345)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox346)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox347)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox348)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox349)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox350)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox351)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox352)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox353)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox354)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox355)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox356)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox357)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox358)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox359)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox360)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox361)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox362)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox363)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox364)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox365)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox366)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox367)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox368)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox369)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox370)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox371)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox372)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox373)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox374)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox375)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox376)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox377)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox378)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox379)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox380)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox381)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox382)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox383)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox384)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox385)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox386)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox387)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox388)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox389)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox390)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox391)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Black;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel1.Controls.Add(this.pictureBox394);
+            this.panel1.Controls.Add(this.pictureBox393);
+            this.panel1.Controls.Add(this.pictureBox392);
             this.panel1.Controls.Add(this.pictureBox391);
             this.panel1.Controls.Add(this.pictureBox389);
             this.panel1.Controls.Add(this.pictureBox390);
@@ -1224,6 +1233,1467 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(505, 500);
             this.panel1.TabIndex = 0;
+            // 
+            // panel2
+            // 
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.label6);
+            this.panel2.Controls.Add(this.label5);
+            this.panel2.Controls.Add(this.label4);
+            this.panel2.Controls.Add(this.label3);
+            this.panel2.Controls.Add(this.label2);
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Controls.Add(this.Pause);
+            this.panel2.Location = new System.Drawing.Point(24, 527);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(472, 114);
+            this.panel2.TabIndex = 1;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label6.Location = new System.Drawing.Point(237, 17);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(19, 23);
+            this.label6.TabIndex = 6;
+            this.label6.Text = "3";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label5.Location = new System.Drawing.Point(96, 17);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(19, 23);
+            this.label5.TabIndex = 5;
+            this.label5.Text = "0";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label4.Location = new System.Drawing.Point(181, 17);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(50, 23);
+            this.label4.TabIndex = 4;
+            this.label4.Text = "Lives:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label3.Location = new System.Drawing.Point(34, 17);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(56, 23);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "Score:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label2.Location = new System.Drawing.Point(3, 81);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(410, 23);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Try to eat all the Kibble before the Ghosts catch you.";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Location = new System.Drawing.Point(3, 60);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(426, 23);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Use the arrow keys to move Pacman around the maze.";
+            // 
+            // Pause
+            // 
+            this.Pause.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Pause.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Pause.Location = new System.Drawing.Point(347, 13);
+            this.Pause.Name = "Pause";
+            this.Pause.Size = new System.Drawing.Size(82, 35);
+            this.Pause.TabIndex = 0;
+            this.Pause.Text = "Pause";
+            this.Pause.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox394
+            // 
+            this.pictureBox394.Image = global::PacMan.Properties.Resources.ghoulBlueUp;
+            this.pictureBox394.Location = new System.Drawing.Point(250, 250);
+            this.pictureBox394.Name = "pictureBox394";
+            this.pictureBox394.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox394.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox394.TabIndex = 399;
+            this.pictureBox394.TabStop = false;
+            this.pictureBox394.Tag = "kibble";
+            // 
+            // pictureBox393
+            // 
+            this.pictureBox393.Image = global::PacMan.Properties.Resources.ghoulBlueUp;
+            this.pictureBox393.Location = new System.Drawing.Point(225, 200);
+            this.pictureBox393.Name = "pictureBox393";
+            this.pictureBox393.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox393.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox393.TabIndex = 398;
+            this.pictureBox393.TabStop = false;
+            this.pictureBox393.Tag = "kibble";
+            // 
+            // pictureBox392
+            // 
+            this.pictureBox392.Image = global::PacMan.Properties.Resources.ghoulBlueUp;
+            this.pictureBox392.Location = new System.Drawing.Point(200, 250);
+            this.pictureBox392.Name = "pictureBox392";
+            this.pictureBox392.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox392.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox392.TabIndex = 397;
+            this.pictureBox392.TabStop = false;
+            this.pictureBox392.Tag = "kibble";
+            // 
+            // pictureBox391
+            // 
+            this.pictureBox391.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox391.Image")));
+            this.pictureBox391.Location = new System.Drawing.Point(400, 425);
+            this.pictureBox391.Name = "pictureBox391";
+            this.pictureBox391.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox391.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox391.TabIndex = 396;
+            this.pictureBox391.TabStop = false;
+            this.pictureBox391.Tag = "kibble";
+            // 
+            // pictureBox389
+            // 
+            this.pictureBox389.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox389.Image")));
+            this.pictureBox389.Location = new System.Drawing.Point(425, 400);
+            this.pictureBox389.Name = "pictureBox389";
+            this.pictureBox389.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox389.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox389.TabIndex = 395;
+            this.pictureBox389.TabStop = false;
+            this.pictureBox389.Tag = "kibble";
+            // 
+            // pictureBox390
+            // 
+            this.pictureBox390.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox390.Image")));
+            this.pictureBox390.Location = new System.Drawing.Point(400, 400);
+            this.pictureBox390.Name = "pictureBox390";
+            this.pictureBox390.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox390.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox390.TabIndex = 394;
+            this.pictureBox390.TabStop = false;
+            this.pictureBox390.Tag = "kibble";
+            // 
+            // pictureBox387
+            // 
+            this.pictureBox387.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox387.Image")));
+            this.pictureBox387.Location = new System.Drawing.Point(375, 225);
+            this.pictureBox387.Name = "pictureBox387";
+            this.pictureBox387.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox387.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox387.TabIndex = 393;
+            this.pictureBox387.TabStop = false;
+            this.pictureBox387.Tag = "kibble";
+            // 
+            // pictureBox388
+            // 
+            this.pictureBox388.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox388.Image")));
+            this.pictureBox388.Location = new System.Drawing.Point(375, 200);
+            this.pictureBox388.Name = "pictureBox388";
+            this.pictureBox388.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox388.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox388.TabIndex = 392;
+            this.pictureBox388.TabStop = false;
+            this.pictureBox388.Tag = "kibble";
+            // 
+            // pictureBox386
+            // 
+            this.pictureBox386.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox386.Image")));
+            this.pictureBox386.Location = new System.Drawing.Point(100, 425);
+            this.pictureBox386.Name = "pictureBox386";
+            this.pictureBox386.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox386.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox386.TabIndex = 391;
+            this.pictureBox386.TabStop = false;
+            this.pictureBox386.Tag = "kibble";
+            // 
+            // pictureBox385
+            // 
+            this.pictureBox385.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox385.Image")));
+            this.pictureBox385.Location = new System.Drawing.Point(100, 375);
+            this.pictureBox385.Name = "pictureBox385";
+            this.pictureBox385.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox385.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox385.TabIndex = 390;
+            this.pictureBox385.TabStop = false;
+            this.pictureBox385.Tag = "kibble";
+            // 
+            // pictureBox384
+            // 
+            this.pictureBox384.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox384.Image")));
+            this.pictureBox384.Location = new System.Drawing.Point(225, 350);
+            this.pictureBox384.Name = "pictureBox384";
+            this.pictureBox384.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox384.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox384.TabIndex = 389;
+            this.pictureBox384.TabStop = false;
+            this.pictureBox384.Tag = "kibble";
+            // 
+            // pictureBox380
+            // 
+            this.pictureBox380.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox380.Image")));
+            this.pictureBox380.Location = new System.Drawing.Point(250, 425);
+            this.pictureBox380.Name = "pictureBox380";
+            this.pictureBox380.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox380.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox380.TabIndex = 388;
+            this.pictureBox380.TabStop = false;
+            this.pictureBox380.Tag = "kibble";
+            // 
+            // pictureBox381
+            // 
+            this.pictureBox381.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox381.Image")));
+            this.pictureBox381.Location = new System.Drawing.Point(250, 400);
+            this.pictureBox381.Name = "pictureBox381";
+            this.pictureBox381.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox381.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox381.TabIndex = 387;
+            this.pictureBox381.TabStop = false;
+            this.pictureBox381.Tag = "kibble";
+            // 
+            // pictureBox382
+            // 
+            this.pictureBox382.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox382.Image")));
+            this.pictureBox382.Location = new System.Drawing.Point(250, 375);
+            this.pictureBox382.Name = "pictureBox382";
+            this.pictureBox382.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox382.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox382.TabIndex = 386;
+            this.pictureBox382.TabStop = false;
+            this.pictureBox382.Tag = "kibble";
+            // 
+            // pictureBox383
+            // 
+            this.pictureBox383.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox383.Image")));
+            this.pictureBox383.Location = new System.Drawing.Point(250, 350);
+            this.pictureBox383.Name = "pictureBox383";
+            this.pictureBox383.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox383.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox383.TabIndex = 385;
+            this.pictureBox383.TabStop = false;
+            this.pictureBox383.Tag = "kibble";
+            // 
+            // pictureBox379
+            // 
+            this.pictureBox379.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox379.Image")));
+            this.pictureBox379.Location = new System.Drawing.Point(100, 275);
+            this.pictureBox379.Name = "pictureBox379";
+            this.pictureBox379.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox379.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox379.TabIndex = 384;
+            this.pictureBox379.TabStop = false;
+            this.pictureBox379.Tag = "kibble";
+            // 
+            // pictureBox378
+            // 
+            this.pictureBox378.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox378.Image")));
+            this.pictureBox378.Location = new System.Drawing.Point(75, 250);
+            this.pictureBox378.Name = "pictureBox378";
+            this.pictureBox378.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox378.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox378.TabIndex = 383;
+            this.pictureBox378.TabStop = false;
+            this.pictureBox378.Tag = "kibble";
+            // 
+            // pictureBox377
+            // 
+            this.pictureBox377.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox377.Image")));
+            this.pictureBox377.Location = new System.Drawing.Point(125, 225);
+            this.pictureBox377.Name = "pictureBox377";
+            this.pictureBox377.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox377.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox377.TabIndex = 382;
+            this.pictureBox377.TabStop = false;
+            this.pictureBox377.Tag = "kibble";
+            // 
+            // pictureBox374
+            // 
+            this.pictureBox374.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox374.Image")));
+            this.pictureBox374.Location = new System.Drawing.Point(50, 225);
+            this.pictureBox374.Name = "pictureBox374";
+            this.pictureBox374.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox374.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox374.TabIndex = 381;
+            this.pictureBox374.TabStop = false;
+            this.pictureBox374.Tag = "kibble";
+            // 
+            // pictureBox375
+            // 
+            this.pictureBox375.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox375.Image")));
+            this.pictureBox375.Location = new System.Drawing.Point(100, 225);
+            this.pictureBox375.Name = "pictureBox375";
+            this.pictureBox375.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox375.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox375.TabIndex = 380;
+            this.pictureBox375.TabStop = false;
+            this.pictureBox375.Tag = "kibble";
+            // 
+            // pictureBox376
+            // 
+            this.pictureBox376.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox376.Image")));
+            this.pictureBox376.Location = new System.Drawing.Point(75, 225);
+            this.pictureBox376.Name = "pictureBox376";
+            this.pictureBox376.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox376.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox376.TabIndex = 379;
+            this.pictureBox376.TabStop = false;
+            this.pictureBox376.Tag = "kibble";
+            // 
+            // pictureBox373
+            // 
+            this.pictureBox373.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox373.Image")));
+            this.pictureBox373.Location = new System.Drawing.Point(425, 200);
+            this.pictureBox373.Name = "pictureBox373";
+            this.pictureBox373.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox373.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox373.TabIndex = 378;
+            this.pictureBox373.TabStop = false;
+            this.pictureBox373.Tag = "kibble";
+            // 
+            // pictureBox372
+            // 
+            this.pictureBox372.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox372.Image")));
+            this.pictureBox372.Location = new System.Drawing.Point(425, 250);
+            this.pictureBox372.Name = "pictureBox372";
+            this.pictureBox372.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox372.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox372.TabIndex = 377;
+            this.pictureBox372.TabStop = false;
+            this.pictureBox372.Tag = "kibble";
+            // 
+            // pictureBox371
+            // 
+            this.pictureBox371.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox371.Image")));
+            this.pictureBox371.Location = new System.Drawing.Point(400, 225);
+            this.pictureBox371.Name = "pictureBox371";
+            this.pictureBox371.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox371.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox371.TabIndex = 376;
+            this.pictureBox371.TabStop = false;
+            this.pictureBox371.Tag = "kibble";
+            // 
+            // pictureBox370
+            // 
+            this.pictureBox370.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox370.Image")));
+            this.pictureBox370.Location = new System.Drawing.Point(400, 350);
+            this.pictureBox370.Name = "pictureBox370";
+            this.pictureBox370.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox370.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox370.TabIndex = 375;
+            this.pictureBox370.TabStop = false;
+            this.pictureBox370.Tag = "kibble";
+            // 
+            // pictureBox369
+            // 
+            this.pictureBox369.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox369.Image")));
+            this.pictureBox369.Location = new System.Drawing.Point(350, 375);
+            this.pictureBox369.Name = "pictureBox369";
+            this.pictureBox369.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox369.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox369.TabIndex = 374;
+            this.pictureBox369.TabStop = false;
+            this.pictureBox369.Tag = "kibble";
+            // 
+            // pictureBox366
+            // 
+            this.pictureBox366.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox366.Image")));
+            this.pictureBox366.Location = new System.Drawing.Point(75, 350);
+            this.pictureBox366.Name = "pictureBox366";
+            this.pictureBox366.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox366.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox366.TabIndex = 373;
+            this.pictureBox366.TabStop = false;
+            this.pictureBox366.Tag = "kibble";
+            // 
+            // pictureBox367
+            // 
+            this.pictureBox367.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox367.Image")));
+            this.pictureBox367.Location = new System.Drawing.Point(125, 350);
+            this.pictureBox367.Name = "pictureBox367";
+            this.pictureBox367.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox367.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox367.TabIndex = 372;
+            this.pictureBox367.TabStop = false;
+            this.pictureBox367.Tag = "kibble";
+            // 
+            // pictureBox368
+            // 
+            this.pictureBox368.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox368.Image")));
+            this.pictureBox368.Location = new System.Drawing.Point(100, 350);
+            this.pictureBox368.Name = "pictureBox368";
+            this.pictureBox368.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox368.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox368.TabIndex = 371;
+            this.pictureBox368.TabStop = false;
+            this.pictureBox368.Tag = "kibble";
+            // 
+            // pictureBox363
+            // 
+            this.pictureBox363.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox363.Image")));
+            this.pictureBox363.Location = new System.Drawing.Point(50, 400);
+            this.pictureBox363.Name = "pictureBox363";
+            this.pictureBox363.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox363.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox363.TabIndex = 370;
+            this.pictureBox363.TabStop = false;
+            this.pictureBox363.Tag = "kibble";
+            // 
+            // pictureBox364
+            // 
+            this.pictureBox364.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox364.Image")));
+            this.pictureBox364.Location = new System.Drawing.Point(100, 400);
+            this.pictureBox364.Name = "pictureBox364";
+            this.pictureBox364.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox364.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox364.TabIndex = 369;
+            this.pictureBox364.TabStop = false;
+            this.pictureBox364.Tag = "kibble";
+            // 
+            // pictureBox365
+            // 
+            this.pictureBox365.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox365.Image")));
+            this.pictureBox365.Location = new System.Drawing.Point(75, 400);
+            this.pictureBox365.Name = "pictureBox365";
+            this.pictureBox365.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox365.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox365.TabIndex = 368;
+            this.pictureBox365.TabStop = false;
+            this.pictureBox365.Tag = "kibble";
+            // 
+            // pictureBox360
+            // 
+            this.pictureBox360.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox360.Image")));
+            this.pictureBox360.Location = new System.Drawing.Point(325, 250);
+            this.pictureBox360.Name = "pictureBox360";
+            this.pictureBox360.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox360.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox360.TabIndex = 367;
+            this.pictureBox360.TabStop = false;
+            this.pictureBox360.Tag = "kibble";
+            // 
+            // pictureBox361
+            // 
+            this.pictureBox361.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox361.Image")));
+            this.pictureBox361.Location = new System.Drawing.Point(375, 250);
+            this.pictureBox361.Name = "pictureBox361";
+            this.pictureBox361.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox361.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox361.TabIndex = 366;
+            this.pictureBox361.TabStop = false;
+            this.pictureBox361.Tag = "kibble";
+            // 
+            // pictureBox362
+            // 
+            this.pictureBox362.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox362.Image")));
+            this.pictureBox362.Location = new System.Drawing.Point(350, 250);
+            this.pictureBox362.Name = "pictureBox362";
+            this.pictureBox362.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox362.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox362.TabIndex = 365;
+            this.pictureBox362.TabStop = false;
+            this.pictureBox362.Tag = "kibble";
+            // 
+            // pictureBox356
+            // 
+            this.pictureBox356.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox356.Image")));
+            this.pictureBox356.Location = new System.Drawing.Point(300, 275);
+            this.pictureBox356.Name = "pictureBox356";
+            this.pictureBox356.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox356.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox356.TabIndex = 364;
+            this.pictureBox356.TabStop = false;
+            this.pictureBox356.Tag = "kibble";
+            // 
+            // pictureBox357
+            // 
+            this.pictureBox357.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox357.Image")));
+            this.pictureBox357.Location = new System.Drawing.Point(300, 250);
+            this.pictureBox357.Name = "pictureBox357";
+            this.pictureBox357.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox357.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox357.TabIndex = 363;
+            this.pictureBox357.TabStop = false;
+            this.pictureBox357.Tag = "kibble";
+            // 
+            // pictureBox358
+            // 
+            this.pictureBox358.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox358.Image")));
+            this.pictureBox358.Location = new System.Drawing.Point(300, 225);
+            this.pictureBox358.Name = "pictureBox358";
+            this.pictureBox358.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox358.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox358.TabIndex = 362;
+            this.pictureBox358.TabStop = false;
+            this.pictureBox358.Tag = "kibble";
+            // 
+            // pictureBox359
+            // 
+            this.pictureBox359.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox359.Image")));
+            this.pictureBox359.Location = new System.Drawing.Point(300, 200);
+            this.pictureBox359.Name = "pictureBox359";
+            this.pictureBox359.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox359.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox359.TabIndex = 361;
+            this.pictureBox359.TabStop = false;
+            this.pictureBox359.Tag = "kibble";
+            // 
+            // pictureBox352
+            // 
+            this.pictureBox352.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox352.Image")));
+            this.pictureBox352.Location = new System.Drawing.Point(150, 275);
+            this.pictureBox352.Name = "pictureBox352";
+            this.pictureBox352.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox352.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox352.TabIndex = 360;
+            this.pictureBox352.TabStop = false;
+            this.pictureBox352.Tag = "kibble";
+            // 
+            // pictureBox353
+            // 
+            this.pictureBox353.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox353.Image")));
+            this.pictureBox353.Location = new System.Drawing.Point(150, 250);
+            this.pictureBox353.Name = "pictureBox353";
+            this.pictureBox353.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox353.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox353.TabIndex = 359;
+            this.pictureBox353.TabStop = false;
+            this.pictureBox353.Tag = "kibble";
+            // 
+            // pictureBox354
+            // 
+            this.pictureBox354.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox354.Image")));
+            this.pictureBox354.Location = new System.Drawing.Point(150, 225);
+            this.pictureBox354.Name = "pictureBox354";
+            this.pictureBox354.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox354.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox354.TabIndex = 358;
+            this.pictureBox354.TabStop = false;
+            this.pictureBox354.Tag = "kibble";
+            // 
+            // pictureBox355
+            // 
+            this.pictureBox355.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox355.Image")));
+            this.pictureBox355.Location = new System.Drawing.Point(150, 200);
+            this.pictureBox355.Name = "pictureBox355";
+            this.pictureBox355.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox355.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox355.TabIndex = 357;
+            this.pictureBox355.TabStop = false;
+            this.pictureBox355.Tag = "kibble";
+            // 
+            // pictureBox347
+            // 
+            this.pictureBox347.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox347.Image")));
+            this.pictureBox347.Location = new System.Drawing.Point(150, 425);
+            this.pictureBox347.Name = "pictureBox347";
+            this.pictureBox347.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox347.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox347.TabIndex = 356;
+            this.pictureBox347.TabStop = false;
+            this.pictureBox347.Tag = "kibble";
+            // 
+            // pictureBox348
+            // 
+            this.pictureBox348.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox348.Image")));
+            this.pictureBox348.Location = new System.Drawing.Point(150, 400);
+            this.pictureBox348.Name = "pictureBox348";
+            this.pictureBox348.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox348.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox348.TabIndex = 355;
+            this.pictureBox348.TabStop = false;
+            this.pictureBox348.Tag = "kibble";
+            // 
+            // pictureBox349
+            // 
+            this.pictureBox349.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox349.Image")));
+            this.pictureBox349.Location = new System.Drawing.Point(150, 375);
+            this.pictureBox349.Name = "pictureBox349";
+            this.pictureBox349.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox349.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox349.TabIndex = 354;
+            this.pictureBox349.TabStop = false;
+            this.pictureBox349.Tag = "kibble";
+            // 
+            // pictureBox350
+            // 
+            this.pictureBox350.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox350.Image")));
+            this.pictureBox350.Location = new System.Drawing.Point(150, 350);
+            this.pictureBox350.Name = "pictureBox350";
+            this.pictureBox350.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox350.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox350.TabIndex = 353;
+            this.pictureBox350.TabStop = false;
+            this.pictureBox350.Tag = "kibble";
+            // 
+            // pictureBox351
+            // 
+            this.pictureBox351.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox351.Image")));
+            this.pictureBox351.Location = new System.Drawing.Point(150, 325);
+            this.pictureBox351.Name = "pictureBox351";
+            this.pictureBox351.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox351.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox351.TabIndex = 352;
+            this.pictureBox351.TabStop = false;
+            this.pictureBox351.Tag = "kibble";
+            // 
+            // pictureBox343
+            // 
+            this.pictureBox343.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox343.Image")));
+            this.pictureBox343.Location = new System.Drawing.Point(375, 400);
+            this.pictureBox343.Name = "pictureBox343";
+            this.pictureBox343.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox343.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox343.TabIndex = 351;
+            this.pictureBox343.TabStop = false;
+            this.pictureBox343.Tag = "kibble";
+            // 
+            // pictureBox344
+            // 
+            this.pictureBox344.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox344.Image")));
+            this.pictureBox344.Location = new System.Drawing.Point(375, 375);
+            this.pictureBox344.Name = "pictureBox344";
+            this.pictureBox344.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox344.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox344.TabIndex = 350;
+            this.pictureBox344.TabStop = false;
+            this.pictureBox344.Tag = "kibble";
+            // 
+            // pictureBox345
+            // 
+            this.pictureBox345.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox345.Image")));
+            this.pictureBox345.Location = new System.Drawing.Point(375, 350);
+            this.pictureBox345.Name = "pictureBox345";
+            this.pictureBox345.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox345.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox345.TabIndex = 349;
+            this.pictureBox345.TabStop = false;
+            this.pictureBox345.Tag = "kibble";
+            // 
+            // pictureBox346
+            // 
+            this.pictureBox346.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox346.Image")));
+            this.pictureBox346.Location = new System.Drawing.Point(375, 325);
+            this.pictureBox346.Name = "pictureBox346";
+            this.pictureBox346.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox346.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox346.TabIndex = 348;
+            this.pictureBox346.TabStop = false;
+            this.pictureBox346.Tag = "kibble";
+            // 
+            // pictureBox338
+            // 
+            this.pictureBox338.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox338.Image")));
+            this.pictureBox338.Location = new System.Drawing.Point(325, 425);
+            this.pictureBox338.Name = "pictureBox338";
+            this.pictureBox338.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox338.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox338.TabIndex = 347;
+            this.pictureBox338.TabStop = false;
+            this.pictureBox338.Tag = "kibble";
+            // 
+            // pictureBox339
+            // 
+            this.pictureBox339.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox339.Image")));
+            this.pictureBox339.Location = new System.Drawing.Point(325, 400);
+            this.pictureBox339.Name = "pictureBox339";
+            this.pictureBox339.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox339.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox339.TabIndex = 346;
+            this.pictureBox339.TabStop = false;
+            this.pictureBox339.Tag = "kibble";
+            // 
+            // pictureBox340
+            // 
+            this.pictureBox340.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox340.Image")));
+            this.pictureBox340.Location = new System.Drawing.Point(325, 375);
+            this.pictureBox340.Name = "pictureBox340";
+            this.pictureBox340.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox340.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox340.TabIndex = 345;
+            this.pictureBox340.TabStop = false;
+            this.pictureBox340.Tag = "kibble";
+            // 
+            // pictureBox341
+            // 
+            this.pictureBox341.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox341.Image")));
+            this.pictureBox341.Location = new System.Drawing.Point(325, 350);
+            this.pictureBox341.Name = "pictureBox341";
+            this.pictureBox341.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox341.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox341.TabIndex = 344;
+            this.pictureBox341.TabStop = false;
+            this.pictureBox341.Tag = "kibble";
+            // 
+            // pictureBox342
+            // 
+            this.pictureBox342.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox342.Image")));
+            this.pictureBox342.Location = new System.Drawing.Point(325, 325);
+            this.pictureBox342.Name = "pictureBox342";
+            this.pictureBox342.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox342.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox342.TabIndex = 343;
+            this.pictureBox342.TabStop = false;
+            this.pictureBox342.Tag = "kibble";
+            // 
+            // pictureBox333
+            // 
+            this.pictureBox333.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox333.Image")));
+            this.pictureBox333.Location = new System.Drawing.Point(200, 425);
+            this.pictureBox333.Name = "pictureBox333";
+            this.pictureBox333.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox333.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox333.TabIndex = 342;
+            this.pictureBox333.TabStop = false;
+            this.pictureBox333.Tag = "kibble";
+            // 
+            // pictureBox334
+            // 
+            this.pictureBox334.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox334.Image")));
+            this.pictureBox334.Location = new System.Drawing.Point(200, 400);
+            this.pictureBox334.Name = "pictureBox334";
+            this.pictureBox334.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox334.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox334.TabIndex = 341;
+            this.pictureBox334.TabStop = false;
+            this.pictureBox334.Tag = "kibble";
+            // 
+            // pictureBox335
+            // 
+            this.pictureBox335.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox335.Image")));
+            this.pictureBox335.Location = new System.Drawing.Point(200, 375);
+            this.pictureBox335.Name = "pictureBox335";
+            this.pictureBox335.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox335.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox335.TabIndex = 340;
+            this.pictureBox335.TabStop = false;
+            this.pictureBox335.Tag = "kibble";
+            // 
+            // pictureBox336
+            // 
+            this.pictureBox336.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox336.Image")));
+            this.pictureBox336.Location = new System.Drawing.Point(200, 350);
+            this.pictureBox336.Name = "pictureBox336";
+            this.pictureBox336.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox336.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox336.TabIndex = 339;
+            this.pictureBox336.TabStop = false;
+            this.pictureBox336.Tag = "kibble";
+            // 
+            // pictureBox337
+            // 
+            this.pictureBox337.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox337.Image")));
+            this.pictureBox337.Location = new System.Drawing.Point(200, 325);
+            this.pictureBox337.Name = "pictureBox337";
+            this.pictureBox337.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox337.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox337.TabIndex = 338;
+            this.pictureBox337.TabStop = false;
+            this.pictureBox337.Tag = "kibble";
+            // 
+            // pictureBox317
+            // 
+            this.pictureBox317.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox317.Image")));
+            this.pictureBox317.Location = new System.Drawing.Point(425, 300);
+            this.pictureBox317.Name = "pictureBox317";
+            this.pictureBox317.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox317.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox317.TabIndex = 337;
+            this.pictureBox317.TabStop = false;
+            this.pictureBox317.Tag = "kibble";
+            // 
+            // pictureBox318
+            // 
+            this.pictureBox318.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox318.Image")));
+            this.pictureBox318.Location = new System.Drawing.Point(400, 300);
+            this.pictureBox318.Name = "pictureBox318";
+            this.pictureBox318.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox318.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox318.TabIndex = 336;
+            this.pictureBox318.TabStop = false;
+            this.pictureBox318.Tag = "kibble";
+            // 
+            // pictureBox319
+            // 
+            this.pictureBox319.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox319.Image")));
+            this.pictureBox319.Location = new System.Drawing.Point(375, 300);
+            this.pictureBox319.Name = "pictureBox319";
+            this.pictureBox319.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox319.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox319.TabIndex = 335;
+            this.pictureBox319.TabStop = false;
+            this.pictureBox319.Tag = "kibble";
+            // 
+            // pictureBox320
+            // 
+            this.pictureBox320.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox320.Image")));
+            this.pictureBox320.Location = new System.Drawing.Point(350, 300);
+            this.pictureBox320.Name = "pictureBox320";
+            this.pictureBox320.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox320.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox320.TabIndex = 334;
+            this.pictureBox320.TabStop = false;
+            this.pictureBox320.Tag = "kibble";
+            // 
+            // pictureBox321
+            // 
+            this.pictureBox321.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox321.Image")));
+            this.pictureBox321.Location = new System.Drawing.Point(325, 300);
+            this.pictureBox321.Name = "pictureBox321";
+            this.pictureBox321.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox321.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox321.TabIndex = 333;
+            this.pictureBox321.TabStop = false;
+            this.pictureBox321.Tag = "kibble";
+            // 
+            // pictureBox322
+            // 
+            this.pictureBox322.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox322.Image")));
+            this.pictureBox322.Location = new System.Drawing.Point(300, 300);
+            this.pictureBox322.Name = "pictureBox322";
+            this.pictureBox322.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox322.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox322.TabIndex = 332;
+            this.pictureBox322.TabStop = false;
+            this.pictureBox322.Tag = "kibble";
+            // 
+            // pictureBox323
+            // 
+            this.pictureBox323.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox323.Image")));
+            this.pictureBox323.Location = new System.Drawing.Point(275, 300);
+            this.pictureBox323.Name = "pictureBox323";
+            this.pictureBox323.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox323.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox323.TabIndex = 331;
+            this.pictureBox323.TabStop = false;
+            this.pictureBox323.Tag = "kibble";
+            // 
+            // pictureBox324
+            // 
+            this.pictureBox324.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox324.Image")));
+            this.pictureBox324.Location = new System.Drawing.Point(250, 300);
+            this.pictureBox324.Name = "pictureBox324";
+            this.pictureBox324.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox324.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox324.TabIndex = 330;
+            this.pictureBox324.TabStop = false;
+            this.pictureBox324.Tag = "kibble";
+            // 
+            // pictureBox325
+            // 
+            this.pictureBox325.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox325.Image")));
+            this.pictureBox325.Location = new System.Drawing.Point(225, 300);
+            this.pictureBox325.Name = "pictureBox325";
+            this.pictureBox325.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox325.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox325.TabIndex = 329;
+            this.pictureBox325.TabStop = false;
+            this.pictureBox325.Tag = "kibble";
+            // 
+            // pictureBox326
+            // 
+            this.pictureBox326.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox326.Image")));
+            this.pictureBox326.Location = new System.Drawing.Point(200, 300);
+            this.pictureBox326.Name = "pictureBox326";
+            this.pictureBox326.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox326.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox326.TabIndex = 328;
+            this.pictureBox326.TabStop = false;
+            this.pictureBox326.Tag = "kibble";
+            // 
+            // pictureBox327
+            // 
+            this.pictureBox327.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox327.Image")));
+            this.pictureBox327.Location = new System.Drawing.Point(175, 300);
+            this.pictureBox327.Name = "pictureBox327";
+            this.pictureBox327.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox327.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox327.TabIndex = 327;
+            this.pictureBox327.TabStop = false;
+            this.pictureBox327.Tag = "kibble";
+            // 
+            // pictureBox328
+            // 
+            this.pictureBox328.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox328.Image")));
+            this.pictureBox328.Location = new System.Drawing.Point(150, 300);
+            this.pictureBox328.Name = "pictureBox328";
+            this.pictureBox328.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox328.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox328.TabIndex = 326;
+            this.pictureBox328.TabStop = false;
+            this.pictureBox328.Tag = "kibble";
+            // 
+            // pictureBox329
+            // 
+            this.pictureBox329.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox329.Image")));
+            this.pictureBox329.Location = new System.Drawing.Point(125, 300);
+            this.pictureBox329.Name = "pictureBox329";
+            this.pictureBox329.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox329.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox329.TabIndex = 325;
+            this.pictureBox329.TabStop = false;
+            this.pictureBox329.Tag = "kibble";
+            // 
+            // pictureBox330
+            // 
+            this.pictureBox330.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox330.Image")));
+            this.pictureBox330.Location = new System.Drawing.Point(100, 300);
+            this.pictureBox330.Name = "pictureBox330";
+            this.pictureBox330.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox330.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox330.TabIndex = 324;
+            this.pictureBox330.TabStop = false;
+            this.pictureBox330.Tag = "kibble";
+            // 
+            // pictureBox331
+            // 
+            this.pictureBox331.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox331.Image")));
+            this.pictureBox331.Location = new System.Drawing.Point(75, 300);
+            this.pictureBox331.Name = "pictureBox331";
+            this.pictureBox331.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox331.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox331.TabIndex = 323;
+            this.pictureBox331.TabStop = false;
+            this.pictureBox331.Tag = "kibble";
+            // 
+            // pictureBox332
+            // 
+            this.pictureBox332.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox332.Image")));
+            this.pictureBox332.Location = new System.Drawing.Point(50, 300);
+            this.pictureBox332.Name = "pictureBox332";
+            this.pictureBox332.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox332.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox332.TabIndex = 322;
+            this.pictureBox332.TabStop = false;
+            this.pictureBox332.Tag = "kibble";
+            // 
+            // pictureBox316
+            // 
+            this.pictureBox316.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox316.Image")));
+            this.pictureBox316.Location = new System.Drawing.Point(425, 100);
+            this.pictureBox316.Name = "pictureBox316";
+            this.pictureBox316.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox316.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox316.TabIndex = 321;
+            this.pictureBox316.TabStop = false;
+            this.pictureBox316.Tag = "kibble";
+            // 
+            // pictureBox314
+            // 
+            this.pictureBox314.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox314.Image")));
+            this.pictureBox314.Location = new System.Drawing.Point(350, 125);
+            this.pictureBox314.Name = "pictureBox314";
+            this.pictureBox314.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox314.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox314.TabIndex = 320;
+            this.pictureBox314.TabStop = false;
+            this.pictureBox314.Tag = "kibble";
+            // 
+            // pictureBox315
+            // 
+            this.pictureBox315.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox315.Image")));
+            this.pictureBox315.Location = new System.Drawing.Point(350, 100);
+            this.pictureBox315.Name = "pictureBox315";
+            this.pictureBox315.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox315.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox315.TabIndex = 319;
+            this.pictureBox315.TabStop = false;
+            this.pictureBox315.Tag = "kibble";
+            // 
+            // pictureBox311
+            // 
+            this.pictureBox311.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox311.Image")));
+            this.pictureBox311.Location = new System.Drawing.Point(300, 150);
+            this.pictureBox311.Name = "pictureBox311";
+            this.pictureBox311.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox311.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox311.TabIndex = 318;
+            this.pictureBox311.TabStop = false;
+            this.pictureBox311.Tag = "kibble";
+            // 
+            // pictureBox312
+            // 
+            this.pictureBox312.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox312.Image")));
+            this.pictureBox312.Location = new System.Drawing.Point(300, 125);
+            this.pictureBox312.Name = "pictureBox312";
+            this.pictureBox312.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox312.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox312.TabIndex = 317;
+            this.pictureBox312.TabStop = false;
+            this.pictureBox312.Tag = "kibble";
+            // 
+            // pictureBox313
+            // 
+            this.pictureBox313.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox313.Image")));
+            this.pictureBox313.Location = new System.Drawing.Point(300, 100);
+            this.pictureBox313.Name = "pictureBox313";
+            this.pictureBox313.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox313.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox313.TabIndex = 316;
+            this.pictureBox313.TabStop = false;
+            this.pictureBox313.Tag = "kibble";
+            // 
+            // pictureBox307
+            // 
+            this.pictureBox307.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox307.Image")));
+            this.pictureBox307.Location = new System.Drawing.Point(375, 75);
+            this.pictureBox307.Name = "pictureBox307";
+            this.pictureBox307.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox307.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox307.TabIndex = 315;
+            this.pictureBox307.TabStop = false;
+            this.pictureBox307.Tag = "kibble";
+            // 
+            // pictureBox308
+            // 
+            this.pictureBox308.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox308.Image")));
+            this.pictureBox308.Location = new System.Drawing.Point(350, 75);
+            this.pictureBox308.Name = "pictureBox308";
+            this.pictureBox308.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox308.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox308.TabIndex = 314;
+            this.pictureBox308.TabStop = false;
+            this.pictureBox308.Tag = "kibble";
+            // 
+            // pictureBox309
+            // 
+            this.pictureBox309.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox309.Image")));
+            this.pictureBox309.Location = new System.Drawing.Point(325, 75);
+            this.pictureBox309.Name = "pictureBox309";
+            this.pictureBox309.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox309.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox309.TabIndex = 313;
+            this.pictureBox309.TabStop = false;
+            this.pictureBox309.Tag = "kibble";
+            // 
+            // pictureBox310
+            // 
+            this.pictureBox310.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox310.Image")));
+            this.pictureBox310.Location = new System.Drawing.Point(300, 75);
+            this.pictureBox310.Name = "pictureBox310";
+            this.pictureBox310.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox310.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox310.TabIndex = 312;
+            this.pictureBox310.TabStop = false;
+            this.pictureBox310.Tag = "kibble";
+            // 
+            // pictureBox306
+            // 
+            this.pictureBox306.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox306.Image")));
+            this.pictureBox306.Location = new System.Drawing.Point(75, 100);
+            this.pictureBox306.Name = "pictureBox306";
+            this.pictureBox306.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox306.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox306.TabIndex = 311;
+            this.pictureBox306.TabStop = false;
+            this.pictureBox306.Tag = "kibble";
+            // 
+            // pictureBox305
+            // 
+            this.pictureBox305.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox305.Image")));
+            this.pictureBox305.Location = new System.Drawing.Point(50, 100);
+            this.pictureBox305.Name = "pictureBox305";
+            this.pictureBox305.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox305.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox305.TabIndex = 310;
+            this.pictureBox305.TabStop = false;
+            this.pictureBox305.Tag = "kibble";
+            // 
+            // pictureBox301
+            // 
+            this.pictureBox301.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox301.Image")));
+            this.pictureBox301.Location = new System.Drawing.Point(200, 75);
+            this.pictureBox301.Name = "pictureBox301";
+            this.pictureBox301.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox301.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox301.TabIndex = 309;
+            this.pictureBox301.TabStop = false;
+            this.pictureBox301.Tag = "kibble";
+            // 
+            // pictureBox302
+            // 
+            this.pictureBox302.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox302.Image")));
+            this.pictureBox302.Location = new System.Drawing.Point(175, 75);
+            this.pictureBox302.Name = "pictureBox302";
+            this.pictureBox302.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox302.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox302.TabIndex = 308;
+            this.pictureBox302.TabStop = false;
+            this.pictureBox302.Tag = "kibble";
+            // 
+            // pictureBox303
+            // 
+            this.pictureBox303.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox303.Image")));
+            this.pictureBox303.Location = new System.Drawing.Point(150, 75);
+            this.pictureBox303.Name = "pictureBox303";
+            this.pictureBox303.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox303.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox303.TabIndex = 307;
+            this.pictureBox303.TabStop = false;
+            this.pictureBox303.Tag = "kibble";
+            // 
+            // pictureBox304
+            // 
+            this.pictureBox304.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox304.Image")));
+            this.pictureBox304.Location = new System.Drawing.Point(125, 75);
+            this.pictureBox304.Name = "pictureBox304";
+            this.pictureBox304.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox304.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox304.TabIndex = 306;
+            this.pictureBox304.TabStop = false;
+            this.pictureBox304.Tag = "kibble";
+            // 
+            // pictureBox298
+            // 
+            this.pictureBox298.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox298.Image")));
+            this.pictureBox298.Location = new System.Drawing.Point(200, 125);
+            this.pictureBox298.Name = "pictureBox298";
+            this.pictureBox298.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox298.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox298.TabIndex = 305;
+            this.pictureBox298.TabStop = false;
+            this.pictureBox298.Tag = "kibble";
+            // 
+            // pictureBox299
+            // 
+            this.pictureBox299.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox299.Image")));
+            this.pictureBox299.Location = new System.Drawing.Point(175, 125);
+            this.pictureBox299.Name = "pictureBox299";
+            this.pictureBox299.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox299.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox299.TabIndex = 304;
+            this.pictureBox299.TabStop = false;
+            this.pictureBox299.Tag = "kibble";
+            // 
+            // pictureBox300
+            // 
+            this.pictureBox300.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox300.Image")));
+            this.pictureBox300.Location = new System.Drawing.Point(150, 125);
+            this.pictureBox300.Name = "pictureBox300";
+            this.pictureBox300.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox300.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox300.TabIndex = 303;
+            this.pictureBox300.TabStop = false;
+            this.pictureBox300.Tag = "kibble";
+            // 
+            // pictureBox294
+            // 
+            this.pictureBox294.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox294.Image")));
+            this.pictureBox294.Location = new System.Drawing.Point(200, 175);
+            this.pictureBox294.Name = "pictureBox294";
+            this.pictureBox294.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox294.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox294.TabIndex = 302;
+            this.pictureBox294.TabStop = false;
+            this.pictureBox294.Tag = "kibble";
+            // 
+            // pictureBox295
+            // 
+            this.pictureBox295.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox295.Image")));
+            this.pictureBox295.Location = new System.Drawing.Point(175, 175);
+            this.pictureBox295.Name = "pictureBox295";
+            this.pictureBox295.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox295.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox295.TabIndex = 301;
+            this.pictureBox295.TabStop = false;
+            this.pictureBox295.Tag = "kibble";
+            // 
+            // pictureBox296
+            // 
+            this.pictureBox296.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox296.Image")));
+            this.pictureBox296.Location = new System.Drawing.Point(150, 175);
+            this.pictureBox296.Name = "pictureBox296";
+            this.pictureBox296.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox296.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox296.TabIndex = 300;
+            this.pictureBox296.TabStop = false;
+            this.pictureBox296.Tag = "kibble";
+            // 
+            // pictureBox297
+            // 
+            this.pictureBox297.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox297.Image")));
+            this.pictureBox297.Location = new System.Drawing.Point(125, 175);
+            this.pictureBox297.Name = "pictureBox297";
+            this.pictureBox297.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox297.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox297.TabIndex = 299;
+            this.pictureBox297.TabStop = false;
+            this.pictureBox297.Tag = "kibble";
+            // 
+            // pictureBox288
+            // 
+            this.pictureBox288.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox288.Image")));
+            this.pictureBox288.Location = new System.Drawing.Point(375, 175);
+            this.pictureBox288.Name = "pictureBox288";
+            this.pictureBox288.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox288.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox288.TabIndex = 298;
+            this.pictureBox288.TabStop = false;
+            this.pictureBox288.Tag = "kibble";
+            // 
+            // pictureBox289
+            // 
+            this.pictureBox289.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox289.Image")));
+            this.pictureBox289.Location = new System.Drawing.Point(350, 175);
+            this.pictureBox289.Name = "pictureBox289";
+            this.pictureBox289.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox289.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox289.TabIndex = 297;
+            this.pictureBox289.TabStop = false;
+            this.pictureBox289.Tag = "kibble";
+            // 
+            // pictureBox290
+            // 
+            this.pictureBox290.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox290.Image")));
+            this.pictureBox290.Location = new System.Drawing.Point(325, 175);
+            this.pictureBox290.Name = "pictureBox290";
+            this.pictureBox290.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox290.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox290.TabIndex = 296;
+            this.pictureBox290.TabStop = false;
+            this.pictureBox290.Tag = "kibble";
+            // 
+            // pictureBox291
+            // 
+            this.pictureBox291.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox291.Image")));
+            this.pictureBox291.Location = new System.Drawing.Point(300, 175);
+            this.pictureBox291.Name = "pictureBox291";
+            this.pictureBox291.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox291.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox291.TabIndex = 295;
+            this.pictureBox291.TabStop = false;
+            this.pictureBox291.Tag = "kibble";
+            // 
+            // pictureBox292
+            // 
+            this.pictureBox292.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox292.Image")));
+            this.pictureBox292.Location = new System.Drawing.Point(275, 175);
+            this.pictureBox292.Name = "pictureBox292";
+            this.pictureBox292.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox292.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox292.TabIndex = 294;
+            this.pictureBox292.TabStop = false;
+            this.pictureBox292.Tag = "kibble";
+            // 
+            // pictureBox293
+            // 
+            this.pictureBox293.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox293.Image")));
+            this.pictureBox293.Location = new System.Drawing.Point(250, 175);
+            this.pictureBox293.Name = "pictureBox293";
+            this.pictureBox293.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox293.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox293.TabIndex = 293;
+            this.pictureBox293.TabStop = false;
+            this.pictureBox293.Tag = "kibble";
+            // 
+            // pictureBox282
+            // 
+            this.pictureBox282.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox282.Image")));
+            this.pictureBox282.Location = new System.Drawing.Point(400, 175);
+            this.pictureBox282.Name = "pictureBox282";
+            this.pictureBox282.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox282.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox282.TabIndex = 292;
+            this.pictureBox282.TabStop = false;
+            this.pictureBox282.Tag = "kibble";
+            // 
+            // pictureBox283
+            // 
+            this.pictureBox283.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox283.Image")));
+            this.pictureBox283.Location = new System.Drawing.Point(400, 150);
+            this.pictureBox283.Name = "pictureBox283";
+            this.pictureBox283.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox283.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox283.TabIndex = 291;
+            this.pictureBox283.TabStop = false;
+            this.pictureBox283.Tag = "kibble";
+            // 
+            // pictureBox284
+            // 
+            this.pictureBox284.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox284.Image")));
+            this.pictureBox284.Location = new System.Drawing.Point(400, 125);
+            this.pictureBox284.Name = "pictureBox284";
+            this.pictureBox284.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox284.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox284.TabIndex = 290;
+            this.pictureBox284.TabStop = false;
+            this.pictureBox284.Tag = "kibble";
+            // 
+            // pictureBox285
+            // 
+            this.pictureBox285.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox285.Image")));
+            this.pictureBox285.Location = new System.Drawing.Point(400, 50);
+            this.pictureBox285.Name = "pictureBox285";
+            this.pictureBox285.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox285.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox285.TabIndex = 289;
+            this.pictureBox285.TabStop = false;
+            this.pictureBox285.Tag = "kibble";
+            // 
+            // pictureBox286
+            // 
+            this.pictureBox286.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox286.Image")));
+            this.pictureBox286.Location = new System.Drawing.Point(400, 100);
+            this.pictureBox286.Name = "pictureBox286";
+            this.pictureBox286.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox286.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox286.TabIndex = 288;
+            this.pictureBox286.TabStop = false;
+            this.pictureBox286.Tag = "kibble";
+            // 
+            // pictureBox287
+            // 
+            this.pictureBox287.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox287.Image")));
+            this.pictureBox287.Location = new System.Drawing.Point(400, 75);
+            this.pictureBox287.Name = "pictureBox287";
+            this.pictureBox287.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox287.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox287.TabIndex = 287;
+            this.pictureBox287.TabStop = false;
+            this.pictureBox287.Tag = "kibble";
+            // 
+            // pictureBox272
+            // 
+            this.pictureBox272.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox272.Image")));
+            this.pictureBox272.Location = new System.Drawing.Point(100, 175);
+            this.pictureBox272.Name = "pictureBox272";
+            this.pictureBox272.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox272.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox272.TabIndex = 286;
+            this.pictureBox272.TabStop = false;
+            this.pictureBox272.Tag = "kibble";
+            // 
+            // pictureBox277
+            // 
+            this.pictureBox277.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox277.Image")));
+            this.pictureBox277.Location = new System.Drawing.Point(100, 150);
+            this.pictureBox277.Name = "pictureBox277";
+            this.pictureBox277.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox277.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox277.TabIndex = 285;
+            this.pictureBox277.TabStop = false;
+            this.pictureBox277.Tag = "kibble";
+            // 
+            // pictureBox278
+            // 
+            this.pictureBox278.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox278.Image")));
+            this.pictureBox278.Location = new System.Drawing.Point(100, 125);
+            this.pictureBox278.Name = "pictureBox278";
+            this.pictureBox278.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox278.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox278.TabIndex = 284;
+            this.pictureBox278.TabStop = false;
+            this.pictureBox278.Tag = "kibble";
+            // 
+            // pictureBox279
+            // 
+            this.pictureBox279.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox279.Image")));
+            this.pictureBox279.Location = new System.Drawing.Point(100, 50);
+            this.pictureBox279.Name = "pictureBox279";
+            this.pictureBox279.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox279.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox279.TabIndex = 283;
+            this.pictureBox279.TabStop = false;
+            this.pictureBox279.Tag = "kibble";
+            // 
+            // pictureBox280
+            // 
+            this.pictureBox280.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox280.Image")));
+            this.pictureBox280.Location = new System.Drawing.Point(100, 100);
+            this.pictureBox280.Name = "pictureBox280";
+            this.pictureBox280.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox280.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox280.TabIndex = 282;
+            this.pictureBox280.TabStop = false;
+            this.pictureBox280.Tag = "kibble";
+            // 
+            // pictureBox281
+            // 
+            this.pictureBox281.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox281.Image")));
+            this.pictureBox281.Location = new System.Drawing.Point(100, 75);
+            this.pictureBox281.Name = "pictureBox281";
+            this.pictureBox281.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox281.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox281.TabIndex = 281;
+            this.pictureBox281.TabStop = false;
+            this.pictureBox281.Tag = "kibble";
+            // 
+            // pictureBox270
+            // 
+            this.pictureBox270.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox270.Image")));
+            this.pictureBox270.Location = new System.Drawing.Point(225, 175);
+            this.pictureBox270.Name = "pictureBox270";
+            this.pictureBox270.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox270.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox270.TabIndex = 280;
+            this.pictureBox270.TabStop = false;
+            this.pictureBox270.Tag = "kibble";
+            // 
+            // pictureBox271
+            // 
+            this.pictureBox271.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox271.Image")));
+            this.pictureBox271.Location = new System.Drawing.Point(225, 150);
+            this.pictureBox271.Name = "pictureBox271";
+            this.pictureBox271.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox271.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox271.TabIndex = 279;
+            this.pictureBox271.TabStop = false;
+            this.pictureBox271.Tag = "kibble";
+            // 
+            // pictureBox273
+            // 
+            this.pictureBox273.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox273.Image")));
+            this.pictureBox273.Location = new System.Drawing.Point(225, 125);
+            this.pictureBox273.Name = "pictureBox273";
+            this.pictureBox273.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox273.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox273.TabIndex = 277;
+            this.pictureBox273.TabStop = false;
+            this.pictureBox273.Tag = "kibble";
+            // 
+            // pictureBox274
+            // 
+            this.pictureBox274.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox274.Image")));
+            this.pictureBox274.Location = new System.Drawing.Point(225, 50);
+            this.pictureBox274.Name = "pictureBox274";
+            this.pictureBox274.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox274.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox274.TabIndex = 276;
+            this.pictureBox274.TabStop = false;
+            this.pictureBox274.Tag = "kibble";
+            // 
+            // pictureBox275
+            // 
+            this.pictureBox275.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox275.Image")));
+            this.pictureBox275.Location = new System.Drawing.Point(225, 100);
+            this.pictureBox275.Name = "pictureBox275";
+            this.pictureBox275.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox275.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox275.TabIndex = 275;
+            this.pictureBox275.TabStop = false;
+            this.pictureBox275.Tag = "kibble";
+            // 
+            // pictureBox276
+            // 
+            this.pictureBox276.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox276.Image")));
+            this.pictureBox276.Location = new System.Drawing.Point(225, 75);
+            this.pictureBox276.Name = "pictureBox276";
+            this.pictureBox276.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox276.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox276.TabIndex = 274;
+            this.pictureBox276.TabStop = false;
+            this.pictureBox276.Tag = "kibble";
             // 
             // pictureBox254
             // 
@@ -1799,7 +3269,7 @@
             // 
             // pictureBox204
             // 
-            this.pictureBox204.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox204.Image")));
+            this.pictureBox204.Image = global::PacMan.Properties.Resources.pacmanRight;
             this.pictureBox204.Location = new System.Drawing.Point(25, 450);
             this.pictureBox204.Name = "pictureBox204";
             this.pictureBox204.Size = new System.Drawing.Size(25, 25);
@@ -4184,1434 +5654,6 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Tag = "border";
             // 
-            // panel2
-            // 
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.label6);
-            this.panel2.Controls.Add(this.label5);
-            this.panel2.Controls.Add(this.label4);
-            this.panel2.Controls.Add(this.label3);
-            this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.Pause);
-            this.panel2.Location = new System.Drawing.Point(24, 527);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(472, 114);
-            this.panel2.TabIndex = 1;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label6.Location = new System.Drawing.Point(237, 17);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(19, 23);
-            this.label6.TabIndex = 6;
-            this.label6.Text = "3";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label5.Location = new System.Drawing.Point(96, 17);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(19, 23);
-            this.label5.TabIndex = 5;
-            this.label5.Text = "0";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.Location = new System.Drawing.Point(181, 17);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(50, 23);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "Lives:";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.Location = new System.Drawing.Point(34, 17);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(56, 23);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Score:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(3, 81);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(410, 23);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Try to eat all the Kibble before the Ghosts catch you.";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(3, 60);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(426, 23);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Use the arrow keys to move Pacman around the maze.";
-            // 
-            // Pause
-            // 
-            this.Pause.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Pause.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Pause.Location = new System.Drawing.Point(347, 13);
-            this.Pause.Name = "Pause";
-            this.Pause.Size = new System.Drawing.Size(82, 35);
-            this.Pause.TabIndex = 0;
-            this.Pause.Text = "Pause";
-            this.Pause.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox270
-            // 
-            this.pictureBox270.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox270.Image")));
-            this.pictureBox270.Location = new System.Drawing.Point(225, 175);
-            this.pictureBox270.Name = "pictureBox270";
-            this.pictureBox270.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox270.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox270.TabIndex = 280;
-            this.pictureBox270.TabStop = false;
-            this.pictureBox270.Tag = "kibble";
-            // 
-            // pictureBox271
-            // 
-            this.pictureBox271.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox271.Image")));
-            this.pictureBox271.Location = new System.Drawing.Point(225, 150);
-            this.pictureBox271.Name = "pictureBox271";
-            this.pictureBox271.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox271.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox271.TabIndex = 279;
-            this.pictureBox271.TabStop = false;
-            this.pictureBox271.Tag = "kibble";
-            // 
-            // pictureBox273
-            // 
-            this.pictureBox273.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox273.Image")));
-            this.pictureBox273.Location = new System.Drawing.Point(225, 125);
-            this.pictureBox273.Name = "pictureBox273";
-            this.pictureBox273.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox273.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox273.TabIndex = 277;
-            this.pictureBox273.TabStop = false;
-            this.pictureBox273.Tag = "kibble";
-            // 
-            // pictureBox274
-            // 
-            this.pictureBox274.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox274.Image")));
-            this.pictureBox274.Location = new System.Drawing.Point(225, 50);
-            this.pictureBox274.Name = "pictureBox274";
-            this.pictureBox274.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox274.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox274.TabIndex = 276;
-            this.pictureBox274.TabStop = false;
-            this.pictureBox274.Tag = "kibble";
-            // 
-            // pictureBox275
-            // 
-            this.pictureBox275.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox275.Image")));
-            this.pictureBox275.Location = new System.Drawing.Point(225, 100);
-            this.pictureBox275.Name = "pictureBox275";
-            this.pictureBox275.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox275.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox275.TabIndex = 275;
-            this.pictureBox275.TabStop = false;
-            this.pictureBox275.Tag = "kibble";
-            // 
-            // pictureBox276
-            // 
-            this.pictureBox276.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox276.Image")));
-            this.pictureBox276.Location = new System.Drawing.Point(225, 75);
-            this.pictureBox276.Name = "pictureBox276";
-            this.pictureBox276.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox276.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox276.TabIndex = 274;
-            this.pictureBox276.TabStop = false;
-            this.pictureBox276.Tag = "kibble";
-            // 
-            // pictureBox272
-            // 
-            this.pictureBox272.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox272.Image")));
-            this.pictureBox272.Location = new System.Drawing.Point(100, 175);
-            this.pictureBox272.Name = "pictureBox272";
-            this.pictureBox272.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox272.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox272.TabIndex = 286;
-            this.pictureBox272.TabStop = false;
-            this.pictureBox272.Tag = "kibble";
-            // 
-            // pictureBox277
-            // 
-            this.pictureBox277.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox277.Image")));
-            this.pictureBox277.Location = new System.Drawing.Point(100, 150);
-            this.pictureBox277.Name = "pictureBox277";
-            this.pictureBox277.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox277.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox277.TabIndex = 285;
-            this.pictureBox277.TabStop = false;
-            this.pictureBox277.Tag = "kibble";
-            // 
-            // pictureBox278
-            // 
-            this.pictureBox278.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox278.Image")));
-            this.pictureBox278.Location = new System.Drawing.Point(100, 125);
-            this.pictureBox278.Name = "pictureBox278";
-            this.pictureBox278.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox278.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox278.TabIndex = 284;
-            this.pictureBox278.TabStop = false;
-            this.pictureBox278.Tag = "kibble";
-            // 
-            // pictureBox279
-            // 
-            this.pictureBox279.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox279.Image")));
-            this.pictureBox279.Location = new System.Drawing.Point(100, 50);
-            this.pictureBox279.Name = "pictureBox279";
-            this.pictureBox279.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox279.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox279.TabIndex = 283;
-            this.pictureBox279.TabStop = false;
-            this.pictureBox279.Tag = "kibble";
-            // 
-            // pictureBox280
-            // 
-            this.pictureBox280.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox280.Image")));
-            this.pictureBox280.Location = new System.Drawing.Point(100, 100);
-            this.pictureBox280.Name = "pictureBox280";
-            this.pictureBox280.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox280.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox280.TabIndex = 282;
-            this.pictureBox280.TabStop = false;
-            this.pictureBox280.Tag = "kibble";
-            // 
-            // pictureBox281
-            // 
-            this.pictureBox281.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox281.Image")));
-            this.pictureBox281.Location = new System.Drawing.Point(100, 75);
-            this.pictureBox281.Name = "pictureBox281";
-            this.pictureBox281.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox281.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox281.TabIndex = 281;
-            this.pictureBox281.TabStop = false;
-            this.pictureBox281.Tag = "kibble";
-            // 
-            // pictureBox282
-            // 
-            this.pictureBox282.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox282.Image")));
-            this.pictureBox282.Location = new System.Drawing.Point(400, 175);
-            this.pictureBox282.Name = "pictureBox282";
-            this.pictureBox282.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox282.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox282.TabIndex = 292;
-            this.pictureBox282.TabStop = false;
-            this.pictureBox282.Tag = "kibble";
-            // 
-            // pictureBox283
-            // 
-            this.pictureBox283.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox283.Image")));
-            this.pictureBox283.Location = new System.Drawing.Point(400, 150);
-            this.pictureBox283.Name = "pictureBox283";
-            this.pictureBox283.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox283.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox283.TabIndex = 291;
-            this.pictureBox283.TabStop = false;
-            this.pictureBox283.Tag = "kibble";
-            // 
-            // pictureBox284
-            // 
-            this.pictureBox284.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox284.Image")));
-            this.pictureBox284.Location = new System.Drawing.Point(400, 125);
-            this.pictureBox284.Name = "pictureBox284";
-            this.pictureBox284.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox284.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox284.TabIndex = 290;
-            this.pictureBox284.TabStop = false;
-            this.pictureBox284.Tag = "kibble";
-            // 
-            // pictureBox285
-            // 
-            this.pictureBox285.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox285.Image")));
-            this.pictureBox285.Location = new System.Drawing.Point(400, 50);
-            this.pictureBox285.Name = "pictureBox285";
-            this.pictureBox285.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox285.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox285.TabIndex = 289;
-            this.pictureBox285.TabStop = false;
-            this.pictureBox285.Tag = "kibble";
-            // 
-            // pictureBox286
-            // 
-            this.pictureBox286.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox286.Image")));
-            this.pictureBox286.Location = new System.Drawing.Point(400, 100);
-            this.pictureBox286.Name = "pictureBox286";
-            this.pictureBox286.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox286.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox286.TabIndex = 288;
-            this.pictureBox286.TabStop = false;
-            this.pictureBox286.Tag = "kibble";
-            // 
-            // pictureBox287
-            // 
-            this.pictureBox287.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox287.Image")));
-            this.pictureBox287.Location = new System.Drawing.Point(400, 75);
-            this.pictureBox287.Name = "pictureBox287";
-            this.pictureBox287.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox287.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox287.TabIndex = 287;
-            this.pictureBox287.TabStop = false;
-            this.pictureBox287.Tag = "kibble";
-            // 
-            // pictureBox288
-            // 
-            this.pictureBox288.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox288.Image")));
-            this.pictureBox288.Location = new System.Drawing.Point(375, 175);
-            this.pictureBox288.Name = "pictureBox288";
-            this.pictureBox288.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox288.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox288.TabIndex = 298;
-            this.pictureBox288.TabStop = false;
-            this.pictureBox288.Tag = "kibble";
-            // 
-            // pictureBox289
-            // 
-            this.pictureBox289.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox289.Image")));
-            this.pictureBox289.Location = new System.Drawing.Point(350, 175);
-            this.pictureBox289.Name = "pictureBox289";
-            this.pictureBox289.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox289.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox289.TabIndex = 297;
-            this.pictureBox289.TabStop = false;
-            this.pictureBox289.Tag = "kibble";
-            // 
-            // pictureBox290
-            // 
-            this.pictureBox290.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox290.Image")));
-            this.pictureBox290.Location = new System.Drawing.Point(325, 175);
-            this.pictureBox290.Name = "pictureBox290";
-            this.pictureBox290.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox290.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox290.TabIndex = 296;
-            this.pictureBox290.TabStop = false;
-            this.pictureBox290.Tag = "kibble";
-            // 
-            // pictureBox291
-            // 
-            this.pictureBox291.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox291.Image")));
-            this.pictureBox291.Location = new System.Drawing.Point(300, 175);
-            this.pictureBox291.Name = "pictureBox291";
-            this.pictureBox291.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox291.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox291.TabIndex = 295;
-            this.pictureBox291.TabStop = false;
-            this.pictureBox291.Tag = "kibble";
-            // 
-            // pictureBox292
-            // 
-            this.pictureBox292.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox292.Image")));
-            this.pictureBox292.Location = new System.Drawing.Point(275, 175);
-            this.pictureBox292.Name = "pictureBox292";
-            this.pictureBox292.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox292.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox292.TabIndex = 294;
-            this.pictureBox292.TabStop = false;
-            this.pictureBox292.Tag = "kibble";
-            // 
-            // pictureBox293
-            // 
-            this.pictureBox293.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox293.Image")));
-            this.pictureBox293.Location = new System.Drawing.Point(250, 175);
-            this.pictureBox293.Name = "pictureBox293";
-            this.pictureBox293.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox293.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox293.TabIndex = 293;
-            this.pictureBox293.TabStop = false;
-            this.pictureBox293.Tag = "kibble";
-            // 
-            // pictureBox294
-            // 
-            this.pictureBox294.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox294.Image")));
-            this.pictureBox294.Location = new System.Drawing.Point(200, 175);
-            this.pictureBox294.Name = "pictureBox294";
-            this.pictureBox294.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox294.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox294.TabIndex = 302;
-            this.pictureBox294.TabStop = false;
-            this.pictureBox294.Tag = "kibble";
-            // 
-            // pictureBox295
-            // 
-            this.pictureBox295.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox295.Image")));
-            this.pictureBox295.Location = new System.Drawing.Point(175, 175);
-            this.pictureBox295.Name = "pictureBox295";
-            this.pictureBox295.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox295.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox295.TabIndex = 301;
-            this.pictureBox295.TabStop = false;
-            this.pictureBox295.Tag = "kibble";
-            // 
-            // pictureBox296
-            // 
-            this.pictureBox296.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox296.Image")));
-            this.pictureBox296.Location = new System.Drawing.Point(150, 175);
-            this.pictureBox296.Name = "pictureBox296";
-            this.pictureBox296.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox296.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox296.TabIndex = 300;
-            this.pictureBox296.TabStop = false;
-            this.pictureBox296.Tag = "kibble";
-            // 
-            // pictureBox297
-            // 
-            this.pictureBox297.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox297.Image")));
-            this.pictureBox297.Location = new System.Drawing.Point(125, 175);
-            this.pictureBox297.Name = "pictureBox297";
-            this.pictureBox297.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox297.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox297.TabIndex = 299;
-            this.pictureBox297.TabStop = false;
-            this.pictureBox297.Tag = "kibble";
-            // 
-            // pictureBox298
-            // 
-            this.pictureBox298.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox298.Image")));
-            this.pictureBox298.Location = new System.Drawing.Point(200, 125);
-            this.pictureBox298.Name = "pictureBox298";
-            this.pictureBox298.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox298.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox298.TabIndex = 305;
-            this.pictureBox298.TabStop = false;
-            this.pictureBox298.Tag = "kibble";
-            // 
-            // pictureBox299
-            // 
-            this.pictureBox299.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox299.Image")));
-            this.pictureBox299.Location = new System.Drawing.Point(175, 125);
-            this.pictureBox299.Name = "pictureBox299";
-            this.pictureBox299.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox299.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox299.TabIndex = 304;
-            this.pictureBox299.TabStop = false;
-            this.pictureBox299.Tag = "kibble";
-            // 
-            // pictureBox300
-            // 
-            this.pictureBox300.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox300.Image")));
-            this.pictureBox300.Location = new System.Drawing.Point(150, 125);
-            this.pictureBox300.Name = "pictureBox300";
-            this.pictureBox300.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox300.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox300.TabIndex = 303;
-            this.pictureBox300.TabStop = false;
-            this.pictureBox300.Tag = "kibble";
-            // 
-            // pictureBox301
-            // 
-            this.pictureBox301.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox301.Image")));
-            this.pictureBox301.Location = new System.Drawing.Point(200, 75);
-            this.pictureBox301.Name = "pictureBox301";
-            this.pictureBox301.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox301.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox301.TabIndex = 309;
-            this.pictureBox301.TabStop = false;
-            this.pictureBox301.Tag = "kibble";
-            // 
-            // pictureBox302
-            // 
-            this.pictureBox302.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox302.Image")));
-            this.pictureBox302.Location = new System.Drawing.Point(175, 75);
-            this.pictureBox302.Name = "pictureBox302";
-            this.pictureBox302.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox302.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox302.TabIndex = 308;
-            this.pictureBox302.TabStop = false;
-            this.pictureBox302.Tag = "kibble";
-            // 
-            // pictureBox303
-            // 
-            this.pictureBox303.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox303.Image")));
-            this.pictureBox303.Location = new System.Drawing.Point(150, 75);
-            this.pictureBox303.Name = "pictureBox303";
-            this.pictureBox303.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox303.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox303.TabIndex = 307;
-            this.pictureBox303.TabStop = false;
-            this.pictureBox303.Tag = "kibble";
-            // 
-            // pictureBox304
-            // 
-            this.pictureBox304.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox304.Image")));
-            this.pictureBox304.Location = new System.Drawing.Point(125, 75);
-            this.pictureBox304.Name = "pictureBox304";
-            this.pictureBox304.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox304.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox304.TabIndex = 306;
-            this.pictureBox304.TabStop = false;
-            this.pictureBox304.Tag = "kibble";
-            // 
-            // pictureBox305
-            // 
-            this.pictureBox305.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox305.Image")));
-            this.pictureBox305.Location = new System.Drawing.Point(50, 100);
-            this.pictureBox305.Name = "pictureBox305";
-            this.pictureBox305.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox305.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox305.TabIndex = 310;
-            this.pictureBox305.TabStop = false;
-            this.pictureBox305.Tag = "kibble";
-            // 
-            // pictureBox306
-            // 
-            this.pictureBox306.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox306.Image")));
-            this.pictureBox306.Location = new System.Drawing.Point(75, 100);
-            this.pictureBox306.Name = "pictureBox306";
-            this.pictureBox306.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox306.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox306.TabIndex = 311;
-            this.pictureBox306.TabStop = false;
-            this.pictureBox306.Tag = "kibble";
-            // 
-            // pictureBox307
-            // 
-            this.pictureBox307.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox307.Image")));
-            this.pictureBox307.Location = new System.Drawing.Point(375, 75);
-            this.pictureBox307.Name = "pictureBox307";
-            this.pictureBox307.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox307.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox307.TabIndex = 315;
-            this.pictureBox307.TabStop = false;
-            this.pictureBox307.Tag = "kibble";
-            // 
-            // pictureBox308
-            // 
-            this.pictureBox308.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox308.Image")));
-            this.pictureBox308.Location = new System.Drawing.Point(350, 75);
-            this.pictureBox308.Name = "pictureBox308";
-            this.pictureBox308.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox308.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox308.TabIndex = 314;
-            this.pictureBox308.TabStop = false;
-            this.pictureBox308.Tag = "kibble";
-            // 
-            // pictureBox309
-            // 
-            this.pictureBox309.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox309.Image")));
-            this.pictureBox309.Location = new System.Drawing.Point(325, 75);
-            this.pictureBox309.Name = "pictureBox309";
-            this.pictureBox309.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox309.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox309.TabIndex = 313;
-            this.pictureBox309.TabStop = false;
-            this.pictureBox309.Tag = "kibble";
-            // 
-            // pictureBox310
-            // 
-            this.pictureBox310.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox310.Image")));
-            this.pictureBox310.Location = new System.Drawing.Point(300, 75);
-            this.pictureBox310.Name = "pictureBox310";
-            this.pictureBox310.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox310.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox310.TabIndex = 312;
-            this.pictureBox310.TabStop = false;
-            this.pictureBox310.Tag = "kibble";
-            // 
-            // pictureBox311
-            // 
-            this.pictureBox311.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox311.Image")));
-            this.pictureBox311.Location = new System.Drawing.Point(300, 150);
-            this.pictureBox311.Name = "pictureBox311";
-            this.pictureBox311.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox311.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox311.TabIndex = 318;
-            this.pictureBox311.TabStop = false;
-            this.pictureBox311.Tag = "kibble";
-            // 
-            // pictureBox312
-            // 
-            this.pictureBox312.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox312.Image")));
-            this.pictureBox312.Location = new System.Drawing.Point(300, 125);
-            this.pictureBox312.Name = "pictureBox312";
-            this.pictureBox312.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox312.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox312.TabIndex = 317;
-            this.pictureBox312.TabStop = false;
-            this.pictureBox312.Tag = "kibble";
-            // 
-            // pictureBox313
-            // 
-            this.pictureBox313.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox313.Image")));
-            this.pictureBox313.Location = new System.Drawing.Point(300, 100);
-            this.pictureBox313.Name = "pictureBox313";
-            this.pictureBox313.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox313.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox313.TabIndex = 316;
-            this.pictureBox313.TabStop = false;
-            this.pictureBox313.Tag = "kibble";
-            // 
-            // pictureBox314
-            // 
-            this.pictureBox314.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox314.Image")));
-            this.pictureBox314.Location = new System.Drawing.Point(350, 125);
-            this.pictureBox314.Name = "pictureBox314";
-            this.pictureBox314.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox314.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox314.TabIndex = 320;
-            this.pictureBox314.TabStop = false;
-            this.pictureBox314.Tag = "kibble";
-            // 
-            // pictureBox315
-            // 
-            this.pictureBox315.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox315.Image")));
-            this.pictureBox315.Location = new System.Drawing.Point(350, 100);
-            this.pictureBox315.Name = "pictureBox315";
-            this.pictureBox315.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox315.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox315.TabIndex = 319;
-            this.pictureBox315.TabStop = false;
-            this.pictureBox315.Tag = "kibble";
-            // 
-            // pictureBox316
-            // 
-            this.pictureBox316.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox316.Image")));
-            this.pictureBox316.Location = new System.Drawing.Point(425, 100);
-            this.pictureBox316.Name = "pictureBox316";
-            this.pictureBox316.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox316.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox316.TabIndex = 321;
-            this.pictureBox316.TabStop = false;
-            this.pictureBox316.Tag = "kibble";
-            // 
-            // pictureBox317
-            // 
-            this.pictureBox317.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox317.Image")));
-            this.pictureBox317.Location = new System.Drawing.Point(425, 300);
-            this.pictureBox317.Name = "pictureBox317";
-            this.pictureBox317.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox317.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox317.TabIndex = 337;
-            this.pictureBox317.TabStop = false;
-            this.pictureBox317.Tag = "kibble";
-            // 
-            // pictureBox318
-            // 
-            this.pictureBox318.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox318.Image")));
-            this.pictureBox318.Location = new System.Drawing.Point(400, 300);
-            this.pictureBox318.Name = "pictureBox318";
-            this.pictureBox318.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox318.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox318.TabIndex = 336;
-            this.pictureBox318.TabStop = false;
-            this.pictureBox318.Tag = "kibble";
-            // 
-            // pictureBox319
-            // 
-            this.pictureBox319.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox319.Image")));
-            this.pictureBox319.Location = new System.Drawing.Point(375, 300);
-            this.pictureBox319.Name = "pictureBox319";
-            this.pictureBox319.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox319.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox319.TabIndex = 335;
-            this.pictureBox319.TabStop = false;
-            this.pictureBox319.Tag = "kibble";
-            // 
-            // pictureBox320
-            // 
-            this.pictureBox320.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox320.Image")));
-            this.pictureBox320.Location = new System.Drawing.Point(350, 300);
-            this.pictureBox320.Name = "pictureBox320";
-            this.pictureBox320.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox320.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox320.TabIndex = 334;
-            this.pictureBox320.TabStop = false;
-            this.pictureBox320.Tag = "kibble";
-            // 
-            // pictureBox321
-            // 
-            this.pictureBox321.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox321.Image")));
-            this.pictureBox321.Location = new System.Drawing.Point(325, 300);
-            this.pictureBox321.Name = "pictureBox321";
-            this.pictureBox321.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox321.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox321.TabIndex = 333;
-            this.pictureBox321.TabStop = false;
-            this.pictureBox321.Tag = "kibble";
-            // 
-            // pictureBox322
-            // 
-            this.pictureBox322.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox322.Image")));
-            this.pictureBox322.Location = new System.Drawing.Point(300, 300);
-            this.pictureBox322.Name = "pictureBox322";
-            this.pictureBox322.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox322.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox322.TabIndex = 332;
-            this.pictureBox322.TabStop = false;
-            this.pictureBox322.Tag = "kibble";
-            // 
-            // pictureBox323
-            // 
-            this.pictureBox323.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox323.Image")));
-            this.pictureBox323.Location = new System.Drawing.Point(275, 300);
-            this.pictureBox323.Name = "pictureBox323";
-            this.pictureBox323.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox323.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox323.TabIndex = 331;
-            this.pictureBox323.TabStop = false;
-            this.pictureBox323.Tag = "kibble";
-            // 
-            // pictureBox324
-            // 
-            this.pictureBox324.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox324.Image")));
-            this.pictureBox324.Location = new System.Drawing.Point(250, 300);
-            this.pictureBox324.Name = "pictureBox324";
-            this.pictureBox324.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox324.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox324.TabIndex = 330;
-            this.pictureBox324.TabStop = false;
-            this.pictureBox324.Tag = "kibble";
-            // 
-            // pictureBox325
-            // 
-            this.pictureBox325.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox325.Image")));
-            this.pictureBox325.Location = new System.Drawing.Point(225, 300);
-            this.pictureBox325.Name = "pictureBox325";
-            this.pictureBox325.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox325.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox325.TabIndex = 329;
-            this.pictureBox325.TabStop = false;
-            this.pictureBox325.Tag = "kibble";
-            // 
-            // pictureBox326
-            // 
-            this.pictureBox326.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox326.Image")));
-            this.pictureBox326.Location = new System.Drawing.Point(200, 300);
-            this.pictureBox326.Name = "pictureBox326";
-            this.pictureBox326.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox326.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox326.TabIndex = 328;
-            this.pictureBox326.TabStop = false;
-            this.pictureBox326.Tag = "kibble";
-            // 
-            // pictureBox327
-            // 
-            this.pictureBox327.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox327.Image")));
-            this.pictureBox327.Location = new System.Drawing.Point(175, 300);
-            this.pictureBox327.Name = "pictureBox327";
-            this.pictureBox327.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox327.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox327.TabIndex = 327;
-            this.pictureBox327.TabStop = false;
-            this.pictureBox327.Tag = "kibble";
-            // 
-            // pictureBox328
-            // 
-            this.pictureBox328.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox328.Image")));
-            this.pictureBox328.Location = new System.Drawing.Point(150, 300);
-            this.pictureBox328.Name = "pictureBox328";
-            this.pictureBox328.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox328.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox328.TabIndex = 326;
-            this.pictureBox328.TabStop = false;
-            this.pictureBox328.Tag = "kibble";
-            // 
-            // pictureBox329
-            // 
-            this.pictureBox329.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox329.Image")));
-            this.pictureBox329.Location = new System.Drawing.Point(125, 300);
-            this.pictureBox329.Name = "pictureBox329";
-            this.pictureBox329.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox329.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox329.TabIndex = 325;
-            this.pictureBox329.TabStop = false;
-            this.pictureBox329.Tag = "kibble";
-            // 
-            // pictureBox330
-            // 
-            this.pictureBox330.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox330.Image")));
-            this.pictureBox330.Location = new System.Drawing.Point(100, 300);
-            this.pictureBox330.Name = "pictureBox330";
-            this.pictureBox330.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox330.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox330.TabIndex = 324;
-            this.pictureBox330.TabStop = false;
-            this.pictureBox330.Tag = "kibble";
-            // 
-            // pictureBox331
-            // 
-            this.pictureBox331.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox331.Image")));
-            this.pictureBox331.Location = new System.Drawing.Point(75, 300);
-            this.pictureBox331.Name = "pictureBox331";
-            this.pictureBox331.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox331.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox331.TabIndex = 323;
-            this.pictureBox331.TabStop = false;
-            this.pictureBox331.Tag = "kibble";
-            // 
-            // pictureBox332
-            // 
-            this.pictureBox332.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox332.Image")));
-            this.pictureBox332.Location = new System.Drawing.Point(50, 300);
-            this.pictureBox332.Name = "pictureBox332";
-            this.pictureBox332.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox332.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox332.TabIndex = 322;
-            this.pictureBox332.TabStop = false;
-            this.pictureBox332.Tag = "kibble";
-            // 
-            // pictureBox333
-            // 
-            this.pictureBox333.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox333.Image")));
-            this.pictureBox333.Location = new System.Drawing.Point(200, 425);
-            this.pictureBox333.Name = "pictureBox333";
-            this.pictureBox333.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox333.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox333.TabIndex = 342;
-            this.pictureBox333.TabStop = false;
-            this.pictureBox333.Tag = "kibble";
-            // 
-            // pictureBox334
-            // 
-            this.pictureBox334.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox334.Image")));
-            this.pictureBox334.Location = new System.Drawing.Point(200, 400);
-            this.pictureBox334.Name = "pictureBox334";
-            this.pictureBox334.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox334.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox334.TabIndex = 341;
-            this.pictureBox334.TabStop = false;
-            this.pictureBox334.Tag = "kibble";
-            // 
-            // pictureBox335
-            // 
-            this.pictureBox335.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox335.Image")));
-            this.pictureBox335.Location = new System.Drawing.Point(200, 375);
-            this.pictureBox335.Name = "pictureBox335";
-            this.pictureBox335.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox335.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox335.TabIndex = 340;
-            this.pictureBox335.TabStop = false;
-            this.pictureBox335.Tag = "kibble";
-            // 
-            // pictureBox336
-            // 
-            this.pictureBox336.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox336.Image")));
-            this.pictureBox336.Location = new System.Drawing.Point(200, 350);
-            this.pictureBox336.Name = "pictureBox336";
-            this.pictureBox336.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox336.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox336.TabIndex = 339;
-            this.pictureBox336.TabStop = false;
-            this.pictureBox336.Tag = "kibble";
-            // 
-            // pictureBox337
-            // 
-            this.pictureBox337.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox337.Image")));
-            this.pictureBox337.Location = new System.Drawing.Point(200, 325);
-            this.pictureBox337.Name = "pictureBox337";
-            this.pictureBox337.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox337.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox337.TabIndex = 338;
-            this.pictureBox337.TabStop = false;
-            this.pictureBox337.Tag = "kibble";
-            // 
-            // pictureBox338
-            // 
-            this.pictureBox338.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox338.Image")));
-            this.pictureBox338.Location = new System.Drawing.Point(325, 425);
-            this.pictureBox338.Name = "pictureBox338";
-            this.pictureBox338.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox338.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox338.TabIndex = 347;
-            this.pictureBox338.TabStop = false;
-            this.pictureBox338.Tag = "kibble";
-            // 
-            // pictureBox339
-            // 
-            this.pictureBox339.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox339.Image")));
-            this.pictureBox339.Location = new System.Drawing.Point(325, 400);
-            this.pictureBox339.Name = "pictureBox339";
-            this.pictureBox339.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox339.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox339.TabIndex = 346;
-            this.pictureBox339.TabStop = false;
-            this.pictureBox339.Tag = "kibble";
-            // 
-            // pictureBox340
-            // 
-            this.pictureBox340.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox340.Image")));
-            this.pictureBox340.Location = new System.Drawing.Point(325, 375);
-            this.pictureBox340.Name = "pictureBox340";
-            this.pictureBox340.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox340.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox340.TabIndex = 345;
-            this.pictureBox340.TabStop = false;
-            this.pictureBox340.Tag = "kibble";
-            // 
-            // pictureBox341
-            // 
-            this.pictureBox341.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox341.Image")));
-            this.pictureBox341.Location = new System.Drawing.Point(325, 350);
-            this.pictureBox341.Name = "pictureBox341";
-            this.pictureBox341.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox341.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox341.TabIndex = 344;
-            this.pictureBox341.TabStop = false;
-            this.pictureBox341.Tag = "kibble";
-            // 
-            // pictureBox342
-            // 
-            this.pictureBox342.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox342.Image")));
-            this.pictureBox342.Location = new System.Drawing.Point(325, 325);
-            this.pictureBox342.Name = "pictureBox342";
-            this.pictureBox342.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox342.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox342.TabIndex = 343;
-            this.pictureBox342.TabStop = false;
-            this.pictureBox342.Tag = "kibble";
-            // 
-            // pictureBox343
-            // 
-            this.pictureBox343.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox343.Image")));
-            this.pictureBox343.Location = new System.Drawing.Point(375, 400);
-            this.pictureBox343.Name = "pictureBox343";
-            this.pictureBox343.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox343.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox343.TabIndex = 351;
-            this.pictureBox343.TabStop = false;
-            this.pictureBox343.Tag = "kibble";
-            // 
-            // pictureBox344
-            // 
-            this.pictureBox344.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox344.Image")));
-            this.pictureBox344.Location = new System.Drawing.Point(375, 375);
-            this.pictureBox344.Name = "pictureBox344";
-            this.pictureBox344.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox344.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox344.TabIndex = 350;
-            this.pictureBox344.TabStop = false;
-            this.pictureBox344.Tag = "kibble";
-            // 
-            // pictureBox345
-            // 
-            this.pictureBox345.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox345.Image")));
-            this.pictureBox345.Location = new System.Drawing.Point(375, 350);
-            this.pictureBox345.Name = "pictureBox345";
-            this.pictureBox345.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox345.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox345.TabIndex = 349;
-            this.pictureBox345.TabStop = false;
-            this.pictureBox345.Tag = "kibble";
-            // 
-            // pictureBox346
-            // 
-            this.pictureBox346.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox346.Image")));
-            this.pictureBox346.Location = new System.Drawing.Point(375, 325);
-            this.pictureBox346.Name = "pictureBox346";
-            this.pictureBox346.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox346.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox346.TabIndex = 348;
-            this.pictureBox346.TabStop = false;
-            this.pictureBox346.Tag = "kibble";
-            // 
-            // pictureBox347
-            // 
-            this.pictureBox347.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox347.Image")));
-            this.pictureBox347.Location = new System.Drawing.Point(150, 425);
-            this.pictureBox347.Name = "pictureBox347";
-            this.pictureBox347.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox347.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox347.TabIndex = 356;
-            this.pictureBox347.TabStop = false;
-            this.pictureBox347.Tag = "kibble";
-            // 
-            // pictureBox348
-            // 
-            this.pictureBox348.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox348.Image")));
-            this.pictureBox348.Location = new System.Drawing.Point(150, 400);
-            this.pictureBox348.Name = "pictureBox348";
-            this.pictureBox348.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox348.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox348.TabIndex = 355;
-            this.pictureBox348.TabStop = false;
-            this.pictureBox348.Tag = "kibble";
-            // 
-            // pictureBox349
-            // 
-            this.pictureBox349.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox349.Image")));
-            this.pictureBox349.Location = new System.Drawing.Point(150, 375);
-            this.pictureBox349.Name = "pictureBox349";
-            this.pictureBox349.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox349.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox349.TabIndex = 354;
-            this.pictureBox349.TabStop = false;
-            this.pictureBox349.Tag = "kibble";
-            // 
-            // pictureBox350
-            // 
-            this.pictureBox350.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox350.Image")));
-            this.pictureBox350.Location = new System.Drawing.Point(150, 350);
-            this.pictureBox350.Name = "pictureBox350";
-            this.pictureBox350.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox350.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox350.TabIndex = 353;
-            this.pictureBox350.TabStop = false;
-            this.pictureBox350.Tag = "kibble";
-            // 
-            // pictureBox351
-            // 
-            this.pictureBox351.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox351.Image")));
-            this.pictureBox351.Location = new System.Drawing.Point(150, 325);
-            this.pictureBox351.Name = "pictureBox351";
-            this.pictureBox351.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox351.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox351.TabIndex = 352;
-            this.pictureBox351.TabStop = false;
-            this.pictureBox351.Tag = "kibble";
-            // 
-            // pictureBox352
-            // 
-            this.pictureBox352.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox352.Image")));
-            this.pictureBox352.Location = new System.Drawing.Point(150, 275);
-            this.pictureBox352.Name = "pictureBox352";
-            this.pictureBox352.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox352.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox352.TabIndex = 360;
-            this.pictureBox352.TabStop = false;
-            this.pictureBox352.Tag = "kibble";
-            // 
-            // pictureBox353
-            // 
-            this.pictureBox353.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox353.Image")));
-            this.pictureBox353.Location = new System.Drawing.Point(150, 250);
-            this.pictureBox353.Name = "pictureBox353";
-            this.pictureBox353.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox353.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox353.TabIndex = 359;
-            this.pictureBox353.TabStop = false;
-            this.pictureBox353.Tag = "kibble";
-            // 
-            // pictureBox354
-            // 
-            this.pictureBox354.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox354.Image")));
-            this.pictureBox354.Location = new System.Drawing.Point(150, 225);
-            this.pictureBox354.Name = "pictureBox354";
-            this.pictureBox354.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox354.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox354.TabIndex = 358;
-            this.pictureBox354.TabStop = false;
-            this.pictureBox354.Tag = "kibble";
-            // 
-            // pictureBox355
-            // 
-            this.pictureBox355.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox355.Image")));
-            this.pictureBox355.Location = new System.Drawing.Point(150, 200);
-            this.pictureBox355.Name = "pictureBox355";
-            this.pictureBox355.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox355.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox355.TabIndex = 357;
-            this.pictureBox355.TabStop = false;
-            this.pictureBox355.Tag = "kibble";
-            // 
-            // pictureBox356
-            // 
-            this.pictureBox356.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox356.Image")));
-            this.pictureBox356.Location = new System.Drawing.Point(300, 275);
-            this.pictureBox356.Name = "pictureBox356";
-            this.pictureBox356.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox356.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox356.TabIndex = 364;
-            this.pictureBox356.TabStop = false;
-            this.pictureBox356.Tag = "kibble";
-            // 
-            // pictureBox357
-            // 
-            this.pictureBox357.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox357.Image")));
-            this.pictureBox357.Location = new System.Drawing.Point(300, 250);
-            this.pictureBox357.Name = "pictureBox357";
-            this.pictureBox357.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox357.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox357.TabIndex = 363;
-            this.pictureBox357.TabStop = false;
-            this.pictureBox357.Tag = "kibble";
-            // 
-            // pictureBox358
-            // 
-            this.pictureBox358.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox358.Image")));
-            this.pictureBox358.Location = new System.Drawing.Point(300, 225);
-            this.pictureBox358.Name = "pictureBox358";
-            this.pictureBox358.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox358.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox358.TabIndex = 362;
-            this.pictureBox358.TabStop = false;
-            this.pictureBox358.Tag = "kibble";
-            // 
-            // pictureBox359
-            // 
-            this.pictureBox359.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox359.Image")));
-            this.pictureBox359.Location = new System.Drawing.Point(300, 200);
-            this.pictureBox359.Name = "pictureBox359";
-            this.pictureBox359.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox359.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox359.TabIndex = 361;
-            this.pictureBox359.TabStop = false;
-            this.pictureBox359.Tag = "kibble";
-            // 
-            // pictureBox360
-            // 
-            this.pictureBox360.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox360.Image")));
-            this.pictureBox360.Location = new System.Drawing.Point(325, 250);
-            this.pictureBox360.Name = "pictureBox360";
-            this.pictureBox360.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox360.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox360.TabIndex = 367;
-            this.pictureBox360.TabStop = false;
-            this.pictureBox360.Tag = "kibble";
-            // 
-            // pictureBox361
-            // 
-            this.pictureBox361.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox361.Image")));
-            this.pictureBox361.Location = new System.Drawing.Point(375, 250);
-            this.pictureBox361.Name = "pictureBox361";
-            this.pictureBox361.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox361.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox361.TabIndex = 366;
-            this.pictureBox361.TabStop = false;
-            this.pictureBox361.Tag = "kibble";
-            // 
-            // pictureBox362
-            // 
-            this.pictureBox362.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox362.Image")));
-            this.pictureBox362.Location = new System.Drawing.Point(350, 250);
-            this.pictureBox362.Name = "pictureBox362";
-            this.pictureBox362.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox362.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox362.TabIndex = 365;
-            this.pictureBox362.TabStop = false;
-            this.pictureBox362.Tag = "kibble";
-            // 
-            // pictureBox363
-            // 
-            this.pictureBox363.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox363.Image")));
-            this.pictureBox363.Location = new System.Drawing.Point(50, 400);
-            this.pictureBox363.Name = "pictureBox363";
-            this.pictureBox363.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox363.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox363.TabIndex = 370;
-            this.pictureBox363.TabStop = false;
-            this.pictureBox363.Tag = "kibble";
-            // 
-            // pictureBox364
-            // 
-            this.pictureBox364.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox364.Image")));
-            this.pictureBox364.Location = new System.Drawing.Point(100, 400);
-            this.pictureBox364.Name = "pictureBox364";
-            this.pictureBox364.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox364.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox364.TabIndex = 369;
-            this.pictureBox364.TabStop = false;
-            this.pictureBox364.Tag = "kibble";
-            // 
-            // pictureBox365
-            // 
-            this.pictureBox365.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox365.Image")));
-            this.pictureBox365.Location = new System.Drawing.Point(75, 400);
-            this.pictureBox365.Name = "pictureBox365";
-            this.pictureBox365.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox365.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox365.TabIndex = 368;
-            this.pictureBox365.TabStop = false;
-            this.pictureBox365.Tag = "kibble";
-            // 
-            // pictureBox366
-            // 
-            this.pictureBox366.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox366.Image")));
-            this.pictureBox366.Location = new System.Drawing.Point(75, 350);
-            this.pictureBox366.Name = "pictureBox366";
-            this.pictureBox366.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox366.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox366.TabIndex = 373;
-            this.pictureBox366.TabStop = false;
-            this.pictureBox366.Tag = "kibble";
-            // 
-            // pictureBox367
-            // 
-            this.pictureBox367.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox367.Image")));
-            this.pictureBox367.Location = new System.Drawing.Point(125, 350);
-            this.pictureBox367.Name = "pictureBox367";
-            this.pictureBox367.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox367.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox367.TabIndex = 372;
-            this.pictureBox367.TabStop = false;
-            this.pictureBox367.Tag = "kibble";
-            // 
-            // pictureBox368
-            // 
-            this.pictureBox368.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox368.Image")));
-            this.pictureBox368.Location = new System.Drawing.Point(100, 350);
-            this.pictureBox368.Name = "pictureBox368";
-            this.pictureBox368.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox368.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox368.TabIndex = 371;
-            this.pictureBox368.TabStop = false;
-            this.pictureBox368.Tag = "kibble";
-            // 
-            // pictureBox369
-            // 
-            this.pictureBox369.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox369.Image")));
-            this.pictureBox369.Location = new System.Drawing.Point(350, 375);
-            this.pictureBox369.Name = "pictureBox369";
-            this.pictureBox369.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox369.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox369.TabIndex = 374;
-            this.pictureBox369.TabStop = false;
-            this.pictureBox369.Tag = "kibble";
-            // 
-            // pictureBox370
-            // 
-            this.pictureBox370.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox370.Image")));
-            this.pictureBox370.Location = new System.Drawing.Point(400, 350);
-            this.pictureBox370.Name = "pictureBox370";
-            this.pictureBox370.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox370.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox370.TabIndex = 375;
-            this.pictureBox370.TabStop = false;
-            this.pictureBox370.Tag = "kibble";
-            // 
-            // pictureBox371
-            // 
-            this.pictureBox371.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox371.Image")));
-            this.pictureBox371.Location = new System.Drawing.Point(400, 225);
-            this.pictureBox371.Name = "pictureBox371";
-            this.pictureBox371.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox371.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox371.TabIndex = 376;
-            this.pictureBox371.TabStop = false;
-            this.pictureBox371.Tag = "kibble";
-            // 
-            // pictureBox372
-            // 
-            this.pictureBox372.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox372.Image")));
-            this.pictureBox372.Location = new System.Drawing.Point(425, 250);
-            this.pictureBox372.Name = "pictureBox372";
-            this.pictureBox372.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox372.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox372.TabIndex = 377;
-            this.pictureBox372.TabStop = false;
-            this.pictureBox372.Tag = "kibble";
-            // 
-            // pictureBox373
-            // 
-            this.pictureBox373.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox373.Image")));
-            this.pictureBox373.Location = new System.Drawing.Point(425, 200);
-            this.pictureBox373.Name = "pictureBox373";
-            this.pictureBox373.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox373.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox373.TabIndex = 378;
-            this.pictureBox373.TabStop = false;
-            this.pictureBox373.Tag = "kibble";
-            // 
-            // pictureBox374
-            // 
-            this.pictureBox374.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox374.Image")));
-            this.pictureBox374.Location = new System.Drawing.Point(50, 225);
-            this.pictureBox374.Name = "pictureBox374";
-            this.pictureBox374.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox374.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox374.TabIndex = 381;
-            this.pictureBox374.TabStop = false;
-            this.pictureBox374.Tag = "kibble";
-            // 
-            // pictureBox375
-            // 
-            this.pictureBox375.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox375.Image")));
-            this.pictureBox375.Location = new System.Drawing.Point(100, 225);
-            this.pictureBox375.Name = "pictureBox375";
-            this.pictureBox375.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox375.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox375.TabIndex = 380;
-            this.pictureBox375.TabStop = false;
-            this.pictureBox375.Tag = "kibble";
-            // 
-            // pictureBox376
-            // 
-            this.pictureBox376.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox376.Image")));
-            this.pictureBox376.Location = new System.Drawing.Point(75, 225);
-            this.pictureBox376.Name = "pictureBox376";
-            this.pictureBox376.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox376.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox376.TabIndex = 379;
-            this.pictureBox376.TabStop = false;
-            this.pictureBox376.Tag = "kibble";
-            // 
-            // pictureBox377
-            // 
-            this.pictureBox377.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox377.Image")));
-            this.pictureBox377.Location = new System.Drawing.Point(125, 225);
-            this.pictureBox377.Name = "pictureBox377";
-            this.pictureBox377.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox377.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox377.TabIndex = 382;
-            this.pictureBox377.TabStop = false;
-            this.pictureBox377.Tag = "kibble";
-            // 
-            // pictureBox378
-            // 
-            this.pictureBox378.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox378.Image")));
-            this.pictureBox378.Location = new System.Drawing.Point(75, 250);
-            this.pictureBox378.Name = "pictureBox378";
-            this.pictureBox378.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox378.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox378.TabIndex = 383;
-            this.pictureBox378.TabStop = false;
-            this.pictureBox378.Tag = "kibble";
-            // 
-            // pictureBox379
-            // 
-            this.pictureBox379.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox379.Image")));
-            this.pictureBox379.Location = new System.Drawing.Point(100, 275);
-            this.pictureBox379.Name = "pictureBox379";
-            this.pictureBox379.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox379.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox379.TabIndex = 384;
-            this.pictureBox379.TabStop = false;
-            this.pictureBox379.Tag = "kibble";
-            // 
-            // pictureBox380
-            // 
-            this.pictureBox380.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox380.Image")));
-            this.pictureBox380.Location = new System.Drawing.Point(250, 425);
-            this.pictureBox380.Name = "pictureBox380";
-            this.pictureBox380.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox380.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox380.TabIndex = 388;
-            this.pictureBox380.TabStop = false;
-            this.pictureBox380.Tag = "kibble";
-            // 
-            // pictureBox381
-            // 
-            this.pictureBox381.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox381.Image")));
-            this.pictureBox381.Location = new System.Drawing.Point(250, 400);
-            this.pictureBox381.Name = "pictureBox381";
-            this.pictureBox381.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox381.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox381.TabIndex = 387;
-            this.pictureBox381.TabStop = false;
-            this.pictureBox381.Tag = "kibble";
-            // 
-            // pictureBox382
-            // 
-            this.pictureBox382.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox382.Image")));
-            this.pictureBox382.Location = new System.Drawing.Point(250, 375);
-            this.pictureBox382.Name = "pictureBox382";
-            this.pictureBox382.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox382.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox382.TabIndex = 386;
-            this.pictureBox382.TabStop = false;
-            this.pictureBox382.Tag = "kibble";
-            // 
-            // pictureBox383
-            // 
-            this.pictureBox383.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox383.Image")));
-            this.pictureBox383.Location = new System.Drawing.Point(250, 350);
-            this.pictureBox383.Name = "pictureBox383";
-            this.pictureBox383.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox383.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox383.TabIndex = 385;
-            this.pictureBox383.TabStop = false;
-            this.pictureBox383.Tag = "kibble";
-            // 
-            // pictureBox384
-            // 
-            this.pictureBox384.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox384.Image")));
-            this.pictureBox384.Location = new System.Drawing.Point(225, 350);
-            this.pictureBox384.Name = "pictureBox384";
-            this.pictureBox384.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox384.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox384.TabIndex = 389;
-            this.pictureBox384.TabStop = false;
-            this.pictureBox384.Tag = "kibble";
-            // 
-            // pictureBox385
-            // 
-            this.pictureBox385.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox385.Image")));
-            this.pictureBox385.Location = new System.Drawing.Point(100, 375);
-            this.pictureBox385.Name = "pictureBox385";
-            this.pictureBox385.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox385.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox385.TabIndex = 390;
-            this.pictureBox385.TabStop = false;
-            this.pictureBox385.Tag = "kibble";
-            // 
-            // pictureBox386
-            // 
-            this.pictureBox386.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox386.Image")));
-            this.pictureBox386.Location = new System.Drawing.Point(100, 425);
-            this.pictureBox386.Name = "pictureBox386";
-            this.pictureBox386.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox386.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox386.TabIndex = 391;
-            this.pictureBox386.TabStop = false;
-            this.pictureBox386.Tag = "kibble";
-            // 
-            // pictureBox387
-            // 
-            this.pictureBox387.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox387.Image")));
-            this.pictureBox387.Location = new System.Drawing.Point(375, 225);
-            this.pictureBox387.Name = "pictureBox387";
-            this.pictureBox387.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox387.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox387.TabIndex = 393;
-            this.pictureBox387.TabStop = false;
-            this.pictureBox387.Tag = "kibble";
-            // 
-            // pictureBox388
-            // 
-            this.pictureBox388.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox388.Image")));
-            this.pictureBox388.Location = new System.Drawing.Point(375, 200);
-            this.pictureBox388.Name = "pictureBox388";
-            this.pictureBox388.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox388.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox388.TabIndex = 392;
-            this.pictureBox388.TabStop = false;
-            this.pictureBox388.Tag = "kibble";
-            // 
-            // pictureBox389
-            // 
-            this.pictureBox389.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox389.Image")));
-            this.pictureBox389.Location = new System.Drawing.Point(425, 400);
-            this.pictureBox389.Name = "pictureBox389";
-            this.pictureBox389.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox389.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox389.TabIndex = 395;
-            this.pictureBox389.TabStop = false;
-            this.pictureBox389.Tag = "kibble";
-            // 
-            // pictureBox390
-            // 
-            this.pictureBox390.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox390.Image")));
-            this.pictureBox390.Location = new System.Drawing.Point(400, 400);
-            this.pictureBox390.Name = "pictureBox390";
-            this.pictureBox390.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox390.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox390.TabIndex = 394;
-            this.pictureBox390.TabStop = false;
-            this.pictureBox390.Tag = "kibble";
-            // 
-            // pictureBox391
-            // 
-            this.pictureBox391.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox391.Image")));
-            this.pictureBox391.Location = new System.Drawing.Point(400, 425);
-            this.pictureBox391.Name = "pictureBox391";
-            this.pictureBox391.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox391.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox391.TabIndex = 396;
-            this.pictureBox391.TabStop = false;
-            this.pictureBox391.Tag = "kibble";
-            // 
             // Pacman
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -5625,6 +5667,133 @@
             this.Name = "Pacman";
             this.Text = "Pacman";
             this.panel1.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox394)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox393)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox392)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox391)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox389)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox390)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox387)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox388)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox386)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox385)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox384)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox380)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox381)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox382)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox383)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox379)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox378)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox377)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox374)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox375)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox376)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox373)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox372)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox371)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox370)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox369)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox366)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox367)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox368)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox363)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox364)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox365)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox360)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox361)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox362)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox356)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox357)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox358)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox359)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox352)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox353)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox354)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox355)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox347)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox348)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox349)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox350)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox351)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox343)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox344)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox345)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox346)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox338)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox339)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox340)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox341)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox342)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox333)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox334)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox335)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox336)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox337)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox317)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox318)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox319)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox320)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox321)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox322)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox323)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox324)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox325)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox326)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox327)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox328)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox329)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox330)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox331)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox332)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox316)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox314)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox315)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox311)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox312)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox313)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox307)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox308)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox309)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox310)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox306)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox305)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox301)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox302)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox303)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox304)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox298)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox299)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox300)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox294)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox295)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox296)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox297)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox288)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox289)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox290)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox291)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox292)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox293)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox282)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox283)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox284)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox285)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox286)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox287)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox272)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox277)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox278)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox279)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox280)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox281)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox270)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox271)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox273)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox274)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox275)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox276)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox254)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox255)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox256)).EndInit();
@@ -5894,130 +6063,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox270)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox271)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox273)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox274)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox275)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox276)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox272)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox277)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox278)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox279)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox280)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox281)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox282)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox283)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox284)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox285)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox286)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox287)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox288)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox289)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox290)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox291)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox292)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox293)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox294)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox295)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox296)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox297)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox298)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox299)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox300)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox301)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox302)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox303)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox304)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox305)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox306)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox307)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox308)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox309)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox310)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox311)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox312)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox313)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox314)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox315)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox316)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox317)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox318)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox319)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox320)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox321)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox322)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox323)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox324)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox325)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox326)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox327)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox328)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox329)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox330)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox331)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox332)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox333)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox334)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox335)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox336)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox337)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox338)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox339)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox340)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox341)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox342)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox343)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox344)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox345)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox346)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox347)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox348)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox349)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox350)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox351)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox352)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox353)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox354)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox355)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox356)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox357)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox358)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox359)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox360)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox361)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox362)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox363)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox364)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox365)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox366)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox367)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox368)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox369)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox370)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox371)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox372)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox373)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox374)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox375)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox376)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox377)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox378)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox379)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox380)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox381)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox382)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox383)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox384)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox385)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox386)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox387)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox388)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox389)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox390)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox391)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -6424,6 +6469,9 @@
         private System.Windows.Forms.PictureBox pictureBox274;
         private System.Windows.Forms.PictureBox pictureBox275;
         private System.Windows.Forms.PictureBox pictureBox276;
+        private System.Windows.Forms.PictureBox pictureBox394;
+        private System.Windows.Forms.PictureBox pictureBox393;
+        private System.Windows.Forms.PictureBox pictureBox392;
     }
 }
 

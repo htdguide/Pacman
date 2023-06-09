@@ -12,7 +12,8 @@ namespace PacMan
 {
     public partial class Pacman : Form
     {
-        private Entity pacman, ghost1, ghost2, ghost3, ghost4;
+        private Entity pacman, ghost1, ghost2, ghost3;
+        private Engine engine;
 
 
         public Pacman()

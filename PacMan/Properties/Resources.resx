@@ -127,7 +127,25 @@
   <data name="pacmanRight" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pacmanRight.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ghoulBlueUp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="GhostUp" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ghoulBlueUp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GhostDown" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ghoulBlueDown.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GhostLeft" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ghoulBlueLeft.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GhostRight" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ghoulBlueRight.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pacmanDown" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pacmanDown.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pacmanLeft" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pacmanLeft.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pacmanUp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pacmanUp.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

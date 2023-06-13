@@ -47,7 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Engine.cs" />
-    <Compile Include="Entity.cs" />
+    <Compile Include="Creatures.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,6 +93,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\ghoulBlueUp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pacmanLeft.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pacmanDown.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pacmanUp.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ghoulBlueDown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ghoulBlueLeft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ghoulBlueRight.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

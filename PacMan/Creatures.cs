@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PacMan.Properties;
 
 namespace PacMan
 {
@@ -64,6 +65,39 @@ namespace PacMan
                     colliderRight.Top = colliderRight.Top + 1;
                 }
             }
+        }
+        public void movementLeft()
+        {
+                    appearance.Left = appearance.Left - 1;
+                    colliderUp.Left = colliderUp.Left - 1;
+                    colliderDown.Left = colliderDown.Left - 1;
+                    colliderLeft.Left = colliderLeft.Left - 1;
+                    colliderRight.Left = colliderRight.Left - 1;
+        }
+        public void movementRight()
+        {
+
+                    appearance.Left = appearance.Left + 1;
+                    colliderUp.Left = colliderUp.Left + 1;
+                    colliderDown.Left = colliderDown.Left + 1;
+                    colliderLeft.Left = colliderLeft.Left + 1;
+                    colliderRight.Left = colliderRight.Left + 1;
+        }
+        public void movementUp()
+        {
+                    appearance.Top = appearance.Top - 1;
+                    colliderUp.Top = colliderUp.Top - 1;
+                    colliderDown.Top = colliderDown.Top - 1;
+                    colliderLeft.Top = colliderLeft.Top - 1;
+                    colliderRight.Top = colliderRight.Top - 1;
+        }
+        public void movementDown()
+        {
+                    appearance.Top = appearance.Top + 1;
+                    colliderUp.Top = colliderUp.Top + 1;
+                    colliderDown.Top = colliderDown.Top + 1;
+                    colliderLeft.Top = colliderLeft.Top + 1;
+                    colliderRight.Top = colliderRight.Top + 1;
         }
     }
 }

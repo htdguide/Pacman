@@ -628,22 +628,11 @@
             this.pictureBox586 = new System.Windows.Forms.PictureBox();
             this.pictureBox587 = new System.Windows.Forms.PictureBox();
             this.pictureBox588 = new System.Windows.Forms.PictureBox();
-            this.thirdGhost = new System.Windows.Forms.PictureBox();
-            this.thirdColliderDown = new System.Windows.Forms.PictureBox();
-            this.thirdColliderUp = new System.Windows.Forms.PictureBox();
-            this.thirdColliderRight = new System.Windows.Forms.PictureBox();
-            this.thirdColliderLeft = new System.Windows.Forms.PictureBox();
-            this.secondGhost = new System.Windows.Forms.PictureBox();
-            this.secondColliderDown = new System.Windows.Forms.PictureBox();
-            this.secondColliderUp = new System.Windows.Forms.PictureBox();
-            this.secondColliderRight = new System.Windows.Forms.PictureBox();
-            this.secondColliderLeft = new System.Windows.Forms.PictureBox();
-            this.firstGhost = new System.Windows.Forms.PictureBox();
-            this.firstColliderDown = new System.Windows.Forms.PictureBox();
-            this.firstColliderUp = new System.Windows.Forms.PictureBox();
-            this.firstColliderRight = new System.Windows.Forms.PictureBox();
-            this.firstCollisionLeft = new System.Windows.Forms.PictureBox();
             this.pictureBox392 = new System.Windows.Forms.PictureBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox204)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.collider2)).BeginInit();
@@ -1234,21 +1223,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox586)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox587)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox588)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.thirdGhost)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.thirdColliderDown)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.thirdColliderUp)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.thirdColliderRight)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.thirdColliderLeft)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.secondGhost)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.secondColliderDown)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.secondColliderUp)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.secondColliderRight)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.secondColliderLeft)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.firstGhost)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.firstColliderDown)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.firstColliderUp)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.firstColliderRight)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.firstCollisionLeft)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox392)).BeginInit();
             this.SuspendLayout();
             // 
@@ -1256,24 +1230,14 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.Black;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel1.Controls.Add(this.pictureBox204);
+            this.panel1.Controls.Add(this.collider3);
             this.panel1.Controls.Add(this.pictureBox392);
-            this.panel1.Controls.Add(this.firstGhost);
-            this.panel1.Controls.Add(this.firstColliderDown);
-            this.panel1.Controls.Add(this.firstColliderUp);
-            this.panel1.Controls.Add(this.firstColliderRight);
-            this.panel1.Controls.Add(this.firstCollisionLeft);
-            this.panel1.Controls.Add(this.secondGhost);
-            this.panel1.Controls.Add(this.secondColliderDown);
-            this.panel1.Controls.Add(this.secondColliderUp);
-            this.panel1.Controls.Add(this.secondColliderRight);
-            this.panel1.Controls.Add(this.secondColliderLeft);
-            this.panel1.Controls.Add(this.thirdGhost);
-            this.panel1.Controls.Add(this.thirdColliderDown);
-            this.panel1.Controls.Add(this.thirdColliderUp);
-            this.panel1.Controls.Add(this.thirdColliderRight);
-            this.panel1.Controls.Add(this.thirdColliderLeft);
+            this.panel1.Controls.Add(this.collider4);
             this.panel1.Controls.Add(this.pictureBox588);
+            this.panel1.Controls.Add(this.collider1);
             this.panel1.Controls.Add(this.pictureBox587);
+            this.panel1.Controls.Add(this.collider2);
             this.panel1.Controls.Add(this.pictureBox586);
             this.panel1.Controls.Add(this.pictureBox585);
             this.panel1.Controls.Add(this.pictureBox584);
@@ -1466,11 +1430,6 @@
             this.panel1.Controls.Add(this.pictureBox414);
             this.panel1.Controls.Add(this.pictureBox415);
             this.panel1.Controls.Add(this.pictureBox395);
-            this.panel1.Controls.Add(this.pictureBox204);
-            this.panel1.Controls.Add(this.collider2);
-            this.panel1.Controls.Add(this.collider1);
-            this.panel1.Controls.Add(this.collider4);
-            this.panel1.Controls.Add(this.collider3);
             this.panel1.Controls.Add(this.pictureBox4);
             this.panel1.Controls.Add(this.pictureBox391);
             this.panel1.Controls.Add(this.pictureBox389);
@@ -1869,10 +1828,10 @@
             // pictureBox204
             // 
             this.pictureBox204.Image = global::PacMan.Properties.Resources.pacmanRight;
-            this.pictureBox204.Location = new System.Drawing.Point(27, 452);
+            this.pictureBox204.Location = new System.Drawing.Point(25, 450);
             this.pictureBox204.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox204.Name = "pictureBox204";
-            this.pictureBox204.Size = new System.Drawing.Size(23, 23);
+            this.pictureBox204.Size = new System.Drawing.Size(22, 22);
             this.pictureBox204.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox204.TabIndex = 221;
             this.pictureBox204.TabStop = false;
@@ -1881,10 +1840,12 @@
             // collider2
             // 
             this.collider2.Image = global::PacMan.Properties.Resources.collider;
-            this.collider2.Location = new System.Drawing.Point(31, 461);
+            this.collider2.Location = new System.Drawing.Point(29, 467);
             this.collider2.Margin = new System.Windows.Forms.Padding(2);
+            this.collider2.MaximumSize = new System.Drawing.Size(14, 5);
+            this.collider2.MinimumSize = new System.Drawing.Size(14, 5);
             this.collider2.Name = "collider2";
-            this.collider2.Size = new System.Drawing.Size(13, 13);
+            this.collider2.Size = new System.Drawing.Size(14, 5);
             this.collider2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.collider2.TabIndex = 400;
             this.collider2.TabStop = false;
@@ -1894,10 +1855,12 @@
             // collider1
             // 
             this.collider1.Image = global::PacMan.Properties.Resources.collider;
-            this.collider1.Location = new System.Drawing.Point(31, 451);
+            this.collider1.Location = new System.Drawing.Point(29, 449);
             this.collider1.Margin = new System.Windows.Forms.Padding(2);
+            this.collider1.MaximumSize = new System.Drawing.Size(14, 14);
+            this.collider1.MinimumSize = new System.Drawing.Size(14, 14);
             this.collider1.Name = "collider1";
-            this.collider1.Size = new System.Drawing.Size(13, 13);
+            this.collider1.Size = new System.Drawing.Size(14, 14);
             this.collider1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.collider1.TabIndex = 401;
             this.collider1.TabStop = false;
@@ -1907,10 +1870,12 @@
             // collider4
             // 
             this.collider4.Image = global::PacMan.Properties.Resources.collider;
-            this.collider4.Location = new System.Drawing.Point(36, 457);
+            this.collider4.Location = new System.Drawing.Point(42, 454);
             this.collider4.Margin = new System.Windows.Forms.Padding(2);
+            this.collider4.MaximumSize = new System.Drawing.Size(5, 14);
+            this.collider4.MinimumSize = new System.Drawing.Size(5, 14);
             this.collider4.Name = "collider4";
-            this.collider4.Size = new System.Drawing.Size(13, 13);
+            this.collider4.Size = new System.Drawing.Size(5, 14);
             this.collider4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.collider4.TabIndex = 403;
             this.collider4.TabStop = false;
@@ -1920,10 +1885,12 @@
             // collider3
             // 
             this.collider3.Image = global::PacMan.Properties.Resources.collider;
-            this.collider3.Location = new System.Drawing.Point(25, 457);
+            this.collider3.Location = new System.Drawing.Point(24, 454);
             this.collider3.Margin = new System.Windows.Forms.Padding(2);
+            this.collider3.MaximumSize = new System.Drawing.Size(5, 14);
+            this.collider3.MinimumSize = new System.Drawing.Size(5, 14);
             this.collider3.Name = "collider3";
-            this.collider3.Size = new System.Drawing.Size(13, 13);
+            this.collider3.Size = new System.Drawing.Size(5, 14);
             this.collider3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.collider3.TabIndex = 402;
             this.collider3.TabStop = false;
@@ -6601,6 +6568,10 @@
             // panel2
             // 
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.label7);
+            this.panel2.Controls.Add(this.label8);
+            this.panel2.Controls.Add(this.label9);
+            this.panel2.Controls.Add(this.label10);
             this.panel2.Controls.Add(this.label6);
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.label4);
@@ -6617,7 +6588,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label6.Location = new System.Drawing.Point(237, 17);
+            this.label6.Location = new System.Drawing.Point(238, 9);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(19, 23);
             this.label6.TabIndex = 6;
@@ -6627,7 +6598,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label5.Location = new System.Drawing.Point(96, 17);
+            this.label5.Location = new System.Drawing.Point(97, 9);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(19, 23);
             this.label5.TabIndex = 5;
@@ -6637,7 +6608,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.Location = new System.Drawing.Point(181, 17);
+            this.label4.Location = new System.Drawing.Point(182, 9);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(50, 23);
             this.label4.TabIndex = 4;
@@ -6647,7 +6618,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.Location = new System.Drawing.Point(34, 17);
+            this.label3.Location = new System.Drawing.Point(35, 9);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(56, 23);
             this.label3.TabIndex = 3;
@@ -6657,7 +6628,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(3, 81);
+            this.label2.Location = new System.Drawing.Point(3, 84);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(410, 23);
             this.label2.TabIndex = 2;
@@ -6667,7 +6638,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(3, 60);
+            this.label1.Location = new System.Drawing.Point(3, 63);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(426, 23);
             this.label1.TabIndex = 1;
@@ -9019,198 +8990,6 @@
             this.pictureBox588.TabStop = false;
             this.pictureBox588.Tag = "border";
             // 
-            // thirdGhost
-            // 
-            this.thirdGhost.Image = global::PacMan.Properties.Resources.GhostUp;
-            this.thirdGhost.Location = new System.Drawing.Point(225, 250);
-            this.thirdGhost.Margin = new System.Windows.Forms.Padding(2);
-            this.thirdGhost.Name = "thirdGhost";
-            this.thirdGhost.Size = new System.Drawing.Size(23, 23);
-            this.thirdGhost.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.thirdGhost.TabIndex = 598;
-            this.thirdGhost.TabStop = false;
-            this.thirdGhost.Tag = "ghost";
-            // 
-            // thirdColliderDown
-            // 
-            this.thirdColliderDown.Image = global::PacMan.Properties.Resources.collider;
-            this.thirdColliderDown.Location = new System.Drawing.Point(229, 259);
-            this.thirdColliderDown.Margin = new System.Windows.Forms.Padding(2);
-            this.thirdColliderDown.Name = "thirdColliderDown";
-            this.thirdColliderDown.Size = new System.Drawing.Size(13, 13);
-            this.thirdColliderDown.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.thirdColliderDown.TabIndex = 599;
-            this.thirdColliderDown.TabStop = false;
-            this.thirdColliderDown.Tag = "colliderDown";
-            this.thirdColliderDown.Visible = false;
-            // 
-            // thirdColliderUp
-            // 
-            this.thirdColliderUp.Image = global::PacMan.Properties.Resources.collider;
-            this.thirdColliderUp.Location = new System.Drawing.Point(229, 249);
-            this.thirdColliderUp.Margin = new System.Windows.Forms.Padding(2);
-            this.thirdColliderUp.Name = "thirdColliderUp";
-            this.thirdColliderUp.Size = new System.Drawing.Size(13, 13);
-            this.thirdColliderUp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.thirdColliderUp.TabIndex = 600;
-            this.thirdColliderUp.TabStop = false;
-            this.thirdColliderUp.Tag = "colliderUp";
-            this.thirdColliderUp.Visible = false;
-            // 
-            // thirdColliderRight
-            // 
-            this.thirdColliderRight.Image = global::PacMan.Properties.Resources.collider;
-            this.thirdColliderRight.Location = new System.Drawing.Point(234, 255);
-            this.thirdColliderRight.Margin = new System.Windows.Forms.Padding(2);
-            this.thirdColliderRight.Name = "thirdColliderRight";
-            this.thirdColliderRight.Size = new System.Drawing.Size(13, 13);
-            this.thirdColliderRight.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.thirdColliderRight.TabIndex = 602;
-            this.thirdColliderRight.TabStop = false;
-            this.thirdColliderRight.Tag = "colliderRight";
-            this.thirdColliderRight.Visible = false;
-            // 
-            // thirdColliderLeft
-            // 
-            this.thirdColliderLeft.Image = global::PacMan.Properties.Resources.collider;
-            this.thirdColliderLeft.Location = new System.Drawing.Point(224, 255);
-            this.thirdColliderLeft.Margin = new System.Windows.Forms.Padding(2);
-            this.thirdColliderLeft.Name = "thirdColliderLeft";
-            this.thirdColliderLeft.Size = new System.Drawing.Size(13, 13);
-            this.thirdColliderLeft.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.thirdColliderLeft.TabIndex = 601;
-            this.thirdColliderLeft.TabStop = false;
-            this.thirdColliderLeft.Tag = "colliderLeft";
-            this.thirdColliderLeft.Visible = false;
-            // 
-            // secondGhost
-            // 
-            this.secondGhost.Image = global::PacMan.Properties.Resources.GhostUp;
-            this.secondGhost.Location = new System.Drawing.Point(250, 200);
-            this.secondGhost.Margin = new System.Windows.Forms.Padding(2);
-            this.secondGhost.Name = "secondGhost";
-            this.secondGhost.Size = new System.Drawing.Size(23, 23);
-            this.secondGhost.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.secondGhost.TabIndex = 603;
-            this.secondGhost.TabStop = false;
-            this.secondGhost.Tag = "ghost";
-            // 
-            // secondColliderDown
-            // 
-            this.secondColliderDown.Image = global::PacMan.Properties.Resources.collider;
-            this.secondColliderDown.Location = new System.Drawing.Point(254, 209);
-            this.secondColliderDown.Margin = new System.Windows.Forms.Padding(2);
-            this.secondColliderDown.Name = "secondColliderDown";
-            this.secondColliderDown.Size = new System.Drawing.Size(13, 13);
-            this.secondColliderDown.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.secondColliderDown.TabIndex = 604;
-            this.secondColliderDown.TabStop = false;
-            this.secondColliderDown.Tag = "colliderDown";
-            this.secondColliderDown.Visible = false;
-            // 
-            // secondColliderUp
-            // 
-            this.secondColliderUp.Image = global::PacMan.Properties.Resources.collider;
-            this.secondColliderUp.Location = new System.Drawing.Point(254, 199);
-            this.secondColliderUp.Margin = new System.Windows.Forms.Padding(2);
-            this.secondColliderUp.Name = "secondColliderUp";
-            this.secondColliderUp.Size = new System.Drawing.Size(13, 13);
-            this.secondColliderUp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.secondColliderUp.TabIndex = 605;
-            this.secondColliderUp.TabStop = false;
-            this.secondColliderUp.Tag = "colliderUp";
-            this.secondColliderUp.Visible = false;
-            // 
-            // secondColliderRight
-            // 
-            this.secondColliderRight.Image = global::PacMan.Properties.Resources.collider;
-            this.secondColliderRight.Location = new System.Drawing.Point(259, 205);
-            this.secondColliderRight.Margin = new System.Windows.Forms.Padding(2);
-            this.secondColliderRight.Name = "secondColliderRight";
-            this.secondColliderRight.Size = new System.Drawing.Size(13, 13);
-            this.secondColliderRight.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.secondColliderRight.TabIndex = 607;
-            this.secondColliderRight.TabStop = false;
-            this.secondColliderRight.Tag = "colliderRight";
-            this.secondColliderRight.Visible = false;
-            // 
-            // secondColliderLeft
-            // 
-            this.secondColliderLeft.Image = global::PacMan.Properties.Resources.collider;
-            this.secondColliderLeft.Location = new System.Drawing.Point(249, 205);
-            this.secondColliderLeft.Margin = new System.Windows.Forms.Padding(2);
-            this.secondColliderLeft.Name = "secondColliderLeft";
-            this.secondColliderLeft.Size = new System.Drawing.Size(13, 13);
-            this.secondColliderLeft.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.secondColliderLeft.TabIndex = 606;
-            this.secondColliderLeft.TabStop = false;
-            this.secondColliderLeft.Tag = "colliderLeft";
-            this.secondColliderLeft.Visible = false;
-            // 
-            // firstGhost
-            // 
-            this.firstGhost.Image = global::PacMan.Properties.Resources.GhostUp;
-            this.firstGhost.Location = new System.Drawing.Point(200, 200);
-            this.firstGhost.Margin = new System.Windows.Forms.Padding(2);
-            this.firstGhost.Name = "firstGhost";
-            this.firstGhost.Size = new System.Drawing.Size(23, 23);
-            this.firstGhost.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.firstGhost.TabIndex = 608;
-            this.firstGhost.TabStop = false;
-            this.firstGhost.Tag = "ghost";
-            // 
-            // firstColliderDown
-            // 
-            this.firstColliderDown.Image = global::PacMan.Properties.Resources.collider;
-            this.firstColliderDown.Location = new System.Drawing.Point(204, 209);
-            this.firstColliderDown.Margin = new System.Windows.Forms.Padding(2);
-            this.firstColliderDown.Name = "firstColliderDown";
-            this.firstColliderDown.Size = new System.Drawing.Size(13, 13);
-            this.firstColliderDown.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.firstColliderDown.TabIndex = 609;
-            this.firstColliderDown.TabStop = false;
-            this.firstColliderDown.Tag = "colliderDown";
-            this.firstColliderDown.Visible = false;
-            // 
-            // firstColliderUp
-            // 
-            this.firstColliderUp.Image = global::PacMan.Properties.Resources.collider;
-            this.firstColliderUp.Location = new System.Drawing.Point(204, 199);
-            this.firstColliderUp.Margin = new System.Windows.Forms.Padding(2);
-            this.firstColliderUp.Name = "firstColliderUp";
-            this.firstColliderUp.Size = new System.Drawing.Size(13, 13);
-            this.firstColliderUp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.firstColliderUp.TabIndex = 610;
-            this.firstColliderUp.TabStop = false;
-            this.firstColliderUp.Tag = "colliderUp";
-            this.firstColliderUp.Visible = false;
-            // 
-            // firstColliderRight
-            // 
-            this.firstColliderRight.Image = global::PacMan.Properties.Resources.collider;
-            this.firstColliderRight.Location = new System.Drawing.Point(209, 205);
-            this.firstColliderRight.Margin = new System.Windows.Forms.Padding(2);
-            this.firstColliderRight.Name = "firstColliderRight";
-            this.firstColliderRight.Size = new System.Drawing.Size(13, 13);
-            this.firstColliderRight.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.firstColliderRight.TabIndex = 612;
-            this.firstColliderRight.TabStop = false;
-            this.firstColliderRight.Tag = "colliderRight";
-            this.firstColliderRight.Visible = false;
-            // 
-            // firstCollisionLeft
-            // 
-            this.firstCollisionLeft.Image = global::PacMan.Properties.Resources.collider;
-            this.firstCollisionLeft.Location = new System.Drawing.Point(199, 205);
-            this.firstCollisionLeft.Margin = new System.Windows.Forms.Padding(2);
-            this.firstCollisionLeft.Name = "firstCollisionLeft";
-            this.firstCollisionLeft.Size = new System.Drawing.Size(13, 13);
-            this.firstCollisionLeft.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.firstCollisionLeft.TabIndex = 611;
-            this.firstCollisionLeft.TabStop = false;
-            this.firstCollisionLeft.Tag = "colliderLeft";
-            this.firstCollisionLeft.Visible = false;
-            // 
             // pictureBox392
             // 
             this.pictureBox392.Image = global::PacMan.Properties.Resources.onewall;
@@ -9222,6 +9001,46 @@
             this.pictureBox392.TabIndex = 613;
             this.pictureBox392.TabStop = false;
             this.pictureBox392.Tag = "border";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label9.Location = new System.Drawing.Point(238, 32);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(19, 23);
+            this.label9.TabIndex = 10;
+            this.label9.Text = "3";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label10.Location = new System.Drawing.Point(182, 32);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(50, 23);
+            this.label10.TabIndex = 9;
+            this.label10.Text = "Lives:";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label7.Location = new System.Drawing.Point(97, 32);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(19, 23);
+            this.label7.TabIndex = 12;
+            this.label7.Text = "0";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label8.Location = new System.Drawing.Point(35, 32);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(56, 23);
+            this.label8.TabIndex = 11;
+            this.label8.Text = "Score:";
             // 
             // Pacman
             // 
@@ -9828,21 +9647,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox586)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox587)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox588)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.thirdGhost)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.thirdColliderDown)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.thirdColliderUp)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.thirdColliderRight)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.thirdColliderLeft)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.secondGhost)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.secondColliderDown)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.secondColliderUp)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.secondColliderRight)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.secondColliderLeft)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.firstGhost)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.firstColliderDown)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.firstColliderUp)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.firstColliderRight)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.firstCollisionLeft)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox392)).EndInit();
             this.ResumeLayout(false);
 
@@ -10449,21 +10253,10 @@
         private System.Windows.Forms.PictureBox pictureBox513;
         private System.Windows.Forms.PictureBox pictureBox512;
         private System.Windows.Forms.PictureBox pictureBox392;
-        private System.Windows.Forms.PictureBox firstGhost;
-        private System.Windows.Forms.PictureBox firstColliderDown;
-        private System.Windows.Forms.PictureBox firstColliderUp;
-        private System.Windows.Forms.PictureBox firstColliderRight;
-        private System.Windows.Forms.PictureBox firstCollisionLeft;
-        private System.Windows.Forms.PictureBox secondGhost;
-        private System.Windows.Forms.PictureBox secondColliderDown;
-        private System.Windows.Forms.PictureBox secondColliderUp;
-        private System.Windows.Forms.PictureBox secondColliderRight;
-        private System.Windows.Forms.PictureBox secondColliderLeft;
-        private System.Windows.Forms.PictureBox thirdGhost;
-        private System.Windows.Forms.PictureBox thirdColliderDown;
-        private System.Windows.Forms.PictureBox thirdColliderUp;
-        private System.Windows.Forms.PictureBox thirdColliderRight;
-        private System.Windows.Forms.PictureBox thirdColliderLeft;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
     }
 }
 

@@ -27,7 +27,7 @@ namespace PacMan
             // ghost1 = new Creatures("Ghost 1", pictureBox392, 2, 0);
             // ghost2 = new Creatures("Ghost 2", pictureBox393, 2, 0);
             // ghost3 = new Creatures("Ghost 3", pictureBox394, 2, 0);
-            engine = new Engine(0, 0, 3, false, false, player, ghost1, ghost2, ghost3);
+            engine = new Engine(0, 0, false, false, player, ghost1, ghost2, ghost3, label5, label6, label7,label9);
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -65,22 +65,22 @@ namespace PacMan
             }
             if (e.KeyCode == Keys.X) //Collision debug
             {
-                firstGhost.Visible = !c;
-                secondGhost.Visible = !c;
-                thirdGhost.Visible = !c;
+               // firstGhost.Visible = !c;
+               // secondGhost.Visible = !c;
+               // thirdGhost.Visible = !c;
                 pictureBox204.Visible = !c;
-                firstCollisionLeft.Visible = c;
-                firstColliderRight.Visible = c;
-                firstColliderUp.Visible = c;
-                firstColliderDown.Visible = c;
-                secondColliderLeft.Visible = c;
-                secondColliderRight.Visible = c;
-                secondColliderUp.Visible = c;
-                secondColliderDown.Visible = c;
-                thirdColliderLeft.Visible = c;
-                thirdColliderRight.Visible = c;
-                thirdColliderUp.Visible = c;
-                thirdColliderDown.Visible = c;
+               // firstCollisionLeft.Visible = c;
+               // firstColliderRight.Visible = c;
+               // firstColliderUp.Visible = c;
+               // firstColliderDown.Visible = c;
+               // secondColliderLeft.Visible = c;
+               // secondColliderRight.Visible = c;
+               // secondColliderUp.Visible = c;
+               // secondColliderDown.Visible = c;
+               // thirdColliderLeft.Visible = c;
+               // thirdColliderRight.Visible = c;
+               // thirdColliderUp.Visible = c;
+               // thirdColliderDown.Visible = c;
                 collider1.Visible = c;
                 collider2.Visible = c;
                 collider3.Visible = c;
@@ -126,6 +126,14 @@ namespace PacMan
                         }
                     }
 
+                }
+                if (x is PictureBox && (x.Tag == "kibble"))  //Tag property 
+                {
+                    if (entity.appearance.Bounds.IntersectsWith(x.Bounds))
+                    {
+                        engine.scoring(entity);
+                        panel1.Controls.Remove(x);
+                    }
                 }
             }
             return b;

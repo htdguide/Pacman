@@ -18,8 +18,9 @@ namespace PacMan
     {
         private Creatures player, ghost1, ghost2, ghost3;
         private Engine engine;
-        private bool c = true;
-
+        private bool c = true; //debugging
+        private bool gates = false; //gates open
+        private int gatesCounter = 0;
         public Pacman()
         {
             InitializeComponent();
@@ -33,6 +34,7 @@ namespace PacMan
         private void timer1_Tick(object sender, EventArgs e)
         {
             if (!wallcheck(player)) player.movement();
+            if ((engine.scoreTotal > 187 && gatesCounter < 20) || (gatesCounter < 20 && gates == true)) gatesopen(pictureBox41,4);
         }
 
         private void Pacman_KeyDown(object sender, KeyEventArgs e)
@@ -86,6 +88,7 @@ namespace PacMan
                 collider3.Visible = c;
                 collider4.Visible = c;
                 vision1.Visible = c;
+                gates = true;
                 c = !c;
             }
         }
@@ -170,6 +173,25 @@ namespace PacMan
                     entity.movementLeft();
                 }
             }
+        }
+        private void gatesopen(PictureBox door, int direction)
+        {
+            switch (direction)
+            {
+                case 1: //Left
+                    door.Left = door.Left - 1; 
+                    break;
+                case 2:
+                    door.Left = door.Left + 1;
+                    break;
+                case 3:
+                    door.Top = door.Top - 1;
+                    break;
+                case 4:
+                    door.Top = door.Top + 1;
+                    break;
+            }
+            gatesCounter = gatesCounter + 1;   
         }
     }
 }

@@ -9,6 +9,7 @@ namespace PacMan
 {
     internal class Engine
     {
+        public int scoreTotal = 0;
         public int score1 = 0; //Player's score
         public int lives1 = 3; //Player's lives
         public int score2 = 0; //Second player's score
@@ -41,12 +42,14 @@ namespace PacMan
                 score1 = score1 + 1;
                 scoreBoard1.Text = score1.ToString();
                 livesBoard1.Text = lives1.ToString();
+                scoreTotal = score1 + score2;
             }
             else if (player.name == "Pacman2")
             {
                 score2= score2++;
                 scoreBoard2.Text = score2.ToString();
                 livesBoard2.Text = lives2.ToString();
+                scoreTotal = score1 + score2;
             }
         }
     }

@@ -139,12 +139,17 @@ namespace PacMan
                         panel1.Controls.Remove(x);
                     }
                 }
-                if (x is PictureBox && (x.Tag == "kibble" || x.Tag == "wall"))  //Tag property 
+                if (x is PictureBox && (x.Tag == "kibble" || x.Tag == "wall" || x.Tag == "key" || x.Tag == "door"))  //Vision
                 {
                     if (entity.vision.Bounds.IntersectsWith(x.Bounds))
                     {
                         x.Visible = true;
                     }
+                }
+                if (entity.vision.Right == panel1.Right && panel1.Right < 1005)
+                {
+                    panel1.Width = panel1.Width + 1;
+                    Pacman.ActiveForm.Width = Pacman.ActiveForm.Width + 1;
                 }
             }
             return b;

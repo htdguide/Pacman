@@ -633,6 +633,7 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.vision1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox204)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.collider2)).BeginInit();
@@ -1224,6 +1225,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox587)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox588)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox392)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vision1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -1819,6 +1821,7 @@
             this.panel1.Controls.Add(this.pictureBox3);
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Controls.Add(this.vision1);
             this.panel1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.panel1.Location = new System.Drawing.Point(12, 12);
             this.panel1.Name = "panel1";
@@ -1920,6 +1923,7 @@
             this.pictureBox391.TabIndex = 396;
             this.pictureBox391.TabStop = false;
             this.pictureBox391.Tag = "kibble";
+            this.pictureBox391.Visible = false;
             // 
             // pictureBox389
             // 
@@ -1932,6 +1936,7 @@
             this.pictureBox389.TabIndex = 395;
             this.pictureBox389.TabStop = false;
             this.pictureBox389.Tag = "kibble";
+            this.pictureBox389.Visible = false;
             // 
             // pictureBox390
             // 
@@ -1944,6 +1949,7 @@
             this.pictureBox390.TabIndex = 394;
             this.pictureBox390.TabStop = false;
             this.pictureBox390.Tag = "kibble";
+            this.pictureBox390.Visible = false;
             // 
             // pictureBox387
             // 
@@ -1956,6 +1962,7 @@
             this.pictureBox387.TabIndex = 393;
             this.pictureBox387.TabStop = false;
             this.pictureBox387.Tag = "kibble";
+            this.pictureBox387.Visible = false;
             // 
             // pictureBox388
             // 
@@ -1968,6 +1975,7 @@
             this.pictureBox388.TabIndex = 392;
             this.pictureBox388.TabStop = false;
             this.pictureBox388.Tag = "kibble";
+            this.pictureBox388.Visible = false;
             // 
             // pictureBox386
             // 
@@ -1980,6 +1988,7 @@
             this.pictureBox386.TabIndex = 391;
             this.pictureBox386.TabStop = false;
             this.pictureBox386.Tag = "kibble";
+            this.pictureBox386.Visible = false;
             // 
             // pictureBox385
             // 
@@ -1992,6 +2001,7 @@
             this.pictureBox385.TabIndex = 390;
             this.pictureBox385.TabStop = false;
             this.pictureBox385.Tag = "kibble";
+            this.pictureBox385.Visible = false;
             // 
             // pictureBox384
             // 
@@ -2004,6 +2014,7 @@
             this.pictureBox384.TabIndex = 389;
             this.pictureBox384.TabStop = false;
             this.pictureBox384.Tag = "kibble";
+            this.pictureBox384.Visible = false;
             // 
             // pictureBox380
             // 
@@ -2016,6 +2027,7 @@
             this.pictureBox380.TabIndex = 388;
             this.pictureBox380.TabStop = false;
             this.pictureBox380.Tag = "kibble";
+            this.pictureBox380.Visible = false;
             // 
             // pictureBox381
             // 
@@ -2028,6 +2040,7 @@
             this.pictureBox381.TabIndex = 387;
             this.pictureBox381.TabStop = false;
             this.pictureBox381.Tag = "kibble";
+            this.pictureBox381.Visible = false;
             // 
             // pictureBox382
             // 
@@ -2040,6 +2053,7 @@
             this.pictureBox382.TabIndex = 386;
             this.pictureBox382.TabStop = false;
             this.pictureBox382.Tag = "kibble";
+            this.pictureBox382.Visible = false;
             // 
             // pictureBox383
             // 
@@ -2052,6 +2066,7 @@
             this.pictureBox383.TabIndex = 385;
             this.pictureBox383.TabStop = false;
             this.pictureBox383.Tag = "kibble";
+            this.pictureBox383.Visible = false;
             // 
             // pictureBox379
             // 
@@ -2064,6 +2079,7 @@
             this.pictureBox379.TabIndex = 384;
             this.pictureBox379.TabStop = false;
             this.pictureBox379.Tag = "kibble";
+            this.pictureBox379.Visible = false;
             // 
             // pictureBox378
             // 
@@ -2076,6 +2092,7 @@
             this.pictureBox378.TabIndex = 383;
             this.pictureBox378.TabStop = false;
             this.pictureBox378.Tag = "kibble";
+            this.pictureBox378.Visible = false;
             // 
             // pictureBox377
             // 
@@ -2088,6 +2105,7 @@
             this.pictureBox377.TabIndex = 382;
             this.pictureBox377.TabStop = false;
             this.pictureBox377.Tag = "kibble";
+            this.pictureBox377.Visible = false;
             // 
             // pictureBox374
             // 
@@ -2100,6 +2118,7 @@
             this.pictureBox374.TabIndex = 381;
             this.pictureBox374.TabStop = false;
             this.pictureBox374.Tag = "kibble";
+            this.pictureBox374.Visible = false;
             // 
             // pictureBox375
             // 
@@ -2112,6 +2131,7 @@
             this.pictureBox375.TabIndex = 380;
             this.pictureBox375.TabStop = false;
             this.pictureBox375.Tag = "kibble";
+            this.pictureBox375.Visible = false;
             // 
             // pictureBox376
             // 
@@ -2124,6 +2144,7 @@
             this.pictureBox376.TabIndex = 379;
             this.pictureBox376.TabStop = false;
             this.pictureBox376.Tag = "kibble";
+            this.pictureBox376.Visible = false;
             // 
             // pictureBox373
             // 
@@ -2136,6 +2157,7 @@
             this.pictureBox373.TabIndex = 378;
             this.pictureBox373.TabStop = false;
             this.pictureBox373.Tag = "kibble";
+            this.pictureBox373.Visible = false;
             // 
             // pictureBox372
             // 
@@ -2148,6 +2170,7 @@
             this.pictureBox372.TabIndex = 377;
             this.pictureBox372.TabStop = false;
             this.pictureBox372.Tag = "kibble";
+            this.pictureBox372.Visible = false;
             // 
             // pictureBox371
             // 
@@ -2160,6 +2183,7 @@
             this.pictureBox371.TabIndex = 376;
             this.pictureBox371.TabStop = false;
             this.pictureBox371.Tag = "kibble";
+            this.pictureBox371.Visible = false;
             // 
             // pictureBox370
             // 
@@ -2172,6 +2196,7 @@
             this.pictureBox370.TabIndex = 375;
             this.pictureBox370.TabStop = false;
             this.pictureBox370.Tag = "kibble";
+            this.pictureBox370.Visible = false;
             // 
             // pictureBox369
             // 
@@ -2184,6 +2209,7 @@
             this.pictureBox369.TabIndex = 374;
             this.pictureBox369.TabStop = false;
             this.pictureBox369.Tag = "kibble";
+            this.pictureBox369.Visible = false;
             // 
             // pictureBox366
             // 
@@ -2196,6 +2222,7 @@
             this.pictureBox366.TabIndex = 373;
             this.pictureBox366.TabStop = false;
             this.pictureBox366.Tag = "kibble";
+            this.pictureBox366.Visible = false;
             // 
             // pictureBox367
             // 
@@ -2208,6 +2235,7 @@
             this.pictureBox367.TabIndex = 372;
             this.pictureBox367.TabStop = false;
             this.pictureBox367.Tag = "kibble";
+            this.pictureBox367.Visible = false;
             // 
             // pictureBox368
             // 
@@ -2220,6 +2248,7 @@
             this.pictureBox368.TabIndex = 371;
             this.pictureBox368.TabStop = false;
             this.pictureBox368.Tag = "kibble";
+            this.pictureBox368.Visible = false;
             // 
             // pictureBox363
             // 
@@ -2232,6 +2261,7 @@
             this.pictureBox363.TabIndex = 370;
             this.pictureBox363.TabStop = false;
             this.pictureBox363.Tag = "kibble";
+            this.pictureBox363.Visible = false;
             // 
             // pictureBox364
             // 
@@ -2244,6 +2274,7 @@
             this.pictureBox364.TabIndex = 369;
             this.pictureBox364.TabStop = false;
             this.pictureBox364.Tag = "kibble";
+            this.pictureBox364.Visible = false;
             // 
             // pictureBox365
             // 
@@ -2256,6 +2287,7 @@
             this.pictureBox365.TabIndex = 368;
             this.pictureBox365.TabStop = false;
             this.pictureBox365.Tag = "kibble";
+            this.pictureBox365.Visible = false;
             // 
             // pictureBox360
             // 
@@ -2268,6 +2300,7 @@
             this.pictureBox360.TabIndex = 367;
             this.pictureBox360.TabStop = false;
             this.pictureBox360.Tag = "kibble";
+            this.pictureBox360.Visible = false;
             // 
             // pictureBox361
             // 
@@ -2280,6 +2313,7 @@
             this.pictureBox361.TabIndex = 366;
             this.pictureBox361.TabStop = false;
             this.pictureBox361.Tag = "kibble";
+            this.pictureBox361.Visible = false;
             // 
             // pictureBox362
             // 
@@ -2292,6 +2326,7 @@
             this.pictureBox362.TabIndex = 365;
             this.pictureBox362.TabStop = false;
             this.pictureBox362.Tag = "kibble";
+            this.pictureBox362.Visible = false;
             // 
             // pictureBox356
             // 
@@ -2304,6 +2339,7 @@
             this.pictureBox356.TabIndex = 364;
             this.pictureBox356.TabStop = false;
             this.pictureBox356.Tag = "kibble";
+            this.pictureBox356.Visible = false;
             // 
             // pictureBox357
             // 
@@ -2316,6 +2352,7 @@
             this.pictureBox357.TabIndex = 363;
             this.pictureBox357.TabStop = false;
             this.pictureBox357.Tag = "kibble";
+            this.pictureBox357.Visible = false;
             // 
             // pictureBox358
             // 
@@ -2328,6 +2365,7 @@
             this.pictureBox358.TabIndex = 362;
             this.pictureBox358.TabStop = false;
             this.pictureBox358.Tag = "kibble";
+            this.pictureBox358.Visible = false;
             // 
             // pictureBox359
             // 
@@ -2340,6 +2378,7 @@
             this.pictureBox359.TabIndex = 361;
             this.pictureBox359.TabStop = false;
             this.pictureBox359.Tag = "kibble";
+            this.pictureBox359.Visible = false;
             // 
             // pictureBox352
             // 
@@ -2352,6 +2391,7 @@
             this.pictureBox352.TabIndex = 360;
             this.pictureBox352.TabStop = false;
             this.pictureBox352.Tag = "kibble";
+            this.pictureBox352.Visible = false;
             // 
             // pictureBox353
             // 
@@ -2364,6 +2404,7 @@
             this.pictureBox353.TabIndex = 359;
             this.pictureBox353.TabStop = false;
             this.pictureBox353.Tag = "kibble";
+            this.pictureBox353.Visible = false;
             // 
             // pictureBox354
             // 
@@ -2376,6 +2417,7 @@
             this.pictureBox354.TabIndex = 358;
             this.pictureBox354.TabStop = false;
             this.pictureBox354.Tag = "kibble";
+            this.pictureBox354.Visible = false;
             // 
             // pictureBox355
             // 
@@ -2388,6 +2430,7 @@
             this.pictureBox355.TabIndex = 357;
             this.pictureBox355.TabStop = false;
             this.pictureBox355.Tag = "kibble";
+            this.pictureBox355.Visible = false;
             // 
             // pictureBox347
             // 
@@ -2400,6 +2443,7 @@
             this.pictureBox347.TabIndex = 356;
             this.pictureBox347.TabStop = false;
             this.pictureBox347.Tag = "kibble";
+            this.pictureBox347.Visible = false;
             // 
             // pictureBox348
             // 
@@ -2412,6 +2456,7 @@
             this.pictureBox348.TabIndex = 355;
             this.pictureBox348.TabStop = false;
             this.pictureBox348.Tag = "kibble";
+            this.pictureBox348.Visible = false;
             // 
             // pictureBox349
             // 
@@ -2424,6 +2469,7 @@
             this.pictureBox349.TabIndex = 354;
             this.pictureBox349.TabStop = false;
             this.pictureBox349.Tag = "kibble";
+            this.pictureBox349.Visible = false;
             // 
             // pictureBox350
             // 
@@ -2436,6 +2482,7 @@
             this.pictureBox350.TabIndex = 353;
             this.pictureBox350.TabStop = false;
             this.pictureBox350.Tag = "kibble";
+            this.pictureBox350.Visible = false;
             // 
             // pictureBox351
             // 
@@ -2448,6 +2495,7 @@
             this.pictureBox351.TabIndex = 352;
             this.pictureBox351.TabStop = false;
             this.pictureBox351.Tag = "kibble";
+            this.pictureBox351.Visible = false;
             // 
             // pictureBox343
             // 
@@ -2460,6 +2508,7 @@
             this.pictureBox343.TabIndex = 351;
             this.pictureBox343.TabStop = false;
             this.pictureBox343.Tag = "kibble";
+            this.pictureBox343.Visible = false;
             // 
             // pictureBox344
             // 
@@ -2472,6 +2521,7 @@
             this.pictureBox344.TabIndex = 350;
             this.pictureBox344.TabStop = false;
             this.pictureBox344.Tag = "kibble";
+            this.pictureBox344.Visible = false;
             // 
             // pictureBox345
             // 
@@ -2484,6 +2534,7 @@
             this.pictureBox345.TabIndex = 349;
             this.pictureBox345.TabStop = false;
             this.pictureBox345.Tag = "kibble";
+            this.pictureBox345.Visible = false;
             // 
             // pictureBox346
             // 
@@ -2496,6 +2547,7 @@
             this.pictureBox346.TabIndex = 348;
             this.pictureBox346.TabStop = false;
             this.pictureBox346.Tag = "kibble";
+            this.pictureBox346.Visible = false;
             // 
             // pictureBox338
             // 
@@ -2508,6 +2560,7 @@
             this.pictureBox338.TabIndex = 347;
             this.pictureBox338.TabStop = false;
             this.pictureBox338.Tag = "kibble";
+            this.pictureBox338.Visible = false;
             // 
             // pictureBox339
             // 
@@ -2520,6 +2573,7 @@
             this.pictureBox339.TabIndex = 346;
             this.pictureBox339.TabStop = false;
             this.pictureBox339.Tag = "kibble";
+            this.pictureBox339.Visible = false;
             // 
             // pictureBox340
             // 
@@ -2532,6 +2586,7 @@
             this.pictureBox340.TabIndex = 345;
             this.pictureBox340.TabStop = false;
             this.pictureBox340.Tag = "kibble";
+            this.pictureBox340.Visible = false;
             // 
             // pictureBox341
             // 
@@ -2544,6 +2599,7 @@
             this.pictureBox341.TabIndex = 344;
             this.pictureBox341.TabStop = false;
             this.pictureBox341.Tag = "kibble";
+            this.pictureBox341.Visible = false;
             // 
             // pictureBox342
             // 
@@ -2556,6 +2612,7 @@
             this.pictureBox342.TabIndex = 343;
             this.pictureBox342.TabStop = false;
             this.pictureBox342.Tag = "kibble";
+            this.pictureBox342.Visible = false;
             // 
             // pictureBox333
             // 
@@ -2568,6 +2625,7 @@
             this.pictureBox333.TabIndex = 342;
             this.pictureBox333.TabStop = false;
             this.pictureBox333.Tag = "kibble";
+            this.pictureBox333.Visible = false;
             // 
             // pictureBox334
             // 
@@ -2580,6 +2638,7 @@
             this.pictureBox334.TabIndex = 341;
             this.pictureBox334.TabStop = false;
             this.pictureBox334.Tag = "kibble";
+            this.pictureBox334.Visible = false;
             // 
             // pictureBox335
             // 
@@ -2592,6 +2651,7 @@
             this.pictureBox335.TabIndex = 340;
             this.pictureBox335.TabStop = false;
             this.pictureBox335.Tag = "kibble";
+            this.pictureBox335.Visible = false;
             // 
             // pictureBox336
             // 
@@ -2604,6 +2664,7 @@
             this.pictureBox336.TabIndex = 339;
             this.pictureBox336.TabStop = false;
             this.pictureBox336.Tag = "kibble";
+            this.pictureBox336.Visible = false;
             // 
             // pictureBox337
             // 
@@ -2616,6 +2677,7 @@
             this.pictureBox337.TabIndex = 338;
             this.pictureBox337.TabStop = false;
             this.pictureBox337.Tag = "kibble";
+            this.pictureBox337.Visible = false;
             // 
             // pictureBox317
             // 
@@ -2628,6 +2690,7 @@
             this.pictureBox317.TabIndex = 337;
             this.pictureBox317.TabStop = false;
             this.pictureBox317.Tag = "kibble";
+            this.pictureBox317.Visible = false;
             // 
             // pictureBox318
             // 
@@ -2640,6 +2703,7 @@
             this.pictureBox318.TabIndex = 336;
             this.pictureBox318.TabStop = false;
             this.pictureBox318.Tag = "kibble";
+            this.pictureBox318.Visible = false;
             // 
             // pictureBox319
             // 
@@ -2652,6 +2716,7 @@
             this.pictureBox319.TabIndex = 335;
             this.pictureBox319.TabStop = false;
             this.pictureBox319.Tag = "kibble";
+            this.pictureBox319.Visible = false;
             // 
             // pictureBox320
             // 
@@ -2664,6 +2729,7 @@
             this.pictureBox320.TabIndex = 334;
             this.pictureBox320.TabStop = false;
             this.pictureBox320.Tag = "kibble";
+            this.pictureBox320.Visible = false;
             // 
             // pictureBox321
             // 
@@ -2676,6 +2742,7 @@
             this.pictureBox321.TabIndex = 333;
             this.pictureBox321.TabStop = false;
             this.pictureBox321.Tag = "kibble";
+            this.pictureBox321.Visible = false;
             // 
             // pictureBox322
             // 
@@ -2688,6 +2755,7 @@
             this.pictureBox322.TabIndex = 332;
             this.pictureBox322.TabStop = false;
             this.pictureBox322.Tag = "kibble";
+            this.pictureBox322.Visible = false;
             // 
             // pictureBox323
             // 
@@ -2700,6 +2768,7 @@
             this.pictureBox323.TabIndex = 331;
             this.pictureBox323.TabStop = false;
             this.pictureBox323.Tag = "kibble";
+            this.pictureBox323.Visible = false;
             // 
             // pictureBox324
             // 
@@ -2712,6 +2781,7 @@
             this.pictureBox324.TabIndex = 330;
             this.pictureBox324.TabStop = false;
             this.pictureBox324.Tag = "kibble";
+            this.pictureBox324.Visible = false;
             // 
             // pictureBox325
             // 
@@ -2724,6 +2794,7 @@
             this.pictureBox325.TabIndex = 329;
             this.pictureBox325.TabStop = false;
             this.pictureBox325.Tag = "kibble";
+            this.pictureBox325.Visible = false;
             // 
             // pictureBox326
             // 
@@ -2736,6 +2807,7 @@
             this.pictureBox326.TabIndex = 328;
             this.pictureBox326.TabStop = false;
             this.pictureBox326.Tag = "kibble";
+            this.pictureBox326.Visible = false;
             // 
             // pictureBox327
             // 
@@ -2748,6 +2820,7 @@
             this.pictureBox327.TabIndex = 327;
             this.pictureBox327.TabStop = false;
             this.pictureBox327.Tag = "kibble";
+            this.pictureBox327.Visible = false;
             // 
             // pictureBox328
             // 
@@ -2760,6 +2833,7 @@
             this.pictureBox328.TabIndex = 326;
             this.pictureBox328.TabStop = false;
             this.pictureBox328.Tag = "kibble";
+            this.pictureBox328.Visible = false;
             // 
             // pictureBox329
             // 
@@ -2772,6 +2846,7 @@
             this.pictureBox329.TabIndex = 325;
             this.pictureBox329.TabStop = false;
             this.pictureBox329.Tag = "kibble";
+            this.pictureBox329.Visible = false;
             // 
             // pictureBox330
             // 
@@ -2784,6 +2859,7 @@
             this.pictureBox330.TabIndex = 324;
             this.pictureBox330.TabStop = false;
             this.pictureBox330.Tag = "kibble";
+            this.pictureBox330.Visible = false;
             // 
             // pictureBox331
             // 
@@ -2796,6 +2872,7 @@
             this.pictureBox331.TabIndex = 323;
             this.pictureBox331.TabStop = false;
             this.pictureBox331.Tag = "kibble";
+            this.pictureBox331.Visible = false;
             // 
             // pictureBox332
             // 
@@ -2808,6 +2885,7 @@
             this.pictureBox332.TabIndex = 322;
             this.pictureBox332.TabStop = false;
             this.pictureBox332.Tag = "kibble";
+            this.pictureBox332.Visible = false;
             // 
             // pictureBox316
             // 
@@ -2820,6 +2898,7 @@
             this.pictureBox316.TabIndex = 321;
             this.pictureBox316.TabStop = false;
             this.pictureBox316.Tag = "kibble";
+            this.pictureBox316.Visible = false;
             // 
             // pictureBox314
             // 
@@ -2832,6 +2911,7 @@
             this.pictureBox314.TabIndex = 320;
             this.pictureBox314.TabStop = false;
             this.pictureBox314.Tag = "kibble";
+            this.pictureBox314.Visible = false;
             // 
             // pictureBox315
             // 
@@ -2844,6 +2924,7 @@
             this.pictureBox315.TabIndex = 319;
             this.pictureBox315.TabStop = false;
             this.pictureBox315.Tag = "kibble";
+            this.pictureBox315.Visible = false;
             // 
             // pictureBox311
             // 
@@ -2856,6 +2937,7 @@
             this.pictureBox311.TabIndex = 318;
             this.pictureBox311.TabStop = false;
             this.pictureBox311.Tag = "kibble";
+            this.pictureBox311.Visible = false;
             // 
             // pictureBox312
             // 
@@ -2868,6 +2950,7 @@
             this.pictureBox312.TabIndex = 317;
             this.pictureBox312.TabStop = false;
             this.pictureBox312.Tag = "kibble";
+            this.pictureBox312.Visible = false;
             // 
             // pictureBox313
             // 
@@ -2880,6 +2963,7 @@
             this.pictureBox313.TabIndex = 316;
             this.pictureBox313.TabStop = false;
             this.pictureBox313.Tag = "kibble";
+            this.pictureBox313.Visible = false;
             // 
             // pictureBox307
             // 
@@ -2892,6 +2976,7 @@
             this.pictureBox307.TabIndex = 315;
             this.pictureBox307.TabStop = false;
             this.pictureBox307.Tag = "kibble";
+            this.pictureBox307.Visible = false;
             // 
             // pictureBox308
             // 
@@ -2904,6 +2989,7 @@
             this.pictureBox308.TabIndex = 314;
             this.pictureBox308.TabStop = false;
             this.pictureBox308.Tag = "kibble";
+            this.pictureBox308.Visible = false;
             // 
             // pictureBox309
             // 
@@ -2916,6 +3002,7 @@
             this.pictureBox309.TabIndex = 313;
             this.pictureBox309.TabStop = false;
             this.pictureBox309.Tag = "kibble";
+            this.pictureBox309.Visible = false;
             // 
             // pictureBox310
             // 
@@ -2928,6 +3015,7 @@
             this.pictureBox310.TabIndex = 312;
             this.pictureBox310.TabStop = false;
             this.pictureBox310.Tag = "kibble";
+            this.pictureBox310.Visible = false;
             // 
             // pictureBox306
             // 
@@ -2940,6 +3028,7 @@
             this.pictureBox306.TabIndex = 311;
             this.pictureBox306.TabStop = false;
             this.pictureBox306.Tag = "kibble";
+            this.pictureBox306.Visible = false;
             // 
             // pictureBox305
             // 
@@ -2952,6 +3041,7 @@
             this.pictureBox305.TabIndex = 310;
             this.pictureBox305.TabStop = false;
             this.pictureBox305.Tag = "kibble";
+            this.pictureBox305.Visible = false;
             // 
             // pictureBox301
             // 
@@ -2964,6 +3054,7 @@
             this.pictureBox301.TabIndex = 309;
             this.pictureBox301.TabStop = false;
             this.pictureBox301.Tag = "kibble";
+            this.pictureBox301.Visible = false;
             // 
             // pictureBox302
             // 
@@ -2976,6 +3067,7 @@
             this.pictureBox302.TabIndex = 308;
             this.pictureBox302.TabStop = false;
             this.pictureBox302.Tag = "kibble";
+            this.pictureBox302.Visible = false;
             // 
             // pictureBox303
             // 
@@ -2988,6 +3080,7 @@
             this.pictureBox303.TabIndex = 307;
             this.pictureBox303.TabStop = false;
             this.pictureBox303.Tag = "kibble";
+            this.pictureBox303.Visible = false;
             // 
             // pictureBox304
             // 
@@ -3000,6 +3093,7 @@
             this.pictureBox304.TabIndex = 306;
             this.pictureBox304.TabStop = false;
             this.pictureBox304.Tag = "kibble";
+            this.pictureBox304.Visible = false;
             // 
             // pictureBox298
             // 
@@ -3012,6 +3106,7 @@
             this.pictureBox298.TabIndex = 305;
             this.pictureBox298.TabStop = false;
             this.pictureBox298.Tag = "kibble";
+            this.pictureBox298.Visible = false;
             // 
             // pictureBox299
             // 
@@ -3024,6 +3119,7 @@
             this.pictureBox299.TabIndex = 304;
             this.pictureBox299.TabStop = false;
             this.pictureBox299.Tag = "kibble";
+            this.pictureBox299.Visible = false;
             // 
             // pictureBox300
             // 
@@ -3036,6 +3132,7 @@
             this.pictureBox300.TabIndex = 303;
             this.pictureBox300.TabStop = false;
             this.pictureBox300.Tag = "kibble";
+            this.pictureBox300.Visible = false;
             // 
             // pictureBox294
             // 
@@ -3048,6 +3145,7 @@
             this.pictureBox294.TabIndex = 302;
             this.pictureBox294.TabStop = false;
             this.pictureBox294.Tag = "kibble";
+            this.pictureBox294.Visible = false;
             // 
             // pictureBox295
             // 
@@ -3060,6 +3158,7 @@
             this.pictureBox295.TabIndex = 301;
             this.pictureBox295.TabStop = false;
             this.pictureBox295.Tag = "kibble";
+            this.pictureBox295.Visible = false;
             // 
             // pictureBox296
             // 
@@ -3072,6 +3171,7 @@
             this.pictureBox296.TabIndex = 300;
             this.pictureBox296.TabStop = false;
             this.pictureBox296.Tag = "kibble";
+            this.pictureBox296.Visible = false;
             // 
             // pictureBox297
             // 
@@ -3084,6 +3184,7 @@
             this.pictureBox297.TabIndex = 299;
             this.pictureBox297.TabStop = false;
             this.pictureBox297.Tag = "kibble";
+            this.pictureBox297.Visible = false;
             // 
             // pictureBox288
             // 
@@ -3096,6 +3197,7 @@
             this.pictureBox288.TabIndex = 298;
             this.pictureBox288.TabStop = false;
             this.pictureBox288.Tag = "kibble";
+            this.pictureBox288.Visible = false;
             // 
             // pictureBox289
             // 
@@ -3108,6 +3210,7 @@
             this.pictureBox289.TabIndex = 297;
             this.pictureBox289.TabStop = false;
             this.pictureBox289.Tag = "kibble";
+            this.pictureBox289.Visible = false;
             // 
             // pictureBox290
             // 
@@ -3120,6 +3223,7 @@
             this.pictureBox290.TabIndex = 296;
             this.pictureBox290.TabStop = false;
             this.pictureBox290.Tag = "kibble";
+            this.pictureBox290.Visible = false;
             // 
             // pictureBox291
             // 
@@ -3132,6 +3236,7 @@
             this.pictureBox291.TabIndex = 295;
             this.pictureBox291.TabStop = false;
             this.pictureBox291.Tag = "kibble";
+            this.pictureBox291.Visible = false;
             // 
             // pictureBox292
             // 
@@ -3144,6 +3249,7 @@
             this.pictureBox292.TabIndex = 294;
             this.pictureBox292.TabStop = false;
             this.pictureBox292.Tag = "kibble";
+            this.pictureBox292.Visible = false;
             // 
             // pictureBox293
             // 
@@ -3156,6 +3262,7 @@
             this.pictureBox293.TabIndex = 293;
             this.pictureBox293.TabStop = false;
             this.pictureBox293.Tag = "kibble";
+            this.pictureBox293.Visible = false;
             // 
             // pictureBox282
             // 
@@ -3168,6 +3275,7 @@
             this.pictureBox282.TabIndex = 292;
             this.pictureBox282.TabStop = false;
             this.pictureBox282.Tag = "kibble";
+            this.pictureBox282.Visible = false;
             // 
             // pictureBox283
             // 
@@ -3180,6 +3288,7 @@
             this.pictureBox283.TabIndex = 291;
             this.pictureBox283.TabStop = false;
             this.pictureBox283.Tag = "kibble";
+            this.pictureBox283.Visible = false;
             // 
             // pictureBox284
             // 
@@ -3192,6 +3301,7 @@
             this.pictureBox284.TabIndex = 290;
             this.pictureBox284.TabStop = false;
             this.pictureBox284.Tag = "kibble";
+            this.pictureBox284.Visible = false;
             // 
             // pictureBox285
             // 
@@ -3204,6 +3314,7 @@
             this.pictureBox285.TabIndex = 289;
             this.pictureBox285.TabStop = false;
             this.pictureBox285.Tag = "kibble";
+            this.pictureBox285.Visible = false;
             // 
             // pictureBox286
             // 
@@ -3216,6 +3327,7 @@
             this.pictureBox286.TabIndex = 288;
             this.pictureBox286.TabStop = false;
             this.pictureBox286.Tag = "kibble";
+            this.pictureBox286.Visible = false;
             // 
             // pictureBox287
             // 
@@ -3228,6 +3340,7 @@
             this.pictureBox287.TabIndex = 287;
             this.pictureBox287.TabStop = false;
             this.pictureBox287.Tag = "kibble";
+            this.pictureBox287.Visible = false;
             // 
             // pictureBox272
             // 
@@ -3240,6 +3353,7 @@
             this.pictureBox272.TabIndex = 286;
             this.pictureBox272.TabStop = false;
             this.pictureBox272.Tag = "kibble";
+            this.pictureBox272.Visible = false;
             // 
             // pictureBox277
             // 
@@ -3252,6 +3366,7 @@
             this.pictureBox277.TabIndex = 285;
             this.pictureBox277.TabStop = false;
             this.pictureBox277.Tag = "kibble";
+            this.pictureBox277.Visible = false;
             // 
             // pictureBox278
             // 
@@ -3264,6 +3379,7 @@
             this.pictureBox278.TabIndex = 284;
             this.pictureBox278.TabStop = false;
             this.pictureBox278.Tag = "kibble";
+            this.pictureBox278.Visible = false;
             // 
             // pictureBox279
             // 
@@ -3276,6 +3392,7 @@
             this.pictureBox279.TabIndex = 283;
             this.pictureBox279.TabStop = false;
             this.pictureBox279.Tag = "kibble";
+            this.pictureBox279.Visible = false;
             // 
             // pictureBox280
             // 
@@ -3288,6 +3405,7 @@
             this.pictureBox280.TabIndex = 282;
             this.pictureBox280.TabStop = false;
             this.pictureBox280.Tag = "kibble";
+            this.pictureBox280.Visible = false;
             // 
             // pictureBox281
             // 
@@ -3300,6 +3418,7 @@
             this.pictureBox281.TabIndex = 281;
             this.pictureBox281.TabStop = false;
             this.pictureBox281.Tag = "kibble";
+            this.pictureBox281.Visible = false;
             // 
             // pictureBox270
             // 
@@ -3312,6 +3431,7 @@
             this.pictureBox270.TabIndex = 280;
             this.pictureBox270.TabStop = false;
             this.pictureBox270.Tag = "kibble";
+            this.pictureBox270.Visible = false;
             // 
             // pictureBox271
             // 
@@ -3324,6 +3444,7 @@
             this.pictureBox271.TabIndex = 279;
             this.pictureBox271.TabStop = false;
             this.pictureBox271.Tag = "kibble";
+            this.pictureBox271.Visible = false;
             // 
             // pictureBox273
             // 
@@ -3336,6 +3457,7 @@
             this.pictureBox273.TabIndex = 277;
             this.pictureBox273.TabStop = false;
             this.pictureBox273.Tag = "kibble";
+            this.pictureBox273.Visible = false;
             // 
             // pictureBox274
             // 
@@ -3348,6 +3470,7 @@
             this.pictureBox274.TabIndex = 276;
             this.pictureBox274.TabStop = false;
             this.pictureBox274.Tag = "kibble";
+            this.pictureBox274.Visible = false;
             // 
             // pictureBox275
             // 
@@ -3360,6 +3483,7 @@
             this.pictureBox275.TabIndex = 275;
             this.pictureBox275.TabStop = false;
             this.pictureBox275.Tag = "kibble";
+            this.pictureBox275.Visible = false;
             // 
             // pictureBox276
             // 
@@ -3372,6 +3496,7 @@
             this.pictureBox276.TabIndex = 274;
             this.pictureBox276.TabStop = false;
             this.pictureBox276.Tag = "kibble";
+            this.pictureBox276.Visible = false;
             // 
             // pictureBox254
             // 
@@ -3384,6 +3509,7 @@
             this.pictureBox254.TabIndex = 273;
             this.pictureBox254.TabStop = false;
             this.pictureBox254.Tag = "kibble";
+            this.pictureBox254.Visible = false;
             // 
             // pictureBox255
             // 
@@ -3396,6 +3522,7 @@
             this.pictureBox255.TabIndex = 272;
             this.pictureBox255.TabStop = false;
             this.pictureBox255.Tag = "kibble";
+            this.pictureBox255.Visible = false;
             // 
             // pictureBox256
             // 
@@ -3408,6 +3535,7 @@
             this.pictureBox256.TabIndex = 271;
             this.pictureBox256.TabStop = false;
             this.pictureBox256.Tag = "kibble";
+            this.pictureBox256.Visible = false;
             // 
             // pictureBox257
             // 
@@ -3420,6 +3548,7 @@
             this.pictureBox257.TabIndex = 270;
             this.pictureBox257.TabStop = false;
             this.pictureBox257.Tag = "kibble";
+            this.pictureBox257.Visible = false;
             // 
             // pictureBox258
             // 
@@ -3432,6 +3561,7 @@
             this.pictureBox258.TabIndex = 269;
             this.pictureBox258.TabStop = false;
             this.pictureBox258.Tag = "kibble";
+            this.pictureBox258.Visible = false;
             // 
             // pictureBox259
             // 
@@ -3444,6 +3574,7 @@
             this.pictureBox259.TabIndex = 268;
             this.pictureBox259.TabStop = false;
             this.pictureBox259.Tag = "kibble";
+            this.pictureBox259.Visible = false;
             // 
             // pictureBox260
             // 
@@ -3456,6 +3587,7 @@
             this.pictureBox260.TabIndex = 267;
             this.pictureBox260.TabStop = false;
             this.pictureBox260.Tag = "kibble";
+            this.pictureBox260.Visible = false;
             // 
             // pictureBox261
             // 
@@ -3468,6 +3600,7 @@
             this.pictureBox261.TabIndex = 266;
             this.pictureBox261.TabStop = false;
             this.pictureBox261.Tag = "kibble";
+            this.pictureBox261.Visible = false;
             // 
             // pictureBox262
             // 
@@ -3480,6 +3613,7 @@
             this.pictureBox262.TabIndex = 265;
             this.pictureBox262.TabStop = false;
             this.pictureBox262.Tag = "kibble";
+            this.pictureBox262.Visible = false;
             // 
             // pictureBox263
             // 
@@ -3492,6 +3626,7 @@
             this.pictureBox263.TabIndex = 264;
             this.pictureBox263.TabStop = false;
             this.pictureBox263.Tag = "kibble";
+            this.pictureBox263.Visible = false;
             // 
             // pictureBox264
             // 
@@ -3504,6 +3639,7 @@
             this.pictureBox264.TabIndex = 263;
             this.pictureBox264.TabStop = false;
             this.pictureBox264.Tag = "kibble";
+            this.pictureBox264.Visible = false;
             // 
             // pictureBox265
             // 
@@ -3516,6 +3652,7 @@
             this.pictureBox265.TabIndex = 262;
             this.pictureBox265.TabStop = false;
             this.pictureBox265.Tag = "kibble";
+            this.pictureBox265.Visible = false;
             // 
             // pictureBox266
             // 
@@ -3528,6 +3665,7 @@
             this.pictureBox266.TabIndex = 261;
             this.pictureBox266.TabStop = false;
             this.pictureBox266.Tag = "kibble";
+            this.pictureBox266.Visible = false;
             // 
             // pictureBox267
             // 
@@ -3540,6 +3678,7 @@
             this.pictureBox267.TabIndex = 260;
             this.pictureBox267.TabStop = false;
             this.pictureBox267.Tag = "kibble";
+            this.pictureBox267.Visible = false;
             // 
             // pictureBox268
             // 
@@ -3552,6 +3691,7 @@
             this.pictureBox268.TabIndex = 259;
             this.pictureBox268.TabStop = false;
             this.pictureBox268.Tag = "kibble";
+            this.pictureBox268.Visible = false;
             // 
             // pictureBox237
             // 
@@ -3564,6 +3704,7 @@
             this.pictureBox237.TabIndex = 257;
             this.pictureBox237.TabStop = false;
             this.pictureBox237.Tag = "kibble";
+            this.pictureBox237.Visible = false;
             // 
             // pictureBox238
             // 
@@ -3576,6 +3717,7 @@
             this.pictureBox238.TabIndex = 256;
             this.pictureBox238.TabStop = false;
             this.pictureBox238.Tag = "kibble";
+            this.pictureBox238.Visible = false;
             // 
             // pictureBox239
             // 
@@ -3588,6 +3730,7 @@
             this.pictureBox239.TabIndex = 255;
             this.pictureBox239.TabStop = false;
             this.pictureBox239.Tag = "kibble";
+            this.pictureBox239.Visible = false;
             // 
             // pictureBox240
             // 
@@ -3600,6 +3743,7 @@
             this.pictureBox240.TabIndex = 254;
             this.pictureBox240.TabStop = false;
             this.pictureBox240.Tag = "kibble";
+            this.pictureBox240.Visible = false;
             // 
             // pictureBox241
             // 
@@ -3612,6 +3756,7 @@
             this.pictureBox241.TabIndex = 253;
             this.pictureBox241.TabStop = false;
             this.pictureBox241.Tag = "kibble";
+            this.pictureBox241.Visible = false;
             // 
             // pictureBox242
             // 
@@ -3624,6 +3769,7 @@
             this.pictureBox242.TabIndex = 252;
             this.pictureBox242.TabStop = false;
             this.pictureBox242.Tag = "kibble";
+            this.pictureBox242.Visible = false;
             // 
             // pictureBox243
             // 
@@ -3636,6 +3782,7 @@
             this.pictureBox243.TabIndex = 251;
             this.pictureBox243.TabStop = false;
             this.pictureBox243.Tag = "kibble";
+            this.pictureBox243.Visible = false;
             // 
             // pictureBox244
             // 
@@ -3648,6 +3795,7 @@
             this.pictureBox244.TabIndex = 250;
             this.pictureBox244.TabStop = false;
             this.pictureBox244.Tag = "kibble";
+            this.pictureBox244.Visible = false;
             // 
             // pictureBox245
             // 
@@ -3660,6 +3808,7 @@
             this.pictureBox245.TabIndex = 249;
             this.pictureBox245.TabStop = false;
             this.pictureBox245.Tag = "kibble";
+            this.pictureBox245.Visible = false;
             // 
             // pictureBox246
             // 
@@ -3672,6 +3821,7 @@
             this.pictureBox246.TabIndex = 248;
             this.pictureBox246.TabStop = false;
             this.pictureBox246.Tag = "kibble";
+            this.pictureBox246.Visible = false;
             // 
             // pictureBox247
             // 
@@ -3684,6 +3834,7 @@
             this.pictureBox247.TabIndex = 247;
             this.pictureBox247.TabStop = false;
             this.pictureBox247.Tag = "kibble";
+            this.pictureBox247.Visible = false;
             // 
             // pictureBox248
             // 
@@ -3696,6 +3847,7 @@
             this.pictureBox248.TabIndex = 246;
             this.pictureBox248.TabStop = false;
             this.pictureBox248.Tag = "kibble";
+            this.pictureBox248.Visible = false;
             // 
             // pictureBox249
             // 
@@ -3708,6 +3860,7 @@
             this.pictureBox249.TabIndex = 245;
             this.pictureBox249.TabStop = false;
             this.pictureBox249.Tag = "kibble";
+            this.pictureBox249.Visible = false;
             // 
             // pictureBox250
             // 
@@ -3720,6 +3873,7 @@
             this.pictureBox250.TabIndex = 244;
             this.pictureBox250.TabStop = false;
             this.pictureBox250.Tag = "kibble";
+            this.pictureBox250.Visible = false;
             // 
             // pictureBox251
             // 
@@ -3732,6 +3886,7 @@
             this.pictureBox251.TabIndex = 243;
             this.pictureBox251.TabStop = false;
             this.pictureBox251.Tag = "kibble";
+            this.pictureBox251.Visible = false;
             // 
             // pictureBox252
             // 
@@ -3744,6 +3899,7 @@
             this.pictureBox252.TabIndex = 242;
             this.pictureBox252.TabStop = false;
             this.pictureBox252.Tag = "kibble";
+            this.pictureBox252.Visible = false;
             // 
             // pictureBox253
             // 
@@ -3756,6 +3912,7 @@
             this.pictureBox253.TabIndex = 241;
             this.pictureBox253.TabStop = false;
             this.pictureBox253.Tag = "kibble";
+            this.pictureBox253.Visible = false;
             // 
             // pictureBox220
             // 
@@ -3768,6 +3925,7 @@
             this.pictureBox220.TabIndex = 240;
             this.pictureBox220.TabStop = false;
             this.pictureBox220.Tag = "kibble";
+            this.pictureBox220.Visible = false;
             // 
             // pictureBox221
             // 
@@ -3780,6 +3938,7 @@
             this.pictureBox221.TabIndex = 239;
             this.pictureBox221.TabStop = false;
             this.pictureBox221.Tag = "kibble";
+            this.pictureBox221.Visible = false;
             // 
             // pictureBox222
             // 
@@ -3792,6 +3951,7 @@
             this.pictureBox222.TabIndex = 238;
             this.pictureBox222.TabStop = false;
             this.pictureBox222.Tag = "kibble";
+            this.pictureBox222.Visible = false;
             // 
             // pictureBox223
             // 
@@ -3804,6 +3964,7 @@
             this.pictureBox223.TabIndex = 237;
             this.pictureBox223.TabStop = false;
             this.pictureBox223.Tag = "kibble";
+            this.pictureBox223.Visible = false;
             // 
             // pictureBox224
             // 
@@ -3816,6 +3977,7 @@
             this.pictureBox224.TabIndex = 236;
             this.pictureBox224.TabStop = false;
             this.pictureBox224.Tag = "kibble";
+            this.pictureBox224.Visible = false;
             // 
             // pictureBox225
             // 
@@ -3828,6 +3990,7 @@
             this.pictureBox225.TabIndex = 235;
             this.pictureBox225.TabStop = false;
             this.pictureBox225.Tag = "kibble";
+            this.pictureBox225.Visible = false;
             // 
             // pictureBox226
             // 
@@ -3840,6 +4003,7 @@
             this.pictureBox226.TabIndex = 234;
             this.pictureBox226.TabStop = false;
             this.pictureBox226.Tag = "kibble";
+            this.pictureBox226.Visible = false;
             // 
             // pictureBox227
             // 
@@ -3852,6 +4016,7 @@
             this.pictureBox227.TabIndex = 233;
             this.pictureBox227.TabStop = false;
             this.pictureBox227.Tag = "kibble";
+            this.pictureBox227.Visible = false;
             // 
             // pictureBox228
             // 
@@ -3864,6 +4029,7 @@
             this.pictureBox228.TabIndex = 232;
             this.pictureBox228.TabStop = false;
             this.pictureBox228.Tag = "kibble";
+            this.pictureBox228.Visible = false;
             // 
             // pictureBox229
             // 
@@ -3876,6 +4042,7 @@
             this.pictureBox229.TabIndex = 231;
             this.pictureBox229.TabStop = false;
             this.pictureBox229.Tag = "kibble";
+            this.pictureBox229.Visible = false;
             // 
             // pictureBox230
             // 
@@ -3888,6 +4055,7 @@
             this.pictureBox230.TabIndex = 230;
             this.pictureBox230.TabStop = false;
             this.pictureBox230.Tag = "kibble";
+            this.pictureBox230.Visible = false;
             // 
             // pictureBox231
             // 
@@ -3900,6 +4068,7 @@
             this.pictureBox231.TabIndex = 229;
             this.pictureBox231.TabStop = false;
             this.pictureBox231.Tag = "kibble";
+            this.pictureBox231.Visible = false;
             // 
             // pictureBox232
             // 
@@ -3912,6 +4081,7 @@
             this.pictureBox232.TabIndex = 228;
             this.pictureBox232.TabStop = false;
             this.pictureBox232.Tag = "kibble";
+            this.pictureBox232.Visible = false;
             // 
             // pictureBox233
             // 
@@ -3924,6 +4094,7 @@
             this.pictureBox233.TabIndex = 227;
             this.pictureBox233.TabStop = false;
             this.pictureBox233.Tag = "kibble";
+            this.pictureBox233.Visible = false;
             // 
             // pictureBox234
             // 
@@ -3936,6 +4107,7 @@
             this.pictureBox234.TabIndex = 226;
             this.pictureBox234.TabStop = false;
             this.pictureBox234.Tag = "kibble";
+            this.pictureBox234.Visible = false;
             // 
             // pictureBox235
             // 
@@ -3948,6 +4120,7 @@
             this.pictureBox235.TabIndex = 225;
             this.pictureBox235.TabStop = false;
             this.pictureBox235.Tag = "kibble";
+            this.pictureBox235.Visible = false;
             // 
             // pictureBox236
             // 
@@ -3960,6 +4133,7 @@
             this.pictureBox236.TabIndex = 224;
             this.pictureBox236.TabStop = false;
             this.pictureBox236.Tag = "kibble";
+            this.pictureBox236.Visible = false;
             // 
             // pictureBox202
             // 
@@ -3972,6 +4146,7 @@
             this.pictureBox202.TabIndex = 223;
             this.pictureBox202.TabStop = false;
             this.pictureBox202.Tag = "kibble";
+            this.pictureBox202.Visible = false;
             // 
             // pictureBox203
             // 
@@ -3984,6 +4159,7 @@
             this.pictureBox203.TabIndex = 222;
             this.pictureBox203.TabStop = false;
             this.pictureBox203.Tag = "kibble";
+            this.pictureBox203.Visible = false;
             // 
             // pictureBox205
             // 
@@ -3996,6 +4172,7 @@
             this.pictureBox205.TabIndex = 220;
             this.pictureBox205.TabStop = false;
             this.pictureBox205.Tag = "kibble";
+            this.pictureBox205.Visible = false;
             // 
             // pictureBox206
             // 
@@ -4008,6 +4185,7 @@
             this.pictureBox206.TabIndex = 219;
             this.pictureBox206.TabStop = false;
             this.pictureBox206.Tag = "kibble";
+            this.pictureBox206.Visible = false;
             // 
             // pictureBox207
             // 
@@ -4020,6 +4198,7 @@
             this.pictureBox207.TabIndex = 218;
             this.pictureBox207.TabStop = false;
             this.pictureBox207.Tag = "kibble";
+            this.pictureBox207.Visible = false;
             // 
             // pictureBox208
             // 
@@ -4032,6 +4211,7 @@
             this.pictureBox208.TabIndex = 217;
             this.pictureBox208.TabStop = false;
             this.pictureBox208.Tag = "kibble";
+            this.pictureBox208.Visible = false;
             // 
             // pictureBox209
             // 
@@ -4044,6 +4224,7 @@
             this.pictureBox209.TabIndex = 216;
             this.pictureBox209.TabStop = false;
             this.pictureBox209.Tag = "kibble";
+            this.pictureBox209.Visible = false;
             // 
             // pictureBox210
             // 
@@ -4056,6 +4237,7 @@
             this.pictureBox210.TabIndex = 215;
             this.pictureBox210.TabStop = false;
             this.pictureBox210.Tag = "kibble";
+            this.pictureBox210.Visible = false;
             // 
             // pictureBox211
             // 
@@ -4068,6 +4250,7 @@
             this.pictureBox211.TabIndex = 214;
             this.pictureBox211.TabStop = false;
             this.pictureBox211.Tag = "kibble";
+            this.pictureBox211.Visible = false;
             // 
             // pictureBox212
             // 
@@ -4080,6 +4263,7 @@
             this.pictureBox212.TabIndex = 213;
             this.pictureBox212.TabStop = false;
             this.pictureBox212.Tag = "kibble";
+            this.pictureBox212.Visible = false;
             // 
             // pictureBox213
             // 
@@ -4092,6 +4276,7 @@
             this.pictureBox213.TabIndex = 212;
             this.pictureBox213.TabStop = false;
             this.pictureBox213.Tag = "kibble";
+            this.pictureBox213.Visible = false;
             // 
             // pictureBox214
             // 
@@ -4104,6 +4289,7 @@
             this.pictureBox214.TabIndex = 211;
             this.pictureBox214.TabStop = false;
             this.pictureBox214.Tag = "kibble";
+            this.pictureBox214.Visible = false;
             // 
             // pictureBox215
             // 
@@ -4116,6 +4302,7 @@
             this.pictureBox215.TabIndex = 210;
             this.pictureBox215.TabStop = false;
             this.pictureBox215.Tag = "kibble";
+            this.pictureBox215.Visible = false;
             // 
             // pictureBox216
             // 
@@ -4128,6 +4315,7 @@
             this.pictureBox216.TabIndex = 209;
             this.pictureBox216.TabStop = false;
             this.pictureBox216.Tag = "kibble";
+            this.pictureBox216.Visible = false;
             // 
             // pictureBox217
             // 
@@ -4140,6 +4328,7 @@
             this.pictureBox217.TabIndex = 208;
             this.pictureBox217.TabStop = false;
             this.pictureBox217.Tag = "kibble";
+            this.pictureBox217.Visible = false;
             // 
             // pictureBox218
             // 
@@ -4152,6 +4341,7 @@
             this.pictureBox218.TabIndex = 207;
             this.pictureBox218.TabStop = false;
             this.pictureBox218.Tag = "kibble";
+            this.pictureBox218.Visible = false;
             // 
             // pictureBox219
             // 
@@ -4164,6 +4354,7 @@
             this.pictureBox219.TabIndex = 206;
             this.pictureBox219.TabStop = false;
             this.pictureBox219.Tag = "kibble";
+            this.pictureBox219.Visible = false;
             // 
             // pictureBox201
             // 
@@ -4176,6 +4367,7 @@
             this.pictureBox201.TabIndex = 205;
             this.pictureBox201.TabStop = false;
             this.pictureBox201.Tag = "wall";
+            this.pictureBox201.Visible = false;
             // 
             // pictureBox199
             // 
@@ -4188,6 +4380,7 @@
             this.pictureBox199.TabIndex = 204;
             this.pictureBox199.TabStop = false;
             this.pictureBox199.Tag = "wall";
+            this.pictureBox199.Visible = false;
             // 
             // pictureBox200
             // 
@@ -4200,6 +4393,7 @@
             this.pictureBox200.TabIndex = 203;
             this.pictureBox200.TabStop = false;
             this.pictureBox200.Tag = "wall";
+            this.pictureBox200.Visible = false;
             // 
             // pictureBox197
             // 
@@ -4212,6 +4406,7 @@
             this.pictureBox197.TabIndex = 202;
             this.pictureBox197.TabStop = false;
             this.pictureBox197.Tag = "wall";
+            this.pictureBox197.Visible = false;
             // 
             // pictureBox198
             // 
@@ -4224,6 +4419,7 @@
             this.pictureBox198.TabIndex = 201;
             this.pictureBox198.TabStop = false;
             this.pictureBox198.Tag = "wall";
+            this.pictureBox198.Visible = false;
             // 
             // pictureBox196
             // 
@@ -4236,6 +4432,7 @@
             this.pictureBox196.TabIndex = 200;
             this.pictureBox196.TabStop = false;
             this.pictureBox196.Tag = "wall";
+            this.pictureBox196.Visible = false;
             // 
             // pictureBox193
             // 
@@ -4248,6 +4445,7 @@
             this.pictureBox193.TabIndex = 199;
             this.pictureBox193.TabStop = false;
             this.pictureBox193.Tag = "wall";
+            this.pictureBox193.Visible = false;
             // 
             // pictureBox194
             // 
@@ -4260,6 +4458,7 @@
             this.pictureBox194.TabIndex = 198;
             this.pictureBox194.TabStop = false;
             this.pictureBox194.Tag = "wall";
+            this.pictureBox194.Visible = false;
             // 
             // pictureBox195
             // 
@@ -4272,6 +4471,7 @@
             this.pictureBox195.TabIndex = 197;
             this.pictureBox195.TabStop = false;
             this.pictureBox195.Tag = "wall";
+            this.pictureBox195.Visible = false;
             // 
             // pictureBox191
             // 
@@ -4284,6 +4484,7 @@
             this.pictureBox191.TabIndex = 196;
             this.pictureBox191.TabStop = false;
             this.pictureBox191.Tag = "wall";
+            this.pictureBox191.Visible = false;
             // 
             // pictureBox192
             // 
@@ -4296,6 +4497,7 @@
             this.pictureBox192.TabIndex = 195;
             this.pictureBox192.TabStop = false;
             this.pictureBox192.Tag = "wall";
+            this.pictureBox192.Visible = false;
             // 
             // pictureBox187
             // 
@@ -4308,6 +4510,7 @@
             this.pictureBox187.TabIndex = 194;
             this.pictureBox187.TabStop = false;
             this.pictureBox187.Tag = "wall";
+            this.pictureBox187.Visible = false;
             // 
             // pictureBox188
             // 
@@ -4320,6 +4523,7 @@
             this.pictureBox188.TabIndex = 193;
             this.pictureBox188.TabStop = false;
             this.pictureBox188.Tag = "wall";
+            this.pictureBox188.Visible = false;
             // 
             // pictureBox189
             // 
@@ -4332,6 +4536,7 @@
             this.pictureBox189.TabIndex = 192;
             this.pictureBox189.TabStop = false;
             this.pictureBox189.Tag = "wall";
+            this.pictureBox189.Visible = false;
             // 
             // pictureBox190
             // 
@@ -4344,6 +4549,7 @@
             this.pictureBox190.TabIndex = 191;
             this.pictureBox190.TabStop = false;
             this.pictureBox190.Tag = "wall";
+            this.pictureBox190.Visible = false;
             // 
             // pictureBox183
             // 
@@ -4356,6 +4562,7 @@
             this.pictureBox183.TabIndex = 190;
             this.pictureBox183.TabStop = false;
             this.pictureBox183.Tag = "wall";
+            this.pictureBox183.Visible = false;
             // 
             // pictureBox184
             // 
@@ -4368,6 +4575,7 @@
             this.pictureBox184.TabIndex = 189;
             this.pictureBox184.TabStop = false;
             this.pictureBox184.Tag = "wall";
+            this.pictureBox184.Visible = false;
             // 
             // pictureBox185
             // 
@@ -4380,6 +4588,7 @@
             this.pictureBox185.TabIndex = 188;
             this.pictureBox185.TabStop = false;
             this.pictureBox185.Tag = "wall";
+            this.pictureBox185.Visible = false;
             // 
             // pictureBox186
             // 
@@ -4392,6 +4601,7 @@
             this.pictureBox186.TabIndex = 187;
             this.pictureBox186.TabStop = false;
             this.pictureBox186.Tag = "wall";
+            this.pictureBox186.Visible = false;
             // 
             // pictureBox180
             // 
@@ -4404,6 +4614,7 @@
             this.pictureBox180.TabIndex = 186;
             this.pictureBox180.TabStop = false;
             this.pictureBox180.Tag = "wall";
+            this.pictureBox180.Visible = false;
             // 
             // pictureBox181
             // 
@@ -4416,6 +4627,7 @@
             this.pictureBox181.TabIndex = 185;
             this.pictureBox181.TabStop = false;
             this.pictureBox181.Tag = "wall";
+            this.pictureBox181.Visible = false;
             // 
             // pictureBox182
             // 
@@ -4428,6 +4640,7 @@
             this.pictureBox182.TabIndex = 184;
             this.pictureBox182.TabStop = false;
             this.pictureBox182.Tag = "wall";
+            this.pictureBox182.Visible = false;
             // 
             // pictureBox178
             // 
@@ -4440,6 +4653,7 @@
             this.pictureBox178.TabIndex = 183;
             this.pictureBox178.TabStop = false;
             this.pictureBox178.Tag = "wall";
+            this.pictureBox178.Visible = false;
             // 
             // pictureBox179
             // 
@@ -4452,6 +4666,7 @@
             this.pictureBox179.TabIndex = 182;
             this.pictureBox179.TabStop = false;
             this.pictureBox179.Tag = "wall";
+            this.pictureBox179.Visible = false;
             // 
             // pictureBox175
             // 
@@ -4464,6 +4679,7 @@
             this.pictureBox175.TabIndex = 181;
             this.pictureBox175.TabStop = false;
             this.pictureBox175.Tag = "wall";
+            this.pictureBox175.Visible = false;
             // 
             // pictureBox176
             // 
@@ -4476,6 +4692,7 @@
             this.pictureBox176.TabIndex = 180;
             this.pictureBox176.TabStop = false;
             this.pictureBox176.Tag = "wall";
+            this.pictureBox176.Visible = false;
             // 
             // pictureBox177
             // 
@@ -4488,6 +4705,7 @@
             this.pictureBox177.TabIndex = 179;
             this.pictureBox177.TabStop = false;
             this.pictureBox177.Tag = "wall";
+            this.pictureBox177.Visible = false;
             // 
             // pictureBox172
             // 
@@ -4500,6 +4718,7 @@
             this.pictureBox172.TabIndex = 178;
             this.pictureBox172.TabStop = false;
             this.pictureBox172.Tag = "wall";
+            this.pictureBox172.Visible = false;
             // 
             // pictureBox173
             // 
@@ -4512,6 +4731,7 @@
             this.pictureBox173.TabIndex = 177;
             this.pictureBox173.TabStop = false;
             this.pictureBox173.Tag = "wall";
+            this.pictureBox173.Visible = false;
             // 
             // pictureBox174
             // 
@@ -4524,6 +4744,7 @@
             this.pictureBox174.TabIndex = 176;
             this.pictureBox174.TabStop = false;
             this.pictureBox174.Tag = "wall";
+            this.pictureBox174.Visible = false;
             // 
             // pictureBox167
             // 
@@ -4536,6 +4757,7 @@
             this.pictureBox167.TabIndex = 175;
             this.pictureBox167.TabStop = false;
             this.pictureBox167.Tag = "wall";
+            this.pictureBox167.Visible = false;
             // 
             // pictureBox168
             // 
@@ -4548,6 +4770,7 @@
             this.pictureBox168.TabIndex = 174;
             this.pictureBox168.TabStop = false;
             this.pictureBox168.Tag = "wall";
+            this.pictureBox168.Visible = false;
             // 
             // pictureBox169
             // 
@@ -4560,6 +4783,7 @@
             this.pictureBox169.TabIndex = 173;
             this.pictureBox169.TabStop = false;
             this.pictureBox169.Tag = "wall";
+            this.pictureBox169.Visible = false;
             // 
             // pictureBox170
             // 
@@ -4572,6 +4796,7 @@
             this.pictureBox170.TabIndex = 172;
             this.pictureBox170.TabStop = false;
             this.pictureBox170.Tag = "wall";
+            this.pictureBox170.Visible = false;
             // 
             // pictureBox171
             // 
@@ -4584,6 +4809,7 @@
             this.pictureBox171.TabIndex = 171;
             this.pictureBox171.TabStop = false;
             this.pictureBox171.Tag = "wall";
+            this.pictureBox171.Visible = false;
             // 
             // pictureBox163
             // 
@@ -4596,6 +4822,7 @@
             this.pictureBox163.TabIndex = 170;
             this.pictureBox163.TabStop = false;
             this.pictureBox163.Tag = "wall";
+            this.pictureBox163.Visible = false;
             // 
             // pictureBox164
             // 
@@ -4608,6 +4835,7 @@
             this.pictureBox164.TabIndex = 169;
             this.pictureBox164.TabStop = false;
             this.pictureBox164.Tag = "wall";
+            this.pictureBox164.Visible = false;
             // 
             // pictureBox165
             // 
@@ -4620,6 +4848,7 @@
             this.pictureBox165.TabIndex = 168;
             this.pictureBox165.TabStop = false;
             this.pictureBox165.Tag = "wall";
+            this.pictureBox165.Visible = false;
             // 
             // pictureBox166
             // 
@@ -4632,6 +4861,7 @@
             this.pictureBox166.TabIndex = 167;
             this.pictureBox166.TabStop = false;
             this.pictureBox166.Tag = "wall";
+            this.pictureBox166.Visible = false;
             // 
             // pictureBox159
             // 
@@ -4644,6 +4874,7 @@
             this.pictureBox159.TabIndex = 166;
             this.pictureBox159.TabStop = false;
             this.pictureBox159.Tag = "wall";
+            this.pictureBox159.Visible = false;
             // 
             // pictureBox160
             // 
@@ -4656,6 +4887,7 @@
             this.pictureBox160.TabIndex = 165;
             this.pictureBox160.TabStop = false;
             this.pictureBox160.Tag = "wall";
+            this.pictureBox160.Visible = false;
             // 
             // pictureBox161
             // 
@@ -4668,6 +4900,7 @@
             this.pictureBox161.TabIndex = 164;
             this.pictureBox161.TabStop = false;
             this.pictureBox161.Tag = "wall";
+            this.pictureBox161.Visible = false;
             // 
             // pictureBox162
             // 
@@ -4680,6 +4913,7 @@
             this.pictureBox162.TabIndex = 163;
             this.pictureBox162.TabStop = false;
             this.pictureBox162.Tag = "wall";
+            this.pictureBox162.Visible = false;
             // 
             // pictureBox158
             // 
@@ -4692,6 +4926,7 @@
             this.pictureBox158.TabIndex = 162;
             this.pictureBox158.TabStop = false;
             this.pictureBox158.Tag = "wall";
+            this.pictureBox158.Visible = false;
             // 
             // pictureBox156
             // 
@@ -4704,6 +4939,7 @@
             this.pictureBox156.TabIndex = 161;
             this.pictureBox156.TabStop = false;
             this.pictureBox156.Tag = "wall";
+            this.pictureBox156.Visible = false;
             // 
             // pictureBox157
             // 
@@ -4716,6 +4952,7 @@
             this.pictureBox157.TabIndex = 160;
             this.pictureBox157.TabStop = false;
             this.pictureBox157.Tag = "wall";
+            this.pictureBox157.Visible = false;
             // 
             // pictureBox140
             // 
@@ -4728,6 +4965,7 @@
             this.pictureBox140.TabIndex = 159;
             this.pictureBox140.TabStop = false;
             this.pictureBox140.Tag = "wall";
+            this.pictureBox140.Visible = false;
             // 
             // pictureBox141
             // 
@@ -4740,6 +4978,7 @@
             this.pictureBox141.TabIndex = 158;
             this.pictureBox141.TabStop = false;
             this.pictureBox141.Tag = "wall";
+            this.pictureBox141.Visible = false;
             // 
             // pictureBox142
             // 
@@ -4752,6 +4991,7 @@
             this.pictureBox142.TabIndex = 157;
             this.pictureBox142.TabStop = false;
             this.pictureBox142.Tag = "wall";
+            this.pictureBox142.Visible = false;
             // 
             // pictureBox151
             // 
@@ -4764,6 +5004,7 @@
             this.pictureBox151.TabIndex = 156;
             this.pictureBox151.TabStop = false;
             this.pictureBox151.Tag = "wall";
+            this.pictureBox151.Visible = false;
             // 
             // pictureBox152
             // 
@@ -4776,6 +5017,7 @@
             this.pictureBox152.TabIndex = 155;
             this.pictureBox152.TabStop = false;
             this.pictureBox152.Tag = "wall";
+            this.pictureBox152.Visible = false;
             // 
             // pictureBox153
             // 
@@ -4788,6 +5030,7 @@
             this.pictureBox153.TabIndex = 154;
             this.pictureBox153.TabStop = false;
             this.pictureBox153.Tag = "wall";
+            this.pictureBox153.Visible = false;
             // 
             // pictureBox154
             // 
@@ -4800,6 +5043,7 @@
             this.pictureBox154.TabIndex = 153;
             this.pictureBox154.TabStop = false;
             this.pictureBox154.Tag = "wall";
+            this.pictureBox154.Visible = false;
             // 
             // pictureBox155
             // 
@@ -4812,6 +5056,7 @@
             this.pictureBox155.TabIndex = 152;
             this.pictureBox155.TabStop = false;
             this.pictureBox155.Tag = "wall";
+            this.pictureBox155.Visible = false;
             // 
             // pictureBox146
             // 
@@ -4824,6 +5069,7 @@
             this.pictureBox146.TabIndex = 151;
             this.pictureBox146.TabStop = false;
             this.pictureBox146.Tag = "wall";
+            this.pictureBox146.Visible = false;
             // 
             // pictureBox147
             // 
@@ -4836,6 +5082,7 @@
             this.pictureBox147.TabIndex = 150;
             this.pictureBox147.TabStop = false;
             this.pictureBox147.Tag = "wall";
+            this.pictureBox147.Visible = false;
             // 
             // pictureBox148
             // 
@@ -4848,6 +5095,7 @@
             this.pictureBox148.TabIndex = 149;
             this.pictureBox148.TabStop = false;
             this.pictureBox148.Tag = "wall";
+            this.pictureBox148.Visible = false;
             // 
             // pictureBox149
             // 
@@ -4860,6 +5108,7 @@
             this.pictureBox149.TabIndex = 148;
             this.pictureBox149.TabStop = false;
             this.pictureBox149.Tag = "wall";
+            this.pictureBox149.Visible = false;
             // 
             // pictureBox150
             // 
@@ -4872,6 +5121,7 @@
             this.pictureBox150.TabIndex = 147;
             this.pictureBox150.TabStop = false;
             this.pictureBox150.Tag = "wall";
+            this.pictureBox150.Visible = false;
             // 
             // pictureBox145
             // 
@@ -4884,6 +5134,7 @@
             this.pictureBox145.TabIndex = 146;
             this.pictureBox145.TabStop = false;
             this.pictureBox145.Tag = "wall";
+            this.pictureBox145.Visible = false;
             // 
             // pictureBox144
             // 
@@ -4896,6 +5147,7 @@
             this.pictureBox144.TabIndex = 145;
             this.pictureBox144.TabStop = false;
             this.pictureBox144.Tag = "wall";
+            this.pictureBox144.Visible = false;
             // 
             // pictureBox143
             // 
@@ -4908,6 +5160,7 @@
             this.pictureBox143.TabIndex = 144;
             this.pictureBox143.TabStop = false;
             this.pictureBox143.Tag = "wall";
+            this.pictureBox143.Visible = false;
             // 
             // pictureBox137
             // 
@@ -4920,6 +5173,7 @@
             this.pictureBox137.TabIndex = 140;
             this.pictureBox137.TabStop = false;
             this.pictureBox137.Tag = "wall";
+            this.pictureBox137.Visible = false;
             // 
             // pictureBox138
             // 
@@ -4932,6 +5186,7 @@
             this.pictureBox138.TabIndex = 139;
             this.pictureBox138.TabStop = false;
             this.pictureBox138.Tag = "wall";
+            this.pictureBox138.Visible = false;
             // 
             // pictureBox139
             // 
@@ -4944,6 +5199,7 @@
             this.pictureBox139.TabIndex = 138;
             this.pictureBox139.TabStop = false;
             this.pictureBox139.Tag = "wall";
+            this.pictureBox139.Visible = false;
             // 
             // pictureBox134
             // 
@@ -4956,6 +5212,7 @@
             this.pictureBox134.TabIndex = 137;
             this.pictureBox134.TabStop = false;
             this.pictureBox134.Tag = "wall";
+            this.pictureBox134.Visible = false;
             // 
             // pictureBox135
             // 
@@ -4968,6 +5225,7 @@
             this.pictureBox135.TabIndex = 136;
             this.pictureBox135.TabStop = false;
             this.pictureBox135.Tag = "wall";
+            this.pictureBox135.Visible = false;
             // 
             // pictureBox136
             // 
@@ -4980,6 +5238,7 @@
             this.pictureBox136.TabIndex = 135;
             this.pictureBox136.TabStop = false;
             this.pictureBox136.Tag = "wall";
+            this.pictureBox136.Visible = false;
             // 
             // pictureBox130
             // 
@@ -4992,6 +5251,7 @@
             this.pictureBox130.TabIndex = 134;
             this.pictureBox130.TabStop = false;
             this.pictureBox130.Tag = "wall";
+            this.pictureBox130.Visible = false;
             // 
             // pictureBox131
             // 
@@ -5004,6 +5264,7 @@
             this.pictureBox131.TabIndex = 133;
             this.pictureBox131.TabStop = false;
             this.pictureBox131.Tag = "wall";
+            this.pictureBox131.Visible = false;
             // 
             // pictureBox132
             // 
@@ -5016,6 +5277,7 @@
             this.pictureBox132.TabIndex = 132;
             this.pictureBox132.TabStop = false;
             this.pictureBox132.Tag = "wall";
+            this.pictureBox132.Visible = false;
             // 
             // pictureBox133
             // 
@@ -5028,6 +5290,7 @@
             this.pictureBox133.TabIndex = 131;
             this.pictureBox133.TabStop = false;
             this.pictureBox133.Tag = "wall";
+            this.pictureBox133.Visible = false;
             // 
             // pictureBox128
             // 
@@ -5040,6 +5303,7 @@
             this.pictureBox128.TabIndex = 130;
             this.pictureBox128.TabStop = false;
             this.pictureBox128.Tag = "wall";
+            this.pictureBox128.Visible = false;
             // 
             // pictureBox129
             // 
@@ -5052,6 +5316,7 @@
             this.pictureBox129.TabIndex = 129;
             this.pictureBox129.TabStop = false;
             this.pictureBox129.Tag = "wall";
+            this.pictureBox129.Visible = false;
             // 
             // pictureBox124
             // 
@@ -5064,6 +5329,7 @@
             this.pictureBox124.TabIndex = 128;
             this.pictureBox124.TabStop = false;
             this.pictureBox124.Tag = "wall";
+            this.pictureBox124.Visible = false;
             // 
             // pictureBox125
             // 
@@ -5076,6 +5342,7 @@
             this.pictureBox125.TabIndex = 127;
             this.pictureBox125.TabStop = false;
             this.pictureBox125.Tag = "wall";
+            this.pictureBox125.Visible = false;
             // 
             // pictureBox126
             // 
@@ -5088,6 +5355,7 @@
             this.pictureBox126.TabIndex = 126;
             this.pictureBox126.TabStop = false;
             this.pictureBox126.Tag = "wall";
+            this.pictureBox126.Visible = false;
             // 
             // pictureBox127
             // 
@@ -5100,6 +5368,7 @@
             this.pictureBox127.TabIndex = 125;
             this.pictureBox127.TabStop = false;
             this.pictureBox127.Tag = "wall";
+            this.pictureBox127.Visible = false;
             // 
             // pictureBox120
             // 
@@ -5112,6 +5381,7 @@
             this.pictureBox120.TabIndex = 124;
             this.pictureBox120.TabStop = false;
             this.pictureBox120.Tag = "wall";
+            this.pictureBox120.Visible = false;
             // 
             // pictureBox121
             // 
@@ -5124,6 +5394,7 @@
             this.pictureBox121.TabIndex = 123;
             this.pictureBox121.TabStop = false;
             this.pictureBox121.Tag = "wall";
+            this.pictureBox121.Visible = false;
             // 
             // pictureBox122
             // 
@@ -5136,6 +5407,7 @@
             this.pictureBox122.TabIndex = 122;
             this.pictureBox122.TabStop = false;
             this.pictureBox122.Tag = "wall";
+            this.pictureBox122.Visible = false;
             // 
             // pictureBox123
             // 
@@ -5148,6 +5420,7 @@
             this.pictureBox123.TabIndex = 121;
             this.pictureBox123.TabStop = false;
             this.pictureBox123.Tag = "wall";
+            this.pictureBox123.Visible = false;
             // 
             // pictureBox119
             // 
@@ -5160,6 +5433,7 @@
             this.pictureBox119.TabIndex = 120;
             this.pictureBox119.TabStop = false;
             this.pictureBox119.Tag = "wall";
+            this.pictureBox119.Visible = false;
             // 
             // pictureBox118
             // 
@@ -5172,6 +5446,7 @@
             this.pictureBox118.TabIndex = 119;
             this.pictureBox118.TabStop = false;
             this.pictureBox118.Tag = "wall";
+            this.pictureBox118.Visible = false;
             // 
             // pictureBox115
             // 
@@ -5184,6 +5459,7 @@
             this.pictureBox115.TabIndex = 118;
             this.pictureBox115.TabStop = false;
             this.pictureBox115.Tag = "wall";
+            this.pictureBox115.Visible = false;
             // 
             // pictureBox116
             // 
@@ -5196,6 +5472,7 @@
             this.pictureBox116.TabIndex = 117;
             this.pictureBox116.TabStop = false;
             this.pictureBox116.Tag = "wall";
+            this.pictureBox116.Visible = false;
             // 
             // pictureBox117
             // 
@@ -5208,6 +5485,7 @@
             this.pictureBox117.TabIndex = 116;
             this.pictureBox117.TabStop = false;
             this.pictureBox117.Tag = "wall";
+            this.pictureBox117.Visible = false;
             // 
             // pictureBox112
             // 
@@ -5220,6 +5498,7 @@
             this.pictureBox112.TabIndex = 115;
             this.pictureBox112.TabStop = false;
             this.pictureBox112.Tag = "wall";
+            this.pictureBox112.Visible = false;
             // 
             // pictureBox113
             // 
@@ -5232,6 +5511,7 @@
             this.pictureBox113.TabIndex = 114;
             this.pictureBox113.TabStop = false;
             this.pictureBox113.Tag = "wall";
+            this.pictureBox113.Visible = false;
             // 
             // pictureBox114
             // 
@@ -5244,6 +5524,7 @@
             this.pictureBox114.TabIndex = 113;
             this.pictureBox114.TabStop = false;
             this.pictureBox114.Tag = "wall";
+            this.pictureBox114.Visible = false;
             // 
             // pictureBox109
             // 
@@ -5256,6 +5537,7 @@
             this.pictureBox109.TabIndex = 112;
             this.pictureBox109.TabStop = false;
             this.pictureBox109.Tag = "wall";
+            this.pictureBox109.Visible = false;
             // 
             // pictureBox110
             // 
@@ -5268,6 +5550,7 @@
             this.pictureBox110.TabIndex = 111;
             this.pictureBox110.TabStop = false;
             this.pictureBox110.Tag = "wall";
+            this.pictureBox110.Visible = false;
             // 
             // pictureBox111
             // 
@@ -5280,6 +5563,7 @@
             this.pictureBox111.TabIndex = 110;
             this.pictureBox111.TabStop = false;
             this.pictureBox111.Tag = "wall";
+            this.pictureBox111.Visible = false;
             // 
             // pictureBox101
             // 
@@ -5292,6 +5576,7 @@
             this.pictureBox101.TabIndex = 109;
             this.pictureBox101.TabStop = false;
             this.pictureBox101.Tag = "wall";
+            this.pictureBox101.Visible = false;
             // 
             // pictureBox106
             // 
@@ -5304,6 +5589,7 @@
             this.pictureBox106.TabIndex = 108;
             this.pictureBox106.TabStop = false;
             this.pictureBox106.Tag = "wall";
+            this.pictureBox106.Visible = false;
             // 
             // pictureBox107
             // 
@@ -5316,6 +5602,7 @@
             this.pictureBox107.TabIndex = 107;
             this.pictureBox107.TabStop = false;
             this.pictureBox107.Tag = "wall";
+            this.pictureBox107.Visible = false;
             // 
             // pictureBox108
             // 
@@ -5328,6 +5615,7 @@
             this.pictureBox108.TabIndex = 106;
             this.pictureBox108.TabStop = false;
             this.pictureBox108.Tag = "wall";
+            this.pictureBox108.Visible = false;
             // 
             // pictureBox102
             // 
@@ -5340,6 +5628,7 @@
             this.pictureBox102.TabIndex = 105;
             this.pictureBox102.TabStop = false;
             this.pictureBox102.Tag = "wall";
+            this.pictureBox102.Visible = false;
             // 
             // pictureBox103
             // 
@@ -5352,6 +5641,7 @@
             this.pictureBox103.TabIndex = 104;
             this.pictureBox103.TabStop = false;
             this.pictureBox103.Tag = "wall";
+            this.pictureBox103.Visible = false;
             // 
             // pictureBox104
             // 
@@ -5364,6 +5654,7 @@
             this.pictureBox104.TabIndex = 103;
             this.pictureBox104.TabStop = false;
             this.pictureBox104.Tag = "wall";
+            this.pictureBox104.Visible = false;
             // 
             // pictureBox105
             // 
@@ -5376,6 +5667,7 @@
             this.pictureBox105.TabIndex = 102;
             this.pictureBox105.TabStop = false;
             this.pictureBox105.Tag = "wall";
+            this.pictureBox105.Visible = false;
             // 
             // pictureBox99
             // 
@@ -5388,6 +5680,7 @@
             this.pictureBox99.TabIndex = 101;
             this.pictureBox99.TabStop = false;
             this.pictureBox99.Tag = "wall";
+            this.pictureBox99.Visible = false;
             // 
             // pictureBox100
             // 
@@ -5400,6 +5693,7 @@
             this.pictureBox100.TabIndex = 100;
             this.pictureBox100.TabStop = false;
             this.pictureBox100.Tag = "wall";
+            this.pictureBox100.Visible = false;
             // 
             // pictureBox97
             // 
@@ -5412,6 +5706,7 @@
             this.pictureBox97.TabIndex = 99;
             this.pictureBox97.TabStop = false;
             this.pictureBox97.Tag = "wall";
+            this.pictureBox97.Visible = false;
             // 
             // pictureBox98
             // 
@@ -5424,6 +5719,7 @@
             this.pictureBox98.TabIndex = 98;
             this.pictureBox98.TabStop = false;
             this.pictureBox98.Tag = "wall";
+            this.pictureBox98.Visible = false;
             // 
             // pictureBox93
             // 
@@ -5436,6 +5732,7 @@
             this.pictureBox93.TabIndex = 97;
             this.pictureBox93.TabStop = false;
             this.pictureBox93.Tag = "wall";
+            this.pictureBox93.Visible = false;
             // 
             // pictureBox94
             // 
@@ -5448,6 +5745,7 @@
             this.pictureBox94.TabIndex = 96;
             this.pictureBox94.TabStop = false;
             this.pictureBox94.Tag = "wall";
+            this.pictureBox94.Visible = false;
             // 
             // pictureBox95
             // 
@@ -5460,6 +5758,7 @@
             this.pictureBox95.TabIndex = 95;
             this.pictureBox95.TabStop = false;
             this.pictureBox95.Tag = "wall";
+            this.pictureBox95.Visible = false;
             // 
             // pictureBox96
             // 
@@ -5472,6 +5771,7 @@
             this.pictureBox96.TabIndex = 94;
             this.pictureBox96.TabStop = false;
             this.pictureBox96.Tag = "wall";
+            this.pictureBox96.Visible = false;
             // 
             // pictureBox89
             // 
@@ -5484,6 +5784,7 @@
             this.pictureBox89.TabIndex = 93;
             this.pictureBox89.TabStop = false;
             this.pictureBox89.Tag = "wall";
+            this.pictureBox89.Visible = false;
             // 
             // pictureBox90
             // 
@@ -5496,6 +5797,7 @@
             this.pictureBox90.TabIndex = 92;
             this.pictureBox90.TabStop = false;
             this.pictureBox90.Tag = "wall";
+            this.pictureBox90.Visible = false;
             // 
             // pictureBox91
             // 
@@ -5508,6 +5810,7 @@
             this.pictureBox91.TabIndex = 91;
             this.pictureBox91.TabStop = false;
             this.pictureBox91.Tag = "wall";
+            this.pictureBox91.Visible = false;
             // 
             // pictureBox92
             // 
@@ -5520,6 +5823,7 @@
             this.pictureBox92.TabIndex = 90;
             this.pictureBox92.TabStop = false;
             this.pictureBox92.Tag = "wall";
+            this.pictureBox92.Visible = false;
             // 
             // pictureBox85
             // 
@@ -5532,6 +5836,7 @@
             this.pictureBox85.TabIndex = 89;
             this.pictureBox85.TabStop = false;
             this.pictureBox85.Tag = "wall";
+            this.pictureBox85.Visible = false;
             // 
             // pictureBox86
             // 
@@ -5544,6 +5849,7 @@
             this.pictureBox86.TabIndex = 88;
             this.pictureBox86.TabStop = false;
             this.pictureBox86.Tag = "wall";
+            this.pictureBox86.Visible = false;
             // 
             // pictureBox87
             // 
@@ -5556,6 +5862,7 @@
             this.pictureBox87.TabIndex = 87;
             this.pictureBox87.TabStop = false;
             this.pictureBox87.Tag = "wall";
+            this.pictureBox87.Visible = false;
             // 
             // pictureBox88
             // 
@@ -5568,6 +5875,7 @@
             this.pictureBox88.TabIndex = 86;
             this.pictureBox88.TabStop = false;
             this.pictureBox88.Tag = "wall";
+            this.pictureBox88.Visible = false;
             // 
             // pictureBox83
             // 
@@ -5580,6 +5888,7 @@
             this.pictureBox83.TabIndex = 85;
             this.pictureBox83.TabStop = false;
             this.pictureBox83.Tag = "wall";
+            this.pictureBox83.Visible = false;
             // 
             // pictureBox84
             // 
@@ -5592,6 +5901,7 @@
             this.pictureBox84.TabIndex = 84;
             this.pictureBox84.TabStop = false;
             this.pictureBox84.Tag = "wall";
+            this.pictureBox84.Visible = false;
             // 
             // pictureBox81
             // 
@@ -5604,6 +5914,7 @@
             this.pictureBox81.TabIndex = 83;
             this.pictureBox81.TabStop = false;
             this.pictureBox81.Tag = "wall";
+            this.pictureBox81.Visible = false;
             // 
             // pictureBox82
             // 
@@ -5616,6 +5927,7 @@
             this.pictureBox82.TabIndex = 82;
             this.pictureBox82.TabStop = false;
             this.pictureBox82.Tag = "wall";
+            this.pictureBox82.Visible = false;
             // 
             // pictureBox77
             // 
@@ -5628,6 +5940,7 @@
             this.pictureBox77.TabIndex = 81;
             this.pictureBox77.TabStop = false;
             this.pictureBox77.Tag = "wall";
+            this.pictureBox77.Visible = false;
             // 
             // pictureBox78
             // 
@@ -5640,6 +5953,7 @@
             this.pictureBox78.TabIndex = 80;
             this.pictureBox78.TabStop = false;
             this.pictureBox78.Tag = "wall";
+            this.pictureBox78.Visible = false;
             // 
             // pictureBox79
             // 
@@ -5652,6 +5966,7 @@
             this.pictureBox79.TabIndex = 79;
             this.pictureBox79.TabStop = false;
             this.pictureBox79.Tag = "wall";
+            this.pictureBox79.Visible = false;
             // 
             // pictureBox80
             // 
@@ -5664,6 +5979,7 @@
             this.pictureBox80.TabIndex = 78;
             this.pictureBox80.TabStop = false;
             this.pictureBox80.Tag = "wall";
+            this.pictureBox80.Visible = false;
             // 
             // pictureBox59
             // 
@@ -9042,6 +9358,17 @@
             this.label8.TabIndex = 11;
             this.label8.Text = "Score:";
             // 
+            // vision1
+            // 
+            this.vision1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.vision1.Location = new System.Drawing.Point(0, 425);
+            this.vision1.Name = "vision1";
+            this.vision1.Size = new System.Drawing.Size(75, 75);
+            this.vision1.TabIndex = 13;
+            this.vision1.TabStop = false;
+            this.vision1.Tag = "vision";
+            this.vision1.Visible = false;
+            // 
             // Pacman
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -9648,6 +9975,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox587)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox588)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox392)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vision1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -10257,6 +10585,7 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.PictureBox vision1;
     }
 }
 

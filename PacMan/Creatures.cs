@@ -12,11 +12,11 @@ namespace PacMan
     {
         public string name; //Name of the creature
         public int direction; //movement direction
-        public PictureBox appearance, colliderUp, colliderDown, colliderLeft, colliderRight; //appearance and collision pictureboxes
+        public PictureBox appearance, colliderUp, colliderDown, colliderLeft, colliderRight,vision; //appearance and collision pictureboxes
         public int stop = 0; 
 
 
-        public Creatures(string name, PictureBox appearance, PictureBox colliderUp, PictureBox colliderDown, PictureBox colliderLeft, PictureBox colliderRight,  int direction,int stop) 
+        public Creatures(string name, PictureBox appearance, PictureBox colliderUp, PictureBox colliderDown, PictureBox colliderLeft, PictureBox colliderRight, PictureBox vision,  int direction,int stop) 
         {
             this.name = name;
             this.appearance = appearance;
@@ -26,6 +26,7 @@ namespace PacMan
             this.colliderRight = colliderRight;
             this.direction = direction;
             this.stop = stop;
+            this.vision = vision;
         }
 
         public void movement()
@@ -39,6 +40,7 @@ namespace PacMan
                     colliderDown.Left = colliderDown.Left - 1;
                     colliderLeft.Left = colliderLeft.Left - 1;
                     colliderRight.Left = colliderRight.Left - 1;
+                    vision.Left = vision.Left - 1;
                 }
                 if (direction == -1)
                 {
@@ -47,6 +49,7 @@ namespace PacMan
                     colliderDown.Left = colliderDown.Left + 1;
                     colliderLeft.Left = colliderLeft.Left + 1;
                     colliderRight.Left = colliderRight.Left + 1;
+                    vision.Left = vision.Left + 1;
                 }
                 if (direction == 2)
                 {
@@ -55,6 +58,7 @@ namespace PacMan
                     colliderDown.Top = colliderDown.Top - 1;
                     colliderLeft.Top = colliderLeft.Top - 1;
                     colliderRight.Top = colliderRight.Top -1;
+                    vision.Top = vision.Top - 1;
                 }
                 if (direction == -2)
                 {
@@ -63,6 +67,7 @@ namespace PacMan
                     colliderDown.Top = colliderDown.Top + 1;
                     colliderLeft.Top = colliderLeft.Top + 1;
                     colliderRight.Top = colliderRight.Top + 1;
+                    vision.Top = vision.Top + 1;
                 }
             }
         }
@@ -73,6 +78,7 @@ namespace PacMan
                     colliderDown.Left = colliderDown.Left - 1;
                     colliderLeft.Left = colliderLeft.Left - 1;
                     colliderRight.Left = colliderRight.Left - 1;
+                    vision.Left = vision.Left - 1;
         }
         public void movementRight()
         {
@@ -82,6 +88,7 @@ namespace PacMan
                     colliderDown.Left = colliderDown.Left + 1;
                     colliderLeft.Left = colliderLeft.Left + 1;
                     colliderRight.Left = colliderRight.Left + 1;
+                    vision.Left = vision.Left + 1;
         }
         public void movementUp()
         {
@@ -90,6 +97,7 @@ namespace PacMan
                     colliderDown.Top = colliderDown.Top - 1;
                     colliderLeft.Top = colliderLeft.Top - 1;
                     colliderRight.Top = colliderRight.Top - 1;
+                    vision.Top = vision.Top - 1;
         }
         public void movementDown()
         {
@@ -98,6 +106,7 @@ namespace PacMan
                     colliderDown.Top = colliderDown.Top + 1;
                     colliderLeft.Top = colliderLeft.Top + 1;
                     colliderRight.Top = colliderRight.Top + 1;
+                    vision.Top = vision.Top + 1;
         }
     }
 }

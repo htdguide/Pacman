@@ -23,7 +23,7 @@ namespace PacMan
         public Pacman()
         {
             InitializeComponent();
-            player = new Creatures("Pacman", pictureBox204, collider1, collider2, collider3, collider4, -1, 0);
+            player = new Creatures("Pacman", pictureBox204, collider1, collider2, collider3, collider4, vision1, -1, 0);
             // ghost1 = new Creatures("Ghost 1", pictureBox392, 2, 0);
             // ghost2 = new Creatures("Ghost 2", pictureBox393, 2, 0);
             // ghost3 = new Creatures("Ghost 3", pictureBox394, 2, 0);
@@ -133,6 +133,13 @@ namespace PacMan
                     {
                         engine.scoring(entity);
                         panel1.Controls.Remove(x);
+                    }
+                }
+                if (x is PictureBox && (x.Tag == "kibble" || x.Tag == "wall"))  //Tag property 
+                {
+                    if (entity.vision.Bounds.IntersectsWith(x.Bounds))
+                    {
+                        x.Visible = true;
                     }
                 }
             }

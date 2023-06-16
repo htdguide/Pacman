@@ -85,6 +85,7 @@ namespace PacMan
                 collider2.Visible = c;
                 collider3.Visible = c;
                 collider4.Visible = c;
+                vision1.Visible = c;
                 c = !c;
             }
         }

@@ -63,6 +63,16 @@ namespace PacMan.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap collider {
+            get {
+                object obj = ResourceManager.GetObject("collider", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap GhostDown {
             get {
                 object obj = ResourceManager.GetObject("GhostDown", resourceCulture);

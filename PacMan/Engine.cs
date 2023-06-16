@@ -28,6 +28,5 @@ namespace PacMan
             this.ghost2 = ghost2;
             this.ghost3 = ghost3;
         }
-
     }
 }

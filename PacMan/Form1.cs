@@ -18,6 +18,7 @@ namespace PacMan
     {
         private Creatures player, ghost1, ghost2, ghost3;
         private Engine engine;
+        private bool c = true;
 
         public Pacman()
         {
@@ -59,8 +60,32 @@ namespace PacMan
             if (e.KeyCode == Keys.Space)
             {
                 panel1.Width = 1005;
-                Pacman.ActiveForm.Width = 1045;
+                Pacman.ActiveForm.Width = 1040;
                 pictureBox49.Top = pictureBox49.Top + 25;
+            }
+            if (e.KeyCode == Keys.X) //Collision debug
+            {
+                firstGhost.Visible = !c;
+                secondGhost.Visible = !c;
+                thirdGhost.Visible = !c;
+                pictureBox204.Visible = !c;
+                firstCollisionLeft.Visible = c;
+                firstColliderRight.Visible = c;
+                firstColliderUp.Visible = c;
+                firstColliderDown.Visible = c;
+                secondColliderLeft.Visible = c;
+                secondColliderRight.Visible = c;
+                secondColliderUp.Visible = c;
+                secondColliderDown.Visible = c;
+                thirdColliderLeft.Visible = c;
+                thirdColliderRight.Visible = c;
+                thirdColliderUp.Visible = c;
+                thirdColliderDown.Visible = c;
+                collider1.Visible = c;
+                collider2.Visible = c;
+                collider3.Visible = c;
+                collider4.Visible = c;
+                c = !c;
             }
         }
 

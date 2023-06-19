@@ -184,9 +184,9 @@ namespace PacMan
                         panel1.Controls.Remove(x);
                     }
                 }
-                if (x is PictureBox && (x.Tag == "door" && engine.keys == 3))  //Door open detection
+                if (x is PictureBox && (x.Tag == "door" && engine.keys > 2))  //Door open detection
                 {
-                    if (entity.vision.Bounds.IntersectsWith(x.Bounds))
+                    if (entity.colliderRight.Bounds.IntersectsWith(x.Bounds))
                     {
                         SoundPlayer collect = new SoundPlayer(Resources.doorSound);
                         collect.Play();

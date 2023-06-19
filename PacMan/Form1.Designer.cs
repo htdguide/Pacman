@@ -9630,6 +9630,7 @@
             this.pictureBox202.TabIndex = 623;
             this.pictureBox202.TabStop = false;
             this.pictureBox202.Tag = "";
+            this.pictureBox202.Visible = false;
             // 
             // pictureBox378
             // 
@@ -9642,6 +9643,7 @@
             this.pictureBox378.TabIndex = 623;
             this.pictureBox378.TabStop = false;
             this.pictureBox378.Tag = "";
+            this.pictureBox378.Visible = false;
             // 
             // pictureBox205
             // 
@@ -9654,6 +9656,7 @@
             this.pictureBox205.TabIndex = 625;
             this.pictureBox205.TabStop = false;
             this.pictureBox205.Tag = "";
+            this.pictureBox205.Visible = false;
             // 
             // pictureBox300
             // 
@@ -9666,6 +9669,7 @@
             this.pictureBox300.TabIndex = 626;
             this.pictureBox300.TabStop = false;
             this.pictureBox300.Tag = "";
+            this.pictureBox300.Visible = false;
             // 
             // panel3
             // 
@@ -9675,7 +9679,7 @@
             this.panel3.Controls.Add(this.pictureBox300);
             this.panel3.Controls.Add(this.pictureBox378);
             this.panel3.Controls.Add(this.pictureBox205);
-            this.panel3.Location = new System.Drawing.Point(591, 9);
+            this.panel3.Location = new System.Drawing.Point(623, 3);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(325, 53);
             this.panel3.TabIndex = 627;

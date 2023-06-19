@@ -79,34 +79,34 @@ namespace PacMan
             if (direction == 1) //Left
             {
                 aimbox.Location = appearance.Location;
-                aimbox.Top = aimbox.Top - 2;
+                aimbox.Top = aimbox.Top + 2;
                 aimbox.Left = appearance.Left - 75;
-                aimbox.Height = 22;
+                aimbox.Height = 15;
                 aimbox.Width = 75;
             }
             if (direction == -1) //Right
             {
                 aimbox.Location = appearance.Location;
                 aimbox.Left = appearance.Right;
-                aimbox.Top = aimbox.Top - 2;
-                aimbox.Height = 22;
+                aimbox.Top = aimbox.Top + 2;
+                aimbox.Height = 15;
                 aimbox.Width = 75;
             }
             if (direction == 2) //Up
             {
                 aimbox.Location = appearance.Location;
                 aimbox.Top = appearance.Top - 75;
-                aimbox.Left = aimbox.Left - 2;
+                aimbox.Left = aimbox.Left;
                 aimbox.Height = 75;
-                aimbox.Width = 22;
+                aimbox.Width = 15;
             }
             if (direction == -2) //Down
             {
                 aimbox.Location = appearance.Location;
                 aimbox.Top = appearance.Bottom;
-                aimbox.Left = aimbox.Left - 2;
+                aimbox.Left = aimbox.Left;
                 aimbox.Height = 75;
-                aimbox.Width = 22;
+                aimbox.Width = 15;
             }
         }
         public void movementLeft() //just 1 step movement 

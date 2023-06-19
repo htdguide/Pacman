@@ -63,6 +63,16 @@ namespace PacMan.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap cherry {
+            get {
+                object obj = ResourceManager.GetObject("cherry", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap collider {
             get {
                 object obj = ResourceManager.GetObject("collider", resourceCulture);
@@ -77,6 +87,15 @@ namespace PacMan.Properties {
             get {
                 object obj = ResourceManager.GetObject("door", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream doorSound {
+            get {
+                return ResourceManager.GetStream("doorSound", resourceCulture);
             }
         }
         
@@ -195,6 +214,26 @@ namespace PacMan.Properties {
         internal static System.Drawing.Bitmap pacmanUp {
             get {
                 object obj = ResourceManager.GetObject("pacmanUp", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap strawberry {
+            get {
+                object obj = ResourceManager.GetObject("strawberry", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap watermel {
+            get {
+                object obj = ResourceManager.GetObject("watermel", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

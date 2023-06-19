@@ -110,7 +110,7 @@ namespace PacMan
             bool b = false;
             foreach (Control x in panel1.Controls) //Checking the all controls for a pictureboxes
             {
-                if (x is PictureBox && (x.Tag == "wall" || x.Tag == "border"))  //Wall detection
+                if (x is PictureBox && (x.Tag == "wall" || x.Tag == "border" || x.Tag =="door"))  //Wall detection
                 {
                     aligning(entity, x); //Alligning of the creature
                     if (entity.direction == 1)
@@ -160,6 +160,16 @@ namespace PacMan
                         panel1.Controls.Remove(x);
                     }
                 }
+                if (x is PictureBox && (x.Tag == "door" && engine.keys == 3))  //Door open detection
+                {
+                    if (entity.vision.Bounds.IntersectsWith(x.Bounds))
+                    {
+                        SoundPlayer collect = new SoundPlayer(Resources.doorSound);
+                        collect.Play();
+                        panel1.Controls.Remove(x);
+                        engine.keys = 0;
+                    }
+                }
                 if (x is PictureBox && (x.Tag == "kibble" || x.Tag == "wall" || x.Tag == "key" || x.Tag == "door"))  //Vision detection
                 {
                     if (entity.vision.Bounds.IntersectsWith(x.Bounds))
@@ -167,7 +177,7 @@ namespace PacMan
                         x.Visible = true;
                     }
                 }
-                if (entity.vision.Right == panel1.Right && panel1.Right < 1005) //Level extender
+                if ((entity.vision.Right + 5) == panel1.Right && panel1.Right < 1005) //Level extender
                 {
                     panel1.Width = panel1.Width + player.speed;
                     Pacman.ActiveForm.Width = Pacman.ActiveForm.Width + player.speed;

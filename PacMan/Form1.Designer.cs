@@ -31,7 +31,22 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Pacman));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox269 = new System.Windows.Forms.PictureBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.Pause = new System.Windows.Forms.Button();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.pictureBox394 = new System.Windows.Forms.PictureBox();
+            this.pictureBox393 = new System.Windows.Forms.PictureBox();
+            this.pictureBox268 = new System.Windows.Forms.PictureBox();
             this.pictureBox204 = new System.Windows.Forms.PictureBox();
             this.collider3 = new System.Windows.Forms.PictureBox();
             this.pictureBox392 = new System.Windows.Forms.PictureBox();
@@ -621,23 +636,14 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.vision1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox269 = new System.Windows.Forms.PictureBox();
             this.key1 = new System.Windows.Forms.PictureBox();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.Pause = new System.Windows.Forms.Button();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.pictureBox268 = new System.Windows.Forms.PictureBox();
+            this.pictureBox589 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox269)).BeginInit();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox394)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox393)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox268)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox204)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.collider3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox392)).BeginInit();
@@ -1227,15 +1233,18 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vision1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox269)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.key1)).BeginInit();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox268)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox589)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Black;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel1.Controls.Add(this.pictureBox589);
+            this.panel1.Controls.Add(this.pictureBox394);
+            this.panel1.Controls.Add(this.pictureBox393);
             this.panel1.Controls.Add(this.pictureBox268);
             this.panel1.Controls.Add(this.pictureBox204);
             this.panel1.Controls.Add(this.collider3);
@@ -1834,18 +1843,181 @@
             this.panel1.Size = new System.Drawing.Size(1046, 500);
             this.panel1.TabIndex = 0;
             // 
-            // pictureBox269
+            // panel2
             // 
-            this.pictureBox269.Image = global::PacMan.Properties.Resources.key;
-            this.pictureBox269.Location = new System.Drawing.Point(850, 125);
-            this.pictureBox269.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox269.Name = "pictureBox269";
-            this.pictureBox269.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox269.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox269.TabIndex = 615;
-            this.pictureBox269.TabStop = false;
-            this.pictureBox269.Tag = "key";
-            this.pictureBox269.Visible = false;
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.label7);
+            this.panel2.Controls.Add(this.label8);
+            this.panel2.Controls.Add(this.label9);
+            this.panel2.Controls.Add(this.label10);
+            this.panel2.Controls.Add(this.label6);
+            this.panel2.Controls.Add(this.label5);
+            this.panel2.Controls.Add(this.label4);
+            this.panel2.Controls.Add(this.label3);
+            this.panel2.Controls.Add(this.label2);
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Controls.Add(this.Pause);
+            this.panel2.Location = new System.Drawing.Point(24, 527);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(472, 120);
+            this.panel2.TabIndex = 1;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label7.Location = new System.Drawing.Point(103, 32);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(19, 23);
+            this.label7.TabIndex = 12;
+            this.label7.Text = "0";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label8.Location = new System.Drawing.Point(7, 32);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(90, 23);
+            this.label8.TabIndex = 11;
+            this.label8.Text = "[P2] Score:";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label9.Location = new System.Drawing.Point(195, 32);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(19, 23);
+            this.label9.TabIndex = 10;
+            this.label9.Text = "3";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label10.Location = new System.Drawing.Point(139, 32);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(50, 23);
+            this.label10.TabIndex = 9;
+            this.label10.Text = "Lives:";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label6.Location = new System.Drawing.Point(195, 9);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(19, 23);
+            this.label6.TabIndex = 6;
+            this.label6.Text = "3";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label5.Location = new System.Drawing.Point(103, 9);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(19, 23);
+            this.label5.TabIndex = 5;
+            this.label5.Text = "0";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label4.Location = new System.Drawing.Point(139, 9);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(50, 23);
+            this.label4.TabIndex = 4;
+            this.label4.Text = "Lives:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label3.Location = new System.Drawing.Point(7, 9);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(90, 23);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "[P1] Score:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label2.Location = new System.Drawing.Point(3, 84);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(410, 23);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Try to eat all the Kibble before the Ghosts catch you.";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Location = new System.Drawing.Point(3, 63);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(426, 23);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Use the arrow keys to move Pacman around the maze.";
+            // 
+            // Pause
+            // 
+            this.Pause.Enabled = false;
+            this.Pause.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Pause.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Pause.Location = new System.Drawing.Point(347, 13);
+            this.Pause.Name = "Pause";
+            this.Pause.Size = new System.Drawing.Size(82, 35);
+            this.Pause.TabIndex = 0;
+            this.Pause.Text = "Pause";
+            this.Pause.UseVisualStyleBackColor = true;
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 15;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // pictureBox394
+            // 
+            this.pictureBox394.Image = global::PacMan.Properties.Resources.watermel;
+            this.pictureBox394.Location = new System.Drawing.Point(800, 125);
+            this.pictureBox394.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox394.Name = "pictureBox394";
+            this.pictureBox394.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox394.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox394.TabIndex = 618;
+            this.pictureBox394.TabStop = false;
+            this.pictureBox394.Tag = "key";
+            this.pictureBox394.Visible = false;
+            // 
+            // pictureBox393
+            // 
+            this.pictureBox393.Image = global::PacMan.Properties.Resources.strawberry;
+            this.pictureBox393.Location = new System.Drawing.Point(550, 450);
+            this.pictureBox393.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox393.Name = "pictureBox393";
+            this.pictureBox393.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox393.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox393.TabIndex = 617;
+            this.pictureBox393.TabStop = false;
+            this.pictureBox393.Tag = "key";
+            this.pictureBox393.Visible = false;
+            // 
+            // pictureBox268
+            // 
+            this.pictureBox268.Image = global::PacMan.Properties.Resources.key;
+            this.pictureBox268.Location = new System.Drawing.Point(850, 449);
+            this.pictureBox268.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox268.Name = "pictureBox268";
+            this.pictureBox268.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox268.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox268.TabIndex = 616;
+            this.pictureBox268.TabStop = false;
+            this.pictureBox268.Tag = "key";
+            this.pictureBox268.Visible = false;
             // 
             // pictureBox204
             // 
@@ -1877,15 +2049,14 @@
             // pictureBox392
             // 
             this.pictureBox392.Image = global::PacMan.Properties.Resources.door;
-            this.pictureBox392.Location = new System.Drawing.Point(890, 350);
+            this.pictureBox392.Location = new System.Drawing.Point(829, 300);
             this.pictureBox392.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox392.Name = "pictureBox392";
-            this.pictureBox392.Size = new System.Drawing.Size(10, 25);
+            this.pictureBox392.Size = new System.Drawing.Size(21, 25);
             this.pictureBox392.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox392.TabIndex = 613;
             this.pictureBox392.TabStop = false;
-            this.pictureBox392.Tag = "wall";
-            this.pictureBox392.Visible = false;
+            this.pictureBox392.Tag = "door";
             // 
             // collider4
             // 
@@ -9375,6 +9546,19 @@
             this.vision1.Tag = "vision";
             this.vision1.Visible = false;
             // 
+            // pictureBox269
+            // 
+            this.pictureBox269.Image = global::PacMan.Properties.Resources.key;
+            this.pictureBox269.Location = new System.Drawing.Point(850, 125);
+            this.pictureBox269.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox269.Name = "pictureBox269";
+            this.pictureBox269.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox269.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox269.TabIndex = 615;
+            this.pictureBox269.TabStop = false;
+            this.pictureBox269.Tag = "key";
+            this.pictureBox269.Visible = false;
+            // 
             // key1
             // 
             this.key1.Image = global::PacMan.Properties.Resources.key;
@@ -9388,155 +9572,18 @@
             this.key1.Tag = "key";
             this.key1.Visible = false;
             // 
-            // panel2
+            // pictureBox589
             // 
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.label7);
-            this.panel2.Controls.Add(this.label8);
-            this.panel2.Controls.Add(this.label9);
-            this.panel2.Controls.Add(this.label10);
-            this.panel2.Controls.Add(this.label6);
-            this.panel2.Controls.Add(this.label5);
-            this.panel2.Controls.Add(this.label4);
-            this.panel2.Controls.Add(this.label3);
-            this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.Pause);
-            this.panel2.Location = new System.Drawing.Point(24, 527);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(472, 114);
-            this.panel2.TabIndex = 1;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label7.Location = new System.Drawing.Point(97, 32);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(19, 23);
-            this.label7.TabIndex = 12;
-            this.label7.Text = "0";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label8.Location = new System.Drawing.Point(35, 32);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(56, 23);
-            this.label8.TabIndex = 11;
-            this.label8.Text = "Score:";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label9.Location = new System.Drawing.Point(238, 32);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(19, 23);
-            this.label9.TabIndex = 10;
-            this.label9.Text = "3";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label10.Location = new System.Drawing.Point(182, 32);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(50, 23);
-            this.label10.TabIndex = 9;
-            this.label10.Text = "Lives:";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label6.Location = new System.Drawing.Point(238, 9);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(19, 23);
-            this.label6.TabIndex = 6;
-            this.label6.Text = "3";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label5.Location = new System.Drawing.Point(97, 9);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(19, 23);
-            this.label5.TabIndex = 5;
-            this.label5.Text = "0";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.Location = new System.Drawing.Point(182, 9);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(50, 23);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "Lives:";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.Location = new System.Drawing.Point(35, 9);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(56, 23);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Score:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(3, 84);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(410, 23);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Try to eat all the Kibble before the Ghosts catch you.";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(3, 63);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(426, 23);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Use the arrow keys to move Pacman around the maze.";
-            // 
-            // Pause
-            // 
-            this.Pause.Enabled = false;
-            this.Pause.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Pause.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Pause.Location = new System.Drawing.Point(347, 13);
-            this.Pause.Name = "Pause";
-            this.Pause.Size = new System.Drawing.Size(82, 35);
-            this.Pause.TabIndex = 0;
-            this.Pause.Text = "Pause";
-            this.Pause.UseVisualStyleBackColor = true;
-            // 
-            // timer1
-            // 
-            this.timer1.Enabled = true;
-            this.timer1.Interval = 15;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // pictureBox268
-            // 
-            this.pictureBox268.Image = global::PacMan.Properties.Resources.key;
-            this.pictureBox268.Location = new System.Drawing.Point(75, 450);
-            this.pictureBox268.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox268.Name = "pictureBox268";
-            this.pictureBox268.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox268.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox268.TabIndex = 616;
-            this.pictureBox268.TabStop = false;
-            this.pictureBox268.Tag = "key";
-            this.pictureBox268.Visible = false;
+            this.pictureBox589.Image = global::PacMan.Properties.Resources.cherry;
+            this.pictureBox589.Location = new System.Drawing.Point(800, 225);
+            this.pictureBox589.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox589.Name = "pictureBox589";
+            this.pictureBox589.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox589.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox589.TabIndex = 619;
+            this.pictureBox589.TabStop = false;
+            this.pictureBox589.Tag = "key";
+            this.pictureBox589.Visible = false;
             // 
             // Pacman
             // 
@@ -9553,7 +9600,11 @@
             this.Text = "Pacman";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Pacman_KeyDown);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox269)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox394)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox393)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox268)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox204)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.collider3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox392)).EndInit();
@@ -10143,10 +10194,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.vision1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox269)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.key1)).EndInit();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox268)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox589)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -10759,6 +10809,9 @@
         private System.Windows.Forms.PictureBox key1;
         private System.Windows.Forms.PictureBox pictureBox269;
         private System.Windows.Forms.PictureBox pictureBox268;
+        private System.Windows.Forms.PictureBox pictureBox393;
+        private System.Windows.Forms.PictureBox pictureBox394;
+        private System.Windows.Forms.PictureBox pictureBox589;
     }
 }
 

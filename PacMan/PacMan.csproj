@@ -122,10 +122,28 @@
     <None Include="Resources\door.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\mixkit-retro-game-notification-212.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mixkit-slamming-a-door-194.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mixkit-epic-orchestra-transition-2290.wav" />
+  </ItemGroup>
+  <ItemGroup>
     <None Include="Resources\mixkit-truck-keys-1625.wav" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\mixkit-retro-game-notification-212.wav" />
+    <None Include="Resources\mixkit-drone-terror-long-organ-2750.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PngItem_154578.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PngItem_987514.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PngItem_987464.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

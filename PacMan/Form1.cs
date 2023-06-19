@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Drawing.Imaging;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -33,6 +34,12 @@ namespace PacMan
 
         private void timer1_Tick(object sender, EventArgs e)
         {
+            if (panel1.Width > 500 && engine.scoreTotal < 1)
+            {
+                panel1.Width = 380;
+                Pacman.ActiveForm.Width = 410;
+                Pacman.ActiveForm.Height = 570;
+            }
             if (!wallcheck(player)) player.movement();
             if ((engine.scoreTotal > 187 && gatesCounter < 20) || (gatesCounter < 20 && gates == true)) gatesopen(pictureBox41,4);
         }
@@ -61,11 +68,9 @@ namespace PacMan
             }
             if (e.KeyCode == Keys.Space)
             {
-                panel1.Width = 1005;
-                Pacman.ActiveForm.Width = 1040;
-                pictureBox49.Top = pictureBox49.Top + 25;
+
             }
-            if (e.KeyCode == Keys.X) //Collision debug
+            if (e.KeyCode == Keys.X) //Debug mode
             {
                // firstGhost.Visible = !c;
                // secondGhost.Visible = !c;
@@ -93,14 +98,21 @@ namespace PacMan
             }
         }
 
+        private void Pacman_Load(object sender, EventArgs e)
+        {
+            panel1.Width = 500;
+            Pacman.ActiveForm.Width = 540;
+            Pacman.ActiveForm.Height = 700;
+        }
+
         private bool wallcheck(Creatures entity) //Checking for the wall collision
         {
             bool b = false;
             foreach (Control x in panel1.Controls) //Checking the all controls for a pictureboxes
             {
-                if (x is PictureBox && (x.Tag == "wall" || x.Tag == "border"))  //Tag property 
+                if (x is PictureBox && (x.Tag == "wall" || x.Tag == "border"))  //Wall detection
                 {
-                    aligning(entity, x);
+                    aligning(entity, x); //Alligning of the creature
                     if (entity.direction == 1)
                     {
                         if (entity.colliderLeft.Bounds.IntersectsWith(x.Bounds))
@@ -129,9 +141,8 @@ namespace PacMan
                             b = true;
                         }
                     }
-
                 }
-                if (x is PictureBox && (x.Tag == "kibble"))  //Tag property 
+                if (x is PictureBox && (x.Tag == "kibble"))  //Kibble detection
                 {
                     if (entity.appearance.Bounds.IntersectsWith(x.Bounds))
                     {
@@ -139,22 +150,32 @@ namespace PacMan
                         panel1.Controls.Remove(x);
                     }
                 }
-                if (x is PictureBox && (x.Tag == "kibble" || x.Tag == "wall" || x.Tag == "key" || x.Tag == "door"))  //Vision
+                if (x is PictureBox && (x.Tag == "key"))  //Kibble detection
+                {
+                    if (entity.appearance.Bounds.IntersectsWith(x.Bounds))
+                    {
+                        engine.keys = engine.keys + 1;
+                        SoundPlayer collect = new SoundPlayer(Resources.keys);
+                        collect.Play();
+                        panel1.Controls.Remove(x);
+                    }
+                }
+                if (x is PictureBox && (x.Tag == "kibble" || x.Tag == "wall" || x.Tag == "key" || x.Tag == "door"))  //Vision detection
                 {
                     if (entity.vision.Bounds.IntersectsWith(x.Bounds))
                     {
                         x.Visible = true;
                     }
                 }
-                if (entity.vision.Right == panel1.Right && panel1.Right < 1005)
+                if (entity.vision.Right == panel1.Right && panel1.Right < 1005) //Level extender
                 {
-                    panel1.Width = panel1.Width + 1;
-                    Pacman.ActiveForm.Width = Pacman.ActiveForm.Width + 1;
+                    panel1.Width = panel1.Width + player.speed;
+                    Pacman.ActiveForm.Width = Pacman.ActiveForm.Width + player.speed;
                 }
             }
             return b;
         }
-        private void aligning(Creatures entity, Control x)
+        private void aligning(Creatures entity, Control x) //Alligning of the creature in the case when creature changes direction not in the right time, but still fits.
         {
             if (entity.direction == 1 || entity.direction == -1)
             {
@@ -179,7 +200,7 @@ namespace PacMan
                 }
             }
         }
-        private void gatesopen(PictureBox door, int direction)
+        private void gatesopen(PictureBox door, int direction) //Gates for level extension
         {
             switch (direction)
             {

@@ -121,5 +121,11 @@
   <ItemGroup>
     <None Include="Resources\door.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mixkit-truck-keys-1625.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mixkit-retro-game-notification-212.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

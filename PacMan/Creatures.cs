@@ -12,6 +12,7 @@ namespace PacMan
     {
         public string name; //Name of the creature
         public int direction; //movement direction
+        public int speed = 1; //speed
         public PictureBox appearance, colliderUp, colliderDown, colliderLeft, colliderRight,vision; //appearance and collision pictureboxes
         public int stop = 0; 
 
@@ -35,43 +36,43 @@ namespace PacMan
             {
                 if (direction == 1)
                 {
-                    appearance.Left = appearance.Left - 1;
-                    colliderUp.Left = colliderUp.Left - 1;
-                    colliderDown.Left = colliderDown.Left - 1;
-                    colliderLeft.Left = colliderLeft.Left - 1;
-                    colliderRight.Left = colliderRight.Left - 1;
-                    vision.Left = vision.Left - 1;
+                    appearance.Left = appearance.Left - speed;
+                    colliderUp.Left = colliderUp.Left - speed;
+                    colliderDown.Left = colliderDown.Left - speed;
+                    colliderLeft.Left = colliderLeft.Left - speed;
+                    colliderRight.Left = colliderRight.Left - speed;
+                    vision.Left = vision.Left - speed;
                 }
                 if (direction == -1)
                 {
-                    appearance.Left = appearance.Left + 1;
-                    colliderUp.Left = colliderUp.Left + 1;
-                    colliderDown.Left = colliderDown.Left + 1;
-                    colliderLeft.Left = colliderLeft.Left + 1;
-                    colliderRight.Left = colliderRight.Left + 1;
-                    vision.Left = vision.Left + 1;
+                    appearance.Left = appearance.Left + speed;
+                    colliderUp.Left = colliderUp.Left + speed;
+                    colliderDown.Left = colliderDown.Left + speed;
+                    colliderLeft.Left = colliderLeft.Left + speed;
+                    colliderRight.Left = colliderRight.Left + speed;
+                    vision.Left = vision.Left + speed;
                 }
                 if (direction == 2)
                 {
-                    appearance.Top = appearance.Top - 1;
-                    colliderUp.Top = colliderUp.Top - 1;
-                    colliderDown.Top = colliderDown.Top - 1;
-                    colliderLeft.Top = colliderLeft.Top - 1;
-                    colliderRight.Top = colliderRight.Top -1;
-                    vision.Top = vision.Top - 1;
+                    appearance.Top = appearance.Top - speed;
+                    colliderUp.Top = colliderUp.Top - speed;
+                    colliderDown.Top = colliderDown.Top - speed;
+                    colliderLeft.Top = colliderLeft.Top - speed;
+                    colliderRight.Top = colliderRight.Top - speed;
+                    vision.Top = vision.Top - speed;
                 }
                 if (direction == -2)
                 {
-                    appearance.Top = appearance.Top + 1;
-                    colliderUp.Top = colliderUp.Top + 1;
-                    colliderDown.Top = colliderDown.Top + 1;
-                    colliderLeft.Top = colliderLeft.Top + 1;
-                    colliderRight.Top = colliderRight.Top + 1;
-                    vision.Top = vision.Top + 1;
+                    appearance.Top = appearance.Top + speed;
+                    colliderUp.Top = colliderUp.Top + speed;
+                    colliderDown.Top = colliderDown.Top + speed;
+                    colliderLeft.Top = colliderLeft.Top + speed;
+                    colliderRight.Top = colliderRight.Top + speed;
+                    vision.Top = vision.Top + speed;
                 }
             }
         }
-        public void movementLeft()
+        public void movementLeft() //just 1 step movement 
         {
                     appearance.Left = appearance.Left - 1;
                     colliderUp.Left = colliderUp.Left - 1;

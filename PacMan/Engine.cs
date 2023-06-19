@@ -14,6 +14,7 @@ namespace PacMan
         public int lives1 = 3; //Player's lives
         public int score2 = 0; //Second player's score
         public int lives2 = 3; //Second player's lives
+        public int keys = 0;
         public int ghosts; //ghosts alive
         public bool restart; //restart button
         public bool pause; //pause button

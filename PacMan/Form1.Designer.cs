@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Pacman));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox269 = new System.Windows.Forms.PictureBox();
             this.pictureBox204 = new System.Windows.Forms.PictureBox();
             this.collider3 = new System.Windows.Forms.PictureBox();
             this.pictureBox392 = new System.Windows.Forms.PictureBox();
@@ -634,8 +635,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.Pause = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.pictureBox269 = new System.Windows.Forms.PictureBox();
+            this.pictureBox268 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox269)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox204)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.collider3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox392)).BeginInit();
@@ -1227,14 +1229,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.vision1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.key1)).BeginInit();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox269)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox268)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Black;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel1.Controls.Add(this.pictureBox269);
+            this.panel1.Controls.Add(this.pictureBox268);
             this.panel1.Controls.Add(this.pictureBox204);
             this.panel1.Controls.Add(this.collider3);
             this.panel1.Controls.Add(this.pictureBox392);
@@ -1824,12 +1826,26 @@
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.vision1);
+            this.panel1.Controls.Add(this.pictureBox269);
             this.panel1.Controls.Add(this.key1);
             this.panel1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.panel1.Location = new System.Drawing.Point(12, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(504, 500);
+            this.panel1.Size = new System.Drawing.Size(1046, 500);
             this.panel1.TabIndex = 0;
+            // 
+            // pictureBox269
+            // 
+            this.pictureBox269.Image = global::PacMan.Properties.Resources.key;
+            this.pictureBox269.Location = new System.Drawing.Point(850, 125);
+            this.pictureBox269.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox269.Name = "pictureBox269";
+            this.pictureBox269.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox269.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox269.TabIndex = 615;
+            this.pictureBox269.TabStop = false;
+            this.pictureBox269.Tag = "key";
+            this.pictureBox269.Visible = false;
             // 
             // pictureBox204
             // 
@@ -1868,7 +1884,7 @@
             this.pictureBox392.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox392.TabIndex = 613;
             this.pictureBox392.TabStop = false;
-            this.pictureBox392.Tag = "door";
+            this.pictureBox392.Tag = "wall";
             this.pictureBox392.Visible = false;
             // 
             // collider4
@@ -9509,25 +9525,25 @@
             this.timer1.Interval = 15;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // pictureBox269
+            // pictureBox268
             // 
-            this.pictureBox269.Image = global::PacMan.Properties.Resources.key;
-            this.pictureBox269.Location = new System.Drawing.Point(850, 125);
-            this.pictureBox269.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox269.Name = "pictureBox269";
-            this.pictureBox269.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox269.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox269.TabIndex = 615;
-            this.pictureBox269.TabStop = false;
-            this.pictureBox269.Tag = "key";
-            this.pictureBox269.Visible = false;
+            this.pictureBox268.Image = global::PacMan.Properties.Resources.key;
+            this.pictureBox268.Location = new System.Drawing.Point(75, 450);
+            this.pictureBox268.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox268.Name = "pictureBox268";
+            this.pictureBox268.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox268.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox268.TabIndex = 616;
+            this.pictureBox268.TabStop = false;
+            this.pictureBox268.Tag = "key";
+            this.pictureBox268.Visible = false;
             // 
             // Pacman
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(209)))), ((int)(((byte)(199)))));
-            this.ClientSize = new System.Drawing.Size(525, 653);
+            this.ClientSize = new System.Drawing.Size(1153, 1164);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.DoubleBuffered = true;
@@ -9537,6 +9553,7 @@
             this.Text = "Pacman";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Pacman_KeyDown);
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox269)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox204)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.collider3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox392)).EndInit();
@@ -10129,7 +10146,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.key1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox269)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox268)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -10741,6 +10758,7 @@
         private System.Windows.Forms.PictureBox pictureBox392;
         private System.Windows.Forms.PictureBox key1;
         private System.Windows.Forms.PictureBox pictureBox269;
+        private System.Windows.Forms.PictureBox pictureBox268;
     }
 }
 

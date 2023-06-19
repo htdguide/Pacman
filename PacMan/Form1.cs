@@ -23,6 +23,7 @@ namespace PacMan
         private bool gates = false; //gates open
         private int gatesCounter = 0;
         private int doorsCounter = 0;
+        private int bullet = 1;
         public Pacman()
         {
             InitializeComponent();
@@ -40,6 +41,7 @@ namespace PacMan
                 panel1.Width = 380;
                 Pacman.ActiveForm.Width = 410;
                 Pacman.ActiveForm.Height = 570;
+                panel2.Width = 360;
             }
             if (!wallcheck(player)) player.movement();
             if ((engine.scoreTotal > 187 && gatesCounter < 20) || (gatesCounter < 20 && gates == true)) gatesopen(pictureBox41,4);
@@ -73,7 +75,9 @@ namespace PacMan
             }
             if (e.KeyCode == Keys.Space)
             {
-
+                if (bullet == 1) shot();
+                else reload();
+                
             }
             if (e.KeyCode == Keys.X) //Debug mode
             {
@@ -100,6 +104,7 @@ namespace PacMan
                 vision1.Visible = c;
                 gates = true;
                 engine.keys = 3;
+                aimBox.Visible = c;
                 c = !c;
             }
         }
@@ -162,7 +167,7 @@ namespace PacMan
                     {
                         foreach (Control z in panel1.Controls)
                         {
-                            if (z is PictureBox && z.Tag == "kibble") z.Visible = true;
+                            if (z is PictureBox && z.Tag == "kibble") z.Visible = true; //Ability to see the kibbles
                         }
                         SoundPlayer collect = new SoundPlayer(Resources.keys);
                         collect.Play();
@@ -200,6 +205,14 @@ namespace PacMan
                 {
                     panel1.Width = panel1.Width + player.speed;
                     Pacman.ActiveForm.Width = Pacman.ActiveForm.Width + player.speed;
+                    panel2.Width = panel2.Width + player.speed;
+                    Pause.Left = Pause.Left + player.speed;
+                    label11.Left = label11.Left + player.speed;
+                    if (Pause.Left > label1.Right && Pause.Bottom != label2.Bottom)
+                    {
+                        Pause.Top = Pause.Top + 1;
+                        label11.Top = label11.Top + 1;
+                    }
                 }
                 if (engine.scoreTotal > 100 && doorsCounter == 0)
                 {
@@ -236,6 +249,21 @@ namespace PacMan
                 }
             }
         }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+            if (timer1.Enabled == true)
+            {
+                timer1.Enabled = false;
+                label11.Text = "Start!";
+            }
+            else
+            {
+                timer1.Enabled = true;
+                label11.Text = "Pause";
+            }
+        }
+
         private void gatesopen(PictureBox door, int direction) //Gates for level extension
         {
             switch (direction)
@@ -254,6 +282,30 @@ namespace PacMan
                     break;
             }
             gatesCounter = gatesCounter + 1;   
+        }
+        private void shot()
+        {
+            SoundPlayer shot = new SoundPlayer(Resources.shot);
+            shot.Play();
+            bullet = 0;
+            foreach (PictureBox v in panel1.Controls)
+            {
+                if (v.Tag == "wall")
+                {
+                    if (aimBox.Bounds.IntersectsWith(v.Bounds))
+                    {
+                        v.Image = Resources.deadwall;
+                        v.Tag = "deadwall";
+                        v.Visible = true;
+                    }
+                }
+            }
+        }
+        private void reload()
+        {
+            SoundPlayer reload = new SoundPlayer(Resources.reload);
+            reload.Play();
+            bullet = 1;
         }
     }
 }

@@ -148,5 +148,17 @@
   <ItemGroup>
     <None Include="Resources\shotgun.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deadwall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mixkit-war-field-explosion-1702.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mixkit-shotgun-long-pump-1666.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mixkit-war-field-explosion-1702 %281%29.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

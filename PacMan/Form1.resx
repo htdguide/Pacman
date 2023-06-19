@@ -117,6 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="pictureBox391.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2122,18 +2125,6 @@
         gTG/OEHPq4bN/zkAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="pictureBox202.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAFoAAABZCAYAAAC+PDOsAAAABGdBTUEAALGPC/xhBQAAAXJJREFUeF7t
-        1bErxGEcx/HnBpKkJH+AiZWUbvklg4ntSOoYTGcxqFNGilEdozilG5QSg8HgCiXmOyUyGBSbmR6/4bn7
-        Ps9Nlvte+b1f9d5+z/PUZ/kZAAAAAAAAAAAAAAAAAAAAAIk2P2ms315eKi1LuSjMHcdfMbQShm6ictHY
-        WrbS0LXXsddO2NWC5K5FI4ZWwtBKGLpJShvxD83LvnRKj9mw+4x02C6tx+e8vnLSfpQKcs8mD0MrYWgl
-        1QNj/exNr1TdCntYk3a7pJX4nNdHRrqIOoLcs8nD0EoYWglDK3ndNtbPHqWkYl9YIR6/Vj7+1vWTDXuO
-        pPN0T5B7NnkYWglDK7lcNNbPbnqtNrQkfc9K72Nht4PSydRwkHs2eRhaCUMrYegWeZozttbndNjbhFQZ
-        kcoDYXeZdD13LRoxtBKGboHCUJv1Oxvtrnca9dcrzYwHueP4K4ZWwtBKGBoAAAAAAAAAAAAAAAAAAAD/
-        gTG/OEHPq4bN/zkAAAAASUVORK5CYII=
-</value>
-  </data>
   <data name="pictureBox203.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAFoAAABZCAYAAAC+PDOsAAAABGdBTUEAALGPC/xhBQAAAXJJREFUeF7t
@@ -2314,9 +2305,6 @@
         gTG/OEHPq4bN/zkAAAAASUVORK5CYII=
 </value>
   </data>
-  <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAYAAAAAAAEAIACbNwAAZgAAAICAAAABACAAKAgBAAE4AABAQAAAAQAgAChCAAApQAEAMDAAAAEA

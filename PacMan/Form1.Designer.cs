@@ -44,8 +44,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.Pause = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.pictureBox589 = new System.Windows.Forms.PictureBox();
             this.pictureBox394 = new System.Windows.Forms.PictureBox();
-            this.pictureBox393 = new System.Windows.Forms.PictureBox();
+            this.strawberry = new System.Windows.Forms.PictureBox();
             this.pictureBox268 = new System.Windows.Forms.PictureBox();
             this.pictureBox204 = new System.Windows.Forms.PictureBox();
             this.collider3 = new System.Windows.Forms.PictureBox();
@@ -261,7 +262,6 @@
             this.pictureBox382 = new System.Windows.Forms.PictureBox();
             this.pictureBox383 = new System.Windows.Forms.PictureBox();
             this.pictureBox379 = new System.Windows.Forms.PictureBox();
-            this.pictureBox378 = new System.Windows.Forms.PictureBox();
             this.pictureBox377 = new System.Windows.Forms.PictureBox();
             this.pictureBox374 = new System.Windows.Forms.PictureBox();
             this.pictureBox375 = new System.Windows.Forms.PictureBox();
@@ -340,8 +340,6 @@
             this.pictureBox303 = new System.Windows.Forms.PictureBox();
             this.pictureBox304 = new System.Windows.Forms.PictureBox();
             this.pictureBox298 = new System.Windows.Forms.PictureBox();
-            this.pictureBox299 = new System.Windows.Forms.PictureBox();
-            this.pictureBox300 = new System.Windows.Forms.PictureBox();
             this.pictureBox294 = new System.Windows.Forms.PictureBox();
             this.pictureBox295 = new System.Windows.Forms.PictureBox();
             this.pictureBox296 = new System.Windows.Forms.PictureBox();
@@ -638,11 +636,12 @@
             this.vision1 = new System.Windows.Forms.PictureBox();
             this.pictureBox269 = new System.Windows.Forms.PictureBox();
             this.key1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox589 = new System.Windows.Forms.PictureBox();
+            this.doorS = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox589)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox394)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox393)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.strawberry)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox268)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox204)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.collider3)).BeginInit();
@@ -858,7 +857,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox382)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox383)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox379)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox378)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox377)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox374)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox375)).BeginInit();
@@ -937,8 +935,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox303)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox304)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox298)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox299)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox300)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox294)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox295)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox296)).BeginInit();
@@ -1235,16 +1231,17 @@
             ((System.ComponentModel.ISupportInitialize)(this.vision1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox269)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.key1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox589)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.doorS)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Black;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel1.Controls.Add(this.doorS);
             this.panel1.Controls.Add(this.pictureBox589);
             this.panel1.Controls.Add(this.pictureBox394);
-            this.panel1.Controls.Add(this.pictureBox393);
+            this.panel1.Controls.Add(this.strawberry);
             this.panel1.Controls.Add(this.pictureBox268);
             this.panel1.Controls.Add(this.pictureBox204);
             this.panel1.Controls.Add(this.collider3);
@@ -1460,7 +1457,6 @@
             this.panel1.Controls.Add(this.pictureBox382);
             this.panel1.Controls.Add(this.pictureBox383);
             this.panel1.Controls.Add(this.pictureBox379);
-            this.panel1.Controls.Add(this.pictureBox378);
             this.panel1.Controls.Add(this.pictureBox377);
             this.panel1.Controls.Add(this.pictureBox374);
             this.panel1.Controls.Add(this.pictureBox375);
@@ -1539,8 +1535,6 @@
             this.panel1.Controls.Add(this.pictureBox303);
             this.panel1.Controls.Add(this.pictureBox304);
             this.panel1.Controls.Add(this.pictureBox298);
-            this.panel1.Controls.Add(this.pictureBox299);
-            this.panel1.Controls.Add(this.pictureBox300);
             this.panel1.Controls.Add(this.pictureBox294);
             this.panel1.Controls.Add(this.pictureBox295);
             this.panel1.Controls.Add(this.pictureBox296);
@@ -1840,7 +1834,7 @@
             this.panel1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.panel1.Location = new System.Drawing.Point(12, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1046, 500);
+            this.panel1.Size = new System.Drawing.Size(1007, 500);
             this.panel1.TabIndex = 0;
             // 
             // panel2
@@ -1980,6 +1974,19 @@
             this.timer1.Interval = 15;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // pictureBox589
+            // 
+            this.pictureBox589.Image = global::PacMan.Properties.Resources.cherry;
+            this.pictureBox589.Location = new System.Drawing.Point(800, 225);
+            this.pictureBox589.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox589.Name = "pictureBox589";
+            this.pictureBox589.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox589.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox589.TabIndex = 619;
+            this.pictureBox589.TabStop = false;
+            this.pictureBox589.Tag = "key";
+            this.pictureBox589.Visible = false;
+            // 
             // pictureBox394
             // 
             this.pictureBox394.Image = global::PacMan.Properties.Resources.watermel;
@@ -1993,18 +2000,18 @@
             this.pictureBox394.Tag = "key";
             this.pictureBox394.Visible = false;
             // 
-            // pictureBox393
+            // strawberry
             // 
-            this.pictureBox393.Image = global::PacMan.Properties.Resources.strawberry;
-            this.pictureBox393.Location = new System.Drawing.Point(550, 450);
-            this.pictureBox393.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox393.Name = "pictureBox393";
-            this.pictureBox393.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox393.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox393.TabIndex = 617;
-            this.pictureBox393.TabStop = false;
-            this.pictureBox393.Tag = "key";
-            this.pictureBox393.Visible = false;
+            this.strawberry.Image = global::PacMan.Properties.Resources.strawberry;
+            this.strawberry.Location = new System.Drawing.Point(150, 125);
+            this.strawberry.Margin = new System.Windows.Forms.Padding(2);
+            this.strawberry.Name = "strawberry";
+            this.strawberry.Size = new System.Drawing.Size(25, 25);
+            this.strawberry.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.strawberry.TabIndex = 617;
+            this.strawberry.TabStop = false;
+            this.strawberry.Tag = "straw";
+            this.strawberry.Visible = false;
             // 
             // pictureBox268
             // 
@@ -2083,7 +2090,7 @@
             this.pictureBox588.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox588.TabIndex = 597;
             this.pictureBox588.TabStop = false;
-            this.pictureBox588.Tag = "wall";
+            this.pictureBox588.Tag = "wall2";
             this.pictureBox588.Visible = false;
             // 
             // collider1
@@ -2111,7 +2118,7 @@
             this.pictureBox587.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox587.TabIndex = 596;
             this.pictureBox587.TabStop = false;
-            this.pictureBox587.Tag = "wall";
+            this.pictureBox587.Tag = "wall2";
             this.pictureBox587.Visible = false;
             // 
             // collider2
@@ -2139,7 +2146,7 @@
             this.pictureBox586.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox586.TabIndex = 595;
             this.pictureBox586.TabStop = false;
-            this.pictureBox586.Tag = "wall";
+            this.pictureBox586.Tag = "wall2";
             this.pictureBox586.Visible = false;
             // 
             // pictureBox585
@@ -2152,7 +2159,7 @@
             this.pictureBox585.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox585.TabIndex = 594;
             this.pictureBox585.TabStop = false;
-            this.pictureBox585.Tag = "wall";
+            this.pictureBox585.Tag = "wall2";
             this.pictureBox585.Visible = false;
             // 
             // pictureBox584
@@ -2165,7 +2172,7 @@
             this.pictureBox584.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox584.TabIndex = 593;
             this.pictureBox584.TabStop = false;
-            this.pictureBox584.Tag = "wall";
+            this.pictureBox584.Tag = "wall2";
             this.pictureBox584.Visible = false;
             // 
             // pictureBox583
@@ -2178,7 +2185,7 @@
             this.pictureBox583.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox583.TabIndex = 592;
             this.pictureBox583.TabStop = false;
-            this.pictureBox583.Tag = "wall";
+            this.pictureBox583.Tag = "wall2";
             this.pictureBox583.Visible = false;
             // 
             // pictureBox582
@@ -2191,7 +2198,7 @@
             this.pictureBox582.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox582.TabIndex = 591;
             this.pictureBox582.TabStop = false;
-            this.pictureBox582.Tag = "wall";
+            this.pictureBox582.Tag = "wall2";
             this.pictureBox582.Visible = false;
             // 
             // pictureBox581
@@ -2204,7 +2211,7 @@
             this.pictureBox581.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox581.TabIndex = 590;
             this.pictureBox581.TabStop = false;
-            this.pictureBox581.Tag = "wall";
+            this.pictureBox581.Tag = "wall2";
             this.pictureBox581.Visible = false;
             // 
             // pictureBox580
@@ -2217,7 +2224,7 @@
             this.pictureBox580.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox580.TabIndex = 589;
             this.pictureBox580.TabStop = false;
-            this.pictureBox580.Tag = "wall";
+            this.pictureBox580.Tag = "wall2";
             this.pictureBox580.Visible = false;
             // 
             // pictureBox579
@@ -2230,7 +2237,7 @@
             this.pictureBox579.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox579.TabIndex = 588;
             this.pictureBox579.TabStop = false;
-            this.pictureBox579.Tag = "wall";
+            this.pictureBox579.Tag = "wall2";
             this.pictureBox579.Visible = false;
             // 
             // pictureBox578
@@ -2243,7 +2250,7 @@
             this.pictureBox578.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox578.TabIndex = 587;
             this.pictureBox578.TabStop = false;
-            this.pictureBox578.Tag = "wall";
+            this.pictureBox578.Tag = "wall2";
             this.pictureBox578.Visible = false;
             // 
             // pictureBox577
@@ -2256,7 +2263,7 @@
             this.pictureBox577.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox577.TabIndex = 586;
             this.pictureBox577.TabStop = false;
-            this.pictureBox577.Tag = "wall";
+            this.pictureBox577.Tag = "wall2";
             this.pictureBox577.Visible = false;
             // 
             // pictureBox576
@@ -2269,7 +2276,7 @@
             this.pictureBox576.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox576.TabIndex = 585;
             this.pictureBox576.TabStop = false;
-            this.pictureBox576.Tag = "wall";
+            this.pictureBox576.Tag = "wall2";
             this.pictureBox576.Visible = false;
             // 
             // pictureBox575
@@ -2282,7 +2289,7 @@
             this.pictureBox575.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox575.TabIndex = 584;
             this.pictureBox575.TabStop = false;
-            this.pictureBox575.Tag = "wall";
+            this.pictureBox575.Tag = "wall2";
             this.pictureBox575.Visible = false;
             // 
             // pictureBox574
@@ -2295,7 +2302,7 @@
             this.pictureBox574.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox574.TabIndex = 583;
             this.pictureBox574.TabStop = false;
-            this.pictureBox574.Tag = "wall";
+            this.pictureBox574.Tag = "wall2";
             this.pictureBox574.Visible = false;
             // 
             // pictureBox573
@@ -2308,7 +2315,7 @@
             this.pictureBox573.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox573.TabIndex = 582;
             this.pictureBox573.TabStop = false;
-            this.pictureBox573.Tag = "wall";
+            this.pictureBox573.Tag = "wall2";
             this.pictureBox573.Visible = false;
             // 
             // pictureBox572
@@ -2321,7 +2328,7 @@
             this.pictureBox572.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox572.TabIndex = 581;
             this.pictureBox572.TabStop = false;
-            this.pictureBox572.Tag = "wall";
+            this.pictureBox572.Tag = "wall2";
             this.pictureBox572.Visible = false;
             // 
             // pictureBox571
@@ -2334,7 +2341,7 @@
             this.pictureBox571.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox571.TabIndex = 580;
             this.pictureBox571.TabStop = false;
-            this.pictureBox571.Tag = "wall";
+            this.pictureBox571.Tag = "wall2";
             this.pictureBox571.Visible = false;
             // 
             // pictureBox570
@@ -2347,7 +2354,7 @@
             this.pictureBox570.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox570.TabIndex = 579;
             this.pictureBox570.TabStop = false;
-            this.pictureBox570.Tag = "wall";
+            this.pictureBox570.Tag = "wall2";
             this.pictureBox570.Visible = false;
             // 
             // pictureBox569
@@ -2360,7 +2367,7 @@
             this.pictureBox569.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox569.TabIndex = 578;
             this.pictureBox569.TabStop = false;
-            this.pictureBox569.Tag = "wall";
+            this.pictureBox569.Tag = "wall2";
             this.pictureBox569.Visible = false;
             // 
             // pictureBox568
@@ -2373,7 +2380,7 @@
             this.pictureBox568.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox568.TabIndex = 577;
             this.pictureBox568.TabStop = false;
-            this.pictureBox568.Tag = "wall";
+            this.pictureBox568.Tag = "wall2";
             this.pictureBox568.Visible = false;
             // 
             // pictureBox567
@@ -2386,7 +2393,7 @@
             this.pictureBox567.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox567.TabIndex = 576;
             this.pictureBox567.TabStop = false;
-            this.pictureBox567.Tag = "wall";
+            this.pictureBox567.Tag = "wall2";
             this.pictureBox567.Visible = false;
             // 
             // pictureBox566
@@ -2399,7 +2406,7 @@
             this.pictureBox566.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox566.TabIndex = 575;
             this.pictureBox566.TabStop = false;
-            this.pictureBox566.Tag = "wall";
+            this.pictureBox566.Tag = "wall2";
             this.pictureBox566.Visible = false;
             // 
             // pictureBox565
@@ -2412,7 +2419,7 @@
             this.pictureBox565.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox565.TabIndex = 574;
             this.pictureBox565.TabStop = false;
-            this.pictureBox565.Tag = "wall";
+            this.pictureBox565.Tag = "wall2";
             this.pictureBox565.Visible = false;
             // 
             // pictureBox564
@@ -2425,7 +2432,7 @@
             this.pictureBox564.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox564.TabIndex = 573;
             this.pictureBox564.TabStop = false;
-            this.pictureBox564.Tag = "wall";
+            this.pictureBox564.Tag = "wall2";
             this.pictureBox564.Visible = false;
             // 
             // pictureBox563
@@ -2438,7 +2445,7 @@
             this.pictureBox563.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox563.TabIndex = 572;
             this.pictureBox563.TabStop = false;
-            this.pictureBox563.Tag = "wall";
+            this.pictureBox563.Tag = "wall2";
             this.pictureBox563.Visible = false;
             // 
             // pictureBox562
@@ -2451,7 +2458,7 @@
             this.pictureBox562.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox562.TabIndex = 571;
             this.pictureBox562.TabStop = false;
-            this.pictureBox562.Tag = "wall";
+            this.pictureBox562.Tag = "wall2";
             this.pictureBox562.Visible = false;
             // 
             // pictureBox561
@@ -2464,7 +2471,7 @@
             this.pictureBox561.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox561.TabIndex = 570;
             this.pictureBox561.TabStop = false;
-            this.pictureBox561.Tag = "wall";
+            this.pictureBox561.Tag = "wall2";
             this.pictureBox561.Visible = false;
             // 
             // pictureBox560
@@ -2477,7 +2484,7 @@
             this.pictureBox560.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox560.TabIndex = 569;
             this.pictureBox560.TabStop = false;
-            this.pictureBox560.Tag = "wall";
+            this.pictureBox560.Tag = "wall2";
             this.pictureBox560.Visible = false;
             // 
             // pictureBox559
@@ -2490,7 +2497,7 @@
             this.pictureBox559.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox559.TabIndex = 568;
             this.pictureBox559.TabStop = false;
-            this.pictureBox559.Tag = "wall";
+            this.pictureBox559.Tag = "wall2";
             this.pictureBox559.Visible = false;
             // 
             // pictureBox558
@@ -2503,7 +2510,7 @@
             this.pictureBox558.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox558.TabIndex = 567;
             this.pictureBox558.TabStop = false;
-            this.pictureBox558.Tag = "wall";
+            this.pictureBox558.Tag = "wall2";
             this.pictureBox558.Visible = false;
             // 
             // pictureBox557
@@ -2516,7 +2523,7 @@
             this.pictureBox557.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox557.TabIndex = 566;
             this.pictureBox557.TabStop = false;
-            this.pictureBox557.Tag = "wall";
+            this.pictureBox557.Tag = "wall2";
             this.pictureBox557.Visible = false;
             // 
             // pictureBox556
@@ -2529,7 +2536,7 @@
             this.pictureBox556.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox556.TabIndex = 565;
             this.pictureBox556.TabStop = false;
-            this.pictureBox556.Tag = "wall";
+            this.pictureBox556.Tag = "wall2";
             this.pictureBox556.Visible = false;
             // 
             // pictureBox555
@@ -2542,7 +2549,7 @@
             this.pictureBox555.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox555.TabIndex = 564;
             this.pictureBox555.TabStop = false;
-            this.pictureBox555.Tag = "wall";
+            this.pictureBox555.Tag = "wall2";
             this.pictureBox555.Visible = false;
             // 
             // pictureBox554
@@ -2555,7 +2562,7 @@
             this.pictureBox554.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox554.TabIndex = 563;
             this.pictureBox554.TabStop = false;
-            this.pictureBox554.Tag = "wall";
+            this.pictureBox554.Tag = "wall2";
             this.pictureBox554.Visible = false;
             // 
             // pictureBox553
@@ -2568,7 +2575,7 @@
             this.pictureBox553.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox553.TabIndex = 562;
             this.pictureBox553.TabStop = false;
-            this.pictureBox553.Tag = "wall";
+            this.pictureBox553.Tag = "wall2";
             this.pictureBox553.Visible = false;
             // 
             // pictureBox552
@@ -2581,7 +2588,7 @@
             this.pictureBox552.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox552.TabIndex = 561;
             this.pictureBox552.TabStop = false;
-            this.pictureBox552.Tag = "wall";
+            this.pictureBox552.Tag = "wall2";
             this.pictureBox552.Visible = false;
             // 
             // pictureBox551
@@ -2594,7 +2601,7 @@
             this.pictureBox551.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox551.TabIndex = 560;
             this.pictureBox551.TabStop = false;
-            this.pictureBox551.Tag = "wall";
+            this.pictureBox551.Tag = "wall2";
             this.pictureBox551.Visible = false;
             // 
             // pictureBox550
@@ -2607,7 +2614,7 @@
             this.pictureBox550.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox550.TabIndex = 559;
             this.pictureBox550.TabStop = false;
-            this.pictureBox550.Tag = "wall";
+            this.pictureBox550.Tag = "wall2";
             this.pictureBox550.Visible = false;
             // 
             // pictureBox549
@@ -2620,7 +2627,7 @@
             this.pictureBox549.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox549.TabIndex = 558;
             this.pictureBox549.TabStop = false;
-            this.pictureBox549.Tag = "wall";
+            this.pictureBox549.Tag = "wall2";
             this.pictureBox549.Visible = false;
             // 
             // pictureBox548
@@ -2633,7 +2640,7 @@
             this.pictureBox548.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox548.TabIndex = 557;
             this.pictureBox548.TabStop = false;
-            this.pictureBox548.Tag = "wall";
+            this.pictureBox548.Tag = "wall2";
             this.pictureBox548.Visible = false;
             // 
             // pictureBox547
@@ -2646,7 +2653,7 @@
             this.pictureBox547.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox547.TabIndex = 556;
             this.pictureBox547.TabStop = false;
-            this.pictureBox547.Tag = "wall";
+            this.pictureBox547.Tag = "wall2";
             this.pictureBox547.Visible = false;
             // 
             // pictureBox546
@@ -2659,7 +2666,7 @@
             this.pictureBox546.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox546.TabIndex = 555;
             this.pictureBox546.TabStop = false;
-            this.pictureBox546.Tag = "wall";
+            this.pictureBox546.Tag = "wall2";
             this.pictureBox546.Visible = false;
             // 
             // pictureBox545
@@ -2672,7 +2679,7 @@
             this.pictureBox545.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox545.TabIndex = 554;
             this.pictureBox545.TabStop = false;
-            this.pictureBox545.Tag = "wall";
+            this.pictureBox545.Tag = "wall2";
             this.pictureBox545.Visible = false;
             // 
             // pictureBox544
@@ -2685,7 +2692,7 @@
             this.pictureBox544.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox544.TabIndex = 553;
             this.pictureBox544.TabStop = false;
-            this.pictureBox544.Tag = "wall";
+            this.pictureBox544.Tag = "wall2";
             this.pictureBox544.Visible = false;
             // 
             // pictureBox543
@@ -2698,7 +2705,7 @@
             this.pictureBox543.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox543.TabIndex = 552;
             this.pictureBox543.TabStop = false;
-            this.pictureBox543.Tag = "wall";
+            this.pictureBox543.Tag = "wall2";
             this.pictureBox543.Visible = false;
             // 
             // pictureBox542
@@ -2711,7 +2718,7 @@
             this.pictureBox542.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox542.TabIndex = 551;
             this.pictureBox542.TabStop = false;
-            this.pictureBox542.Tag = "wall";
+            this.pictureBox542.Tag = "wall2";
             this.pictureBox542.Visible = false;
             // 
             // pictureBox541
@@ -2724,7 +2731,7 @@
             this.pictureBox541.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox541.TabIndex = 550;
             this.pictureBox541.TabStop = false;
-            this.pictureBox541.Tag = "wall";
+            this.pictureBox541.Tag = "wall2";
             this.pictureBox541.Visible = false;
             // 
             // pictureBox540
@@ -2737,7 +2744,7 @@
             this.pictureBox540.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox540.TabIndex = 549;
             this.pictureBox540.TabStop = false;
-            this.pictureBox540.Tag = "wall";
+            this.pictureBox540.Tag = "wall2";
             this.pictureBox540.Visible = false;
             // 
             // pictureBox539
@@ -2750,7 +2757,7 @@
             this.pictureBox539.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox539.TabIndex = 548;
             this.pictureBox539.TabStop = false;
-            this.pictureBox539.Tag = "wall";
+            this.pictureBox539.Tag = "wall2";
             this.pictureBox539.Visible = false;
             // 
             // pictureBox538
@@ -2763,7 +2770,7 @@
             this.pictureBox538.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox538.TabIndex = 547;
             this.pictureBox538.TabStop = false;
-            this.pictureBox538.Tag = "wall";
+            this.pictureBox538.Tag = "wall2";
             this.pictureBox538.Visible = false;
             // 
             // pictureBox537
@@ -2776,7 +2783,7 @@
             this.pictureBox537.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox537.TabIndex = 546;
             this.pictureBox537.TabStop = false;
-            this.pictureBox537.Tag = "wall";
+            this.pictureBox537.Tag = "wall2";
             this.pictureBox537.Visible = false;
             // 
             // pictureBox536
@@ -2789,7 +2796,7 @@
             this.pictureBox536.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox536.TabIndex = 545;
             this.pictureBox536.TabStop = false;
-            this.pictureBox536.Tag = "wall";
+            this.pictureBox536.Tag = "wall2";
             this.pictureBox536.Visible = false;
             // 
             // pictureBox535
@@ -2802,7 +2809,7 @@
             this.pictureBox535.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox535.TabIndex = 544;
             this.pictureBox535.TabStop = false;
-            this.pictureBox535.Tag = "wall";
+            this.pictureBox535.Tag = "wall2";
             this.pictureBox535.Visible = false;
             // 
             // pictureBox534
@@ -2815,7 +2822,7 @@
             this.pictureBox534.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox534.TabIndex = 543;
             this.pictureBox534.TabStop = false;
-            this.pictureBox534.Tag = "wall";
+            this.pictureBox534.Tag = "wall2";
             this.pictureBox534.Visible = false;
             // 
             // pictureBox533
@@ -2828,7 +2835,7 @@
             this.pictureBox533.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox533.TabIndex = 542;
             this.pictureBox533.TabStop = false;
-            this.pictureBox533.Tag = "wall";
+            this.pictureBox533.Tag = "wall2";
             this.pictureBox533.Visible = false;
             // 
             // pictureBox532
@@ -2841,7 +2848,7 @@
             this.pictureBox532.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox532.TabIndex = 541;
             this.pictureBox532.TabStop = false;
-            this.pictureBox532.Tag = "wall";
+            this.pictureBox532.Tag = "wall2";
             this.pictureBox532.Visible = false;
             // 
             // pictureBox531
@@ -2854,7 +2861,7 @@
             this.pictureBox531.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox531.TabIndex = 540;
             this.pictureBox531.TabStop = false;
-            this.pictureBox531.Tag = "wall";
+            this.pictureBox531.Tag = "wall2";
             this.pictureBox531.Visible = false;
             // 
             // pictureBox530
@@ -2867,7 +2874,7 @@
             this.pictureBox530.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox530.TabIndex = 539;
             this.pictureBox530.TabStop = false;
-            this.pictureBox530.Tag = "wall";
+            this.pictureBox530.Tag = "wall2";
             this.pictureBox530.Visible = false;
             // 
             // pictureBox529
@@ -2880,7 +2887,7 @@
             this.pictureBox529.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox529.TabIndex = 538;
             this.pictureBox529.TabStop = false;
-            this.pictureBox529.Tag = "wall";
+            this.pictureBox529.Tag = "wall2";
             this.pictureBox529.Visible = false;
             // 
             // pictureBox528
@@ -2893,7 +2900,7 @@
             this.pictureBox528.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox528.TabIndex = 537;
             this.pictureBox528.TabStop = false;
-            this.pictureBox528.Tag = "wall";
+            this.pictureBox528.Tag = "wall2";
             this.pictureBox528.Visible = false;
             // 
             // pictureBox527
@@ -2906,7 +2913,7 @@
             this.pictureBox527.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox527.TabIndex = 536;
             this.pictureBox527.TabStop = false;
-            this.pictureBox527.Tag = "wall";
+            this.pictureBox527.Tag = "wall2";
             this.pictureBox527.Visible = false;
             // 
             // pictureBox526
@@ -2919,7 +2926,7 @@
             this.pictureBox526.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox526.TabIndex = 535;
             this.pictureBox526.TabStop = false;
-            this.pictureBox526.Tag = "wall";
+            this.pictureBox526.Tag = "wall2";
             this.pictureBox526.Visible = false;
             // 
             // pictureBox525
@@ -2932,7 +2939,7 @@
             this.pictureBox525.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox525.TabIndex = 534;
             this.pictureBox525.TabStop = false;
-            this.pictureBox525.Tag = "wall";
+            this.pictureBox525.Tag = "wall2";
             this.pictureBox525.Visible = false;
             // 
             // pictureBox524
@@ -2945,7 +2952,7 @@
             this.pictureBox524.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox524.TabIndex = 533;
             this.pictureBox524.TabStop = false;
-            this.pictureBox524.Tag = "wall";
+            this.pictureBox524.Tag = "wall2";
             this.pictureBox524.Visible = false;
             // 
             // pictureBox523
@@ -2958,7 +2965,7 @@
             this.pictureBox523.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox523.TabIndex = 532;
             this.pictureBox523.TabStop = false;
-            this.pictureBox523.Tag = "wall";
+            this.pictureBox523.Tag = "wall2";
             this.pictureBox523.Visible = false;
             // 
             // pictureBox522
@@ -2971,7 +2978,7 @@
             this.pictureBox522.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox522.TabIndex = 531;
             this.pictureBox522.TabStop = false;
-            this.pictureBox522.Tag = "wall";
+            this.pictureBox522.Tag = "wall2";
             this.pictureBox522.Visible = false;
             // 
             // pictureBox521
@@ -2984,7 +2991,7 @@
             this.pictureBox521.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox521.TabIndex = 530;
             this.pictureBox521.TabStop = false;
-            this.pictureBox521.Tag = "wall";
+            this.pictureBox521.Tag = "wall2";
             this.pictureBox521.Visible = false;
             // 
             // pictureBox520
@@ -2997,7 +3004,7 @@
             this.pictureBox520.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox520.TabIndex = 529;
             this.pictureBox520.TabStop = false;
-            this.pictureBox520.Tag = "wall";
+            this.pictureBox520.Tag = "wall2";
             this.pictureBox520.Visible = false;
             // 
             // pictureBox519
@@ -3010,7 +3017,7 @@
             this.pictureBox519.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox519.TabIndex = 528;
             this.pictureBox519.TabStop = false;
-            this.pictureBox519.Tag = "wall";
+            this.pictureBox519.Tag = "wall2";
             this.pictureBox519.Visible = false;
             // 
             // pictureBox518
@@ -3023,7 +3030,7 @@
             this.pictureBox518.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox518.TabIndex = 527;
             this.pictureBox518.TabStop = false;
-            this.pictureBox518.Tag = "wall";
+            this.pictureBox518.Tag = "wall2";
             this.pictureBox518.Visible = false;
             // 
             // pictureBox517
@@ -3036,7 +3043,7 @@
             this.pictureBox517.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox517.TabIndex = 526;
             this.pictureBox517.TabStop = false;
-            this.pictureBox517.Tag = "wall";
+            this.pictureBox517.Tag = "wall2";
             this.pictureBox517.Visible = false;
             // 
             // pictureBox516
@@ -3049,7 +3056,7 @@
             this.pictureBox516.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox516.TabIndex = 525;
             this.pictureBox516.TabStop = false;
-            this.pictureBox516.Tag = "wall";
+            this.pictureBox516.Tag = "wall2";
             this.pictureBox516.Visible = false;
             // 
             // pictureBox515
@@ -3062,7 +3069,7 @@
             this.pictureBox515.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox515.TabIndex = 524;
             this.pictureBox515.TabStop = false;
-            this.pictureBox515.Tag = "wall";
+            this.pictureBox515.Tag = "wall2";
             this.pictureBox515.Visible = false;
             // 
             // pictureBox514
@@ -3075,7 +3082,7 @@
             this.pictureBox514.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox514.TabIndex = 523;
             this.pictureBox514.TabStop = false;
-            this.pictureBox514.Tag = "wall";
+            this.pictureBox514.Tag = "wall2";
             this.pictureBox514.Visible = false;
             // 
             // pictureBox513
@@ -3088,7 +3095,7 @@
             this.pictureBox513.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox513.TabIndex = 522;
             this.pictureBox513.TabStop = false;
-            this.pictureBox513.Tag = "wall";
+            this.pictureBox513.Tag = "wall2";
             this.pictureBox513.Visible = false;
             // 
             // pictureBox512
@@ -3101,7 +3108,7 @@
             this.pictureBox512.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox512.TabIndex = 521;
             this.pictureBox512.TabStop = false;
-            this.pictureBox512.Tag = "wall";
+            this.pictureBox512.Tag = "wall2";
             this.pictureBox512.Visible = false;
             // 
             // pictureBox511
@@ -3114,7 +3121,7 @@
             this.pictureBox511.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox511.TabIndex = 520;
             this.pictureBox511.TabStop = false;
-            this.pictureBox511.Tag = "wall";
+            this.pictureBox511.Tag = "wall2";
             this.pictureBox511.Visible = false;
             // 
             // pictureBox510
@@ -3127,7 +3134,7 @@
             this.pictureBox510.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox510.TabIndex = 519;
             this.pictureBox510.TabStop = false;
-            this.pictureBox510.Tag = "wall";
+            this.pictureBox510.Tag = "wall2";
             this.pictureBox510.Visible = false;
             // 
             // pictureBox509
@@ -3140,7 +3147,7 @@
             this.pictureBox509.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox509.TabIndex = 518;
             this.pictureBox509.TabStop = false;
-            this.pictureBox509.Tag = "wall";
+            this.pictureBox509.Tag = "wall2";
             this.pictureBox509.Visible = false;
             // 
             // pictureBox508
@@ -3153,7 +3160,7 @@
             this.pictureBox508.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox508.TabIndex = 517;
             this.pictureBox508.TabStop = false;
-            this.pictureBox508.Tag = "wall";
+            this.pictureBox508.Tag = "wall2";
             this.pictureBox508.Visible = false;
             // 
             // pictureBox507
@@ -3166,7 +3173,7 @@
             this.pictureBox507.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox507.TabIndex = 516;
             this.pictureBox507.TabStop = false;
-            this.pictureBox507.Tag = "wall";
+            this.pictureBox507.Tag = "wall2";
             this.pictureBox507.Visible = false;
             // 
             // pictureBox506
@@ -3179,7 +3186,7 @@
             this.pictureBox506.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox506.TabIndex = 515;
             this.pictureBox506.TabStop = false;
-            this.pictureBox506.Tag = "wall";
+            this.pictureBox506.Tag = "wall2";
             this.pictureBox506.Visible = false;
             // 
             // pictureBox505
@@ -3192,7 +3199,7 @@
             this.pictureBox505.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox505.TabIndex = 514;
             this.pictureBox505.TabStop = false;
-            this.pictureBox505.Tag = "wall";
+            this.pictureBox505.Tag = "wall2";
             this.pictureBox505.Visible = false;
             // 
             // pictureBox504
@@ -3205,7 +3212,7 @@
             this.pictureBox504.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox504.TabIndex = 513;
             this.pictureBox504.TabStop = false;
-            this.pictureBox504.Tag = "wall";
+            this.pictureBox504.Tag = "wall2";
             this.pictureBox504.Visible = false;
             // 
             // pictureBox503
@@ -3218,7 +3225,7 @@
             this.pictureBox503.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox503.TabIndex = 512;
             this.pictureBox503.TabStop = false;
-            this.pictureBox503.Tag = "wall";
+            this.pictureBox503.Tag = "wall2";
             this.pictureBox503.Visible = false;
             // 
             // pictureBox502
@@ -3231,7 +3238,7 @@
             this.pictureBox502.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox502.TabIndex = 511;
             this.pictureBox502.TabStop = false;
-            this.pictureBox502.Tag = "wall";
+            this.pictureBox502.Tag = "wall2";
             this.pictureBox502.Visible = false;
             // 
             // pictureBox500
@@ -3244,7 +3251,7 @@
             this.pictureBox500.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox500.TabIndex = 510;
             this.pictureBox500.TabStop = false;
-            this.pictureBox500.Tag = "wall";
+            this.pictureBox500.Tag = "wall2";
             this.pictureBox500.Visible = false;
             // 
             // pictureBox501
@@ -3257,7 +3264,7 @@
             this.pictureBox501.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox501.TabIndex = 509;
             this.pictureBox501.TabStop = false;
-            this.pictureBox501.Tag = "wall";
+            this.pictureBox501.Tag = "wall2";
             this.pictureBox501.Visible = false;
             // 
             // pictureBox495
@@ -3270,7 +3277,7 @@
             this.pictureBox495.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox495.TabIndex = 508;
             this.pictureBox495.TabStop = false;
-            this.pictureBox495.Tag = "wall";
+            this.pictureBox495.Tag = "wall2";
             this.pictureBox495.Visible = false;
             // 
             // pictureBox496
@@ -3283,7 +3290,7 @@
             this.pictureBox496.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox496.TabIndex = 507;
             this.pictureBox496.TabStop = false;
-            this.pictureBox496.Tag = "wall";
+            this.pictureBox496.Tag = "wall2";
             this.pictureBox496.Visible = false;
             // 
             // pictureBox497
@@ -3296,7 +3303,7 @@
             this.pictureBox497.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox497.TabIndex = 506;
             this.pictureBox497.TabStop = false;
-            this.pictureBox497.Tag = "wall";
+            this.pictureBox497.Tag = "wall2";
             this.pictureBox497.Visible = false;
             // 
             // pictureBox498
@@ -3309,7 +3316,7 @@
             this.pictureBox498.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox498.TabIndex = 505;
             this.pictureBox498.TabStop = false;
-            this.pictureBox498.Tag = "wall";
+            this.pictureBox498.Tag = "wall2";
             this.pictureBox498.Visible = false;
             // 
             // pictureBox499
@@ -3322,7 +3329,7 @@
             this.pictureBox499.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox499.TabIndex = 504;
             this.pictureBox499.TabStop = false;
-            this.pictureBox499.Tag = "wall";
+            this.pictureBox499.Tag = "wall2";
             this.pictureBox499.Visible = false;
             // 
             // pictureBox494
@@ -3335,7 +3342,7 @@
             this.pictureBox494.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox494.TabIndex = 503;
             this.pictureBox494.TabStop = false;
-            this.pictureBox494.Tag = "wall";
+            this.pictureBox494.Tag = "wall2";
             this.pictureBox494.Visible = false;
             // 
             // pictureBox493
@@ -3348,7 +3355,7 @@
             this.pictureBox493.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox493.TabIndex = 502;
             this.pictureBox493.TabStop = false;
-            this.pictureBox493.Tag = "wall";
+            this.pictureBox493.Tag = "wall2";
             this.pictureBox493.Visible = false;
             // 
             // pictureBox492
@@ -3361,7 +3368,7 @@
             this.pictureBox492.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox492.TabIndex = 501;
             this.pictureBox492.TabStop = false;
-            this.pictureBox492.Tag = "wall";
+            this.pictureBox492.Tag = "wall2";
             this.pictureBox492.Visible = false;
             // 
             // pictureBox491
@@ -3374,7 +3381,7 @@
             this.pictureBox491.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox491.TabIndex = 500;
             this.pictureBox491.TabStop = false;
-            this.pictureBox491.Tag = "wall";
+            this.pictureBox491.Tag = "wall2";
             this.pictureBox491.Visible = false;
             // 
             // pictureBox490
@@ -3387,7 +3394,7 @@
             this.pictureBox490.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox490.TabIndex = 499;
             this.pictureBox490.TabStop = false;
-            this.pictureBox490.Tag = "wall";
+            this.pictureBox490.Tag = "wall2";
             this.pictureBox490.Visible = false;
             // 
             // pictureBox489
@@ -3400,7 +3407,7 @@
             this.pictureBox489.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox489.TabIndex = 498;
             this.pictureBox489.TabStop = false;
-            this.pictureBox489.Tag = "wall";
+            this.pictureBox489.Tag = "wall2";
             this.pictureBox489.Visible = false;
             // 
             // pictureBox488
@@ -3413,7 +3420,7 @@
             this.pictureBox488.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox488.TabIndex = 497;
             this.pictureBox488.TabStop = false;
-            this.pictureBox488.Tag = "wall";
+            this.pictureBox488.Tag = "wall2";
             this.pictureBox488.Visible = false;
             // 
             // pictureBox487
@@ -3426,7 +3433,7 @@
             this.pictureBox487.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox487.TabIndex = 496;
             this.pictureBox487.TabStop = false;
-            this.pictureBox487.Tag = "wall";
+            this.pictureBox487.Tag = "wall2";
             this.pictureBox487.Visible = false;
             // 
             // pictureBox486
@@ -3439,7 +3446,7 @@
             this.pictureBox486.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox486.TabIndex = 495;
             this.pictureBox486.TabStop = false;
-            this.pictureBox486.Tag = "wall";
+            this.pictureBox486.Tag = "wall2";
             this.pictureBox486.Visible = false;
             // 
             // pictureBox485
@@ -3452,7 +3459,7 @@
             this.pictureBox485.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox485.TabIndex = 494;
             this.pictureBox485.TabStop = false;
-            this.pictureBox485.Tag = "wall";
+            this.pictureBox485.Tag = "wall2";
             this.pictureBox485.Visible = false;
             // 
             // pictureBox484
@@ -3465,7 +3472,7 @@
             this.pictureBox484.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox484.TabIndex = 493;
             this.pictureBox484.TabStop = false;
-            this.pictureBox484.Tag = "wall";
+            this.pictureBox484.Tag = "wall2";
             this.pictureBox484.Visible = false;
             // 
             // pictureBox483
@@ -3478,7 +3485,7 @@
             this.pictureBox483.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox483.TabIndex = 492;
             this.pictureBox483.TabStop = false;
-            this.pictureBox483.Tag = "wall";
+            this.pictureBox483.Tag = "wall2";
             this.pictureBox483.Visible = false;
             // 
             // pictureBox482
@@ -3491,7 +3498,7 @@
             this.pictureBox482.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox482.TabIndex = 491;
             this.pictureBox482.TabStop = false;
-            this.pictureBox482.Tag = "wall";
+            this.pictureBox482.Tag = "wall2";
             this.pictureBox482.Visible = false;
             // 
             // pictureBox481
@@ -3504,7 +3511,7 @@
             this.pictureBox481.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox481.TabIndex = 490;
             this.pictureBox481.TabStop = false;
-            this.pictureBox481.Tag = "wall";
+            this.pictureBox481.Tag = "wall2";
             this.pictureBox481.Visible = false;
             // 
             // pictureBox480
@@ -3517,7 +3524,7 @@
             this.pictureBox480.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox480.TabIndex = 489;
             this.pictureBox480.TabStop = false;
-            this.pictureBox480.Tag = "wall";
+            this.pictureBox480.Tag = "wall2";
             this.pictureBox480.Visible = false;
             // 
             // pictureBox479
@@ -3530,7 +3537,7 @@
             this.pictureBox479.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox479.TabIndex = 488;
             this.pictureBox479.TabStop = false;
-            this.pictureBox479.Tag = "wall";
+            this.pictureBox479.Tag = "wall2";
             this.pictureBox479.Visible = false;
             // 
             // pictureBox478
@@ -3543,7 +3550,7 @@
             this.pictureBox478.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox478.TabIndex = 487;
             this.pictureBox478.TabStop = false;
-            this.pictureBox478.Tag = "wall";
+            this.pictureBox478.Tag = "wall2";
             this.pictureBox478.Visible = false;
             // 
             // pictureBox477
@@ -3556,7 +3563,7 @@
             this.pictureBox477.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox477.TabIndex = 486;
             this.pictureBox477.TabStop = false;
-            this.pictureBox477.Tag = "wall";
+            this.pictureBox477.Tag = "wall2";
             this.pictureBox477.Visible = false;
             // 
             // pictureBox476
@@ -3569,7 +3576,7 @@
             this.pictureBox476.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox476.TabIndex = 485;
             this.pictureBox476.TabStop = false;
-            this.pictureBox476.Tag = "wall";
+            this.pictureBox476.Tag = "wall2";
             this.pictureBox476.Visible = false;
             // 
             // pictureBox475
@@ -3582,7 +3589,7 @@
             this.pictureBox475.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox475.TabIndex = 484;
             this.pictureBox475.TabStop = false;
-            this.pictureBox475.Tag = "wall";
+            this.pictureBox475.Tag = "wall2";
             this.pictureBox475.Visible = false;
             // 
             // pictureBox474
@@ -3595,7 +3602,7 @@
             this.pictureBox474.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox474.TabIndex = 483;
             this.pictureBox474.TabStop = false;
-            this.pictureBox474.Tag = "wall";
+            this.pictureBox474.Tag = "wall2";
             this.pictureBox474.Visible = false;
             // 
             // pictureBox473
@@ -3608,7 +3615,7 @@
             this.pictureBox473.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox473.TabIndex = 482;
             this.pictureBox473.TabStop = false;
-            this.pictureBox473.Tag = "wall";
+            this.pictureBox473.Tag = "wall2";
             this.pictureBox473.Visible = false;
             // 
             // pictureBox472
@@ -3621,7 +3628,7 @@
             this.pictureBox472.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox472.TabIndex = 481;
             this.pictureBox472.TabStop = false;
-            this.pictureBox472.Tag = "wall";
+            this.pictureBox472.Tag = "wall2";
             this.pictureBox472.Visible = false;
             // 
             // pictureBox471
@@ -3634,7 +3641,7 @@
             this.pictureBox471.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox471.TabIndex = 480;
             this.pictureBox471.TabStop = false;
-            this.pictureBox471.Tag = "wall";
+            this.pictureBox471.Tag = "wall2";
             this.pictureBox471.Visible = false;
             // 
             // pictureBox470
@@ -3647,7 +3654,7 @@
             this.pictureBox470.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox470.TabIndex = 479;
             this.pictureBox470.TabStop = false;
-            this.pictureBox470.Tag = "wall";
+            this.pictureBox470.Tag = "wall2";
             this.pictureBox470.Visible = false;
             // 
             // pictureBox469
@@ -3660,7 +3667,7 @@
             this.pictureBox469.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox469.TabIndex = 478;
             this.pictureBox469.TabStop = false;
-            this.pictureBox469.Tag = "wall";
+            this.pictureBox469.Tag = "wall2";
             this.pictureBox469.Visible = false;
             // 
             // pictureBox468
@@ -3673,7 +3680,7 @@
             this.pictureBox468.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox468.TabIndex = 477;
             this.pictureBox468.TabStop = false;
-            this.pictureBox468.Tag = "wall";
+            this.pictureBox468.Tag = "wall2";
             this.pictureBox468.Visible = false;
             // 
             // pictureBox467
@@ -3686,7 +3693,7 @@
             this.pictureBox467.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox467.TabIndex = 476;
             this.pictureBox467.TabStop = false;
-            this.pictureBox467.Tag = "wall";
+            this.pictureBox467.Tag = "wall2";
             this.pictureBox467.Visible = false;
             // 
             // pictureBox466
@@ -3699,7 +3706,7 @@
             this.pictureBox466.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox466.TabIndex = 475;
             this.pictureBox466.TabStop = false;
-            this.pictureBox466.Tag = "wall";
+            this.pictureBox466.Tag = "wall2";
             this.pictureBox466.Visible = false;
             // 
             // pictureBox465
@@ -3712,7 +3719,7 @@
             this.pictureBox465.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox465.TabIndex = 474;
             this.pictureBox465.TabStop = false;
-            this.pictureBox465.Tag = "wall";
+            this.pictureBox465.Tag = "wall2";
             this.pictureBox465.Visible = false;
             // 
             // pictureBox464
@@ -3725,7 +3732,7 @@
             this.pictureBox464.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox464.TabIndex = 473;
             this.pictureBox464.TabStop = false;
-            this.pictureBox464.Tag = "wall";
+            this.pictureBox464.Tag = "wall2";
             this.pictureBox464.Visible = false;
             // 
             // pictureBox463
@@ -3738,7 +3745,7 @@
             this.pictureBox463.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox463.TabIndex = 472;
             this.pictureBox463.TabStop = false;
-            this.pictureBox463.Tag = "wall";
+            this.pictureBox463.Tag = "wall2";
             this.pictureBox463.Visible = false;
             // 
             // pictureBox462
@@ -3751,7 +3758,7 @@
             this.pictureBox462.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox462.TabIndex = 471;
             this.pictureBox462.TabStop = false;
-            this.pictureBox462.Tag = "wall";
+            this.pictureBox462.Tag = "wall2";
             this.pictureBox462.Visible = false;
             // 
             // pictureBox461
@@ -3764,7 +3771,7 @@
             this.pictureBox461.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox461.TabIndex = 470;
             this.pictureBox461.TabStop = false;
-            this.pictureBox461.Tag = "wall";
+            this.pictureBox461.Tag = "wall2";
             this.pictureBox461.Visible = false;
             // 
             // pictureBox460
@@ -3777,7 +3784,7 @@
             this.pictureBox460.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox460.TabIndex = 469;
             this.pictureBox460.TabStop = false;
-            this.pictureBox460.Tag = "wall";
+            this.pictureBox460.Tag = "wall2";
             this.pictureBox460.Visible = false;
             // 
             // pictureBox459
@@ -3790,7 +3797,7 @@
             this.pictureBox459.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox459.TabIndex = 468;
             this.pictureBox459.TabStop = false;
-            this.pictureBox459.Tag = "wall";
+            this.pictureBox459.Tag = "wall2";
             this.pictureBox459.Visible = false;
             // 
             // pictureBox458
@@ -3803,7 +3810,7 @@
             this.pictureBox458.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox458.TabIndex = 467;
             this.pictureBox458.TabStop = false;
-            this.pictureBox458.Tag = "wall";
+            this.pictureBox458.Tag = "wall2";
             this.pictureBox458.Visible = false;
             // 
             // pictureBox457
@@ -3816,7 +3823,7 @@
             this.pictureBox457.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox457.TabIndex = 466;
             this.pictureBox457.TabStop = false;
-            this.pictureBox457.Tag = "wall";
+            this.pictureBox457.Tag = "wall2";
             this.pictureBox457.Visible = false;
             // 
             // pictureBox456
@@ -3829,7 +3836,7 @@
             this.pictureBox456.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox456.TabIndex = 465;
             this.pictureBox456.TabStop = false;
-            this.pictureBox456.Tag = "wall";
+            this.pictureBox456.Tag = "wall2";
             this.pictureBox456.Visible = false;
             // 
             // pictureBox455
@@ -3842,7 +3849,7 @@
             this.pictureBox455.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox455.TabIndex = 464;
             this.pictureBox455.TabStop = false;
-            this.pictureBox455.Tag = "wall";
+            this.pictureBox455.Tag = "wall2";
             this.pictureBox455.Visible = false;
             // 
             // pictureBox454
@@ -3855,7 +3862,7 @@
             this.pictureBox454.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox454.TabIndex = 463;
             this.pictureBox454.TabStop = false;
-            this.pictureBox454.Tag = "wall";
+            this.pictureBox454.Tag = "wall2";
             this.pictureBox454.Visible = false;
             // 
             // pictureBox435
@@ -4564,7 +4571,7 @@
             this.pictureBox395.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox395.TabIndex = 404;
             this.pictureBox395.TabStop = false;
-            this.pictureBox395.Tag = "wall";
+            this.pictureBox395.Tag = "wall2";
             this.pictureBox395.Visible = false;
             // 
             // pictureBox4
@@ -4748,19 +4755,6 @@
             this.pictureBox379.Tag = "kibble";
             this.pictureBox379.Visible = false;
             // 
-            // pictureBox378
-            // 
-            this.pictureBox378.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox378.Image")));
-            this.pictureBox378.Location = new System.Drawing.Point(75, 250);
-            this.pictureBox378.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox378.Name = "pictureBox378";
-            this.pictureBox378.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox378.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox378.TabIndex = 383;
-            this.pictureBox378.TabStop = false;
-            this.pictureBox378.Tag = "kibble";
-            this.pictureBox378.Visible = false;
-            // 
             // pictureBox377
             // 
             this.pictureBox377.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox377.Image")));
@@ -4842,7 +4836,7 @@
             // pictureBox371
             // 
             this.pictureBox371.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox371.Image")));
-            this.pictureBox371.Location = new System.Drawing.Point(400, 225);
+            this.pictureBox371.Location = new System.Drawing.Point(75, 250);
             this.pictureBox371.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox371.Name = "pictureBox371";
             this.pictureBox371.Size = new System.Drawing.Size(25, 25);
@@ -5774,32 +5768,6 @@
             this.pictureBox298.TabStop = false;
             this.pictureBox298.Tag = "kibble";
             this.pictureBox298.Visible = false;
-            // 
-            // pictureBox299
-            // 
-            this.pictureBox299.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox299.Image")));
-            this.pictureBox299.Location = new System.Drawing.Point(175, 125);
-            this.pictureBox299.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox299.Name = "pictureBox299";
-            this.pictureBox299.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox299.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox299.TabIndex = 304;
-            this.pictureBox299.TabStop = false;
-            this.pictureBox299.Tag = "kibble";
-            this.pictureBox299.Visible = false;
-            // 
-            // pictureBox300
-            // 
-            this.pictureBox300.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox300.Image")));
-            this.pictureBox300.Location = new System.Drawing.Point(150, 125);
-            this.pictureBox300.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox300.Name = "pictureBox300";
-            this.pictureBox300.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox300.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox300.TabIndex = 303;
-            this.pictureBox300.TabStop = false;
-            this.pictureBox300.Tag = "kibble";
-            this.pictureBox300.Visible = false;
             // 
             // pictureBox294
             // 
@@ -9572,18 +9540,18 @@
             this.key1.Tag = "key";
             this.key1.Visible = false;
             // 
-            // pictureBox589
+            // doorS
             // 
-            this.pictureBox589.Image = global::PacMan.Properties.Resources.cherry;
-            this.pictureBox589.Location = new System.Drawing.Point(800, 225);
-            this.pictureBox589.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox589.Name = "pictureBox589";
-            this.pictureBox589.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox589.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox589.TabIndex = 619;
-            this.pictureBox589.TabStop = false;
-            this.pictureBox589.Tag = "key";
-            this.pictureBox589.Visible = false;
+            this.doorS.Image = global::PacMan.Properties.Resources.door;
+            this.doorS.Location = new System.Drawing.Point(179, 125);
+            this.doorS.Margin = new System.Windows.Forms.Padding(2);
+            this.doorS.Name = "doorS";
+            this.doorS.Size = new System.Drawing.Size(21, 25);
+            this.doorS.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.doorS.TabIndex = 620;
+            this.doorS.TabStop = false;
+            this.doorS.Tag = "wall";
+            this.doorS.Visible = false;
             // 
             // Pacman
             // 
@@ -9602,8 +9570,9 @@
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox589)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox394)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox393)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.strawberry)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox268)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox204)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.collider3)).EndInit();
@@ -9819,7 +9788,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox382)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox383)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox379)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox378)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox377)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox374)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox375)).EndInit();
@@ -9898,8 +9866,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox303)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox304)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox298)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox299)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox300)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox294)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox295)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox296)).EndInit();
@@ -10196,7 +10162,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.vision1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox269)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.key1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox589)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.doorS)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -10492,7 +10458,6 @@
         private System.Windows.Forms.PictureBox pictureBox382;
         private System.Windows.Forms.PictureBox pictureBox383;
         private System.Windows.Forms.PictureBox pictureBox379;
-        private System.Windows.Forms.PictureBox pictureBox378;
         private System.Windows.Forms.PictureBox pictureBox377;
         private System.Windows.Forms.PictureBox pictureBox374;
         private System.Windows.Forms.PictureBox pictureBox375;
@@ -10571,8 +10536,6 @@
         private System.Windows.Forms.PictureBox pictureBox303;
         private System.Windows.Forms.PictureBox pictureBox304;
         private System.Windows.Forms.PictureBox pictureBox298;
-        private System.Windows.Forms.PictureBox pictureBox299;
-        private System.Windows.Forms.PictureBox pictureBox300;
         private System.Windows.Forms.PictureBox pictureBox294;
         private System.Windows.Forms.PictureBox pictureBox295;
         private System.Windows.Forms.PictureBox pictureBox296;
@@ -10809,9 +10772,10 @@
         private System.Windows.Forms.PictureBox key1;
         private System.Windows.Forms.PictureBox pictureBox269;
         private System.Windows.Forms.PictureBox pictureBox268;
-        private System.Windows.Forms.PictureBox pictureBox393;
+        private System.Windows.Forms.PictureBox strawberry;
         private System.Windows.Forms.PictureBox pictureBox394;
         private System.Windows.Forms.PictureBox pictureBox589;
+        private System.Windows.Forms.PictureBox doorS;
     }
 }
 

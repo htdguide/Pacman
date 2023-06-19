@@ -22,6 +22,7 @@ namespace PacMan
         private bool c = true; //debugging
         private bool gates = false; //gates open
         private int gatesCounter = 0;
+        private int doorsCounter = 0;
         public Pacman()
         {
             InitializeComponent();
@@ -94,6 +95,7 @@ namespace PacMan
                 collider4.Visible = c;
                 vision1.Visible = c;
                 gates = true;
+                engine.keys = 3;
                 c = !c;
             }
         }
@@ -110,7 +112,7 @@ namespace PacMan
             bool b = false;
             foreach (Control x in panel1.Controls) //Checking the all controls for a pictureboxes
             {
-                if (x is PictureBox && (x.Tag == "wall" || x.Tag == "border" || x.Tag =="door"))  //Wall detection
+                if (x is PictureBox && (x.Tag == "wall" || x.Tag == "wall2" || x.Tag == "border" || x.Tag =="door"))  //Wall detection
                 {
                     aligning(entity, x); //Alligning of the creature
                     if (entity.direction == 1)
@@ -150,6 +152,19 @@ namespace PacMan
                         panel1.Controls.Remove(x);
                     }
                 }
+                if (x is PictureBox && (x.Tag == "straw"))  //Kibble detection
+                {
+                    if (entity.appearance.Bounds.IntersectsWith(x.Bounds))
+                    {
+                        foreach (Control z in panel1.Controls)
+                        {
+                            if (z is PictureBox && z.Tag == "kibble") z.Visible = true;
+                        }
+                        SoundPlayer collect = new SoundPlayer(Resources.keys);
+                        collect.Play();
+                        panel1.Controls.Remove(x);
+                    }
+                }
                 if (x is PictureBox && (x.Tag == "key"))  //Kibble detection
                 {
                     if (entity.appearance.Bounds.IntersectsWith(x.Bounds))
@@ -170,7 +185,7 @@ namespace PacMan
                         engine.keys = 0;
                     }
                 }
-                if (x is PictureBox && (x.Tag == "kibble" || x.Tag == "wall" || x.Tag == "key" || x.Tag == "door"))  //Vision detection
+                if (x is PictureBox && (x.Tag == "kibble" || x.Tag == "wall" || x.Tag == "wall2"|| x.Tag == "key" || x.Tag == "door" || x.Tag == "straw"))  //Vision detection
                 {
                     if (entity.vision.Bounds.IntersectsWith(x.Bounds))
                     {
@@ -181,6 +196,13 @@ namespace PacMan
                 {
                     panel1.Width = panel1.Width + player.speed;
                     Pacman.ActiveForm.Width = Pacman.ActiveForm.Width + player.speed;
+                }
+                if (engine.scoreTotal > 100 && doorsCounter == 0)
+                {
+                    SoundPlayer collect = new SoundPlayer(Resources.doorSound);
+                    collect.Play();
+                    panel1.Controls.Remove(doorS);
+                    doorsCounter = 1;
                 }
             }
             return b;

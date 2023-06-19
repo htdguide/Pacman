@@ -42,9 +42,10 @@ namespace PacMan
                 Pacman.ActiveForm.Width = 410;
                 Pacman.ActiveForm.Height = 570;
                 panel2.Width = 360;
+                panel3.Width = 150;
             }
             if (!wallcheck(player)) player.movement();
-            if ((engine.scoreTotal > 187 && gatesCounter < 20) || (gatesCounter < 20 && gates == true)) gatesopen(pictureBox41,4);
+            if ((engine.scoreTotal > 170 && gatesCounter < 20) || (gatesCounter < 20 && gates == true)) gatesopen(pictureBox41,4);
         }
 
         private void Pacman_KeyDown(object sender, KeyEventArgs e)
@@ -248,6 +249,7 @@ namespace PacMan
                         Pause.Top = Pause.Top + 1;
                         label11.Top = label11.Top + 1;
                     }
+                    if (panel2.Right - 35 > panel3.Right) panel3.Width= panel3.Width + player.speed;
                 }
                 if (engine.scoreTotal > 100 && doorsCounter == 0)
                 {
@@ -301,6 +303,8 @@ namespace PacMan
 
         private void gatesopen(PictureBox door, int direction) //Gates for level extension
         {
+            SoundPlayer gates = new SoundPlayer(Resources.gates);
+            gates.Play();
             switch (direction)
             {
                 case 1: //Left

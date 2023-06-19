@@ -42,6 +42,7 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.label11 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
             this.pictureBox300 = new System.Windows.Forms.PictureBox();
             this.pictureBox205 = new System.Windows.Forms.PictureBox();
             this.pictureBox393 = new System.Windows.Forms.PictureBox();
@@ -643,7 +644,6 @@
             this.pictureBox269 = new System.Windows.Forms.PictureBox();
             this.key1 = new System.Windows.Forms.PictureBox();
             this.aimBox = new System.Windows.Forms.PictureBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -1973,9 +1973,21 @@
             this.panel3.Controls.Add(this.pictureBox378);
             this.panel3.Location = new System.Drawing.Point(623, 3);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(325, 53);
+            this.panel3.Size = new System.Drawing.Size(241, 53);
             this.panel3.TabIndex = 627;
             this.panel3.Visible = false;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(260, 15);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(29, 23);
+            this.label3.TabIndex = 628;
+            this.label3.Text = "x3";
+            this.label3.Visible = false;
             // 
             // pictureBox300
             // 
@@ -2117,7 +2129,7 @@
             this.pictureBox589.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox589.TabIndex = 619;
             this.pictureBox589.TabStop = false;
-            this.pictureBox589.Tag = "key";
+            this.pictureBox589.Tag = "cherry";
             this.pictureBox589.Visible = false;
             // 
             // pictureBox394
@@ -2130,7 +2142,7 @@
             this.pictureBox394.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox394.TabIndex = 618;
             this.pictureBox394.TabStop = false;
-            this.pictureBox394.Tag = "key";
+            this.pictureBox394.Tag = "watermelon";
             this.pictureBox394.Visible = false;
             // 
             // strawberry
@@ -2197,6 +2209,7 @@
             this.pictureBox392.TabIndex = 613;
             this.pictureBox392.TabStop = false;
             this.pictureBox392.Tag = "door";
+            this.pictureBox392.Visible = false;
             // 
             // collider4
             // 
@@ -8948,7 +8961,7 @@
             this.pictureBox41.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox41.TabIndex = 58;
             this.pictureBox41.TabStop = false;
-            this.pictureBox41.Tag = "border";
+            this.pictureBox41.Tag = "wall";
             // 
             // pictureBox42
             // 
@@ -8960,7 +8973,7 @@
             this.pictureBox42.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox42.TabIndex = 57;
             this.pictureBox42.TabStop = false;
-            this.pictureBox42.Tag = "border";
+            this.pictureBox42.Tag = "wall";
             // 
             // pictureBox43
             // 
@@ -8972,7 +8985,7 @@
             this.pictureBox43.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox43.TabIndex = 56;
             this.pictureBox43.TabStop = false;
-            this.pictureBox43.Tag = "border";
+            this.pictureBox43.Tag = "wall";
             // 
             // pictureBox44
             // 
@@ -8984,7 +8997,7 @@
             this.pictureBox44.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox44.TabIndex = 55;
             this.pictureBox44.TabStop = false;
-            this.pictureBox44.Tag = "border";
+            this.pictureBox44.Tag = "wall";
             // 
             // pictureBox45
             // 
@@ -8996,7 +9009,7 @@
             this.pictureBox45.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox45.TabIndex = 54;
             this.pictureBox45.TabStop = false;
-            this.pictureBox45.Tag = "border";
+            this.pictureBox45.Tag = "wall";
             // 
             // pictureBox46
             // 
@@ -9008,7 +9021,7 @@
             this.pictureBox46.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox46.TabIndex = 53;
             this.pictureBox46.TabStop = false;
-            this.pictureBox46.Tag = "border";
+            this.pictureBox46.Tag = "wall";
             // 
             // pictureBox47
             // 
@@ -9020,7 +9033,7 @@
             this.pictureBox47.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox47.TabIndex = 52;
             this.pictureBox47.TabStop = false;
-            this.pictureBox47.Tag = "border";
+            this.pictureBox47.Tag = "wall";
             // 
             // pictureBox48
             // 
@@ -9032,7 +9045,7 @@
             this.pictureBox48.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox48.TabIndex = 51;
             this.pictureBox48.TabStop = false;
-            this.pictureBox48.Tag = "border";
+            this.pictureBox48.Tag = "wall";
             // 
             // pictureBox49
             // 
@@ -9044,7 +9057,7 @@
             this.pictureBox49.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox49.TabIndex = 50;
             this.pictureBox49.TabStop = false;
-            this.pictureBox49.Tag = "border";
+            this.pictureBox49.Tag = "wall";
             // 
             // pictureBox50
             // 
@@ -9056,7 +9069,7 @@
             this.pictureBox50.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox50.TabIndex = 49;
             this.pictureBox50.TabStop = false;
-            this.pictureBox50.Tag = "border";
+            this.pictureBox50.Tag = "wall";
             // 
             // pictureBox51
             // 
@@ -9068,7 +9081,7 @@
             this.pictureBox51.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox51.TabIndex = 48;
             this.pictureBox51.TabStop = false;
-            this.pictureBox51.Tag = "border";
+            this.pictureBox51.Tag = "wall";
             // 
             // pictureBox52
             // 
@@ -9080,7 +9093,7 @@
             this.pictureBox52.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox52.TabIndex = 47;
             this.pictureBox52.TabStop = false;
-            this.pictureBox52.Tag = "border";
+            this.pictureBox52.Tag = "wall";
             // 
             // pictureBox53
             // 
@@ -9092,7 +9105,7 @@
             this.pictureBox53.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox53.TabIndex = 46;
             this.pictureBox53.TabStop = false;
-            this.pictureBox53.Tag = "border";
+            this.pictureBox53.Tag = "wall";
             // 
             // pictureBox54
             // 
@@ -9104,7 +9117,7 @@
             this.pictureBox54.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox54.TabIndex = 45;
             this.pictureBox54.TabStop = false;
-            this.pictureBox54.Tag = "border";
+            this.pictureBox54.Tag = "wall";
             // 
             // pictureBox55
             // 
@@ -9116,7 +9129,7 @@
             this.pictureBox55.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox55.TabIndex = 44;
             this.pictureBox55.TabStop = false;
-            this.pictureBox55.Tag = "border";
+            this.pictureBox55.Tag = "wall";
             // 
             // pictureBox56
             // 
@@ -9128,7 +9141,7 @@
             this.pictureBox56.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox56.TabIndex = 43;
             this.pictureBox56.TabStop = false;
-            this.pictureBox56.Tag = "border";
+            this.pictureBox56.Tag = "wall";
             // 
             // pictureBox57
             // 
@@ -9140,7 +9153,7 @@
             this.pictureBox57.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox57.TabIndex = 42;
             this.pictureBox57.TabStop = false;
-            this.pictureBox57.Tag = "border";
+            this.pictureBox57.Tag = "wall";
             // 
             // pictureBox58
             // 
@@ -9152,7 +9165,7 @@
             this.pictureBox58.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox58.TabIndex = 41;
             this.pictureBox58.TabStop = false;
-            this.pictureBox58.Tag = "border";
+            this.pictureBox58.Tag = "wall";
             // 
             // pictureBox36
             // 
@@ -9657,18 +9670,6 @@
             this.aimBox.TabStop = false;
             this.aimBox.Tag = "aim";
             this.aimBox.Visible = false;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(260, 15);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(29, 23);
-            this.label3.TabIndex = 628;
-            this.label3.Text = "x3";
-            this.label3.Visible = false;
             // 
             // Pacman
             // 

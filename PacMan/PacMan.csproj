@@ -166,5 +166,8 @@
   <ItemGroup>
     <None Include="Resources\mixkit-shotgun-pump-1659.wav" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mixkit-empty-tube-hit-3197.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

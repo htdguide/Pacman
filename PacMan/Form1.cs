@@ -26,7 +26,7 @@ namespace PacMan
         public Pacman()
         {
             InitializeComponent();
-            player = new Creatures("Pacman", pictureBox204, collider1, collider2, collider3, collider4, vision1, -1, 0);
+            player = new Creatures("Pacman", pictureBox204, collider1, collider2, collider3, collider4, vision1, aimBox, -1, 0);
             // ghost1 = new Creatures("Ghost 1", pictureBox392, 2, 0);
             // ghost2 = new Creatures("Ghost 2", pictureBox393, 2, 0);
             // ghost3 = new Creatures("Ghost 3", pictureBox394, 2, 0);
@@ -50,21 +50,25 @@ namespace PacMan
             if (e.KeyCode == Keys.Left)
             {
                 player.direction = 1;
+                player.aimMovement();
                 player.appearance.Image = Resources.pacmanLeft;
             }
             if (e.KeyCode == Keys.Right)
             {
                 player.direction = -1;
+                player.aimMovement();
                 player.appearance.Image = Resources.pacmanRight;
             }
             if (e.KeyCode == Keys.Up)
             {
                 player.direction = 2;
+                player.aimMovement();
                 player.appearance.Image = Resources.pacmanUp;
             }
             if (e.KeyCode == Keys.Down)
             {
                 player.direction = -2;
+                player.aimMovement();
                 player.appearance.Image = Resources.pacmanDown;
             }
             if (e.KeyCode == Keys.Space)
@@ -192,7 +196,7 @@ namespace PacMan
                         x.Visible = true;
                     }
                 }
-                if ((entity.vision.Right + 5) == panel1.Right && panel1.Right < 1005) //Level extender
+                if ((entity.appearance.Right + 25) == panel1.Right && panel1.Right < 1005) //Level extender
                 {
                     panel1.Width = panel1.Width + player.speed;
                     Pacman.ActiveForm.Width = Pacman.ActiveForm.Width + player.speed;

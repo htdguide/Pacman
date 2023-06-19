@@ -44,6 +44,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.Pause = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.pictureBox299 = new System.Windows.Forms.PictureBox();
+            this.doorS = new System.Windows.Forms.PictureBox();
             this.pictureBox589 = new System.Windows.Forms.PictureBox();
             this.pictureBox394 = new System.Windows.Forms.PictureBox();
             this.strawberry = new System.Windows.Forms.PictureBox();
@@ -418,7 +420,6 @@
             this.pictureBox236 = new System.Windows.Forms.PictureBox();
             this.pictureBox202 = new System.Windows.Forms.PictureBox();
             this.pictureBox203 = new System.Windows.Forms.PictureBox();
-            this.pictureBox205 = new System.Windows.Forms.PictureBox();
             this.pictureBox206 = new System.Windows.Forms.PictureBox();
             this.pictureBox207 = new System.Windows.Forms.PictureBox();
             this.pictureBox208 = new System.Windows.Forms.PictureBox();
@@ -636,9 +637,11 @@
             this.vision1 = new System.Windows.Forms.PictureBox();
             this.pictureBox269 = new System.Windows.Forms.PictureBox();
             this.key1 = new System.Windows.Forms.PictureBox();
-            this.doorS = new System.Windows.Forms.PictureBox();
+            this.aimBox = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox299)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.doorS)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox589)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox394)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.strawberry)).BeginInit();
@@ -1013,7 +1016,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox236)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox202)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox203)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox205)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox206)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox207)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox208)).BeginInit();
@@ -1231,13 +1233,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.vision1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox269)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.key1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.doorS)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.aimBox)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Black;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel1.Controls.Add(this.pictureBox299);
             this.panel1.Controls.Add(this.doorS);
             this.panel1.Controls.Add(this.pictureBox589);
             this.panel1.Controls.Add(this.pictureBox394);
@@ -1613,7 +1616,6 @@
             this.panel1.Controls.Add(this.pictureBox236);
             this.panel1.Controls.Add(this.pictureBox202);
             this.panel1.Controls.Add(this.pictureBox203);
-            this.panel1.Controls.Add(this.pictureBox205);
             this.panel1.Controls.Add(this.pictureBox206);
             this.panel1.Controls.Add(this.pictureBox207);
             this.panel1.Controls.Add(this.pictureBox208);
@@ -1831,6 +1833,7 @@
             this.panel1.Controls.Add(this.vision1);
             this.panel1.Controls.Add(this.pictureBox269);
             this.panel1.Controls.Add(this.key1);
+            this.panel1.Controls.Add(this.aimBox);
             this.panel1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.panel1.Location = new System.Drawing.Point(12, 12);
             this.panel1.Name = "panel1";
@@ -1860,7 +1863,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label7.Location = new System.Drawing.Point(103, 32);
+            this.label7.Location = new System.Drawing.Point(95, 32);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(19, 23);
             this.label7.TabIndex = 12;
@@ -1910,7 +1913,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label5.Location = new System.Drawing.Point(103, 9);
+            this.label5.Location = new System.Drawing.Point(95, 9);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(19, 23);
             this.label5.TabIndex = 5;
@@ -1974,10 +1977,36 @@
             this.timer1.Interval = 15;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // pictureBox299
+            // 
+            this.pictureBox299.Image = global::PacMan.Properties.Resources.shotgun;
+            this.pictureBox299.Location = new System.Drawing.Point(913, 50);
+            this.pictureBox299.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox299.Name = "pictureBox299";
+            this.pictureBox299.Size = new System.Drawing.Size(46, 25);
+            this.pictureBox299.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox299.TabIndex = 621;
+            this.pictureBox299.TabStop = false;
+            this.pictureBox299.Tag = "key";
+            this.pictureBox299.Visible = false;
+            // 
+            // doorS
+            // 
+            this.doorS.Image = global::PacMan.Properties.Resources.door;
+            this.doorS.Location = new System.Drawing.Point(179, 125);
+            this.doorS.Margin = new System.Windows.Forms.Padding(2);
+            this.doorS.Name = "doorS";
+            this.doorS.Size = new System.Drawing.Size(21, 25);
+            this.doorS.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.doorS.TabIndex = 620;
+            this.doorS.TabStop = false;
+            this.doorS.Tag = "wall";
+            this.doorS.Visible = false;
+            // 
             // pictureBox589
             // 
             this.pictureBox589.Image = global::PacMan.Properties.Resources.cherry;
-            this.pictureBox589.Location = new System.Drawing.Point(800, 225);
+            this.pictureBox589.Location = new System.Drawing.Point(550, 450);
             this.pictureBox589.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox589.Name = "pictureBox589";
             this.pictureBox589.Size = new System.Drawing.Size(25, 25);
@@ -2029,7 +2058,7 @@
             // pictureBox204
             // 
             this.pictureBox204.Image = global::PacMan.Properties.Resources.pacmanRight;
-            this.pictureBox204.Location = new System.Drawing.Point(28, 450);
+            this.pictureBox204.Location = new System.Drawing.Point(25, 449);
             this.pictureBox204.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox204.Name = "pictureBox204";
             this.pictureBox204.Size = new System.Drawing.Size(22, 22);
@@ -2041,7 +2070,7 @@
             // collider3
             // 
             this.collider3.Image = global::PacMan.Properties.Resources.collider;
-            this.collider3.Location = new System.Drawing.Point(26, 454);
+            this.collider3.Location = new System.Drawing.Point(24, 453);
             this.collider3.Margin = new System.Windows.Forms.Padding(2);
             this.collider3.MaximumSize = new System.Drawing.Size(5, 14);
             this.collider3.MinimumSize = new System.Drawing.Size(5, 14);
@@ -2068,7 +2097,7 @@
             // collider4
             // 
             this.collider4.Image = global::PacMan.Properties.Resources.collider;
-            this.collider4.Location = new System.Drawing.Point(45, 454);
+            this.collider4.Location = new System.Drawing.Point(42, 453);
             this.collider4.Margin = new System.Windows.Forms.Padding(2);
             this.collider4.MaximumSize = new System.Drawing.Size(5, 14);
             this.collider4.MinimumSize = new System.Drawing.Size(5, 14);
@@ -2096,7 +2125,7 @@
             // collider1
             // 
             this.collider1.Image = global::PacMan.Properties.Resources.collider;
-            this.collider1.Location = new System.Drawing.Point(32, 449);
+            this.collider1.Location = new System.Drawing.Point(29, 448);
             this.collider1.Margin = new System.Windows.Forms.Padding(2);
             this.collider1.MaximumSize = new System.Drawing.Size(14, 14);
             this.collider1.MinimumSize = new System.Drawing.Size(14, 14);
@@ -2124,7 +2153,7 @@
             // collider2
             // 
             this.collider2.Image = global::PacMan.Properties.Resources.collider;
-            this.collider2.Location = new System.Drawing.Point(32, 467);
+            this.collider2.Location = new System.Drawing.Point(29, 466);
             this.collider2.Margin = new System.Windows.Forms.Padding(2);
             this.collider2.MaximumSize = new System.Drawing.Size(14, 5);
             this.collider2.MinimumSize = new System.Drawing.Size(14, 5);
@@ -6305,7 +6334,7 @@
             // pictureBox267
             // 
             this.pictureBox267.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox267.Image")));
-            this.pictureBox267.Location = new System.Drawing.Point(100, 450);
+            this.pictureBox267.Location = new System.Drawing.Point(400, 225);
             this.pictureBox267.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox267.Name = "pictureBox267";
             this.pictureBox267.Size = new System.Drawing.Size(25, 25);
@@ -6782,19 +6811,6 @@
             this.pictureBox203.TabStop = false;
             this.pictureBox203.Tag = "kibble";
             this.pictureBox203.Visible = false;
-            // 
-            // pictureBox205
-            // 
-            this.pictureBox205.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox205.Image")));
-            this.pictureBox205.Location = new System.Drawing.Point(25, 425);
-            this.pictureBox205.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox205.Name = "pictureBox205";
-            this.pictureBox205.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox205.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox205.TabIndex = 220;
-            this.pictureBox205.TabStop = false;
-            this.pictureBox205.Tag = "kibble";
-            this.pictureBox205.Visible = false;
             // 
             // pictureBox206
             // 
@@ -9506,9 +9522,9 @@
             // vision1
             // 
             this.vision1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.vision1.Location = new System.Drawing.Point(4, 425);
+            this.vision1.Location = new System.Drawing.Point(-3, 424);
             this.vision1.Name = "vision1";
-            this.vision1.Size = new System.Drawing.Size(70, 70);
+            this.vision1.Size = new System.Drawing.Size(78, 75);
             this.vision1.TabIndex = 13;
             this.vision1.TabStop = false;
             this.vision1.Tag = "vision";
@@ -9540,18 +9556,15 @@
             this.key1.Tag = "key";
             this.key1.Visible = false;
             // 
-            // doorS
+            // aimBox
             // 
-            this.doorS.Image = global::PacMan.Properties.Resources.door;
-            this.doorS.Location = new System.Drawing.Point(179, 125);
-            this.doorS.Margin = new System.Windows.Forms.Padding(2);
-            this.doorS.Name = "doorS";
-            this.doorS.Size = new System.Drawing.Size(21, 25);
-            this.doorS.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.doorS.TabIndex = 620;
-            this.doorS.TabStop = false;
-            this.doorS.Tag = "wall";
-            this.doorS.Visible = false;
+            this.aimBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.aimBox.Location = new System.Drawing.Point(50, 453);
+            this.aimBox.Name = "aimBox";
+            this.aimBox.Size = new System.Drawing.Size(75, 20);
+            this.aimBox.TabIndex = 622;
+            this.aimBox.TabStop = false;
+            this.aimBox.Tag = "aim";
             // 
             // Pacman
             // 
@@ -9570,6 +9583,8 @@
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox299)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.doorS)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox589)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox394)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.strawberry)).EndInit();
@@ -9944,7 +9959,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox236)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox202)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox203)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox205)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox206)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox207)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox208)).EndInit();
@@ -10162,7 +10176,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.vision1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox269)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.key1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.doorS)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.aimBox)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -10382,7 +10396,6 @@
         private System.Windows.Forms.PictureBox pictureBox202;
         private System.Windows.Forms.PictureBox pictureBox203;
         private System.Windows.Forms.PictureBox pictureBox204;
-        private System.Windows.Forms.PictureBox pictureBox205;
         private System.Windows.Forms.PictureBox pictureBox206;
         private System.Windows.Forms.PictureBox pictureBox207;
         private System.Windows.Forms.PictureBox pictureBox208;
@@ -10776,6 +10789,8 @@
         private System.Windows.Forms.PictureBox pictureBox394;
         private System.Windows.Forms.PictureBox pictureBox589;
         private System.Windows.Forms.PictureBox doorS;
+        private System.Windows.Forms.PictureBox pictureBox299;
+        private System.Windows.Forms.PictureBox aimBox;
     }
 }
 

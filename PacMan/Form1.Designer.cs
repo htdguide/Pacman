@@ -36,14 +36,20 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.Pause = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.label11 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.pictureBox300 = new System.Windows.Forms.PictureBox();
+            this.pictureBox205 = new System.Windows.Forms.PictureBox();
+            this.pictureBox393 = new System.Windows.Forms.PictureBox();
+            this.pictureBox202 = new System.Windows.Forms.PictureBox();
+            this.pictureBox378 = new System.Windows.Forms.PictureBox();
+            this.waterIcon = new System.Windows.Forms.PictureBox();
+            this.cherryIcon = new System.Windows.Forms.PictureBox();
+            this.strawIcon = new System.Windows.Forms.PictureBox();
             this.pictureBox299 = new System.Windows.Forms.PictureBox();
             this.doorS = new System.Windows.Forms.PictureBox();
             this.pictureBox589 = new System.Windows.Forms.PictureBox();
@@ -637,17 +643,18 @@
             this.pictureBox269 = new System.Windows.Forms.PictureBox();
             this.key1 = new System.Windows.Forms.PictureBox();
             this.aimBox = new System.Windows.Forms.PictureBox();
-            this.strawIcon = new System.Windows.Forms.PictureBox();
-            this.cherryIcon = new System.Windows.Forms.PictureBox();
-            this.waterIcon = new System.Windows.Forms.PictureBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.pictureBox202 = new System.Windows.Forms.PictureBox();
-            this.pictureBox378 = new System.Windows.Forms.PictureBox();
-            this.pictureBox205 = new System.Windows.Forms.PictureBox();
-            this.pictureBox300 = new System.Windows.Forms.PictureBox();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox300)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox205)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox393)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox202)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox378)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.waterIcon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cherryIcon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.strawIcon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox299)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.doorS)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox589)).BeginInit();
@@ -1241,14 +1248,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox269)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.key1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.aimBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.strawIcon)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cherryIcon)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.waterIcon)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox202)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox378)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox205)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox300)).BeginInit();
-            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -1866,10 +1865,6 @@
             this.panel2.Controls.Add(this.label8);
             this.panel2.Controls.Add(this.label9);
             this.panel2.Controls.Add(this.label10);
-            this.panel2.Controls.Add(this.label6);
-            this.panel2.Controls.Add(this.label5);
-            this.panel2.Controls.Add(this.label4);
-            this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.Pause);
@@ -1882,7 +1877,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label7.Location = new System.Drawing.Point(95, 32);
+            this.label7.Location = new System.Drawing.Point(91, 19);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(19, 23);
             this.label7.TabIndex = 12;
@@ -1892,17 +1887,17 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label8.Location = new System.Drawing.Point(7, 32);
+            this.label8.Location = new System.Drawing.Point(27, 19);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(90, 23);
+            this.label8.Size = new System.Drawing.Size(56, 23);
             this.label8.TabIndex = 11;
-            this.label8.Text = "[P2] Score:";
+            this.label8.Text = "Score:";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label9.Location = new System.Drawing.Point(185, 32);
+            this.label9.Location = new System.Drawing.Point(181, 19);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(19, 23);
             this.label9.TabIndex = 10;
@@ -1912,51 +1907,11 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label10.Location = new System.Drawing.Point(139, 32);
+            this.label10.Location = new System.Drawing.Point(135, 19);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(50, 23);
             this.label10.TabIndex = 9;
             this.label10.Text = "Lives:";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label6.Location = new System.Drawing.Point(185, 9);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(19, 23);
-            this.label6.TabIndex = 6;
-            this.label6.Text = "3";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label5.Location = new System.Drawing.Point(95, 9);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(19, 23);
-            this.label5.TabIndex = 5;
-            this.label5.Text = "0";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.Location = new System.Drawing.Point(139, 9);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(50, 23);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "Lives:";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.Location = new System.Drawing.Point(7, 9);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(90, 23);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "[P1] Score:";
             // 
             // label2
             // 
@@ -1995,6 +1950,137 @@
             this.timer1.Interval = 15;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label11.Location = new System.Drawing.Point(359, 19);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(54, 23);
+            this.label11.TabIndex = 624;
+            this.label11.Text = "Pause";
+            this.label11.Click += new System.EventHandler(this.label11_Click);
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.Gray;
+            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel3.Controls.Add(this.label3);
+            this.panel3.Controls.Add(this.pictureBox300);
+            this.panel3.Controls.Add(this.pictureBox205);
+            this.panel3.Controls.Add(this.pictureBox393);
+            this.panel3.Controls.Add(this.pictureBox202);
+            this.panel3.Controls.Add(this.pictureBox378);
+            this.panel3.Location = new System.Drawing.Point(623, 3);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(325, 53);
+            this.panel3.TabIndex = 627;
+            this.panel3.Visible = false;
+            // 
+            // pictureBox300
+            // 
+            this.pictureBox300.Image = global::PacMan.Properties.Resources.key;
+            this.pictureBox300.Location = new System.Drawing.Point(79, 4);
+            this.pictureBox300.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox300.Name = "pictureBox300";
+            this.pictureBox300.Size = new System.Drawing.Size(32, 43);
+            this.pictureBox300.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox300.TabIndex = 629;
+            this.pictureBox300.TabStop = false;
+            this.pictureBox300.Tag = "";
+            this.pictureBox300.Visible = false;
+            // 
+            // pictureBox205
+            // 
+            this.pictureBox205.Image = global::PacMan.Properties.Resources.key;
+            this.pictureBox205.Location = new System.Drawing.Point(43, 4);
+            this.pictureBox205.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox205.Name = "pictureBox205";
+            this.pictureBox205.Size = new System.Drawing.Size(32, 43);
+            this.pictureBox205.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox205.TabIndex = 628;
+            this.pictureBox205.TabStop = false;
+            this.pictureBox205.Tag = "";
+            this.pictureBox205.Visible = false;
+            // 
+            // pictureBox393
+            // 
+            this.pictureBox393.Image = global::PacMan.Properties.Resources.shell;
+            this.pictureBox393.Location = new System.Drawing.Point(289, 4);
+            this.pictureBox393.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox393.Name = "pictureBox393";
+            this.pictureBox393.Size = new System.Drawing.Size(25, 39);
+            this.pictureBox393.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox393.TabIndex = 627;
+            this.pictureBox393.TabStop = false;
+            this.pictureBox393.Tag = "";
+            this.pictureBox393.Visible = false;
+            // 
+            // pictureBox202
+            // 
+            this.pictureBox202.Image = global::PacMan.Properties.Resources.key;
+            this.pictureBox202.Location = new System.Drawing.Point(7, 4);
+            this.pictureBox202.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox202.Name = "pictureBox202";
+            this.pictureBox202.Size = new System.Drawing.Size(32, 43);
+            this.pictureBox202.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox202.TabIndex = 623;
+            this.pictureBox202.TabStop = false;
+            this.pictureBox202.Tag = "";
+            this.pictureBox202.Visible = false;
+            // 
+            // pictureBox378
+            // 
+            this.pictureBox378.Image = global::PacMan.Properties.Resources.shotgun;
+            this.pictureBox378.Location = new System.Drawing.Point(122, 4);
+            this.pictureBox378.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox378.Name = "pictureBox378";
+            this.pictureBox378.Size = new System.Drawing.Size(134, 43);
+            this.pictureBox378.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox378.TabIndex = 623;
+            this.pictureBox378.TabStop = false;
+            this.pictureBox378.Tag = "";
+            this.pictureBox378.Visible = false;
+            // 
+            // waterIcon
+            // 
+            this.waterIcon.Image = global::PacMan.Properties.Resources.watermel;
+            this.waterIcon.Location = new System.Drawing.Point(284, 17);
+            this.waterIcon.Margin = new System.Windows.Forms.Padding(2);
+            this.waterIcon.Name = "waterIcon";
+            this.waterIcon.Size = new System.Drawing.Size(25, 25);
+            this.waterIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.waterIcon.TabIndex = 623;
+            this.waterIcon.TabStop = false;
+            this.waterIcon.Tag = "";
+            this.waterIcon.Visible = false;
+            // 
+            // cherryIcon
+            // 
+            this.cherryIcon.Image = global::PacMan.Properties.Resources.cherry;
+            this.cherryIcon.Location = new System.Drawing.Point(255, 17);
+            this.cherryIcon.Margin = new System.Windows.Forms.Padding(2);
+            this.cherryIcon.Name = "cherryIcon";
+            this.cherryIcon.Size = new System.Drawing.Size(25, 25);
+            this.cherryIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.cherryIcon.TabIndex = 623;
+            this.cherryIcon.TabStop = false;
+            this.cherryIcon.Tag = "";
+            this.cherryIcon.Visible = false;
+            // 
+            // strawIcon
+            // 
+            this.strawIcon.Image = global::PacMan.Properties.Resources.strawberry;
+            this.strawIcon.Location = new System.Drawing.Point(226, 17);
+            this.strawIcon.Margin = new System.Windows.Forms.Padding(2);
+            this.strawIcon.Name = "strawIcon";
+            this.strawIcon.Size = new System.Drawing.Size(25, 25);
+            this.strawIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.strawIcon.TabIndex = 623;
+            this.strawIcon.TabStop = false;
+            this.strawIcon.Tag = "";
+            this.strawIcon.Visible = false;
+            // 
             // pictureBox299
             // 
             this.pictureBox299.Image = global::PacMan.Properties.Resources.shotgun;
@@ -2005,7 +2091,7 @@
             this.pictureBox299.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox299.TabIndex = 621;
             this.pictureBox299.TabStop = false;
-            this.pictureBox299.Tag = "key";
+            this.pictureBox299.Tag = "shotgun";
             this.pictureBox299.Visible = false;
             // 
             // doorS
@@ -9572,117 +9658,17 @@
             this.aimBox.Tag = "aim";
             this.aimBox.Visible = false;
             // 
-            // strawIcon
+            // label3
             // 
-            this.strawIcon.Image = global::PacMan.Properties.Resources.strawberry;
-            this.strawIcon.Location = new System.Drawing.Point(226, 9);
-            this.strawIcon.Margin = new System.Windows.Forms.Padding(2);
-            this.strawIcon.Name = "strawIcon";
-            this.strawIcon.Size = new System.Drawing.Size(25, 25);
-            this.strawIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.strawIcon.TabIndex = 623;
-            this.strawIcon.TabStop = false;
-            this.strawIcon.Tag = "";
-            // 
-            // cherryIcon
-            // 
-            this.cherryIcon.Image = global::PacMan.Properties.Resources.cherry;
-            this.cherryIcon.Location = new System.Drawing.Point(255, 9);
-            this.cherryIcon.Margin = new System.Windows.Forms.Padding(2);
-            this.cherryIcon.Name = "cherryIcon";
-            this.cherryIcon.Size = new System.Drawing.Size(25, 25);
-            this.cherryIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.cherryIcon.TabIndex = 623;
-            this.cherryIcon.TabStop = false;
-            this.cherryIcon.Tag = "";
-            // 
-            // waterIcon
-            // 
-            this.waterIcon.Image = global::PacMan.Properties.Resources.watermel;
-            this.waterIcon.Location = new System.Drawing.Point(284, 9);
-            this.waterIcon.Margin = new System.Windows.Forms.Padding(2);
-            this.waterIcon.Name = "waterIcon";
-            this.waterIcon.Size = new System.Drawing.Size(25, 25);
-            this.waterIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.waterIcon.TabIndex = 623;
-            this.waterIcon.TabStop = false;
-            this.waterIcon.Tag = "";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label11.Location = new System.Drawing.Point(359, 19);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(54, 23);
-            this.label11.TabIndex = 624;
-            this.label11.Text = "Pause";
-            this.label11.Click += new System.EventHandler(this.label11_Click);
-            // 
-            // pictureBox202
-            // 
-            this.pictureBox202.Image = global::PacMan.Properties.Resources.key;
-            this.pictureBox202.Location = new System.Drawing.Point(7, 4);
-            this.pictureBox202.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox202.Name = "pictureBox202";
-            this.pictureBox202.Size = new System.Drawing.Size(40, 39);
-            this.pictureBox202.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox202.TabIndex = 623;
-            this.pictureBox202.TabStop = false;
-            this.pictureBox202.Tag = "";
-            this.pictureBox202.Visible = false;
-            // 
-            // pictureBox378
-            // 
-            this.pictureBox378.Image = global::PacMan.Properties.Resources.shotgun;
-            this.pictureBox378.Location = new System.Drawing.Point(148, 4);
-            this.pictureBox378.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox378.Name = "pictureBox378";
-            this.pictureBox378.Size = new System.Drawing.Size(134, 39);
-            this.pictureBox378.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox378.TabIndex = 623;
-            this.pictureBox378.TabStop = false;
-            this.pictureBox378.Tag = "";
-            this.pictureBox378.Visible = false;
-            // 
-            // pictureBox205
-            // 
-            this.pictureBox205.Image = global::PacMan.Properties.Resources.key;
-            this.pictureBox205.Location = new System.Drawing.Point(51, 4);
-            this.pictureBox205.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox205.Name = "pictureBox205";
-            this.pictureBox205.Size = new System.Drawing.Size(40, 39);
-            this.pictureBox205.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox205.TabIndex = 625;
-            this.pictureBox205.TabStop = false;
-            this.pictureBox205.Tag = "";
-            this.pictureBox205.Visible = false;
-            // 
-            // pictureBox300
-            // 
-            this.pictureBox300.Image = global::PacMan.Properties.Resources.key;
-            this.pictureBox300.Location = new System.Drawing.Point(95, 4);
-            this.pictureBox300.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox300.Name = "pictureBox300";
-            this.pictureBox300.Size = new System.Drawing.Size(40, 39);
-            this.pictureBox300.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox300.TabIndex = 626;
-            this.pictureBox300.TabStop = false;
-            this.pictureBox300.Tag = "";
-            this.pictureBox300.Visible = false;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.Gray;
-            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel3.Controls.Add(this.pictureBox202);
-            this.panel3.Controls.Add(this.pictureBox300);
-            this.panel3.Controls.Add(this.pictureBox378);
-            this.panel3.Controls.Add(this.pictureBox205);
-            this.panel3.Location = new System.Drawing.Point(623, 3);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(325, 53);
-            this.panel3.TabIndex = 627;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(260, 15);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(29, 23);
+            this.label3.TabIndex = 628;
+            this.label3.Text = "x3";
+            this.label3.Visible = false;
             // 
             // Pacman
             // 
@@ -9701,6 +9687,16 @@
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox300)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox205)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox393)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox202)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox378)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.waterIcon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cherryIcon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.strawIcon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox299)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.doorS)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox589)).EndInit();
@@ -10294,14 +10290,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox269)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.key1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.aimBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.strawIcon)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cherryIcon)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.waterIcon)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox202)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox378)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox205)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox300)).EndInit();
-            this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -10310,13 +10298,9 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button Pause;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox59;
         private System.Windows.Forms.PictureBox pictureBox60;
@@ -10920,10 +10904,12 @@
         private System.Windows.Forms.PictureBox strawIcon;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.PictureBox pictureBox202;
-        private System.Windows.Forms.PictureBox pictureBox300;
-        private System.Windows.Forms.PictureBox pictureBox205;
         private System.Windows.Forms.PictureBox pictureBox378;
         private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.PictureBox pictureBox300;
+        private System.Windows.Forms.PictureBox pictureBox205;
+        private System.Windows.Forms.PictureBox pictureBox393;
+        private System.Windows.Forms.Label label3;
     }
 }
 

@@ -150,6 +150,15 @@ namespace PacMan.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream gunPick {
+            get {
+                return ResourceManager.GetStream("gunPick", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap key {
@@ -234,6 +243,16 @@ namespace PacMan.Properties {
         internal static System.IO.UnmanagedMemoryStream reload {
             get {
                 return ResourceManager.GetStream("reload", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap shell {
+            get {
+                object obj = ResourceManager.GetObject("shell", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         

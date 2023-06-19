@@ -23,7 +23,7 @@ namespace PacMan
         private bool gates = false; //gates open
         private int gatesCounter = 0;
         private int doorsCounter = 0;
-        private int bullet = 1;
+        private int bullet = -1;
         public Pacman()
         {
             InitializeComponent();
@@ -31,7 +31,7 @@ namespace PacMan
             // ghost1 = new Creatures("Ghost 1", pictureBox392, 2, 0);
             // ghost2 = new Creatures("Ghost 2", pictureBox393, 2, 0);
             // ghost3 = new Creatures("Ghost 3", pictureBox394, 2, 0);
-            engine = new Engine(0, 0, false, false, player, ghost1, ghost2, ghost3, label5, label6, label7,label9);
+            engine = new Engine(0, 0, false, false, player, ghost1, ghost2, ghost3, label7,label9);
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -76,7 +76,7 @@ namespace PacMan
             if (e.KeyCode == Keys.Space)
             {
                 if (bullet == 1) shot();
-                else reload();
+                else if (bullet == 0) reload();
                 
             }
             if (e.KeyCode == Keys.X) //Debug mode
@@ -102,6 +102,9 @@ namespace PacMan
                 collider3.Visible = c;
                 collider4.Visible = c;
                 vision1.Visible = c;
+                pictureBox202.Visible = c;
+                pictureBox205.Visible = c;
+                pictureBox300.Visible = c;
                 gates = true;
                 engine.keys = 3;
                 aimBox.Visible = c;
@@ -161,10 +164,26 @@ namespace PacMan
                         panel1.Controls.Remove(x);
                     }
                 }
+                if (x is PictureBox && (x.Tag == "shotgun"))  //Kibble detection
+                {
+                    if (entity.appearance.Bounds.IntersectsWith(x.Bounds))
+                    {
+                        SoundPlayer pick = new SoundPlayer(Resources.gunPick);
+                        pick.Play();
+                        panel3.Visible= true;
+                        pictureBox378.Visible = true;
+                        pictureBox393.Visible = true;
+                        aimBox.Visible = true;
+                        label3.Visible = true;
+                        bullet = 1;
+                        panel1.Controls.Remove(x);
+                    }
+                }
                 if (x is PictureBox && (x.Tag == "straw"))  //Kibble detection
                 {
                     if (entity.appearance.Bounds.IntersectsWith(x.Bounds))
                     {
+                        strawIcon.Visible = true;
                         foreach (Control z in panel1.Controls)
                         {
                             if (z is PictureBox && z.Tag == "kibble") z.Visible = true; //Ability to see the kibbles
@@ -178,10 +197,26 @@ namespace PacMan
                 {
                     if (entity.appearance.Bounds.IntersectsWith(x.Bounds))
                     {
+                        panel3.Visible = true;
                         engine.keys = engine.keys + 1;
                         SoundPlayer collect = new SoundPlayer(Resources.keys);
                         collect.Play();
                         panel1.Controls.Remove(x);
+                        switch (engine.keys) 
+                        {
+                            case 1:
+                                pictureBox202.Visible = true;
+                                break;
+                            case 2:
+                                pictureBox205.Visible = true;
+                                pictureBox202.Visible = true;
+                                break;
+                            case 3:
+                                pictureBox202.Visible = true;
+                                pictureBox205.Visible = true;
+                                pictureBox300.Visible = true;
+                                break;
+                        }
                     }
                 }
                 if (x is PictureBox && (x.Tag == "door" && engine.keys > 2))  //Door open detection
@@ -194,7 +229,7 @@ namespace PacMan
                         engine.keys = 0;
                     }
                 }
-                if (x is PictureBox && (x.Tag == "kibble" || x.Tag == "wall" || x.Tag == "wall2"|| x.Tag == "key" || x.Tag == "door" || x.Tag == "straw"))  //Vision detection
+                if (x is PictureBox && (x.Tag == "kibble" || x.Tag == "wall" || x.Tag == "wall2"|| x.Tag == "key" || x.Tag == "door" || x.Tag == "straw" || x.Tag == "shotgun"))  //Vision detection
                 {
                     if (entity.vision.Bounds.IntersectsWith(x.Bounds))
                     {

@@ -17,13 +17,15 @@ namespace PacMan
 {
     public partial class Pacman : Form
     {
+        SoundPlayer ambient;
         private Creatures player, ghost1, ghost2, ghost3;
         private Engine engine;
         private bool c = true; //debugging
         private bool gates = false; //gates open
         private int gatesCounter = 0;
         private int doorsCounter = 0;
-        private int bullet = -1;
+        private int shotAbility = -1;
+        private int shells = 0;
         public Pacman()
         {
             InitializeComponent();
@@ -32,6 +34,8 @@ namespace PacMan
             // ghost2 = new Creatures("Ghost 2", pictureBox393, 2, 0);
             // ghost3 = new Creatures("Ghost 3", pictureBox394, 2, 0);
             engine = new Engine(0, 0, false, false, player, ghost1, ghost2, ghost3, label7,label9);
+            ambient = new SoundPlayer(Resources.ambient);
+            ambient.Play();
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -76,8 +80,8 @@ namespace PacMan
             }
             if (e.KeyCode == Keys.Space)
             {
-                if (bullet == 1) shot();
-                else if (bullet == 0) reload();
+                if (shotAbility == 1) shot();
+                else if (shotAbility == 0 && shells > 0) reload();
                 
             }
             if (e.KeyCode == Keys.X) //Debug mode
@@ -165,6 +169,17 @@ namespace PacMan
                         panel1.Controls.Remove(x);
                     }
                 }
+                if (x is PictureBox && (x.Tag == "shell"))  //Kibble detection
+                {
+                    if (entity.appearance.Bounds.IntersectsWith(x.Bounds))
+                    {
+                        shells = shells + 5;
+                        SoundPlayer pick = new SoundPlayer(Resources.gunPick);
+                        pick.Play();
+                        label3.Text = ("x" + shells);
+                        panel1.Controls.Remove(x);
+                    }
+                }
                 if (x is PictureBox && (x.Tag == "shotgun"))  //Kibble detection
                 {
                     if (entity.appearance.Bounds.IntersectsWith(x.Bounds))
@@ -176,7 +191,7 @@ namespace PacMan
                         pictureBox393.Visible = true;
                         aimBox.Visible = true;
                         label3.Visible = true;
-                        bullet = 1;
+                        shotAbility = 1;
                         panel1.Controls.Remove(x);
                     }
                 }
@@ -230,7 +245,7 @@ namespace PacMan
                         engine.keys = 0;
                     }
                 }
-                if (x is PictureBox && (x.Tag == "kibble" || x.Tag == "wall" || x.Tag == "wall2"|| x.Tag == "key" || x.Tag == "door" || x.Tag == "straw" || x.Tag == "shotgun"))  //Vision detection
+                if (x is PictureBox && (x.Tag == "kibble" || x.Tag == "wall" || x.Tag == "wall2"|| x.Tag == "key" || x.Tag == "door" || x.Tag == "straw" || x.Tag == "shotgun"|| x.Tag == "shell" || x.Tag == "cherry"))  //Vision detection
                 {
                     if (entity.vision.Bounds.IntersectsWith(x.Bounds))
                     {
@@ -326,7 +341,7 @@ namespace PacMan
         {
             SoundPlayer shot = new SoundPlayer(Resources.shot);
             shot.Play();
-            bullet = 0;
+            shotAbility = 0;
             foreach (PictureBox v in panel1.Controls)
             {
                 if (v.Tag == "wall")
@@ -344,7 +359,9 @@ namespace PacMan
         {
             SoundPlayer reload = new SoundPlayer(Resources.reload);
             reload.Play();
-            bullet = 1;
+            shotAbility = 1;
+            shells = shells - 1;
+            label3.Text = ("x" + shells);
         }
     }
 }

@@ -12,7 +12,7 @@ namespace PacMan
     {
         public string name; //Name of the creature
         public int direction; //movement direction
-        public int speed = 1; //speed
+        public int speed = 2; //speed
         public PictureBox appearance, colliderUp, colliderDown, colliderLeft, colliderRight, vision, aimbox; //appearance and collision pictureboxes
         public int stop = 0;
 

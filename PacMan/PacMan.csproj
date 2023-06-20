@@ -169,5 +169,17 @@
   <ItemGroup>
     <None Include="Resources\mixkit-empty-tube-hit-3197.wav" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mixkit-arcade-game-jump-coin-216.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mixkit-synthetic-sci-fi-wobble-278.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mixkit-space-coin-win-notification-271.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mixkit-drone-terror-long-organ-2750 %281%29.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

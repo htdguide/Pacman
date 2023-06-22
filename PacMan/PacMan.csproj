@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="bot.cs" />
     <Compile Include="Engine.cs" />
     <Compile Include="Creatures.cs" />
     <Compile Include="Form1.cs">

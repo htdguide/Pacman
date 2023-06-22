@@ -252,7 +252,7 @@ namespace PacMan
                         x.Visible = true;
                     }
                 }
-                if ((entity.appearance.Right + 25) == panel1.Right && panel1.Right < 1005) //Level extender
+                if ((entity.appearance.Right + 25) > panel1.Right) //Level extender
                 {
                     panel1.Width = panel1.Width + player.speed;
                     Pacman.ActiveForm.Width = Pacman.ActiveForm.Width + player.speed;

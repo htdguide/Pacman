@@ -12,12 +12,12 @@ namespace PacMan
     {
         public string name; //Name of the creature
         public int direction; //movement direction
-        public int speed = 2; //speed
+        public int speed; //speed
         public PictureBox appearance, colliderUp, colliderDown, colliderLeft, colliderRight, vision, aimbox; //appearance and collision pictureboxes
         public int stop = 0;
 
 
-        public Creatures(string name, PictureBox appearance, PictureBox colliderUp, PictureBox colliderDown, PictureBox colliderLeft, PictureBox colliderRight, PictureBox vision, PictureBox aimbox, int direction, int stop) 
+        public Creatures(string name, PictureBox appearance, PictureBox colliderUp, PictureBox colliderDown, PictureBox colliderLeft, PictureBox colliderRight, PictureBox vision, PictureBox aimbox, int direction, int stop, int speed) 
         {
             this.name = name;
             this.appearance = appearance;
@@ -29,6 +29,7 @@ namespace PacMan
             this.stop = stop;
             this.vision = vision;
             this.aimbox = aimbox;
+            this.speed = speed;
         }
 
         public void movement()

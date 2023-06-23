@@ -18,7 +18,7 @@ namespace PacMan
     public partial class Pacman : Form
     {
         SoundPlayer ambient;
-        private Creatures player, ghost1, ghost2, ghost3;
+        private Creatures player, ghost;
         private Engine engine;
         private bool c = true; //debugging
         private bool gates = false; //gates open
@@ -26,20 +26,23 @@ namespace PacMan
         private int doorsCounter = 0;
         private int shotAbility = -1;
         private int shells = 0;
+        private bot bot;
         public Pacman()
         {
             InitializeComponent();
-            player = new Creatures("Pacman", pictureBox204, collider1, collider2, collider3, collider4, vision1, aimBox, -1, 0);
-            // ghost1 = new Creatures("Ghost 1", pictureBox392, 2, 0);
+            player = new Creatures("Pacman", pictureBox204, collider1, collider2, collider3, collider4, vision1, aimBox, -1, 0, 2);
+            ghost = new Creatures("Pacman", ghostAppearance, ghostColliderUp, ghostColliderDown, ghostColliderLeft, ghostColliderRight, ghostVision, ghostAim, -1, 0, 1);
             // ghost2 = new Creatures("Ghost 2", pictureBox393, 2, 0);
             // ghost3 = new Creatures("Ghost 3", pictureBox394, 2, 0);
-            engine = new Engine(0, 0, false, false, player, ghost1, ghost2, ghost3, label7,label9);
+            bot = new bot(ghost, panel1, player);
+            engine = new Engine(0, 0, player, ghost, label7,label9);
             ambient = new SoundPlayer(Resources.ambient);
             ambient.Play();
         }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
+            bot.mind();
             if (panel1.Width > 500 && engine.scoreTotal < 1)
             {
                 panel1.Width = 380;
@@ -49,6 +52,7 @@ namespace PacMan
                 panel3.Width = 150;
             }
             if (!wallcheck(player)) player.movement();
+            if (!wallcheck(ghost)) ghost.movement();
             if ((engine.scoreTotal > 170 && gatesCounter < 20) || (gatesCounter < 20 && gates == true)) gatesopen(pictureBox41,4);
         }
 

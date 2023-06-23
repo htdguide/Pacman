@@ -17,7 +17,6 @@ namespace PacMan
 {
     public partial class Pacman : Form
     {
-        SoundPlayer ambient;
         private Creatures player, ghost;
         private Engine engine;
         private bool c = true; //debugging
@@ -26,23 +25,22 @@ namespace PacMan
         private int doorsCounter = 0;
         private int shotAbility = -1;
         private int shells = 0;
+        private int appearanceCount = 0;
+        private int ghostJump = 300;
         private bot bot;
         public Pacman()
         {
             InitializeComponent();
             player = new Creatures("Pacman", pictureBox204, collider1, collider2, collider3, collider4, vision1, aimBox, -1, 0, 2);
             ghost = new Creatures("ghost", ghostAppearance, ghostColliderUp, ghostColliderDown, ghostColliderLeft, ghostColliderRight, ghostVision, ghostAim, -1, 0, 1);
-            // ghost2 = new Creatures("Ghost 2", pictureBox393, 2, 0);
-            // ghost3 = new Creatures("Ghost 3", pictureBox394, 2, 0);
             bot = new bot(ghost, panel1, player);
             engine = new Engine(0, 0, player, ghost, label7,label9);
-            ambient = new SoundPlayer(Resources.ambient);
-            ambient.Play();
         }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
             bot.mind();
+            ghostUnhide();
             if (panel1.Width > 500 && engine.scoreTotal < 1)
             {
                 panel1.Width = 380;
@@ -127,7 +125,7 @@ namespace PacMan
             {
                 if (x is PictureBox && (x.Tag == "wall" || x.Tag == "wall2" || x.Tag == "border" || x.Tag =="door"))  //Wall detection
                 {
-                    if (entity.name == "player") aligning(entity, x); //Alligning of the creature
+                    if (entity.name == "Pacman") aligning(entity, x); //Alligning of the creature
                     if (entity.direction == 1)
                     {
                         if (entity.colliderLeft.Bounds.IntersectsWith(x.Bounds))
@@ -157,117 +155,120 @@ namespace PacMan
                         }
                     }
                 }
-                if (x is PictureBox && (x.Tag == "kibble"))  //Kibble detection
+                if (entity.name == "Pacman")
                 {
-                    if (entity.appearance.Bounds.IntersectsWith(x.Bounds))
+                    if (x is PictureBox && (x.Tag == "kibble"))  //Kibble detection
                     {
-                        engine.scoring(entity);
-                        panel1.Controls.Remove(x);
-                    }
-                }
-                if (x is PictureBox && (x.Tag == "shell"))  //Kibble detection
-                {
-                    if (entity.appearance.Bounds.IntersectsWith(x.Bounds))
-                    {
-                        shells = shells + 5;
-                        SoundPlayer pick = new SoundPlayer(Resources.gunPick);
-                        pick.Play();
-                        label3.Text = ("x" + shells);
-                        panel1.Controls.Remove(x);
-                    }
-                }
-                if (x is PictureBox && (x.Tag == "shotgun"))  //Kibble detection
-                {
-                    if (entity.appearance.Bounds.IntersectsWith(x.Bounds))
-                    {
-                        SoundPlayer pick = new SoundPlayer(Resources.gunPick);
-                        pick.Play();
-                        panel3.Visible= true;
-                        pictureBox378.Visible = true;
-                        pictureBox393.Visible = true;
-                        aimBox.Visible = true;
-                        label3.Visible = true;
-                        shotAbility = 1;
-                        panel1.Controls.Remove(x);
-                    }
-                }
-                if (x is PictureBox && (x.Tag == "straw"))  //Kibble detection
-                {
-                    if (entity.appearance.Bounds.IntersectsWith(x.Bounds))
-                    {
-                        strawIcon.Visible = true;
-                        foreach (Control z in panel1.Controls)
+                        if (entity.appearance.Bounds.IntersectsWith(x.Bounds))
                         {
-                            if (z is PictureBox && z.Tag == "kibble") z.Visible = true; //Ability to see the kibbles
-                        }
-                        SoundPlayer collect = new SoundPlayer(Resources.keys);
-                        collect.Play();
-                        panel1.Controls.Remove(x);
-                    }
-                }
-                if (x is PictureBox && (x.Tag == "key"))  //Kibble detection
-                {
-                    if (entity.appearance.Bounds.IntersectsWith(x.Bounds))
-                    {
-                        panel3.Visible = true;
-                        engine.keys = engine.keys + 1;
-                        SoundPlayer collect = new SoundPlayer(Resources.keys);
-                        collect.Play();
-                        panel1.Controls.Remove(x);
-                        switch (engine.keys) 
-                        {
-                            case 1:
-                                pictureBox202.Visible = true;
-                                break;
-                            case 2:
-                                pictureBox205.Visible = true;
-                                pictureBox202.Visible = true;
-                                break;
-                            case 3:
-                                pictureBox202.Visible = true;
-                                pictureBox205.Visible = true;
-                                pictureBox300.Visible = true;
-                                break;
+                            engine.scoring(entity);
+                            panel1.Controls.Remove(x);
                         }
                     }
-                }
-                if (x is PictureBox && (x.Tag == "door" && engine.keys > 2))  //Door open detection
-                {
-                    if (entity.colliderRight.Bounds.IntersectsWith(x.Bounds))
+                    if (x is PictureBox && (x.Tag == "shell"))  //Kibble detection
+                    {
+                        if (entity.appearance.Bounds.IntersectsWith(x.Bounds))
+                        {
+                            shells = shells + 5;
+                            SoundPlayer pick = new SoundPlayer(Resources.gunPick);
+                            pick.Play();
+                            label3.Text = ("x" + shells);
+                            panel1.Controls.Remove(x);
+                        }
+                    }
+                    if (x is PictureBox && (x.Tag == "shotgun"))  //Kibble detection
+                    {
+                        if (entity.appearance.Bounds.IntersectsWith(x.Bounds))
+                        {
+                            SoundPlayer pick = new SoundPlayer(Resources.gunPick);
+                            pick.Play();
+                            panel3.Visible = true;
+                            pictureBox378.Visible = true;
+                            pictureBox393.Visible = true;
+                            aimBox.Visible = true;
+                            label3.Visible = true;
+                            shotAbility = 1;
+                            panel1.Controls.Remove(x);
+                        }
+                    }
+                    if (x is PictureBox && (x.Tag == "straw"))  //Kibble detection
+                    {
+                        if (entity.appearance.Bounds.IntersectsWith(x.Bounds))
+                        {
+                            strawIcon.Visible = true;
+                            foreach (Control z in panel1.Controls)
+                            {
+                                if (z is PictureBox && z.Tag == "kibble") z.Visible = true; //Ability to see the kibbles
+                            }
+                            SoundPlayer collect = new SoundPlayer(Resources.keys);
+                            collect.Play();
+                            panel1.Controls.Remove(x);
+                        }
+                    }
+                    if (x is PictureBox && (x.Tag == "key"))  //Kibble detection
+                    {
+                        if (entity.appearance.Bounds.IntersectsWith(x.Bounds))
+                        {
+                            panel3.Visible = true;
+                            engine.keys = engine.keys + 1;
+                            SoundPlayer collect = new SoundPlayer(Resources.keys);
+                            collect.Play();
+                            panel1.Controls.Remove(x);
+                            switch (engine.keys)
+                            {
+                                case 1:
+                                    pictureBox202.Visible = true;
+                                    break;
+                                case 2:
+                                    pictureBox205.Visible = true;
+                                    pictureBox202.Visible = true;
+                                    break;
+                                case 3:
+                                    pictureBox202.Visible = true;
+                                    pictureBox205.Visible = true;
+                                    pictureBox300.Visible = true;
+                                    break;
+                            }
+                        }
+                    }
+                    if (x is PictureBox && (x.Tag == "door" && engine.keys > 2))  //Door open detection
+                    {
+                        if (entity.colliderRight.Bounds.IntersectsWith(x.Bounds))
+                        {
+                            SoundPlayer collect = new SoundPlayer(Resources.doorSound);
+                            collect.Play();
+                            panel1.Controls.Remove(x);
+                            engine.keys = 0;
+                        }
+                    }
+                    if (x is PictureBox && (x.Tag == "kibble" || x.Tag == "wall" || x.Tag == "wall2" || x.Tag == "key" || x.Tag == "door" || x.Tag == "straw" || x.Tag == "shotgun" || x.Tag == "shell" || x.Tag == "cherry"))  //Vision detection
+                    {
+                        if (entity.vision.Bounds.IntersectsWith(x.Bounds))
+                        {
+                            x.Visible = true;
+                        }
+                    }
+                    if ((entity.appearance.Right + 25) > panel1.Right) //Level extender
+                    {
+                        panel1.Width = panel1.Width + player.speed;
+                        Pacman.ActiveForm.Width = Pacman.ActiveForm.Width + player.speed;
+                        panel2.Width = panel2.Width + player.speed;
+                        Pause.Left = Pause.Left + player.speed;
+                        label11.Left = label11.Left + player.speed;
+                        if (Pause.Left > label1.Right && Pause.Bottom != label2.Bottom)
+                        {
+                            Pause.Top = Pause.Top + 1;
+                            label11.Top = label11.Top + 1;
+                        }
+                        if (panel2.Right - 35 > panel3.Right) panel3.Width = panel3.Width + player.speed;
+                    }
+                    if (engine.scoreTotal > 100 && doorsCounter == 0)
                     {
                         SoundPlayer collect = new SoundPlayer(Resources.doorSound);
                         collect.Play();
-                        panel1.Controls.Remove(x);
-                        engine.keys = 0;
+                        panel1.Controls.Remove(doorS);
+                        doorsCounter = 1;
                     }
-                }
-                if (x is PictureBox && (x.Tag == "kibble" || x.Tag == "wall" || x.Tag == "wall2"|| x.Tag == "key" || x.Tag == "door" || x.Tag == "straw" || x.Tag == "shotgun"|| x.Tag == "shell" || x.Tag == "cherry"))  //Vision detection
-                {
-                    if (entity.vision.Bounds.IntersectsWith(x.Bounds))
-                    {
-                        x.Visible = true;
-                    }
-                }
-                if ((entity.appearance.Right + 25) > panel1.Right) //Level extender
-                {
-                    panel1.Width = panel1.Width + player.speed;
-                    Pacman.ActiveForm.Width = Pacman.ActiveForm.Width + player.speed;
-                    panel2.Width = panel2.Width + player.speed;
-                    Pause.Left = Pause.Left + player.speed;
-                    label11.Left = label11.Left + player.speed;
-                    if (Pause.Left > label1.Right && Pause.Bottom != label2.Bottom)
-                    {
-                        Pause.Top = Pause.Top + 1;
-                        label11.Top = label11.Top + 1;
-                    }
-                    if (panel2.Right - 35 > panel3.Right) panel3.Width= panel3.Width + player.speed;
-                }
-                if (engine.scoreTotal > 100 && doorsCounter == 0)
-                {
-                    SoundPlayer collect = new SoundPlayer(Resources.doorSound);
-                    collect.Play();
-                    panel1.Controls.Remove(doorS);
-                    doorsCounter = 1;
                 }
             }
             return b;
@@ -358,6 +359,30 @@ namespace PacMan
             shotAbility = 1;
             shells = shells - 1;
             label3.Text = ("x" + shells);
+        }
+        private void ghostUnhide()
+        {
+            SoundPlayer pursuit = new SoundPlayer(Resources.pursuit);
+            if (player.vision.Bounds.IntersectsWith(ghost.appearance.Bounds) || player.aimbox.Bounds.IntersectsWith(ghost.appearance.Bounds))
+            {
+                ghost.appearance.Visible = true;
+                if (ghostJump == 300) ghost.speed = 2;
+                if (appearanceCount == 0)
+                {
+                    pursuit.Play();
+                }
+                appearanceCount = 100;
+                if (ghostJump > 0) ghostJump = ghostJump - 1;
+                if (ghostJump == 0) ghost.speed = 1;
+            }
+            else if (ghost.appearance.Visible && appearanceCount == 0)
+            {
+                ghost.appearance.Visible = false;
+                ghost.speed = 1;
+                pursuit.Stop();
+                ghostJump = 300;
+            }
+            if (appearanceCount > 0) appearanceCount = appearanceCount - 1;
         }
     }
 }

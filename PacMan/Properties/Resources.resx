@@ -199,4 +199,10 @@
   <data name="kibbleget" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\mixkit-space-coin-win-notification-271.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="pursuit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mixkit-cinematic-mystery-heartbeat-transition-492 (mp3cut.net).wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="warning" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tindeck_1 (mp3cut.net).wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

@@ -182,5 +182,14 @@
   <ItemGroup>
     <None Include="Resources\mixkit-drone-terror-long-organ-2750 %281%29.wav" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tindeck_1.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tindeck_1 %28mp3cut.net%29.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mixkit-cinematic-mystery-heartbeat-transition-492 %28mp3cut.net%29.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

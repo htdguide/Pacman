@@ -61,15 +61,6 @@ namespace PacMan.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        internal static System.IO.UnmanagedMemoryStream ambient {
-            get {
-                return ResourceManager.GetStream("ambient", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap cherry {
@@ -215,15 +206,6 @@ namespace PacMan.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        internal static System.IO.UnmanagedMemoryStream kibbleget {
-            get {
-                return ResourceManager.GetStream("kibbleget", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap kiddle {
@@ -346,15 +328,6 @@ namespace PacMan.Properties {
             get {
                 object obj = ResourceManager.GetObject("strawberry", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        internal static System.IO.UnmanagedMemoryStream warning {
-            get {
-                return ResourceManager.GetStream("warning", resourceCulture);
             }
         }
         

@@ -629,6 +629,14 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.label18 = new System.Windows.Forms.Label();
+            this.timer2 = new System.Windows.Forms.Timer(this.components);
+            this.label13 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox474)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox470)).BeginInit();
@@ -1214,6 +1222,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.cherryIcon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.strawIcon)).BeginInit();
             this.panel4.SuspendLayout();
+            this.panel5.SuspendLayout();
+            this.panel6.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -2096,6 +2106,7 @@
             this.ghostAppearance.TabIndex = 638;
             this.ghostAppearance.TabStop = false;
             this.ghostAppearance.Tag = "ghost";
+            this.ghostAppearance.Visible = false;
             // 
             // ghostColliderLeft
             // 
@@ -2182,7 +2193,7 @@
             // pictureBox595
             // 
             this.pictureBox595.Image = global::PacMan.Properties.Resources.shell;
-            this.pictureBox595.Location = new System.Drawing.Point(550, 375);
+            this.pictureBox595.Location = new System.Drawing.Point(750, 250);
             this.pictureBox595.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox595.Name = "pictureBox595";
             this.pictureBox595.Size = new System.Drawing.Size(25, 25);
@@ -2208,7 +2219,7 @@
             // pictureBox592
             // 
             this.pictureBox592.Image = global::PacMan.Properties.Resources.shell;
-            this.pictureBox592.Location = new System.Drawing.Point(950, 449);
+            this.pictureBox592.Location = new System.Drawing.Point(850, 449);
             this.pictureBox592.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox592.Name = "pictureBox592";
             this.pictureBox592.Size = new System.Drawing.Size(25, 25);
@@ -2246,6 +2257,7 @@
             // 
             // pictureBox589
             // 
+            this.pictureBox589.Enabled = false;
             this.pictureBox589.Image = global::PacMan.Properties.Resources.cherry;
             this.pictureBox589.Location = new System.Drawing.Point(550, 450);
             this.pictureBox589.Margin = new System.Windows.Forms.Padding(2);
@@ -2273,7 +2285,7 @@
             // pictureBox268
             // 
             this.pictureBox268.Image = global::PacMan.Properties.Resources.key;
-            this.pictureBox268.Location = new System.Drawing.Point(850, 449);
+            this.pictureBox268.Location = new System.Drawing.Point(950, 449);
             this.pictureBox268.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox268.Name = "pictureBox268";
             this.pictureBox268.Size = new System.Drawing.Size(25, 25);
@@ -9074,7 +9086,7 @@
             // key1
             // 
             this.key1.Image = global::PacMan.Properties.Resources.key;
-            this.key1.Location = new System.Drawing.Point(550, 225);
+            this.key1.Location = new System.Drawing.Point(650, 350);
             this.key1.Margin = new System.Windows.Forms.Padding(2);
             this.key1.Name = "key1";
             this.key1.Size = new System.Drawing.Size(25, 25);
@@ -9252,13 +9264,14 @@
             this.label11.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label11.Location = new System.Drawing.Point(359, 19);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(54, 23);
+            this.label11.Size = new System.Drawing.Size(50, 23);
             this.label11.TabIndex = 624;
-            this.label11.Text = "Pause";
+            this.label11.Text = "Start!";
             this.label11.Click += new System.EventHandler(this.label11_Click);
             // 
             // cherryIcon
             // 
+            this.cherryIcon.Enabled = false;
             this.cherryIcon.Image = global::PacMan.Properties.Resources.cherry;
             this.cherryIcon.Location = new System.Drawing.Point(255, 17);
             this.cherryIcon.Margin = new System.Windows.Forms.Padding(2);
@@ -9329,9 +9342,9 @@
             this.label2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label2.Location = new System.Drawing.Point(3, 84);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(410, 23);
+            this.label2.Size = new System.Drawing.Size(388, 23);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Try to eat all the Kibble before the Ghosts catch you.";
+            this.label2.Text = "Try to eat 170 kibbles before the Ghost catch you.";
             // 
             // label1
             // 
@@ -9356,7 +9369,6 @@
             // 
             // timer1
             // 
-            this.timer1.Enabled = true;
             this.timer1.Interval = 30;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
@@ -9412,12 +9424,91 @@
             this.label5.TabIndex = 628;
             this.label5.Text = "YOU DIED";
             // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(209)))), ((int)(((byte)(199)))));
+            this.panel5.Controls.Add(this.label14);
+            this.panel5.Controls.Add(this.label16);
+            this.panel5.Location = new System.Drawing.Point(24, 834);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(281, 100);
+            this.panel5.TabIndex = 669;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label14.Location = new System.Drawing.Point(61, 50);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(137, 23);
+            this.label14.TabIndex = 630;
+            this.label14.Text = "Press \"Q\" to quit";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label16.Location = new System.Drawing.Point(79, 9);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(98, 23);
+            this.label16.TabIndex = 628;
+            this.label16.Text = "YOU LOSED";
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(209)))), ((int)(((byte)(199)))));
+            this.panel6.Controls.Add(this.label15);
+            this.panel6.Controls.Add(this.label13);
+            this.panel6.Controls.Add(this.label18);
+            this.panel6.Location = new System.Drawing.Point(333, 728);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(356, 138);
+            this.panel6.TabIndex = 669;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label18.Location = new System.Drawing.Point(74, 22);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(182, 23);
+            this.label18.TabIndex = 628;
+            this.label18.Text = "Press \"Space\" to shoot";
+            // 
+            // timer2
+            // 
+            this.timer2.Enabled = true;
+            this.timer2.Interval = 1;
+            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label13.Location = new System.Drawing.Point(14, 57);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(304, 23);
+            this.label13.TabIndex = 629;
+            this.label13.Text = "Press \"Space\" one more time to reload";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label15.Location = new System.Drawing.Point(63, 93);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(206, 23);
+            this.label15.TabIndex = 630;
+            this.label15.Text = "Press \"Space\" to continue";
+            // 
             // Pacman
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(209)))), ((int)(((byte)(199)))));
             this.ClientSize = new System.Drawing.Size(1153, 1164);
+            this.Controls.Add(this.panel6);
+            this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -10015,6 +10106,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.strawIcon)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -10620,6 +10715,14 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Timer timer2;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label13;
     }
 }
 

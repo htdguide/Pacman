@@ -92,10 +92,29 @@ namespace PacMan.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap dead {
+            get {
+                object obj = ResourceManager.GetObject("dead", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap deadwall {
             get {
                 object obj = ResourceManager.GetObject("deadwall", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream dissapearing {
+            get {
+                return ResourceManager.GetStream("dissapearing", resourceCulture);
             }
         }
         
@@ -211,6 +230,15 @@ namespace PacMan.Properties {
             get {
                 object obj = ResourceManager.GetObject("kiddle", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream kill {
+            get {
+                return ResourceManager.GetStream("kill", resourceCulture);
             }
         }
         

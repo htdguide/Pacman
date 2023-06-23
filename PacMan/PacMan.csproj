@@ -191,5 +191,17 @@
   <ItemGroup>
     <None Include="Resources\mixkit-cinematic-mystery-heartbeat-transition-492 %28mp3cut.net%29.wav" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mixkit-small-stone-avalanche-1272.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mixkit-monster-wraith-passing-by-1979.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mixkit-creature-long-screech-307.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dead.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

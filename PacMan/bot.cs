@@ -1,4 +1,5 @@
 ﻿using System.Windows.Forms;
+using PacMan.Properties;
 
 namespace PacMan
 {
@@ -104,6 +105,18 @@ namespace PacMan
         {
             ghost.direction = direction;
             ghost.aimMovement();
+            switch (direction)
+            {
+                case 1:
+                    ghost.appearance.Image = Resources.GhostLeft; break;
+                case -1:
+                    ghost.appearance.Image = Resources.GhostRight; break;
+                case 2:
+                    ghost.appearance.Image = Resources.GhostUp; break;
+                case 3:
+                    ghost.appearance.Image = Resources.GhostDown; break;
+            }
+           
         }
 
     }

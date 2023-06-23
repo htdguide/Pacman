@@ -21,12 +21,12 @@ namespace PacMan
         private Engine engine;
         private bool c = true; //debugging
         private bool gates = false; //gates open
-        private int gatesCounter = 0;
-        private int doorsCounter = 0;
-        private int shotAbility = -1;
+        private int doorsCounter = 0; //door open for strawberry
+        private int shotAbility = -1; 
         private int shells = 0;
-        private int appearanceCount = 0;
-        private int ghostJump = 300;
+        private int gatesSound = 0; 
+        private int appearanceCount = 0; //appearance for the ghost
+        private int ghostJump = 300; //timing for ghosts fast moving
         private bot bot;
         public Pacman()
         {
@@ -34,7 +34,7 @@ namespace PacMan
             player = new Creatures("Pacman", pictureBox204, collider1, collider2, collider3, collider4, vision1, aimBox, -1, 0, 2);
             ghost = new Creatures("ghost", ghostAppearance, ghostColliderUp, ghostColliderDown, ghostColliderLeft, ghostColliderRight, ghostVision, ghostAim, -1, 0, 1);
             bot = new bot(ghost, panel1, player);
-            engine = new Engine(0, 0, player, ghost, label7,label9);
+            engine = new Engine(0, 3, player, ghost, label7,label9);
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -51,7 +51,14 @@ namespace PacMan
             }
             if (!wallcheck(player)) player.movement();
             if (!wallcheck(ghost)) ghost.movement();
-            if ((engine.scoreTotal > 170 && gatesCounter < 20) || (gatesCounter < 20 && gates == true)) gatesopen(pictureBox41,4);
+            if (engine.scoreTotal > 170 || gates == true) gatesopen();
+            if (gatesSound == 1)
+            {
+                SoundPlayer gates = new SoundPlayer(Resources.gates);
+                gates.Play();
+                gatesSound = 2;
+            }
+            kill();
         }
 
         private void Pacman_KeyDown(object sender, KeyEventArgs e)
@@ -84,7 +91,19 @@ namespace PacMan
             {
                 if (shotAbility == 1) shot();
                 else if (shotAbility == 0 && shells > 0) reload();
-                
+            }
+            if (e.KeyCode == Keys.Enter)
+            {
+                if (!timer1.Enabled)
+                {
+                    panel4.Visible = false;
+                    panel4.Enabled = false;
+                   // switch(lives)
+                    //{
+                     //   case 1:
+                            
+                   // }
+                }
             }
             if (e.KeyCode == Keys.X) //Debug mode
             {
@@ -161,7 +180,7 @@ namespace PacMan
                     {
                         if (entity.appearance.Bounds.IntersectsWith(x.Bounds))
                         {
-                            engine.scoring(entity);
+                            engine.scoring();
                             panel1.Controls.Remove(x);
                         }
                     }
@@ -313,26 +332,16 @@ namespace PacMan
             }
         }
 
-        private void gatesopen(PictureBox door, int direction) //Gates for level extension
+        private void gatesopen() //Gates for level extension
         {
-            SoundPlayer gates = new SoundPlayer(Resources.gates);
-            gates.Play();
-            switch (direction)
+            if (gatesSound != 2) gatesSound = 1;
+            foreach (Control x in panel1.Controls)
             {
-                case 1: //Left
-                    door.Left = door.Left - 1; 
-                    break;
-                case 2:
-                    door.Left = door.Left + 1;
-                    break;
-                case 3:
-                    door.Top = door.Top - 1;
-                    break;
-                case 4:
-                    door.Top = door.Top + 1;
-                    break;
+                if (x is PictureBox && x.Tag == "wall2")
+                {
+                    if (x.Top != 0) x.Top = x.Top + 1;
+                }
             }
-            gatesCounter = gatesCounter + 1;   
         }
         private void shot()
         {
@@ -363,6 +372,7 @@ namespace PacMan
         private void ghostUnhide()
         {
             SoundPlayer pursuit = new SoundPlayer(Resources.pursuit);
+            SoundPlayer dissapear = new SoundPlayer(Resources.dissapearing);
             if (player.vision.Bounds.IntersectsWith(ghost.appearance.Bounds) || player.aimbox.Bounds.IntersectsWith(ghost.appearance.Bounds))
             {
                 ghost.appearance.Visible = true;
@@ -380,9 +390,27 @@ namespace PacMan
                 ghost.appearance.Visible = false;
                 ghost.speed = 1;
                 pursuit.Stop();
+                dissapear.Play();
                 ghostJump = 300;
             }
             if (appearanceCount > 0) appearanceCount = appearanceCount - 1;
+        }
+        private void kill()
+        {
+            if (ghost.appearance.Bounds.IntersectsWith(player.appearance.Bounds))
+            {
+                timer1.Enabled = false;
+                engine.lives = engine.lives - 1;
+                engine.scoring();
+                label12.Text = engine.lives.ToString();
+                SoundPlayer death = new SoundPlayer(Resources.kill);
+                death.Play();
+                engine.lives = engine.lives - 1;
+                player.appearance.Image = Resources.dead;
+                ghost.appearance.Visible = false;
+                panel4.Left = (panel1.Left + panel1.Width / 2) - (panel4.Width /2);
+                panel4.Top = (panel1.Top + panel1.Height / 2) - (panel4.Height/2);
+            }
         }
     }
 }

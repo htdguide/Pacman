@@ -10,7 +10,7 @@ namespace PacMan
     internal class Engine
     {
         public int scoreTotal;
-        public int lives = 3; //Player's lives
+        public int lives; //Player's lives
         public int keys = 0;
         public Label scoreBoard, livesBoard;
         private Creatures pacman, ghost;
@@ -24,7 +24,7 @@ namespace PacMan
             this.scoreBoard = scoreBoard;
             this.livesBoard = livesBoard;
         }
-        public void scoring(Creatures player)
+        public void scoring()
         {
                 scoreTotal = scoreTotal + 1;
                 scoreBoard.Text = scoreTotal.ToString();

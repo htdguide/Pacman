@@ -31,7 +31,7 @@ namespace PacMan
         {
             InitializeComponent();
             player = new Creatures("Pacman", pictureBox204, collider1, collider2, collider3, collider4, vision1, aimBox, -1, 0, 2);
-            ghost = new Creatures("Pacman", ghostAppearance, ghostColliderUp, ghostColliderDown, ghostColliderLeft, ghostColliderRight, ghostVision, ghostAim, -1, 0, 1);
+            ghost = new Creatures("ghost", ghostAppearance, ghostColliderUp, ghostColliderDown, ghostColliderLeft, ghostColliderRight, ghostVision, ghostAim, -1, 0, 1);
             // ghost2 = new Creatures("Ghost 2", pictureBox393, 2, 0);
             // ghost3 = new Creatures("Ghost 3", pictureBox394, 2, 0);
             bot = new bot(ghost, panel1, player);
@@ -90,22 +90,14 @@ namespace PacMan
             }
             if (e.KeyCode == Keys.X) //Debug mode
             {
-               // firstGhost.Visible = !c;
-               // secondGhost.Visible = !c;
-               // thirdGhost.Visible = !c;
+                ghost.appearance.Visible = !c;
                 pictureBox204.Visible = !c;
-               // firstCollisionLeft.Visible = c;
-               // firstColliderRight.Visible = c;
-               // firstColliderUp.Visible = c;
-               // firstColliderDown.Visible = c;
-               // secondColliderLeft.Visible = c;
-               // secondColliderRight.Visible = c;
-               // secondColliderUp.Visible = c;
-               // secondColliderDown.Visible = c;
-               // thirdColliderLeft.Visible = c;
-               // thirdColliderRight.Visible = c;
-               // thirdColliderUp.Visible = c;
-               // thirdColliderDown.Visible = c;
+                ghost.colliderLeft.Visible = c;
+                ghost.colliderRight.Visible = c;
+                ghost.colliderUp.Visible = c;
+                ghost.colliderDown.Visible = c;
+                ghost.aimbox.Visible = c;
+                ghost.vision.Visible = c;
                 collider1.Visible = c;
                 collider2.Visible = c;
                 collider3.Visible = c;
@@ -135,7 +127,7 @@ namespace PacMan
             {
                 if (x is PictureBox && (x.Tag == "wall" || x.Tag == "wall2" || x.Tag == "border" || x.Tag =="door"))  //Wall detection
                 {
-                    aligning(entity, x); //Alligning of the creature
+                    if (entity.name == "player") aligning(entity, x); //Alligning of the creature
                     if (entity.direction == 1)
                     {
                         if (entity.colliderLeft.Bounds.IntersectsWith(x.Bounds))

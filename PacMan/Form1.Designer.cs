@@ -31,6 +31,13 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Pacman));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.ghostAppearance = new System.Windows.Forms.PictureBox();
+            this.ghostColliderLeft = new System.Windows.Forms.PictureBox();
+            this.ghostColliderRight = new System.Windows.Forms.PictureBox();
+            this.ghostColliderUp = new System.Windows.Forms.PictureBox();
+            this.ghostColliderDown = new System.Windows.Forms.PictureBox();
+            this.ghostVision = new System.Windows.Forms.PictureBox();
+            this.ghostAim = new System.Windows.Forms.PictureBox();
             this.pictureBox595 = new System.Windows.Forms.PictureBox();
             this.pictureBox594 = new System.Windows.Forms.PictureBox();
             this.pictureBox592 = new System.Windows.Forms.PictureBox();
@@ -638,14 +645,16 @@
             this.label1 = new System.Windows.Forms.Label();
             this.Pause = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.ghostAppearance = new System.Windows.Forms.PictureBox();
-            this.ghostColliderLeft = new System.Windows.Forms.PictureBox();
-            this.ghostColliderRight = new System.Windows.Forms.PictureBox();
-            this.ghostColliderUp = new System.Windows.Forms.PictureBox();
-            this.ghostColliderDown = new System.Windows.Forms.PictureBox();
-            this.ghostVision = new System.Windows.Forms.PictureBox();
-            this.ghostAim = new System.Windows.Forms.PictureBox();
+            this.pictureBox118 = new System.Windows.Forms.PictureBox();
+            this.pictureBox143 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ghostAppearance)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ghostColliderLeft)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ghostColliderRight)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ghostColliderUp)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ghostColliderDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ghostVision)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ghostAim)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox595)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox594)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox592)).BeginInit();
@@ -1243,19 +1252,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox378)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cherryIcon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.strawIcon)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ghostAppearance)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ghostColliderLeft)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ghostColliderRight)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ghostColliderUp)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ghostColliderDown)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ghostVision)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ghostAim)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox118)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox143)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Black;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel1.Controls.Add(this.pictureBox143);
+            this.panel1.Controls.Add(this.pictureBox118);
             this.panel1.Controls.Add(this.ghostAppearance);
             this.panel1.Controls.Add(this.ghostColliderLeft);
             this.panel1.Controls.Add(this.ghostColliderRight);
@@ -1856,6 +1862,100 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1007, 500);
             this.panel1.TabIndex = 0;
+            // 
+            // ghostAppearance
+            // 
+            this.ghostAppearance.Image = global::PacMan.Properties.Resources.GhostRight;
+            this.ghostAppearance.Location = new System.Drawing.Point(225, 225);
+            this.ghostAppearance.Margin = new System.Windows.Forms.Padding(2);
+            this.ghostAppearance.Name = "ghostAppearance";
+            this.ghostAppearance.Size = new System.Drawing.Size(22, 22);
+            this.ghostAppearance.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ghostAppearance.TabIndex = 638;
+            this.ghostAppearance.TabStop = false;
+            this.ghostAppearance.Tag = "ghost";
+            // 
+            // ghostColliderLeft
+            // 
+            this.ghostColliderLeft.Image = global::PacMan.Properties.Resources.collider;
+            this.ghostColliderLeft.Location = new System.Drawing.Point(224, 229);
+            this.ghostColliderLeft.Margin = new System.Windows.Forms.Padding(2);
+            this.ghostColliderLeft.MaximumSize = new System.Drawing.Size(5, 14);
+            this.ghostColliderLeft.MinimumSize = new System.Drawing.Size(5, 14);
+            this.ghostColliderLeft.Name = "ghostColliderLeft";
+            this.ghostColliderLeft.Size = new System.Drawing.Size(5, 14);
+            this.ghostColliderLeft.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ghostColliderLeft.TabIndex = 641;
+            this.ghostColliderLeft.TabStop = false;
+            this.ghostColliderLeft.Tag = "colliderLeft";
+            this.ghostColliderLeft.Visible = false;
+            // 
+            // ghostColliderRight
+            // 
+            this.ghostColliderRight.Image = global::PacMan.Properties.Resources.collider;
+            this.ghostColliderRight.Location = new System.Drawing.Point(242, 229);
+            this.ghostColliderRight.Margin = new System.Windows.Forms.Padding(2);
+            this.ghostColliderRight.MaximumSize = new System.Drawing.Size(5, 14);
+            this.ghostColliderRight.MinimumSize = new System.Drawing.Size(5, 14);
+            this.ghostColliderRight.Name = "ghostColliderRight";
+            this.ghostColliderRight.Size = new System.Drawing.Size(5, 14);
+            this.ghostColliderRight.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ghostColliderRight.TabIndex = 642;
+            this.ghostColliderRight.TabStop = false;
+            this.ghostColliderRight.Tag = "colliderRight";
+            this.ghostColliderRight.Visible = false;
+            // 
+            // ghostColliderUp
+            // 
+            this.ghostColliderUp.Image = global::PacMan.Properties.Resources.collider;
+            this.ghostColliderUp.Location = new System.Drawing.Point(229, 224);
+            this.ghostColliderUp.Margin = new System.Windows.Forms.Padding(2);
+            this.ghostColliderUp.MaximumSize = new System.Drawing.Size(14, 14);
+            this.ghostColliderUp.MinimumSize = new System.Drawing.Size(14, 14);
+            this.ghostColliderUp.Name = "ghostColliderUp";
+            this.ghostColliderUp.Size = new System.Drawing.Size(14, 14);
+            this.ghostColliderUp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ghostColliderUp.TabIndex = 640;
+            this.ghostColliderUp.TabStop = false;
+            this.ghostColliderUp.Tag = "colliderUp";
+            this.ghostColliderUp.Visible = false;
+            // 
+            // ghostColliderDown
+            // 
+            this.ghostColliderDown.Image = global::PacMan.Properties.Resources.collider;
+            this.ghostColliderDown.Location = new System.Drawing.Point(229, 242);
+            this.ghostColliderDown.Margin = new System.Windows.Forms.Padding(2);
+            this.ghostColliderDown.MaximumSize = new System.Drawing.Size(14, 5);
+            this.ghostColliderDown.MinimumSize = new System.Drawing.Size(14, 5);
+            this.ghostColliderDown.Name = "ghostColliderDown";
+            this.ghostColliderDown.Size = new System.Drawing.Size(14, 5);
+            this.ghostColliderDown.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ghostColliderDown.TabIndex = 639;
+            this.ghostColliderDown.TabStop = false;
+            this.ghostColliderDown.Tag = "colliderDown";
+            this.ghostColliderDown.Visible = false;
+            // 
+            // ghostVision
+            // 
+            this.ghostVision.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.ghostVision.Location = new System.Drawing.Point(197, 200);
+            this.ghostVision.Name = "ghostVision";
+            this.ghostVision.Size = new System.Drawing.Size(78, 75);
+            this.ghostVision.TabIndex = 637;
+            this.ghostVision.TabStop = false;
+            this.ghostVision.Tag = "ghostVision";
+            this.ghostVision.Visible = false;
+            // 
+            // ghostAim
+            // 
+            this.ghostAim.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.ghostAim.Location = new System.Drawing.Point(250, 229);
+            this.ghostAim.Name = "ghostAim";
+            this.ghostAim.Size = new System.Drawing.Size(75, 20);
+            this.ghostAim.TabIndex = 643;
+            this.ghostAim.TabStop = false;
+            this.ghostAim.Tag = "ghostAim";
+            this.ghostAim.Visible = false;
             // 
             // pictureBox595
             // 
@@ -9597,99 +9697,30 @@
             this.timer1.Interval = 30;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // ghostAppearance
+            // pictureBox118
             // 
-            this.ghostAppearance.Image = global::PacMan.Properties.Resources.pacmanRight;
-            this.ghostAppearance.Location = new System.Drawing.Point(225, 225);
-            this.ghostAppearance.Margin = new System.Windows.Forms.Padding(2);
-            this.ghostAppearance.Name = "ghostAppearance";
-            this.ghostAppearance.Size = new System.Drawing.Size(22, 22);
-            this.ghostAppearance.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ghostAppearance.TabIndex = 638;
-            this.ghostAppearance.TabStop = false;
-            this.ghostAppearance.Tag = "ghost";
+            this.pictureBox118.Image = global::PacMan.Properties.Resources.onewall;
+            this.pictureBox118.Location = new System.Drawing.Point(225, 275);
+            this.pictureBox118.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox118.Name = "pictureBox118";
+            this.pictureBox118.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox118.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox118.TabIndex = 645;
+            this.pictureBox118.TabStop = false;
+            this.pictureBox118.Tag = "wall";
+            this.pictureBox118.Visible = false;
             // 
-            // ghostColliderLeft
+            // pictureBox143
             // 
-            this.ghostColliderLeft.Image = global::PacMan.Properties.Resources.collider;
-            this.ghostColliderLeft.Location = new System.Drawing.Point(224, 229);
-            this.ghostColliderLeft.Margin = new System.Windows.Forms.Padding(2);
-            this.ghostColliderLeft.MaximumSize = new System.Drawing.Size(5, 14);
-            this.ghostColliderLeft.MinimumSize = new System.Drawing.Size(5, 14);
-            this.ghostColliderLeft.Name = "ghostColliderLeft";
-            this.ghostColliderLeft.Size = new System.Drawing.Size(5, 14);
-            this.ghostColliderLeft.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ghostColliderLeft.TabIndex = 641;
-            this.ghostColliderLeft.TabStop = false;
-            this.ghostColliderLeft.Tag = "colliderLeft";
-            this.ghostColliderLeft.Visible = false;
-            // 
-            // ghostColliderRight
-            // 
-            this.ghostColliderRight.Image = global::PacMan.Properties.Resources.collider;
-            this.ghostColliderRight.Location = new System.Drawing.Point(242, 229);
-            this.ghostColliderRight.Margin = new System.Windows.Forms.Padding(2);
-            this.ghostColliderRight.MaximumSize = new System.Drawing.Size(5, 14);
-            this.ghostColliderRight.MinimumSize = new System.Drawing.Size(5, 14);
-            this.ghostColliderRight.Name = "ghostColliderRight";
-            this.ghostColliderRight.Size = new System.Drawing.Size(5, 14);
-            this.ghostColliderRight.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ghostColliderRight.TabIndex = 642;
-            this.ghostColliderRight.TabStop = false;
-            this.ghostColliderRight.Tag = "colliderRight";
-            this.ghostColliderRight.Visible = false;
-            // 
-            // ghostColliderUp
-            // 
-            this.ghostColliderUp.Image = global::PacMan.Properties.Resources.collider;
-            this.ghostColliderUp.Location = new System.Drawing.Point(229, 224);
-            this.ghostColliderUp.Margin = new System.Windows.Forms.Padding(2);
-            this.ghostColliderUp.MaximumSize = new System.Drawing.Size(14, 14);
-            this.ghostColliderUp.MinimumSize = new System.Drawing.Size(14, 14);
-            this.ghostColliderUp.Name = "ghostColliderUp";
-            this.ghostColliderUp.Size = new System.Drawing.Size(14, 14);
-            this.ghostColliderUp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ghostColliderUp.TabIndex = 640;
-            this.ghostColliderUp.TabStop = false;
-            this.ghostColliderUp.Tag = "colliderUp";
-            this.ghostColliderUp.Visible = false;
-            // 
-            // ghostColliderDown
-            // 
-            this.ghostColliderDown.Image = global::PacMan.Properties.Resources.collider;
-            this.ghostColliderDown.Location = new System.Drawing.Point(229, 242);
-            this.ghostColliderDown.Margin = new System.Windows.Forms.Padding(2);
-            this.ghostColliderDown.MaximumSize = new System.Drawing.Size(14, 5);
-            this.ghostColliderDown.MinimumSize = new System.Drawing.Size(14, 5);
-            this.ghostColliderDown.Name = "ghostColliderDown";
-            this.ghostColliderDown.Size = new System.Drawing.Size(14, 5);
-            this.ghostColliderDown.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ghostColliderDown.TabIndex = 639;
-            this.ghostColliderDown.TabStop = false;
-            this.ghostColliderDown.Tag = "colliderDown";
-            this.ghostColliderDown.Visible = false;
-            // 
-            // ghostVision
-            // 
-            this.ghostVision.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ghostVision.Location = new System.Drawing.Point(197, 200);
-            this.ghostVision.Name = "ghostVision";
-            this.ghostVision.Size = new System.Drawing.Size(78, 75);
-            this.ghostVision.TabIndex = 637;
-            this.ghostVision.TabStop = false;
-            this.ghostVision.Tag = "ghostVision";
-            this.ghostVision.Visible = false;
-            // 
-            // ghostAim
-            // 
-            this.ghostAim.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ghostAim.Location = new System.Drawing.Point(250, 229);
-            this.ghostAim.Name = "ghostAim";
-            this.ghostAim.Size = new System.Drawing.Size(75, 20);
-            this.ghostAim.TabIndex = 643;
-            this.ghostAim.TabStop = false;
-            this.ghostAim.Tag = "ghostAim";
-            this.ghostAim.Visible = false;
+            this.pictureBox143.Image = global::PacMan.Properties.Resources.onewall;
+            this.pictureBox143.Location = new System.Drawing.Point(475, 325);
+            this.pictureBox143.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox143.Name = "pictureBox143";
+            this.pictureBox143.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox143.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox143.TabIndex = 647;
+            this.pictureBox143.TabStop = false;
+            this.pictureBox143.Tag = "wall";
             // 
             // Pacman
             // 
@@ -9706,6 +9737,13 @@
             this.Text = "Pacman";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Pacman_KeyDown);
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.ghostAppearance)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ghostColliderLeft)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ghostColliderRight)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ghostColliderUp)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ghostColliderDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ghostVision)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ghostAim)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox595)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox594)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox592)).EndInit();
@@ -10305,13 +10343,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox378)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cherryIcon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.strawIcon)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ghostAppearance)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ghostColliderLeft)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ghostColliderRight)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ghostColliderUp)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ghostColliderDown)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ghostVision)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ghostAim)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox118)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox143)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -10933,6 +10966,8 @@
         private System.Windows.Forms.PictureBox ghostColliderDown;
         private System.Windows.Forms.PictureBox ghostVision;
         private System.Windows.Forms.PictureBox ghostAim;
+        private System.Windows.Forms.PictureBox pictureBox118;
+        private System.Windows.Forms.PictureBox pictureBox143;
     }
 }
 

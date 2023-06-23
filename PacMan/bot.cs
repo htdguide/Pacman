@@ -7,7 +7,6 @@ namespace PacMan
         public Creatures ghost;
         public Creatures target;
         public Panel panel;
-        private int mem1, mem2, mem3;
 
         public bot(Creatures ghost, Panel panel, Creatures target)
         {
@@ -18,46 +17,47 @@ namespace PacMan
 
         public void mind()
         {
-            if (ghost.appearance.Left > target.appearance.Left && ghost.appearance.Top > target.appearance.Top) //Down right corner position relative to target
-            {
-                if (!wallcheck(ghost, 2)) ghost.direction = 2;
-                else ghost.direction = 1;
-            }
-            if (ghost.appearance.Left < target.appearance.Left && ghost.appearance.Top > target.appearance.Top) //Down left corner position relative to target
-            {
-                if (!wallcheck(ghost, 2)) ghost.direction = 2; 
-                else ghost.direction = -1;
-            }
-            if (ghost.appearance.Left > target.appearance.Left && ghost.appearance.Top < target.appearance.Top) //Up right corner position relative to target
-            {
-                if (!wallcheck(ghost, -2)) ghost.direction = -2;
-                else ghost.direction = 1;
-            }
-            if (ghost.appearance.Left < target.appearance.Left && ghost.appearance.Top < target.appearance.Top) //Up left corner position relative to target
-            {
-                if (!wallcheck(ghost, -2)) ghost.direction = -2;
-                else ghost.direction = -1;
-            }     
-            if (ghost.appearance.Left == target.appearance.Left && ghost.appearance.Top > target.appearance.Top) //Same line as a target, but lower
-            {
-                if (!wallcheck(ghost, 2)) ghost.direction = 2; 
-                else ghost.direction = 1;
-            }
-            if (ghost.appearance.Left > target.appearance.Left && ghost.appearance.Top == target.appearance.Top) //Same height as a target, but more to right
-            {
-                if (!wallcheck(ghost, 1)) ghost.direction = 1; 
-                else ghost.direction = 2;
-            }
-            if (ghost.appearance.Left == target.appearance.Left && ghost.appearance.Top < target.appearance.Top) //Same line as a target, but higher
-            {
-                if (!wallcheck(ghost, -2)) ghost.direction = -2; 
-                else ghost.direction = 1;
-            }
-            if (ghost.appearance.Left < target.appearance.Left && ghost.appearance.Top == target.appearance.Top) //Same height as a target, but more to left
-            {
-                if (!wallcheck(ghost, -1)) ghost.direction = -1; 
-                else ghost.direction = 2;
-            }
+                if (ghost.appearance.Left > target.appearance.Left && ghost.appearance.Top > target.appearance.Top) //Down right corner position relative to target
+                {
+                if (!wallcheck(ghost, 2)) directionChange(2);
+
+                else directionChange(1);
+                }
+                if (ghost.appearance.Left < target.appearance.Left && ghost.appearance.Top > target.appearance.Top) //Down left corner position relative to target
+                {
+                    if (!wallcheck(ghost, 2)) directionChange(2); 
+                    else directionChange(-1);
+                }
+                if (ghost.appearance.Left > target.appearance.Left && ghost.appearance.Top < target.appearance.Top) //Up right corner position relative to target
+                {
+                    if (!wallcheck(ghost, -2)) directionChange(-2);
+                    else directionChange(1);
+                }
+                if (ghost.appearance.Left < target.appearance.Left && ghost.appearance.Top < target.appearance.Top) //Up left corner position relative to target
+                {
+                    if (!wallcheck(ghost, -2)) directionChange(-2);
+                    else directionChange (-1);
+                }     
+                if (ghost.appearance.Left == target.appearance.Left && ghost.appearance.Top > target.appearance.Top) //Same line as a target, but lower
+                {
+                    if (!wallcheck(ghost, 2)) directionChange(2); 
+                    else directionChange(1);
+                }
+                if (ghost.appearance.Left > target.appearance.Left && ghost.appearance.Top == target.appearance.Top) //Same height as a target, but more to right
+                {
+                    if (!wallcheck(ghost, 1)) directionChange(1); 
+                    else directionChange(2);
+                }
+                if (ghost.appearance.Left == target.appearance.Left && ghost.appearance.Top < target.appearance.Top) //Same line as a target, but higher
+                {
+                    if (!wallcheck(ghost, -2)) directionChange(-2); 
+                    else directionChange(1);
+                }
+                if (ghost.appearance.Left < target.appearance.Left && ghost.appearance.Top == target.appearance.Top) //Same height as a target, but more to left
+                {
+                    if (!wallcheck(ghost, -1)) directionChange(-1); 
+                    else directionChange(2);
+                }
         }
 
         private bool wallcheck(Creatures entity, int direction) //Checking for the wall collision
@@ -99,6 +99,11 @@ namespace PacMan
 
             }
             return b;
+        }
+        private void directionChange(int direction)
+        {
+            ghost.direction = direction;
+            ghost.aimMovement();
         }
 
     }

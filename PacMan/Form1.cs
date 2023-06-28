@@ -19,16 +19,16 @@ namespace PacMan
     {
         private Creatures player, ghost;
         private Engine engine;
-        private bool c = true; //debugging
+        private bool c = true; //debugging switch
         private bool gates = false; //gates open
         private int doorsCounter = 0; //door open for strawberry
-        private int shotAbility = -1; 
+        private int shotAbility = -1; //Shotgun
         private int shells = 0;
         private int gatesSound = 0; 
         private int appearanceCount = 0; //appearance for the ghost
         private int ghostJump = 200; //timing for ghosts fast moving
         private int ghostAlive = 1; //Dead or alive ghost
-        int shotgunMenu = 0;
+        int shotgunMenu = 0; 
         private bot bot;
         public Pacman()
         {
@@ -41,7 +41,7 @@ namespace PacMan
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            bot.mind();
+            bot.mind(); //ghost controlling
             ghostUnhide();
             if (!wallcheck(player)) player.movement();
             if (!wallcheck(ghost) && ghostAlive == 1) ghost.movement();
@@ -60,25 +60,25 @@ namespace PacMan
             if (e.KeyCode == Keys.Left && timer1.Enabled)
             {
                 player.direction = 1;
-                player.aimMovement();
+                player.aimMovement(); //changing the direction of the aimbox
                 player.appearance.Image = Resources.pacmanLeft;
             }
             if (e.KeyCode == Keys.Right && timer1.Enabled)
             {
                 player.direction = -1;
-                player.aimMovement();
+                player.aimMovement(); //changing the direction of the aimbox
                 player.appearance.Image = Resources.pacmanRight;
             }
             if (e.KeyCode == Keys.Up && timer1.Enabled)
             {
                 player.direction = 2;
-                player.aimMovement();
+                player.aimMovement(); //changing the direction of the aimbox
                 player.appearance.Image = Resources.pacmanUp;
             }
             if (e.KeyCode == Keys.Down && timer1.Enabled)
             {
                 player.direction = -2;
-                player.aimMovement();
+                player.aimMovement(); //changing the direction of the aimbox
                 player.appearance.Image = Resources.pacmanDown;
             }
             if (e.KeyCode == Keys.Space && timer1.Enabled)
@@ -86,7 +86,7 @@ namespace PacMan
                 if (shotAbility == 1) shot();
                 else if (shotAbility == 0 && shells > 0) reload();
             }
-            if (e.KeyCode == Keys.Space && !timer1.Enabled && shotgunMenu == 1)
+            if (e.KeyCode == Keys.Space && !timer1.Enabled && shotgunMenu == 1) //shotgun help menu handler
             {
                 shotgunMenu = 0;
                 panel6.Enabled = false;
@@ -97,17 +97,17 @@ namespace PacMan
             {
                 this.Close();
             }
-            if (e.KeyCode == Keys.Enter && engine.lives != 0)
+            if (e.KeyCode == Keys.Enter && engine.lives != 0) //Press enter to continue playing
             {
                 if (!timer1.Enabled)
                 {
                     panel4.Visible = false;
                     panel4.Enabled = false;
-                    for (int x = player.colliderLeft.Left; x > pictureBox3.Right; x--)
+                    for (int x = player.colliderLeft.Left; x > pictureBox3.Right; x--) //Moviing the pacman to the beginning
                     {
                         player.movementLeft();
                     }
-                    for (int x = player.colliderDown.Bottom; x < pictureBox76.Top; x++)
+                    for (int x = player.colliderDown.Bottom; x < pictureBox76.Top; x++) //Moving the pacman to the beginning
                     {
                         player.movementDown();
                     }
@@ -299,6 +299,7 @@ namespace PacMan
                     if ((entity.appearance.Right + 25) > panel1.Right) //Level extender
                     {
                         panel1.Width = panel1.Width + player.speed;
+                        Pacman.ActiveForm.MaximumSize = new System.Drawing.Size(Pacman.ActiveForm.Width + player.speed, 570);
                         Pacman.ActiveForm.Width = Pacman.ActiveForm.Width + player.speed;
                         panel2.Width = panel2.Width + player.speed;
                         Pause.Left = Pause.Left + player.speed;
@@ -349,6 +350,8 @@ namespace PacMan
 
         private void label11_Click(object sender, EventArgs e)
         {
+            panel7.Left = 714;
+            panel7.Top = 728;
             if (timer1.Enabled == true)
             {
                 timer1.Enabled = false;
@@ -438,10 +441,14 @@ namespace PacMan
             if (panel1.Width > 500 && engine.scoreTotal < 1)
             {
                 panel1.Width = 380;
+                Pacman.ActiveForm.MaximumSize = new System.Drawing.Size(410, 570);
                 Pacman.ActiveForm.Width = 410;
                 Pacman.ActiveForm.Height = 570;
                 panel2.Width = 360;
                 panel3.Width = 150;
+                panel7.Left = (panel1.Left + panel1.Width / 2) - (panel7.Width / 2);
+                panel7.Top = (panel1.Top + panel1.Height / 2) - (panel7.Height / 2);
+                timer2.Enabled = false;
             }
         }
 

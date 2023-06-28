@@ -18,43 +18,43 @@ namespace PacMan
 
         public void mind()
         {
-                if (ghost.appearance.Left > target.appearance.Left && ghost.appearance.Top > target.appearance.Top) //Down right corner position relative to target
+                if (ghost.appearance.Left > target.appearance.Left + 2 && ghost.appearance.Top > target.appearance.Top + 2) //Down right corner position relative to target
                 {
                 if (!wallcheck(ghost, 2)) directionChange(2);
 
                 else directionChange(1);
                 }
-                if (ghost.appearance.Left < target.appearance.Left && ghost.appearance.Top > target.appearance.Top) //Down left corner position relative to target
+                if (ghost.appearance.Left < target.appearance.Left -2 && ghost.appearance.Top > target.appearance.Top + 2) //Down left corner position relative to target
                 {
                     if (!wallcheck(ghost, 2)) directionChange(2); 
                     else directionChange(-1);
                 }
-                if (ghost.appearance.Left > target.appearance.Left && ghost.appearance.Top < target.appearance.Top) //Up right corner position relative to target
+                if (ghost.appearance.Left > target.appearance.Left + 2 && ghost.appearance.Top < target.appearance.Top - 2) //Up right corner position relative to target
                 {
                     if (!wallcheck(ghost, -2)) directionChange(-2);
                     else directionChange(1);
                 }
-                if (ghost.appearance.Left < target.appearance.Left && ghost.appearance.Top < target.appearance.Top) //Up left corner position relative to target
+                if (ghost.appearance.Left < target.appearance.Left - 2 && ghost.appearance.Top < target.appearance.Top - 2) //Up left corner position relative to target
                 {
                     if (!wallcheck(ghost, -2)) directionChange(-2);
                     else directionChange (-1);
                 }     
-                if (ghost.appearance.Left == target.appearance.Left && ghost.appearance.Top > target.appearance.Top) //Same line as a target, but lower
+                if ((ghost.appearance.Left <= target.appearance.Left + 2 && ghost.appearance.Left >= target.appearance.Left) && ghost.appearance.Top > target.appearance.Top) //Same line as a target, but lower
                 {
                     if (!wallcheck(ghost, 2)) directionChange(2); 
                     else directionChange(1);
                 }
-                if (ghost.appearance.Left > target.appearance.Left && ghost.appearance.Top == target.appearance.Top) //Same height as a target, but more to right
+                if (ghost.appearance.Left > target.appearance.Left && (ghost.appearance.Top <= target.appearance.Top + 2 && ghost.appearance.Top >= target.appearance.Top)) //Same height as a target, but more to right
                 {
                     if (!wallcheck(ghost, 1)) directionChange(1); 
                     else directionChange(2);
                 }
-                if (ghost.appearance.Left == target.appearance.Left && ghost.appearance.Top < target.appearance.Top) //Same line as a target, but higher
+                if ((ghost.appearance.Left <= target.appearance.Left + 2 && ghost.appearance.Left >= target.appearance.Left) && ghost.appearance.Top < target.appearance.Top) //Same line as a target, but higher
                 {
                     if (!wallcheck(ghost, -2)) directionChange(-2); 
                     else directionChange(1);
                 }
-                if (ghost.appearance.Left < target.appearance.Left && ghost.appearance.Top == target.appearance.Top) //Same height as a target, but more to left
+                if (ghost.appearance.Left < target.appearance.Left && (ghost.appearance.Top <= target.appearance.Top + 2 && ghost.appearance.Top >= target.appearance.Top)) //Same height as a target, but more to left
                 {
                     if (!wallcheck(ghost, -1)) directionChange(-1); 
                     else directionChange(2);

@@ -26,9 +26,15 @@ namespace PacMan
         private int shells = 0;
         private int gatesSound = 0; 
         private int appearanceCount = 0; //appearance for the ghost
-        private int ghostJump = 200; //timing for ghosts fast moving
+        private int ghostJump = 30; //timing for ghosts fast moving
         private int ghostAlive = 1; //Dead or alive ghost
-        int shotgunMenu = 0; 
+        private int shotgunMenu = 0;
+        private int begin = 0;
+        private int deathDirection;
+        private int animCounter = 0;
+        private int gameend = 0;
+        private int teleportMode = 0;
+        
         private bot bot;
         public Pacman()
         {
@@ -41,11 +47,11 @@ namespace PacMan
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            bot.mind(); //ghost controlling
+            if (ghostAlive == 1) bot.mind(); //ghost controlling
             ghostUnhide();
             if (!wallcheck(player)) player.movement();
             if (!wallcheck(ghost) && ghostAlive == 1) ghost.movement();
-            if (engine.scoreTotal > 170 || gates == true) gatesopen();
+            if (engine.scoreTotal > 150 || gates == true) gatesopen();
             if (gatesSound == 1)
             {
                 SoundPlayer gates = new SoundPlayer(Resources.gates);
@@ -57,6 +63,11 @@ namespace PacMan
 
         private void Pacman_KeyDown(object sender, KeyEventArgs e)
         {
+            if (e.KeyCode == Keys.R)
+            {
+                Application.Restart();
+                Environment.Exit(0);
+            }
             if (e.KeyCode == Keys.Left && timer1.Enabled)
             {
                 player.direction = 1;
@@ -81,7 +92,7 @@ namespace PacMan
                 player.aimMovement(); //changing the direction of the aimbox
                 player.appearance.Image = Resources.pacmanDown;
             }
-            if (e.KeyCode == Keys.Space && timer1.Enabled)
+            if (e.KeyCode == Keys.Space && timer1.Enabled && gameend == 0)
             {
                 if (shotAbility == 1) shot();
                 else if (shotAbility == 0 && shells > 0) reload();
@@ -89,6 +100,8 @@ namespace PacMan
             if (e.KeyCode == Keys.Space && !timer1.Enabled && shotgunMenu == 1) //shotgun help menu handler
             {
                 shotgunMenu = 0;
+                SoundPlayer pick = new SoundPlayer(Resources.gunPick);
+                pick.Play();
                 panel6.Enabled = false;
                 panel6.Visible = false;
                 timer1.Enabled = true;
@@ -97,12 +110,15 @@ namespace PacMan
             {
                 this.Close();
             }
-            if (e.KeyCode == Keys.Enter && engine.lives != 0) //Press enter to continue playing
+            if (e.KeyCode == Keys.Enter && engine.lives != 0 && begin != 0 && gameend == 0) //Press enter to continue playing
             {
                 if (!timer1.Enabled)
                 {
                     panel4.Visible = false;
                     panel4.Enabled = false;
+                    player.appearance.Visible = false;
+                    ghost.appearance.Visible = false;
+                    teleportMode = 1;
                     for (int x = player.colliderLeft.Left; x > pictureBox3.Right; x--) //Moviing the pacman to the beginning
                     {
                         player.movementLeft();
@@ -110,6 +126,14 @@ namespace PacMan
                     for (int x = player.colliderDown.Bottom; x < pictureBox76.Top; x++) //Moving the pacman to the beginning
                     {
                         player.movementDown();
+                    }
+                    for (int x = ghost.colliderRight.Right; x < pictureBox31.Right; x++) //Moviing the pacman to the beginning
+                    {
+                        ghost.movementRight();
+                    }
+                    for (int x = ghost.colliderUp.Top; x > pictureBox31.Bottom; x--) //Moving the pacman to the beginning
+                    {
+                        ghost.movementUp();
                     }
                     switch (player.direction)
                     {
@@ -127,10 +151,20 @@ namespace PacMan
                             break;
 
                     }
+                    teleportMode = 0;
+                    player.appearance.Visible = true;
                     timer1.Enabled = true;
                 }
             }
-            if (e.KeyCode == Keys.X && timer1.Enabled) //Debug mode
+            if (e.KeyCode == Keys.Enter && timer1.Enabled == false && begin == 0 && gameend == 0)
+            {
+                label11.Text = "Pause";
+                timer1.Enabled = true;
+                panel7.Left = 714;
+                panel7.Top = 728;
+                begin = 1;
+            }
+            if (e.KeyCode == Keys.X && timer1.Enabled && gameend == 0) //Debug mode
             {
                 ghost.appearance.Visible = !c;
                 pictureBox204.Visible = !c;
@@ -167,7 +201,7 @@ namespace PacMan
             bool b = false;
             foreach (Control x in panel1.Controls) //Checking the all controls for a pictureboxes
             {
-                if (x is PictureBox && (x.Tag == "wall" || x.Tag == "wall2" || x.Tag == "border" || x.Tag =="door"))  //Wall detection
+                if (x is PictureBox && (x.Tag == "wall" || x.Tag == "wall2" || x.Tag == "wall3" || x.Tag == "border" || x.Tag =="door"))  //Wall detection
                 {
                     if (entity.name == "Pacman") aligning(entity, x); //Alligning of the creature
                     if (entity.direction == 1)
@@ -201,7 +235,7 @@ namespace PacMan
                 }
                 if (entity.name == "Pacman")
                 {
-                    if (x is PictureBox && (x.Tag == "kibble"))  //Kibble detection
+                    if (x is PictureBox && (x.Tag == "kibble" || x.Tag == "kibble2"))  //Kibble detection
                     {
                         if (entity.appearance.Bounds.IntersectsWith(x.Bounds))
                         {
@@ -213,7 +247,7 @@ namespace PacMan
                     {
                         if (entity.appearance.Bounds.IntersectsWith(x.Bounds))
                         {
-                            shells = shells + 5;
+                            shells = shells + 1;
                             SoundPlayer pick = new SoundPlayer(Resources.gunPick);
                             pick.Play();
                             label3.Text = ("x" + shells);
@@ -224,8 +258,8 @@ namespace PacMan
                     {
                         if (entity.appearance.Bounds.IntersectsWith(x.Bounds))
                         {
-                            SoundPlayer pick = new SoundPlayer(Resources.gunPick);
-                            pick.Play();
+                            SoundPlayer player = new SoundPlayer(Resources.duke);
+                            player.Play();
                             panel3.Visible = true;
                             pictureBox378.Visible = true;
                             pictureBox393.Visible = true;
@@ -253,6 +287,22 @@ namespace PacMan
                             panel1.Controls.Remove(x);
                         }
                     }
+                    if (x is PictureBox && (x.Tag == "cherry"))  //Kibble detection
+                    {
+                        if (entity.appearance.Bounds.IntersectsWith(x.Bounds))
+                        {
+                            strawIcon.Visible = true;
+                            foreach (Control z in panel1.Controls)
+                            {
+                                if (z is PictureBox && z.Tag == "kibble2") z.Visible = true; //Ability to see the kibbles
+                            }
+                            SoundPlayer collect = new SoundPlayer(Resources.keys);
+                            cherryIcon.Visible = true;
+                            collect.Play();
+                            panel1.Controls.Remove(x);
+                        }
+                    }
+
                     if (x is PictureBox && (x.Tag == "key"))  //Kibble detection
                     {
                         if (entity.appearance.Bounds.IntersectsWith(x.Bounds))
@@ -289,7 +339,7 @@ namespace PacMan
                             engine.keys = 0;
                         }
                     }
-                    if (x is PictureBox && (x.Tag == "kibble" || x.Tag == "wall" || x.Tag == "wall2" || x.Tag == "key" || x.Tag == "door" || x.Tag == "straw" || x.Tag == "shotgun" || x.Tag == "shell" || x.Tag == "cherry"))  //Vision detection
+                    if (x is PictureBox && (x.Tag == "kibble" || x.Tag == "kibble2" || x.Tag == "wall" || x.Tag == "wall2" || x.Tag == "wall3"|| x.Tag == "key" || x.Tag == "door" || x.Tag == "straw" || x.Tag == "shotgun" || x.Tag == "shell" || x.Tag == "cherry"))  //Vision detection
                     {
                         if (entity.vision.Bounds.IntersectsWith(x.Bounds))
                         {
@@ -350,17 +400,20 @@ namespace PacMan
 
         private void label11_Click(object sender, EventArgs e)
         {
-            panel7.Left = 714;
-            panel7.Top = 728;
-            if (timer1.Enabled == true)
+            if (gameend == 0)
             {
-                timer1.Enabled = false;
-                label11.Text = "Start!";
-            }
-            else if (engine.lives != 0 && shotgunMenu != 1)
-            {
-                timer1.Enabled = true;
-                label11.Text = "Pause";
+                panel7.Left = 714;
+                panel7.Top = 728;
+                if (timer1.Enabled == true)
+                {
+                    timer1.Enabled = false;
+                    label11.Text = "Start!";
+                }
+                else if (engine.lives != 0 && shotgunMenu != 1)
+                {
+                    timer1.Enabled = true;
+                    label11.Text = "Pause";
+                }
             }
         }
 
@@ -382,7 +435,7 @@ namespace PacMan
             shotAbility = 0;
             foreach (PictureBox v in panel1.Controls)
             {
-                if (v.Tag == "wall")
+                if (v.Tag == "wall" || v.Tag == "wall3")
                 {
                     if (aimBox.Bounds.IntersectsWith(v.Bounds))
                     {
@@ -396,7 +449,9 @@ namespace PacMan
                     if (aimBox.Bounds.IntersectsWith(v.Bounds))
                     {
                         ghostAlive = 0;
-                        ghost.appearance.Visible = false;
+                        deathDirection = player.direction;
+                        timer3.Enabled = true;
+                        ghost.appearance.Image = Resources.GhostDead;
                     }
                 }
             }
@@ -416,14 +471,12 @@ namespace PacMan
             if (player.vision.Bounds.IntersectsWith(ghost.appearance.Bounds) || player.aimbox.Bounds.IntersectsWith(ghost.appearance.Bounds))
             {
                 ghost.appearance.Visible = true;
-                if (ghostJump == 200) ghost.speed = 2;
+                if (ghostJump == 30) ghost.speed = 2;
                 if (appearanceCount == 0)
                 {
                     pursuit.Play();
                 }
                 appearanceCount = 100;
-                if (ghostJump > 0) ghostJump = ghostJump - 1;
-                if (ghostJump == 0) ghost.speed = 1;
             }
             else if (ghost.appearance.Visible && appearanceCount == 0)
             {
@@ -431,9 +484,11 @@ namespace PacMan
                 ghost.speed = 1;
                 pursuit.Stop();
                 dissapear.Play();
-                ghostJump = 200;
+                ghostJump = 30;
             }
             if (appearanceCount > 0) appearanceCount = appearanceCount - 1;
+            if (ghostJump > 0 && ghost.appearance.Visible) ghostJump = ghostJump - 1;
+            if (ghostJump < 1) ghost.speed = 1;
         }
 
         private void timer2_Tick(object sender, EventArgs e)
@@ -454,7 +509,7 @@ namespace PacMan
 
         private void kill()
         {
-            if (ghost.appearance.Bounds.IntersectsWith(player.appearance.Bounds) && engine.lives > 0 && ghostAlive == 1)
+            if (ghost.appearance.Bounds.IntersectsWith(player.appearance.Bounds) && engine.lives > 0 && ghostAlive == 1 && teleportMode == 0)
             {
                 timer1.Enabled = false;
                 engine.lives = engine.lives - 1;
@@ -469,7 +524,7 @@ namespace PacMan
                 panel4.Left = (panel1.Left + panel1.Width / 2) - (panel4.Width /2);
                 panel4.Top = (panel1.Top + panel1.Height / 2) - (panel4.Height/2);
             }
-            if (ghost.appearance.Bounds.IntersectsWith(player.appearance.Bounds) && engine.lives == 0 && ghostAlive == 1)
+            if (ghost.appearance.Bounds.IntersectsWith(player.appearance.Bounds) && engine.lives == 0 && ghostAlive == 1 && teleportMode == 0)
             {
                 timer1.Enabled = false;
                 engine.scoring();
@@ -482,5 +537,107 @@ namespace PacMan
             }
         }
 
+        private void label19_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://www.linkedin.com/in/htdguide");
+            this.Close();
+        }
+
+        private void label23_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://www.linkedin.com/in/htdguide");
+        }
+
+        private void timer3_Tick(object sender, EventArgs e)
+        {
+            ghost.direction = deathDirection;
+            animCounter = animCounter + 1;
+            switch (deathDirection)
+            {
+                case 1:
+                    if (animCounter < 10 && !wallcheck(ghost))
+                    {
+                        ghost.movementLeft();
+                        ghost.movementLeft();
+                        ghost.movementLeft();
+                    }
+                    if (animCounter > 10 && animCounter < 20 && !wallcheck(ghost))
+                    {
+                        ghost.movementLeft();
+                        ghost.movementLeft();
+                    }
+                    if (animCounter > 20 && animCounter < 30 && !wallcheck(ghost))
+                    {
+                        ghost.movementLeft();
+                    }
+                break;
+                case -1:
+                    if (animCounter < 10)
+                    {
+                        ghost.movementRight();
+                        ghost.movementRight();
+                        ghost.movementRight();
+                    }
+                    if (animCounter > 10 && animCounter < 20 && !wallcheck(ghost))
+                    {
+                        ghost.movementRight();
+                        ghost.movementRight();
+                    }
+                    if (animCounter > 20 && animCounter < 30 && !wallcheck(ghost))
+                    {
+                        ghost.movementRight();
+                    }
+                break;
+                case 2:
+                    if (animCounter < 10 && !wallcheck(ghost))
+                    {
+                        ghost.movementUp();
+                        ghost.movementUp();
+                        ghost.movementUp();
+                    }
+                    if (animCounter > 10 && animCounter < 20 && !wallcheck(ghost))
+                    {
+                        ghost.movementUp();
+                        ghost.movementUp();
+                    }
+                    if (animCounter > 20 && animCounter < 30 && !wallcheck(ghost))
+                    {
+                        ghost.movementUp();
+                    }
+                break;
+                case -2:
+                    if (animCounter < 10 && !wallcheck(ghost))
+                    {
+                        ghost.movementDown();
+                        ghost.movementDown();
+                        ghost.movementDown();
+                    }
+                    if (animCounter > 10 && animCounter < 20 && !wallcheck(ghost))
+                    {
+                        ghost.movementDown();
+                        ghost.movementDown();
+                    }
+                    if (animCounter > 20 && animCounter < 30 && !wallcheck(ghost))
+                    {
+                        ghost.movementDown();
+                    }
+                break;
+            }  
+            if (animCounter == 25)
+            {
+                SoundPlayer death = new SoundPlayer(Resources.ghostDeadSound);
+                death.Play();
+            }
+            if (animCounter == 120)
+            {
+                panel8.Left = (panel1.Left + panel1.Width / 2) - (panel8.Width / 2);
+                panel8.Top = (panel1.Top + panel1.Height / 2) - (panel8.Height / 2);
+                timer1.Enabled = false;
+                gameend = 1;
+                label21.Text = engine.scoreTotal.ToString();
+                SoundPlayer death = new SoundPlayer(Resources.ending);
+                death.Play();
+            }
+        }
     }
 }

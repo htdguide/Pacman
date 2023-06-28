@@ -203,5 +203,17 @@
   <ItemGroup>
     <None Include="Resources\dead.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\its-time-to-kick-ass-and-chew-bubble-gum-and-im-all-out-of-gum.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ghoulDead.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mixkit-wounded-lion-growling-5.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mixkit-game-level-music-689 %281%29.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

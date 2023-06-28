@@ -205,4 +205,16 @@
   <data name="pursuit" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\mixkit-cinematic-mystery-heartbeat-transition-492 (mp3cut.net).wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="duke" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\its-time-to-kick-ass-and-chew-bubble-gum-and-im-all-out-of-gum.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ending" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mixkit-game-level-music-689 (1).wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="GhostDead" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ghoulDead.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ghostDeadSound" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mixkit-wounded-lion-growling-5.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

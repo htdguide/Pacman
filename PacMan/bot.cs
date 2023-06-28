@@ -8,6 +8,8 @@ namespace PacMan
         public Creatures ghost;
         public Creatures target;
         public Panel panel;
+        public int wallbreakCounter;
+        public int maxWallbreakCounter = 100;
 
         public bot(Creatures ghost, Panel panel, Creatures target)
         {
@@ -41,23 +43,68 @@ namespace PacMan
                 }     
                 if ((ghost.appearance.Left <= target.appearance.Left + 2 && ghost.appearance.Left >= target.appearance.Left) && ghost.appearance.Top > target.appearance.Top) //Same line as a target, but lower
                 {
-                    if (!wallcheck(ghost, 2)) directionChange(2); 
-                    else directionChange(1);
+                    if (ghost.direction == 2)
+                    {
+                        if (wallcheck(ghost, 2))
+                        {
+                            wallbreakCounter = wallbreakCounter + 1;
+                            if (wallbreakCounter > maxWallbreakCounter) wallbreak(ghost, 2);
+                        }
+                    }
+                    else
+                    {
+                        directionChange(2);
+                        wallbreakCounter = 0;
+                    }
                 }
                 if (ghost.appearance.Left > target.appearance.Left && (ghost.appearance.Top <= target.appearance.Top + 2 && ghost.appearance.Top >= target.appearance.Top)) //Same height as a target, but more to right
                 {
-                    if (!wallcheck(ghost, 1)) directionChange(1); 
-                    else directionChange(2);
+                    if (ghost.direction == 1)
+                    {
+                        if (wallcheck(ghost, 1))
+                        {
+                            wallbreakCounter = wallbreakCounter + 1;
+                            if (wallbreakCounter > maxWallbreakCounter) wallbreak(ghost, 1);
+                        }
+                    }
+                    else
+                    {
+                        directionChange(1);
+                        wallbreakCounter = 0;
+                    }
                 }
                 if ((ghost.appearance.Left <= target.appearance.Left + 2 && ghost.appearance.Left >= target.appearance.Left) && ghost.appearance.Top < target.appearance.Top) //Same line as a target, but higher
                 {
-                    if (!wallcheck(ghost, -2)) directionChange(-2); 
-                    else directionChange(1);
+                    if (ghost.direction == -2)
+                    {
+                        if (wallcheck(ghost, -2))
+                        {
+                            wallbreakCounter = wallbreakCounter + 1;
+                            if (wallbreakCounter > maxWallbreakCounter) wallbreak(ghost, -2);
+                        }
+                    }
+                    else
+                    {
+                        directionChange(-2);
+                        wallbreakCounter = 0;
+                    }
                 }
                 if (ghost.appearance.Left < target.appearance.Left && (ghost.appearance.Top <= target.appearance.Top + 2 && ghost.appearance.Top >= target.appearance.Top)) //Same height as a target, but more to left
                 {
-                    if (!wallcheck(ghost, -1)) directionChange(-1); 
-                    else directionChange(2);
+                    if (ghost.direction == -1)
+                    {
+                        if (wallcheck(ghost, -1))
+                        {
+                            wallbreakCounter = wallbreakCounter + 1;
+                            if (wallbreakCounter > maxWallbreakCounter) wallbreak(ghost, -1);
+                        }
+                    }
+                    else
+                    {
+                        directionChange(-1);
+                        wallbreakCounter = 0;
+                    }
+
                 }
         }
 
@@ -117,6 +164,53 @@ namespace PacMan
                     ghost.appearance.Image = Resources.GhostDown; break;
             }
            
+        }
+        private void wallbreak(Creatures entity, int direction)
+        {
+            foreach (Control x in panel.Controls) //Checking the all controls for a pictureboxes
+            {
+                if (x is PictureBox && (x.Tag == "wall"))  //Wall detection
+                {
+                    PictureBox wall = (PictureBox)x;
+                    if (direction == 1)
+                    {
+                        if (entity.colliderLeft.Bounds.IntersectsWith(x.Bounds))
+                        {   
+                            wall.Image = Resources.deadwall;
+                            wall.Tag = "deadwall";
+                            wallbreakCounter = 0;
+                        }
+                    }
+                    if (direction == -1)
+                    {
+                        if (entity.colliderRight.Bounds.IntersectsWith(x.Bounds))
+                        {
+                            wall.Image = Resources.deadwall;
+                            wall.Tag = "deadwall";
+                            wallbreakCounter = 0;
+                        }
+                    }
+                    if (direction == 2)
+                    {
+                        if (entity.colliderUp.Bounds.IntersectsWith(x.Bounds))
+                        {
+                            wall.Image = Resources.deadwall;
+                            wall.Tag = "deadwall";
+                            wallbreakCounter = 0;
+                        }
+                    }
+                    if (direction == -2)
+                    {
+                        if (entity.colliderDown.Bounds.IntersectsWith(x.Bounds))
+                        {
+                            wall.Image = Resources.deadwall;
+                            wall.Tag = "deadwall";
+                            wallbreakCounter = 0;
+                        }
+                    }
+                }
+
+            }
         }
 
     }

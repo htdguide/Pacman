@@ -399,7 +399,7 @@ namespace PacMan
 
         private void label11_Click(object sender, EventArgs e)
         {
-            if (gameend == 0)
+            if (gameend == 0 && teleportMode == 0)
             {
                 panel7.Left = 714;
                 panel7.Top = 728;

@@ -117,8 +117,7 @@ namespace PacMan
                     panel4.Visible = false;
                     panel4.Enabled = false;
                     player.appearance.Visible = false;
-                    ghost.appearance.Visible = false;
-                    teleportMode = 1;
+                    ghost.appearance.Visible = false;                   
                     for (int x = player.colliderLeft.Left; x > pictureBox3.Right; x--) //Moviing the pacman to the beginning
                     {
                         player.movementLeft();
@@ -523,8 +522,9 @@ namespace PacMan
                 panel4.Visible = true;
                 panel4.Left = (panel1.Left + panel1.Width / 2) - (panel4.Width /2);
                 panel4.Top = (panel1.Top + panel1.Height / 2) - (panel4.Height/2);
+                teleportMode = 1;
             }
-            if (ghost.appearance.Bounds.IntersectsWith(player.appearance.Bounds) && engine.lives == 0 && ghostAlive == 1 && teleportMode == 0)
+            if (ghost.appearance.Bounds.IntersectsWith(player.appearance.Bounds) && engine.lives == 0 && ghostAlive == 1)
             {
                 timer1.Enabled = false;
                 engine.scoring();

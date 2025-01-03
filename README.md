@@ -1,5 +1,7 @@
 # PacMan
 
+![PacMan_fva2Hy1drk](https://github.com/user-attachments/assets/641c7b36-dd2e-4866-bebf-12b23a5e5d40)
+
 My second assignment with C# and windows forms. To download the latest version, check releases tab.
 
 Controls:
